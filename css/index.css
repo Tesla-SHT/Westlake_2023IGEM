@@ -1,0 +1,33 @@
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  color: yellow;
+  background:transparent!important;
+}
+
+.navbar-shrink {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: rgba(216, 96, 96, 0.602);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-shrink .dropdown-menu>li>a {
+  color: white;
+}
+
+.navbar-shrink .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-shrink .navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  color: yellow;
+}
+.dropdown-menu {
+  background:transparent!important;
+  border:none;
+}
