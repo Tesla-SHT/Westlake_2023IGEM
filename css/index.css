@@ -1,3 +1,4 @@
+/*导航栏样式*/
 .navbar-nav>li>a:hover,
 .navbar-nav>li>a:focus,
 .dropdown-menu>li>a:hover,
@@ -9,7 +10,7 @@
 .navbar-shrink {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  background-color: rgba(216, 96, 96, 0.602);
+  background-color: rgba(219, 130, 130, 0.602);
   transition: all 0.5s ease-in-out;
 }
 
@@ -31,3 +32,65 @@
   background:transparent!important;
   border:none;
 }
+/*顶部滚动展示进度*/
+::-webkit-scrollbar {
+	width: 10px;
+	height: 5px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #cdcabd;
+}
+.scroll-line {
+	height: 2px;
+	margin-bottom: -2px;
+	background: #0089f2;
+	width: 100%;
+}
+.content{
+/*   background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fpic%2Fe%2F27%2Ffe997254c8.jpg&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652084532&t=d1c86873e1cd37cc98fa49844d8148f5'); */
+  filter: grayscale(80%);
+  background-size: cover;
+  z-index: -3;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/*logo*/
+.logo{
+  margin: 0;
+  font-family: 'Nosifer', cursive;
+  font-size: 1.5rem;
+  color: transparent;
+  background: linear-gradient(to right, #fff, #BF391B, #531515);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+  letter-spacing: 0.23rem;
+  font-style: italic;
+}
+.logo::before,
+.logo::after{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  -webkit-text-stroke: 5px #737373;
+  z-index: -1;
+}
+.logo::after{
+  -webkit-text-stroke: 7px #fff;
+  z-index: -2;
+}
+.logo:nth-child(2){
+  margin-top: -12px;
+  font-size: 1.5rem;
+}
+.content:hover{
+  filter: none;
+}
+/*logo end*/
