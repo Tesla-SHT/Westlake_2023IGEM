@@ -1,0 +1,128 @@
+
+.wrapper--team {
+	margin: 0;
+	padding: 2rem 1rem;
+  }
+  .l-container {
+	margin: 0 auto;
+  }
+  @media screen and (min-width: 64em) {
+	.l-container {
+	  max-width: 64rem;
+	}
+  }
+  @media screen and (min-width: 75em) {
+	.l-container {
+	  max-width: 75rem;
+	}
+  }
+  .team-grid {
+	margin: 0;
+	text-align: center;
+	*zoom: 1;
+  }
+  .team-grid:before, .team-grid:after {
+	content: " ";
+	display: table;
+  }
+  .team-grid:after {
+	clear: both;
+  }
+  .team-grid__member {
+	font-family: ff-tisa-web-pro;
+	max-width: 100%;
+	padding: 0.5rem;
+	margin: 0 0 0.5rem;
+	display: inline-block;
+	float: none;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+  }
+  @media screen and (max-width: 42em) {
+	.team-grid__member {
+	  width: 100%;
+	}
+  }
+  
+  /* For medium screens, display two members per row */
+  @media screen and (min-width: 42em) and (max-width: 62em) {
+	.team-grid__member {
+	  width: 49%;
+	}
+  }
+  
+  /* For large screens, display three members per row */
+  @media screen and (min-width: 62em) {
+	.team-grid__member {
+	  width: 32.5%;
+	}
+  }
+  .team-grid__member {
+	position: relative;
+	overflow: hidden;
+  }
+  .team-grid__member img {
+	width: 100%;
+	height: auto;
+	border: 8px solid #fff;
+	box-sizing: border-box;
+	display: block;
+  }
+  .member__info {
+	color: #fff;
+	height: auto;
+	width: auto;
+	opacity: 0;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	right: 1rem;
+	bottom: 1rem;
+	background: rgba(0, 0, 0, 0.4);
+	backface-visibility: hidden;
+	transition: opacity 0.4s ease-in-out;
+  }
+  .member__name {
+
+	letter-spacing: 1px;
+	line-height: 6rem;
+	margin-bottom: 0;
+  }
+  .member__title {
+	color: #0060c1;
+	margin-bottom: 0.75rem;
+	font-weight: normal;
+	line-height: 1rem;
+	padding: 0 1.5rem;
+  }
+  a.member__link:hover {
+	color:burlywood;
+  }
+  a.member__link {
+	color: #FFF;
+	border-radius: 2px;
+	border: 0;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+  }
+  .team-grid__member:hover .member__info {
+	opacity: 1;
+  }
+  .member__info:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+  }
+  .center-vert-content {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top:150px;
+  }
+  

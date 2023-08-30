@@ -1,0 +1,190 @@
+body {
+  font-family: Titillium Web, Helvetica, 'Helvetica Neue', NotoSansSC-Regular, NotoSansSC, PingFang SC, sans-serif;
+
+}
+
+.bg-hero {
+  background-color: #45b06cff;
+}
+
+/* loading */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #cdcabd;
+}
+
+.scroll-line {
+  height: 2px;
+  margin-bottom: -2px;
+  background: #0089f2;
+  width: 100%;
+}
+
+.content {
+  /*   background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fpic%2Fe%2F27%2Ffe997254c8.jpg&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652084532&t=d1c86873e1cd37cc98fa49844d8148f5'); */
+  filter: grayscale(80%);
+  background-size: cover;
+  z-index: -3;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* back to top*/
+#backtop {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#backtop:hover {
+  background-color: #555;
+}
+
+/*导航栏样式*/
+.nav-link {
+  color: rgb(113, 113, 113);
+}
+
+.dropdown-menu {
+  background-color: rgb(113, 113, 113);
+}
+
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  color: rgb(240, 141, 0);
+  background: transparent !important;
+}
+
+.navbar-shrink {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: rgba(99, 94, 94, 0.602);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-shrink .dropdown-menu>li>a {
+  color: black;
+}
+
+.navbar-shrink .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-shrink .navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  color: rgb(240, 141, 0);
+}
+
+.dropdown-menu {
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 'all 0.5s ease-in-out';
+  background: transparent;
+  border: none;
+}
+
+/* 鼠标悬停时显示下拉 */
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  max-height: 500px;
+  /* 根据需要调整最大高度 */
+  opacity: 1;
+}
+
+.nav-ani li a {
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.nav-ani li a:before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  top: 0px;
+  content: '';
+  background: #FFF;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+.nav-ani li a:hover:before {
+  height: 100%;
+}
+
+
+/* CALLOUT */
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: .25rem;
+  border-radius: .25rem
+}
+
+.bd-callout h4 {
+  margin-bottom: .25rem
+}
+
+.bd-callout p:last-child {
+  margin-bottom: 0
+}
+
+.bd-callout code {
+  border-radius: .25rem
+}
+
+.bd-callout+.bd-callout {
+  margin-top: -.25rem
+}
+
+.bd-callout-info {
+  border-left-color: #5bc0de
+}
+
+.bd-callout-warning {
+  border-left-color: #f0ad4e
+}
+
+.bd-callout-danger {
+  border-left-color: #d9534f
+}
+
+/* footer */
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}

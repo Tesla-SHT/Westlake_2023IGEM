@@ -1,0 +1,168 @@
+{% extends "layout.html" %}
+
+{% block title %}Notebook{% endblock %}
+
+{% block page_content %}
+<link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
+
+
+<!--sidebar-->
+<div class="row">
+  <div id="sidebar" class=" ol-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3  ">
+    <hr>
+    <ul class="navigation nav nav-pills flex-column mb-auto">
+      <li>
+        <a href="#June" class="nav-link">
+          June
+        </a>
+      </li>
+      <li>
+        <a href="#July" class="nav-link">
+          July
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          August
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          September
+        </a>
+      </li>
+    </ul>
+    <hr>
+  </div>
+  <!--<div class="col-lg-3 col-md-3" style="overflow:auto;vertical-align:middle">
+  <ul class="navigation">
+    <li><a href="January">January</a></li>
+  </ul>
+  </div>-->
+  <div class="mp-content offset-md-3 col-md-9 col-lg-9">
+    <div id="April" class="month">
+      <div class="container mx-auto mt-5 w-75">
+        <h1 class="pt-5 mx-auto text-center">
+          April
+        </h1>
+        <hr>
+        <div class="card mx-auto text-center">
+          <div class="card-header ani-card-header">Week 1</div>
+          <div class="card-body ani-card-body">
+
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-5 w-75">
+        <div class="card mx-auto text-center">
+          <div class="card-header ani-card-header">Week 2</div>
+          <div class="card-body ani-card-body">
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="May" class="month">
+      <div class="container mx-auto mt-5 w-75">
+        <h1 class="pt-5 mx-auto text-center">
+          May
+        </h1>
+        <hr>
+        <p class="w-80 mx-auto pt-4 pb-4 text-center">
+          Introduce your list here.
+        </p>
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="container w-80 h-80 mx-auto mt-5 mb-5">
+            <div class="row mt-4" style="text-align:justify">
+              <div class="col">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Abbreviations</th>
+                      <th scope="col">Full Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>BA</td>
+                      <td>Bioamine</td>
+                    </tr>
+                    <tr>
+                      <td>C2000</td>
+                      <td>Cadaverine 2000 ppm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-5 w-75">
+        <h1 class="pt-5 mx-auto text-center">
+          Lab Notebook
+        </h1>
+        <p class="w-80 mx-auto pt-4 pb-4 text-center">
+        </p>
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="container w-80 h-80 mx-auto mt-5 mb-5">
+            <div class="row mt-4" style="text-align:justify">
+              <div class="col">
+                <p>Our team used the these protocols to perform the following experiments.</p>
+                <div style="text-align:center" class="mt-2 mb-2">
+                  <a href="https://static.igem.wiki/teams/4225/wiki/protocol-final-circuitdesign.pdf"
+                    class="button">Circuit
+                    Design Protocol</a><a href="https://static.igem.wiki/teams/4225/wiki/protocol-final-cfs.pdf"
+                    class="button">Cell Free System Protocol</a><a
+                    href="https://static.igem.wiki/teams/4225/wiki/protocol-final-hardware.pdf" class="button">Hardware
+                    Protocol</a>
+                </div>
+                <button class="collapsible active">Week 1</button>
+                <div class="content" style="max-height: 83px;">
+                  <div style="text-align:center" class="mt-2 mb-2">
+                    <a href="https://static.igem.wiki/teams/4225/wiki/week1.pdf" class="button">Wet Lab</a>
+                  </div>
+                </div>
+                <button class="collapsible active">Week 2</button>
+                <div class="content" style="max-height: 83px;">
+                  <div style="text-align:center" class="mt-2 mb-2">
+                    <a href="https://static.igem.wiki/teams/4225/wiki/week2.pdf" class="button">Wet Lab</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>What should this page contain?</h2>
+    <hr>
+    <ul>
+      <li>Chronological notes of what your team is doing.</li>
+      <li>Brief descriptions of daily important events.</li>
+      <li>Pictures of your progress.</li>
+      <li>Mention who participated in what task.</li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <h2>Inspirations</h2>
+    <hr>
+    <ul>
+      <li><a href="http://2018.igem.org/Team:Munich/Notebook">2018 Munich</a></li>
+      <li><a href="https://2019.igem.org/Team:Georgia_State/Notebook">2019 Georgia State</a></li>
+      <li><a href="https://2019.igem.org/Team:Newcastle/Notebook">2019 Newcastle</a></li>
+      <li><a href="https://2020.igem.org/Team:IISER-Pune-India/Notebook">2020 IISER Pune India</a></li>
+      <li><a href="https://2020.igem.org/Team:Lund/Notebook">2020 Lund</a></li>
+      <li><a href="https://2020.igem.org/Team:NOVA_LxPortugal/Notebook">2020 NOVA LxPortugal</a></li>
+      <li><a href="https://2020.igem.org/Team:RDFZ-China/NoteBook">2020 RDFZ China</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename = 'card.js') }}"></script>
+{% endblock %}
