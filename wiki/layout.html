@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <link href="{{ url_for('static', filename = 'footer.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <title>{% block title %}{% endblock %} | Westlake-China - iGEM 2023</title>
+  <!--GSAP animation-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link href="{{ url_for('static', filename = 'button.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--加载界面
+  <script>
+    setTimeout(function () {
+      $(".loading-div").hide();
+      $(".main").css('display', 'block');
+    }, 8000)
+    document.onreadystatechange = function () {
+      if (document.readyState == "complete") {
+        $(".loading-div").hide();
+        $(".main").css('display', 'block');
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+    .main {
+      display: none;
+    }
+
+    .loading-div {
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #555;
+    }
+  </style>
+  <div class="loading-div">
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw "></i>
+    <link rel="icon" href="https://static.igem.wiki/teams/4702/wiki/logo.png" size="16x16">
+  </div>-->
+  <link href="{{ url_for('static', filename = 'loading.css') }}" rel="stylesheet">
+  <div class="preloader">
+    <div class="loader">
+      <div class="ytp-spinner">
+        <div class="ytp-spinner-container">
+          <div class="ytp-spinner-rotator">
+            <div class="ytp-spinner-left">
+              <div class="ytp-spinner-circle"></div>
+            </div>
+            <div class="ytp-spinner-right">
+              <div class="ytp-spinner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--主界面-->
+
+  <div class="main">
+
+    <!--滚动展示进度-->
+    <script>
+      $(window).scroll(function () {
+        var wintop = $(window).scrollTop(), docheight =
+
+          $(document).height(), winheight = $(window).height();
+        var scrolled = (wintop / (docheight - winheight)) * 100;
+        console.log(scrolled);
+        $('.scroll-line').css('width', (scrolled + '%'));
+      });
+    </script>
+    <div class="scroll-line" style="
+      position: fixed;z-index:999999"></div>
+    <!-- Navigation -->
+    {% include 'menu.html' %}
+
+    <!-- Header -->
+    <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
+    <div class="sky single_slider d-flex align-items-center" style="background:linear-gradient(
+      110deg,
+      #6fd7d0 0%,
+      #96daf7 32%, 
+      #66bfe5 57%, 
+      rgba(0, 76, 197, 0.8) 100%
+  )">
+      <section class="col-md-12 text-center">
+        <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
+        <div class="container header">
+          <div class="row">
+            <div class="">
+              <p class="text-light" style="font-size:70px;">{{ self.title() }}</p>
+              <div class=" ">
+                <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">{% block lead
+                  %}{%
+                  endblock %}</p>
+                <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      // 使用原生 JavaScript 控制动画
+      document.addEventListener("DOMContentLoaded", function () {
+        // 获取包含按钮的 DOM 元素
+        var button = document.querySelector(".btn-header");
+
+        // 获取当前页面的路径
+        var currentPath = window.location.pathname;
+        console.log(currentPath);
+        // 检查当前页面的路径是否包含 "home"
+        if (currentPath.slice(-1) === "/") {
+          // 如果是 Home 页面，则显示按钮
+          button.style.display = "inline-block";
+        } else {
+          // 如果不是 Home 页面，则隐藏按钮
+          button.style.display = "none";
+        }
+      });
+    </script>
+    <!--回到顶部图标-->
+
+    <button onclick="topFunction()" style="padding:1px 8px" id="backtop" type="button"
+      class="btn btn-outline-danger btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30"
+        fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 18" style="padding:0;margin:0;">
+        <path
+          d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
+      </svg>
+    </button>
+    <!--回到顶部结束-->
+    <!-- Page Content -->
+    <div class="container"style="margin-left:0;margin-right:0">
+
+      {% block page_content %}{% endblock %}
+    </div>
+
+    <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+    {% include 'footer.html' %}
+  </div>
+  <script src="{{ url_for('static', filename = 'layout.js') }}"></script>
+
+  <script src="{{ url_for('static', filename='header_gsap.js') }}"></script>
+  <!--粒子特效-->
+  <script src="{{ url_for('static', filename='particles.js') }}"></script>
+
+  <!--加载界面-->
+  <script>$(function () {
+    "use strict"; $(window).on('load', function (event) { $('.preloader').delay(500).fadeOut(500); });
+    $(window).on('scroll', function (event) {
+      var scroll = $(window).scrollTop();
+      if (scroll < 20) { $(".header_navbar").removeClass("sticky"); $(".header_navbar img").attr("src", "assets/images/logo.svg"); }
+      else { $(".header_navbar").addClass("sticky"); $(".header_navbar img").attr("src", "assets/images/logo-2.svg"); }
+    });
+    var scrollLink = $('.page-scroll');
+    $(window).scroll(function () {
+      var scrollbarLocation = $(this).scrollTop(); scrollLink.each(function () {
+        var sectionOffset = $(this.hash).offset().top - 73;
+        if (sectionOffset <= scrollbarLocation) { $(this).parent().addClass('active'); $(this).parent().siblings().removeClass('active'); }
+      });
+    });
+    $(".navbar-nav a").on('click', function () {
+      $(".navbar-collapse").removeClass("show");
+    });
+    $(".navbar-toggler").on('click', function () {
+      $(this).toggleClass("active");
+    }); $(".navbar-nav a").on('click', function () {
+      $(".navbar-toggler").removeClass('active');
+    });
+    $('.counter').counterUp({ delay: 10, time: 3000 });
+    $('.video-popup').magnificPopup({ type: 'iframe' });
+    $('.image-popup').magnificPopup({ type: 'image', gallery: { enabled: true } });
+    $('.testimonial_active').slick({ dots: true, infinite: true, arrows: false, speed: 800, slidesToShow: 2, slidesToScroll: 1, responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, } }, { breakpoint: 576, settings: { slidesToShow: 1, } }] });
+    $(window).on('scroll', function (event) { if ($(this).scrollTop() > 600) { $('.back-to-top').fadeIn(200) } else { $('.back-to-top').fadeOut(200) } });
+    $('.back-to-top').on('click', function (event) { event.preventDefault(); $('html, body').animate({ scrollTop: 0, }, 1500); });
+    $('select').niceSelect(); var wow = new WOW({ boxClass: 'wow', mobile: false, })
+    wow.init();
+    
+    $(".preloader").delay(8000).fadeout(500);
+  });</script>
+</body>
+
+</html>
