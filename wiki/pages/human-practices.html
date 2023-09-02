@@ -7,6 +7,7 @@ the world. Consider how the world affects your work and how your work affects th
 {% block page_content %}
 
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'HP.css') }}" rel="stylesheet">
 <div class="row" style="">
   <div id="sidebar" class="ol-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3"
     style="padding-right:0;padding-left:0">
@@ -34,7 +35,7 @@ the world. Consider how the world affects your work and how your work affects th
       </li>
       <li>
         <a href="#5" class="nav-link">
-          Longxing Cao  
+          Longxing Cao
         </a>
       </li>
       <li>
@@ -50,37 +51,70 @@ the world. Consider how the world affects your work and how your work affects th
     </ul>
     <hr>
   </div>
-  <div class="mp-content offset-md-2 col-md-12 col-lg-12" style="padding-right:0;padding-left:0">
+  <div class="mp-content offset-md-3 col-md-9 col-lg-9 justify-content-end" style="padding-right:0;padding-left:0">
     <div id="1" class="month">
-      <div class="container mx-auto mt-5 w-75">
+      <div class="container mx-auto mt-5">
         <h1 class="pt-5 mx-auto text-center">
           Kechun Zhang
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[1]</a></sup>
         </h1>
         <hr>
         <div class="card mx-auto text-center">
           <div class="card-body">
-            <p style="color:#009DBE">School of Engineering</p>
-            <p>Materials Science and Engineering<br>
-            Laboratory of Biomanufacturing and New Materials</p>
-            <a href="https://en.westlake.edu.cn/faculty/kechun-zhang.html">View more</a>
-
+            <div class="subfield">
+              <div class="left-column">
+                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg">
+                <h3 style="text-align: center;padding-top: 15px;">Kechun Zhang</h3>
+                <br>
+                <p style="color:#009DBE">School of Engineering</p>
+                <p>Materials Science and Engineering<br>
+                  Laboratory of Biomanufacturing and New Materials</p>
+                <a href="https://en.westlake.edu.cn/faculty/kechun-zhang.html">View more</a>
+              </div>
+              <div class="vertical-line"></div>
+              <div class="right-column">
+                <ol>
+                  <li>We discussed culture medium proteins for E.coli, such as SOB (Super Optimal Broth) protein.</li>
+                  <li>The synthesis of antibodies in E.coli was also addressed. Dr. Zhang pointed out that even when
+                    using
+                    strains with partially blocked reduction pathways, there is a possibility of the double sulfur bond
+                    of
+                    the antibody forming at the wrong location. To confirm this, we referred to Ahmadzadeh et al.
+                    (2020),
+                    where it was found that our desired antibody can indeed be synthesized in E.coli.</li>
+                  <li>The conjugation of iron oxide nanoparticles (IONPs) and antibodies was another topic of our
+                    discussion. Dr. Zhang mentioned that previous research has shown that Au nanoparticles and
+                    antibodies
+                    can form the Au-S bond. However, there is no information available regarding whether this method
+                    works
+                    for iron oxide nanoparticles. Currently, we are working on this issue and drawing inspiration from
+                    Lee
+                    et al. (2021), who proposed the use of the SpyTag/SpyCatcher system for conjugation.</li>
+                  <li>Dr. Zhang advised us to pay attention to our schedule, as we will be conducting tests to validate
+                    our
+                    hypothesis. He suggested optimizing the conditions for producing the best product with iron oxide
+                    nanoparticles as a priority.</li>
+                  <li>We also inquired about the possibility of constructing an AI model to predict interactions between
+                    nanoparticles and proteins. However, Dr. Zhang pointed out that the limited amount of experimental
+                    data
+                    available in this field and the scarcity of published data make it necessary to postpone this plan.
+                    Perhaps in the future, when we have gathered more data, we will be able to proceed with this
+                    project.
+                  </li>
+                  <li>Lastly, we discussed the mass production of IONPs. Dr. Zhang emphasized the need to compare the
+                    biosynthesis yield with chemosynthesis. Additionally, mass production involves considerations such
+                    as
+                    reaction time and the inhomogeneity of reactants in a large reactor. Moreover, controlling the
+                    particle
+                    size of iron oxide nanoparticles poses a challenge.</li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card mx-auto text-center">
           <div class="card-header">Discussion</div>
           <div class="card-body">
-            <ol>
-              <li>We discussed culture medium proteins for E.coli, such as SOB (Super Optimal Broth) protein.</li>
-              <li>The synthesis of antibodies in E.coli was also addressed. Dr. Zhang pointed out that even when using strains with partially blocked reduction pathways, there is a possibility of the double sulfur bond of the antibody forming at the wrong location. To confirm this, we referred to Ahmadzadeh et al. (2020), where it was found that our desired antibody can indeed be synthesized in E.coli.</li>
-              <li>The conjugation of iron oxide nanoparticles (IONPs) and antibodies was another topic of our discussion. Dr. Zhang mentioned that previous research has shown that Au nanoparticles and antibodies can form the Au-S bond. However, there is no information available regarding whether this method works for iron oxide nanoparticles. Currently, we are working on this issue and drawing inspiration from Lee et al. (2021), who proposed the use of the SpyTag/SpyCatcher system for conjugation.</li>
-              <li>Dr. Zhang advised us to pay attention to our schedule, as we will be conducting tests to validate our hypothesis. He suggested optimizing the conditions for producing the best product with iron oxide nanoparticles as a priority.</li>
-              <li>We also inquired about the possibility of constructing an AI model to predict interactions between nanoparticles and proteins. However, Dr. Zhang pointed out that the limited amount of experimental data available in this field and the scarcity of published data make it necessary to postpone this plan. Perhaps in the future, when we have gathered more data, we will be able to proceed with this project.</li>
-              <li>Lastly, we discussed the mass production of IONPs. Dr. Zhang emphasized the need to compare the biosynthesis yield with chemosynthesis. Additionally, mass production involves considerations such as reaction time and the inhomogeneity of reactants in a large reactor. Moreover, controlling the particle size of iron oxide nanoparticles poses a challenge.</li>
-            
-            
-            
-            </ol>
+
 
           </div>
         </div>
@@ -104,365 +138,10 @@ the world. Consider how the world affects your work and how your work affects th
         </div>
       </div>
     </div>
-    <div id="2" class="month">
-      <div class="container mx-auto mt-5 w-75">
-        <h1 class="pt-5 mx-auto text-center">
-          Competent Cell Preparation
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[2]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Day 1</div>
-          <div class="card-body">
-            1. Taking out one tube of frozen glycerol stock competent bacterial cells from -80ºC storage. (Shuffle
-            strain in our case)
-            <br>2. Thaw the cell on ice till little crystalloid could be observed in the tube.
-            <br>3. Add 10ng vectors for transformation into the tube.
-            <br>4. Heat shock at 42ºC water bath for 90 seconds.
-            <br>5. Keep on ice for two minutes.
-            <br>6. Add 500 μL LB into the 1.5mL EP tube. Incubate the tubes for 30 minutes at 37ºC shaker for 220rpm to
-            allow cell to express antibiotic resistance gene.
-            <br>7. Concentrate the cell by conducting centrifugation at 4000rcf for one minute.
-            <br>8. Discard the supernatant and leave around 100 μL cell culture, spread the cell onto LB plate with
-            corresponding antibiotics. (Ampicillin in our case)
-            <br>9. Incubate the plate at 37ºC.
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Day 2</div>
-          <div class="card-body">
-            1. Pick up a single colony of Shuffle strain from LB plate into 5mL antibiotics containing liquid LB medium.
-            Incubate in 37ºC shaker at 220rpm for 8 hours.
-            <br>2. Send the culture for sequencing.
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="3" class="month">
-      <div class="container mx-auto mt-5 w-75">
-        <h1 class="pt-5 mx-auto text-center">
-          Competent Cell Preparation
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[3]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Day 1</div>
-          <div class="card-body">
-            1. Taking 50 μL culture from 5 mL antibiotics containing liquid LB medium into new 5 mL antibiotics
-            containing liquid LB medium. Incubate at 37ºC in the shaker at 220rpm overnight. (If the original culture
-            has been stored in the 4ºC for some days, otherwise if directly following the competent cell transformation
-            step, start from Day 2)
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Day 2</div>
-          <div class="card-body">
-            1. Prepare the autoclaved LB medium, for 500 mL Erlenmeyer flask, filled with 150 mL LB medium, for 1 L
-            Erlenmeyer flask, filled with 250 mL LB medium.
-            <br>2. Add ampicillin to the medium to make the concentration to be 0.1g/L.
-            <br>3. Add bacteria culture using 1:100 dilution by volume. (For 150 mL LB medium add 1.5 mL bacteria strain
-            prepared in Day 1)
-            <br>4. Incubate at 37ºC in the shaker at 220 rpm till the OD600 of the culture reach 0.4-0.6.
-            <br>5. Immediately add 20% Arabinose solution (mass fraction) using 1:100 dilution by volume. (For 150 mL LB
-            medium add 1.5 mL 20% Arabinose solution prepared as stock solution, filtrated though 0.22 μL filter
-            membrane)
-            <br>6. Incubate at 37ºC in the shaker at 220 rpm for 8 hours or at 18 ºC in the shaker at 220 rpm for 16-18
-            hours.
-
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Day 3</div>
-          <div class="card-body">
-            1. Distribute the culture into 50 mL centrifugation tube and collect the cell by centrifuge at 4000 rcf for
-            20 minutes.
-            <br>2. If not broken immediately after this step, discard the supernatant and store the cell pellet at -80
-            ºC refrigerator.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="4" class="month">
-      <div class="container mx-auto mt-5 w-75">
-        <h1 class="pt-5 mx-auto text-center">
-          His-tagged protein purification
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[4]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Materials</div>
-          <div class="card-body">
-            <ol>
-              <li>
-                Buffer A:
-                150 mM NaCl,
-                20 mM Tris-HCl pH 8.0
-              </li>
-              <li>
-                High-pressure homogenizer (Union-Biotech(shanghai)Co., Ltd.)</li>
-              <li>
-                Filtration membrane (0.45 μm, Millipore, Item No. SLHPR33RB)</li>
-              <li>
-                AKTA purification system (Union-Biotech(shanghai)Co., Ltd.)</li>
-              <li>
-                HisTrapTM HP His tag protein purification column (Cytiva, Item No.17524701)</li>
-              <li> -Buffer B:
-                150 mM NaCl,
-                20 mM Tris-HCl,
-                1 M imidazole, pH adjusted to 8.0 by HCl</li>
-              <li>
-                PMSF (Phenylmethylsulfonyl fluoride)</li>
-            </ol>
-
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Procedure</div>
-          <div class="card-body">
-            1. Prepare the buffer system using Buffer A as substrate, and add extra PMSF till a final concentration of
-            0.1 mM. (Buffer A components: 150 mM NaCl, 20 mM Tris-HCl pH 8.0)
-            <br>2. Resuspend the cell pellet with around 10 mL buffer system prepared above for high pressure
-            homogenization. (For 150 mL culture system, homogenizing at 750 bar for 3 minutes, using homogenizer from
-            Union-Biotech(shanghai)Co., Ltd.)
-            <br>3. Centrifugation at 11000 rcf for 30 minutes.
-            <br>4. Collect the supernatant and filtrate through 0.45 μL filtration membrane for the preparation of
-            running AKTA purification system.
-            <br>5. HisTrapTM HP His tag protein purification column (Item No.17524701) are applied onto the AKTA system
-            (Union-Biotech(shanghai)Co., Ltd.). The program is set to pre-charge the flow path with 10 column volume
-            with Buffer A, then 12 column volume of the supernatant containing sample protein are applied onto the
-            column. After that, 10 column volume buffer A are applied to wash out the unbonded protein. Finally, a
-            linear gradient of the mixture of buffer A and buffer B (starting ratio is Buffer A: Buffer B = 70%:30%,
-            final ratio is Buffer A: Buffer B = 0:100%) are applied to wash out the his-tagged protein and collected.
-            (Buffer B components: 150 mM NaCl, 20 mM Tris-HCl, 1 M iminazole, pH adjusted to 8.0 by HCl) Elution sample
-            are collected by fixed volume collection with 1 mL per EP tube.
-            <br>6. After that, electrophoresis and Coomassie blue staining are conducted to see the purity and relative
-            concentration of the protein collected. Further, ones with high purity and concentration are collected
-            through ultrafiltration to substitute the buffer B to buffer A with 0.1 mM PMSF added. And after solvent
-            replacement, BCA test is performed to tell the protein concentration. (For detailed information of this
-            step, see the protocol for electrophoresis, ultrafiltration and BCA test)
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div id="5" class="month">
-      <div class="container mx-auto mt-5 w-75">
-        <h1 class="pt-5 mx-auto text-center">
-          Protein Electrophoresis
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[5]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Materials</div>
-          <div class="card-body">
-            <ol>
-              <li>
-                5x SDS-PAGE Sample Buffer
-              </li>
-              <li>
-                Protein samples</li>
-              <li>
-                Running Buffer (#########还没弄好！！, composition could be different under different cases)</li>
-              <li>
-                Protein ladder</li>
-              <li>
-                Electrophoresis system</li>
-              <li> Power supply</li>
-              <li>
-                Coomassie blue dye</li>
-            </ol>
-            Note: Amount of protein sample used for electrophoresis could be adjusted according to the loading capacity
-            of the gel used under specific circumstance.
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Procedure</div>
-          <div class="card-body">
-            1. Prepare 16ul protein samples and add 4ul 5x SDS-PAGE Sample Buffer to each protein sample.
-            <br>2. Heat up the protein sample to 95ºC and keep for 10 minutes.
-            <br>3. Prepare the electrophoresis chamber and prepare running buffer. Take out 12-well precast gel and set
-            up the system. Fill the chamber with running buffer.
-            <br>4. Load all the protein sample onto the gel. And add a protein ladder to one well to serve as a
-            molecular weight marker for reference.
-            <br>8. Pour all the rest of the running buffer into the chamber and making sure that the gel is completely
-            submerged.
-            <br>9. Connect the power supply to the electrophoresis system and run the system by 80V for 20 minutes to
-            check if the circuit is well developed. Then switch the voltage to 140V and run for another 1 hour. The
-            specific running time will depend on the size of the gel and the separation requirements of specific
-            experiment. Generally, stop running when the dye front reaches the bottom of the gel or reaches a desired
-            distance.
-            <br>10. Take down the chamber and wash the gel with deionized water by snap-boiling the system in micro-wave
-            oven twice.
-            <br>11. Stain the gel using Coomassie blue dye for 30 minutes.
-            <br>12. Decolor the gel with deionized water by snap-boiling the system in micro-wave oven multiple times
-            when background coloring is insignificant.
-            <br>13. Observe the bands to see the purity of the purified protein.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="6" class="month">
-      <div class="container mx-auto mt-5 w-75">
-        <h1 class="pt-5 mx-auto text-center">
-          BCA Test
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[6]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            Our BCA test are conducted by using Enhanced BCA Protein Assay Kit from Beyotime (Item No. P0009).
-            <br>Standard Instruction protocol could be found in the <a
-              href="https://www.beyotime.com/Manual/P0009_Enhanced%20BCA%20Protein%20Assay%20Kit.pdf">link</a>
-            <br>
-            And we strictly follow the instruction given by Beyotime.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="7" class="month">
-      <div class="container mx-auto mt-5 w-75">
-        <h1 class="pt-5 mx-auto text-center">
-          NHS-PEG-Maleimide Linking Protocol
-          </a><sup class="author" style="font-size:medium"><a href="#a2">[7]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Preperation</div>
-          <div class="card-body">
-            1. Dissolve 0.05/0.10g NHS-PEG-Maleimide in DMSO with a concentration of 100µM and store
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Primary Part</div>
-          <div class="card-body">1. Mix maleimide solution and nanoparticle solution with a volume ratio 2:1, reacting
-            for 1 h at room temperature
-            <br>2. Dilute the solution to a proper volume for ultrafiltration. Ultrafiltrate (3kDa), centrifuging at
-            5000g for at least 20 mins. Finish until the liquid above the filtrate less than 1.5mL.
-            <br>3. Collect the liquid above the filtrate and combine the solution with the liquid before, add 30 µg/mL
-            antibody solution the same volume as maleimide solution consumed before, reacting for 1.5 h at room
-            temperature
-            <br>4. Ultrafiltrate (10 kDa), centrifuging at 14000g for at least 20 mins. Finish until the liquid above
-            the filtrate less than 100 µL.
-            <br>5. Collect the liquid above the filtrate by converting the ultrafiltration tube, centrifuging at 1000g
-            for 1 min.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="8" class="month">
-      <div class="container mx-auto mt-5 w-75">
-        <h1 class="pt-5 mx-auto text-center">
-          Nanoparticle Biosynthesis
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[8]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Materials</div>
-          <div class="card-body">
-            <ol>
-              <li>SHuffle-pGLO bacteria single colony
-              </li>
-              <li>LB Broth: 10g/L Tryptone, 5g/L Yeast, 10g/L NaCl, sterilized after dissolving above content in water.
-              </li>
-              <li>Stock Ampicillin</li>
-            </ol>
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Day1</div>
-          <div class="card-body">
-            Picking up a single colony of SHuffle-pGLO bacteria from LB plate (with 0.1 g/L ampicillin) into 5 mL LB
-            Broth (0.1 g/L ampicillin). Incubate at 37ºC in the shaker at 220rpm overnight.
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Day2</div>
-          <div class="card-body">
-            1. Prepare the autoclaved LB medium, for 500 mL Erlenmeyer flask, filled with 150 mL LB medium, for 1 L
-            Erlenmeyer flask, filled with 250 mL LB medium.
-            <br>2. Add ampicillin to the medium to make the concentration to be 0.1g/L.
-            <br>3. Add bacteria culture using 1:100 dilution by volume. (For 150 mL LB medium add 1.5 mL bacteria strain
-            prepared in Day 1)
-            <br>4. Incubate at 37ºC in the shaker at 220 rpm till the OD600 of the culture reach 0.1.
-            <br>5. Immediately add FeCl3 solution to final concentration of 5 mM Fe3+. (In our case, 0.5 M FeCl3
-            solution are prepared as stock solution, and add using a 1:100 dilution, stock solution filtrated though
-            0.22 μL filter membrane)
-            <br>6. Incubate at 37ºC in the shaker at 220 rpm for one day in 37ºC.
-
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Day3</div>
-          <div class="card-body">
-            1. Distribute the culture into 50 mL centrifugation tube and collect the cell by centrifuge at 4000 rcf for
-            20 minutes.
-            <br>2. If not broken immediately after this step, discard the supernatant and store the cell pellet at -80
-            ºC refrigerator.
 
 
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="9" class="month">
-      <div class="container mx-auto mt-5 w-75">
-        <h1 class="pt-5 mx-auto text-center">
-          Biologically Synthesized Nanoparticle Separation for TEM analysis
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[9]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Materials</div>
-          <div class="card-body">
-            <ol>
-              <li>
-                Deionized water</li>
-              <li>High-pressure homogenizer (Union-Biotech(shanghai)Co., Ltd.)</li>
-              <li>100 kDa Ultracentrifugation tube (Item No. UFC9100, Millipore)</li>
-              <li>3 kDa Ultracentrifugation tube (Item No. UFC9003, Millipore)</li>
-              <li>Buffer A:
-                150 mM NaCl,
-                20 mM Tris-HCl</li>
-              <li>Ultrasonic Cleaner</li>
-            </ol>
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Procedure</div>
-          <div class="card-body">1. Resuspend the cell pellet for each 50 mL centrifuge tube with around 10 mL deionized
-            water for high pressure homogenization. (For 150 mL culture system, homogenizing at 750 bar for 3 minutes,
-            the broken cell system could be concentrated in one 50 mL centrifugation tube after homogenization, using
-            homogenizer from Union-Biotech(shanghai)Co., Ltd.)
-            <br>2. Centrifugation at 11000 rcf under 4ºC for 30 minutes.
-            <br>3. Discard the supernatant, add 10 ml deionized water, vortex the system for 1 minutes. (Notice that now
-            there should still have a lot iron salt precipitate at the bottom of the tube, while the cell debris should
-            already be resuspended, this could prevent jamming in the ultrafiltration step followed).
-            <br>4. Carefully put the tube into an ice bath and then put the whole system into ultrasonic cleaners and
-            run the cleaners for 15 minutes.
-            <br>5. Without disrupting the precipitate, move the supernatant into activated 100 kDa Ultracentrifugation
-            tube.
-            <br>6. Centrifugation at 5000 rcf under 4ºC for 25 minutes. Note that if there still have more than 2 mL
-            liquids above the filtration membrane, centrifugation at 5000 rcf under 4ºC for another 20 minutes.
-            <br>7. Discard the filtration membrane and carefully put the tube into an ice bath and then put the whole
-            system into ultrasonic cleaners and run the cleaners for 15 minutes.
-            <br>8. Transfer the flow through into activated 3 kDa Ultracentrifugation tube.
-            <br>9. Centrifugation at 5000 rcf under 4ºC for 25 minutes. Note that if there still have more than 5 mL
-            liquids above the filtration membrane, centrifugation at 5000 rcf under 4ºC for another 20 minutes till
-            there only have around 2 mL liquids above the filtration membrane.
-            <br>10. Collect the liquid above the filtration membrane. Carefully put the tube into an ice bath and then
-            put the whole system into ultrasonic cleaners and run the cleaners for 15 minutes. This sample could be used
-            for TEM characterization.
-            Note: In this experiment design, we use deionized water for the solution system to avoid the interference of
-            mineral salt in TEM analysis. But if the target is to get nanoparticle with all membrane protein on the
-            surface biologically active, please use Buffer A to take the place of deionized water.
-          </div>
-        </div>
-      </div>
-    </div>
 
-
-    <div class="container mx-auto mt-5 w-75" id="Author">
+    <div class="container mx-auto mt-5 " id="Author">
       <h1 class="pt-5 mx-auto text-center">
         Author & Reference
       </h1>
@@ -552,4 +231,4 @@ the world. Consider how the world affects your work and how your work affects th
   </div>
 </div>
 <script src="{{ url_for('static', filename = 'card.js') }}"></script>
-  {% endblock %}
+{% endblock %}

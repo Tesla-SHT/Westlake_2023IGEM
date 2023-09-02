@@ -1,0 +1,20 @@
+.subfield {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .left-column {
+    flex-basis: 30%; /* 左右两栏宽度平分 */
+    padding: 20px; /* 可根据需要调整内边距 */
+    border-right:#000;
+  }
+  
+  .right-column{
+    flex-basis:70%;
+  }
+  
+  .vertical-line {
+    width: 1px; /* 竖线宽度 */
+    background-color: #000; /* 竖线颜色 */
+    margin: 0 10px; /* 可根据需要调整竖线与左右两栏之间的距离 */
+  }
