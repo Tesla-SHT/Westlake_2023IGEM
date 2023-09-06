@@ -151,5 +151,12 @@ h4.member_content{
 	word-wrap: break-word; /* 允许文本自动换行 */
 }
 .card-body{
-	padding:0 1rem;
+	padding:0 1rem;	
+	border-radius: 0;
+}
+.card{
+	border-radius: 0;
+}
+.member-content{
+	margin:0 0.5rem;
 }

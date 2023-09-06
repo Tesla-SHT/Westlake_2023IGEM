@@ -1,16 +1,30 @@
 {% extends "layout.html" %}
 
-{% block title %}Team{% endblock %}
-{% block lead %}
-
-Our energetic team consists of 12 students from different subjects in STEM study, one highly supportive principal investigator, one amazing instructor and one helpful advisor.
-We devoted ourselves to our project over the past several months with unwavering motivation and steadfast commitment. \
-We take great pride in both our work and the camaraderie we developed with one another.
-
-{% endblock %}
 
 {% block page_content %}
+<!-- Header -->
+<link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
+<div class="sky single_slider d-flex align-items-center" style="background-image: url('https://static.igem.wiki/teams/4702/wiki/result-for-notebook/4.jpg');background-size:cover">
+  <section class="col-md-12 text-center">
+    <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
+    <div class="container header">
+        <div class="">
+          <p class="text-light" style="font-size:70px;">Team</p>
+          <div class=" ">
+            <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
+              Our energetic team consists of twelve students from different subjects in STEM study, one highly supportive principal
+              investigator, one amazing instructor and one helpful advisor.
+              We devoted ourselves to our project over the past several months with unwavering motivation and steadfast commitment. 
+              We take great pride in both our work and the camaraderie we developed with one another.</p>
+            <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 <link href="{{ url_for('static', filename = 'team.css') }}" rel="stylesheet">
+
 
 <div class="wrapper--team">
 
@@ -22,161 +36,221 @@ We take great pride in both our work and the camaraderie we developed with one a
     <div class="team-grid">
       <div class="team-grid__member hover">
         <div class="member__info">
-            
-            <div class="center-vert-content"> 
-              <h4 class="member_content">Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader</h4>
-            </div>
-        </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Gehua WENG">
-        <div class="card member-content ">
-          <div class="card-body">
-              <a class="member__link" href="attributions#1">
-                <h1 class="member__name">Gehua WENG</h1>
-              </a>
-              <h3 class="member__title">Student Leader</h3>
+
+          <div class="center-vert-content">
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
           </div>
         </div>
-      </div>
-      <div class="team-grid__member hover">
-        <div class="member__info">
-          <div class="center-vert-content">
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/gehua-weng.jpg" alt="Gehua WENG">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Gehua WENG</h1>
             </a>
             <h3 class="member__title">Student Leader</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Gehua WENG">
-        <div class="card member-content ">
-          <div class="card-body">
-            <p> Hello WGH</p>
-            <p> Hello WGH</p>
-            <p> Hello WGH</p>
-            <p> Hello WGH</p>
-            <p> Hello WGH</p>
-          </div>
-        </div>
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
+            <h4 class="member_content">It may elude us, but at least we tried.</h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/shuoyi-hu.jpg" alt="Shuoyi HU">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Shuoyi HU</h1>
             </a>
             <h3 class="member__title">Student Leader</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Shuoyi HU">
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
-            <a class="member__link" href="attributions#1">
-              <h1 class="member__name">Shijie HE</h1>
-            </a>
-            <h3 class="member__title">Student</h3>
+            <h4 class="member_content">I came, I saw, I conquered</h4>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Shijie HE">
-      </div>
-      <div class="team-grid__member hover">
-        <div class="member__info">
-          <div class="center-vert-content">
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/haotian-shen.jpg" alt="Haotian SHEN">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Haotian SHEN</h1>
             </a>
-            <h3 class="member__title">Student</h3>
+            <h3 class="member__title">Student Member</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Haotian SHEN">
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
+            <h4 class="member_content">Do not go gentle into that good night.</h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/shijie-he.jpg" alt="Shijie HE">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
-              <h1 class="member__name">Yuchen JIANG</h1>
+              <h1 class="member__name">Shijie HE</h1>
             </a>
-            <h3 class="member__title">Student</h3>
+            <h3 class="member__title">Student Member</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Yuchen JIANG">
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/songnan-ren.jpg" alt="Songnan REN">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Songnan REN</h1>
             </a>
-            <h3 class="member__title">Student</h3>
+            <h3 class="member__title">Student Member</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Songnan REN">
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/yuchen-jiang.jpg" alt="Yuchen JIANG">
+        <div class="card member-content ">
+          <div class="card-body">
+            <a class="member__link" href="attributions#1">
+              <h1 class="member__name">Yuchen JIANG</h1>
+            </a>
+            <h3 class="member__title">Student Member</h3>
+          </div>
+        </div>
+      </div>
+      <div class="team-grid__member hover">
+        <div class="member__info">
+
+          <div class="center-vert-content">
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/yixiao-xiao.jpg" alt="Yixiao XIAO">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Yixiao XIAO</h1>
             </a>
-            <h3 class="member__title">Student</h3>
+            <h3 class="member__title">Student Member</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Yixiao XIAO">
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/mingchun-xu.jpg" alt="Mingchun XU">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Mingchun XU</h1>
             </a>
-            <h3 class="member__title">Student</h3>
+            <h3 class="member__title">Student Member</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Mingchun XU">
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
+            <h4 class="member_content">The best way to predict the future is to create it.</h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/chenxu-liu.jpg" alt="Chenxu LIU">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Chenxu LIU</h1>
             </a>
-            <h3 class="member__title">Student</h3>
+            <h3 class="member__title">Student Member</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Chenxu LIU">
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/yuqi-shen.jpg" alt="Yuqi SHEN">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Yuqi SHEN</h1>
             </a>
-            <h3 class="member__title">Student</h3>
+            <h3 class="member__title">Student Member</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Yuqi SHEN">
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
-            <a class="member__link" href="attributions#1">
-              <h1 class="member__name">Ziqiao WANG</h1>
-            </a>
-            <h3 class="member__title">Student</h3>
+            <h4 class="member_content">
+              To the stars, through hardships.
+            </h4>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Ziqiao WANG">
-      </div>
-      <div class="team-grid__member hover">
-        <div class="member__info">
-          <div class="center-vert-content">
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/songyuan-xue.jpg" alt="Songyuan XUE">
+        <div class="card member-content ">
+          <div class="card-body">
             <a class="member__link" href="attributions#1">
               <h1 class="member__name">Songyuan XUE</h1>
             </a>
-            <h3 class="member__title">Student</h3>
+            <h3 class="member__title">Student Member</h3>
           </div>
         </div>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Songyuan XUE">
+      </div>
+      <div class="team-grid__member hover">
+        <div class="member__info">
+
+          <div class="center-vert-content">
+            <h4 class="member_content">Don't go through life, grow through life.</h4>
+          </div>
+        </div>
+        <img src="https://static.igem.wiki/teams/4702/wiki/hp/people-photo/ziqiao-wang.jpg" alt="Ziqiao WANG">
+        <div class="card member-content ">
+          <div class="card-body">
+            <a class="member__link" href="attributions#1">
+              <h1 class="member__name">Ziqiao WANG</h1>
+            </a>
+            <h3 class="member__title">Student Member</h3>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -186,29 +260,79 @@ We take great pride in both our work and the camaraderie we developed with one a
     <h1 class=" mx-auto text-center">
       Supervisors
     </h1>
+
     <div class="team-grid">
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
-            <h1 class="member__name">Chengchen GUO</h1>
-            <h3 class="member__title">Primary PI</h3>
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
           </div>
         </div>
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Chengchen GUO">
+        <div class="card member-content ">
+          <div class="card-body">
+            <a class="member__link" href="attributions#1">
+              <h1 class="member__name">Chengchen GUO</h1>
+            </a>
+            <h3 class="member__title">Primary PI</h3>
+          </div>
+        </div>
       </div>
       <div class="team-grid__member hover">
         <div class="member__info">
+
           <div class="center-vert-content">
-            <h1 class="member__name">Yanbo MAO</h1>
-            <h3 class="member__title">Instructor</h3>
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
           </div>
         </div>
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Yanbo MAO">
+        <div class="card member-content ">
+          <div class="card-body">
+            <a class="member__link" href="attributions#1">
+              <h1 class="member__name">Yanbo MAO</h1>
+            </a>
+            <h3 class="member__title">Instructor</h3>
+          </div>
+        </div>
       </div>
-
     </div>
-
   </div>
+
+  <div class="l-container">
+    <hr>
+    <h1 class=" mx-auto text-center">
+      Advisor
+    </h1>
+
+    <div class="team-grid">
+      <div class="team-grid__member hover">
+        <div class="member__info">
+
+          <div class="center-vert-content">
+            <h4 class="member_content">
+              Studentdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddader
+            </h4>
+          </div>
+        </div>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/robert-finkel_2.jpg" alt="Songlin SHI">
+        <div class="card member-content ">
+          <div class="card-body">
+            <a class="member__link" href="attributions#1">
+              <h1 class="member__name">Songlin SHI</h1>
+            </a>
+            <h3 class="member__title">Advisor</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div>
 
 

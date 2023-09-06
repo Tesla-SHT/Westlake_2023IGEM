@@ -58,20 +58,13 @@ body {
 
 /*导航栏样式*/
 .nav-link {
-  color: rgb(113, 113, 113);
+  color: #000;
 }
 
 .dropdown-menu {
-  background-color: rgb(113, 113, 113);
+  background-color: rgba(99, 94, 94, 0.602);
 }
 
-.navbar-nav>li>a:hover,
-.navbar-nav>li>a:focus,
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-  color: rgb(240, 141, 0);
-  background: transparent !important;
-}
 
 .navbar-shrink {
   padding-top: 0.25rem;
@@ -91,20 +84,24 @@ body {
 .navbar-shrink .navbar-nav>li>a:hover,
 .navbar-nav>li>a:focus,
 .dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
+.dropdown-menu>li>a:focus 
+{
   color: rgb(240, 141, 0);
+  background: transparent!important;
 }
 
 .dropdown-menu {
+  padding-top:0;
+  margin-top:0;
   transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
   max-height: 0;
   opacity: 0;
-  overflow: hidden;
-  transition: 'all 0.5s ease-in-out';
-  background: transparent;
+  overflow: hidden; 
   border: none;
 }
-
+.dropdown-item {
+  margin:0!important;
+}
 /* 鼠标悬停时显示下拉 */
 .navbar .nav-item.dropdown:hover .dropdown-menu {
   max-height: 500px;
@@ -130,7 +127,7 @@ body {
   top: 0px;
   content: '';
   background: #FFF;
-  opacity: 0.3;
+  opacity: 0.1;
   transition: all 0.3s;
 }
 
@@ -187,4 +184,14 @@ footer a {
 footer a {
   color: white;
   text-decoration: underline;
+}
+
+.main-container{
+  max-width:100%;
+  padding:0;
+  width:100%;
+  margin:0;
+  top:0;
+  left:0;
+  right:0;
 }
