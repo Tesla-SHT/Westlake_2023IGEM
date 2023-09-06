@@ -1,26 +1,49 @@
 /* 悬停和点击时的样式 */
 .card-header:hover {
-    cursor: pointer;
-    background-color: #f0f0f0; /* 悬停时颜色变化 */
-  }
+  cursor: pointer;
+  background-color: #f0f0f0 ; /* 悬停时颜色变化 */
+}
+
+.card-header.active {
+  background-color: #ddd; /* 点击时颜色变化 */
+}
+
+/* 初始状态隐藏card-body */
+.card-body {
+  display: none;
+}
+
+/* 添加淡入效果 */
+.card-body.active {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* 添加淡入过渡效果 */
+}
+
+.card-body.active.show {
+  opacity: 1;
+}
+
+
+.subfield {
+  display: flex;
+  align-items: stretch;
+}
+
+
+.left-column {
   
-  .card-header.active {
-    background-color: #ddd; /* 点击时颜色变化 */
-  }
-  
-  /* 初始状态隐藏card-body */
-  .card-body {
-    display: none;
-  }
-  
-  /* 添加淡入效果 */
-  .card-body.active {
-    display: block;
-    opacity: 0;
-    transition: opacity 0.3s ease; /* 添加淡入过渡效果 */
-  }
-  
-  .card-body.active.show {
-    opacity: 1;
-  }
-  
+  flex-basis: 70%; /* 左右两栏宽度平分 */
+  padding: 0px; /* 可根据需要调整内边距 */
+  border-right:#000;
+}
+
+.right-column{
+  flex-basis:30%;
+}
+
+.vertical-line {
+  width: 1px; /* 竖线宽度 */
+  background-color: #000; /* 竖线颜色 */
+  margin: 0 20px; /* 可根据需要调整竖线与左右两栏之间的距离 */
+}
