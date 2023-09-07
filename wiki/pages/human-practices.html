@@ -23,7 +23,7 @@ the world. Consider how the world affects your work and how your work affects th
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
               We ask every team to think deeply and creatively about whether their project is responsible and good for
-              the world. Consider how the world affects your work and how your work affects the world. 
+              the world. Consider how the world affects your work and how your work affects the world.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -36,6 +36,8 @@ the world. Consider how the world affects your work and how your work affects th
 
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'HP.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
+
 <div class="row" style="">
   <div id="sidebar" class="ol-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3"
     style="padding-right:0;padding-left:0">
@@ -78,14 +80,16 @@ the world. Consider how the world affects your work and how your work affects th
     <div id="1" class="month">
       <div class="container mx-auto mt-5">
         <h1 class="pt-5 mx-auto text-center">
-          Kechun Zhang
+          这里放专题名称
         </h1>
         <hr>
+        <!--专家介绍-->
         <div class="card mx-auto text-center">
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
-                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" alt="Professor Kechun ZHANG" width="250" height="">
+                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" alt="Professor Kechun ZHANG"
+                  width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Kechun Zhang</h3>
                 <br>
                 <p style="color:#009DBE">School of Engineering</p>
@@ -132,14 +136,13 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
           </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Discussion</div>
-          <div class="card-body">
-
-
+          <!--问题-->
+          <div class="card-header ani-card-header">Questions </div>
+          <div class="card-body ani-card-body">
+            <p>这里是问题</p>
           </div>
         </div>
+        <!--如果要在这个栏目再放一个专家及问题，把上面专家和问题复制下来，并且在下面一行加上换行<br> -->
       </div>
     </div>
     <div id="2" class="month">
@@ -152,7 +155,8 @@ the world. Consider how the world affects your work and how your work affects th
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
-                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" alt="Professor Bobo DANG" width="250" height="">
+                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" alt="Professor Bobo DANG"
+                  width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Bobo DANG</h3>
                 <br>
                 <p style="color:#009DBE">School of Life Sciences</p>
@@ -163,31 +167,31 @@ the world. Consider how the world affects your work and how your work affects th
               <div class="vertical-line"></div>
               <div class="right-column">
                 <ol>
-                  <li>During our discussion on the self-assembly of bio-synthetic 
-                    nanoparticles and antibodies in Escherichia coli, professor Dang expressed 
-                    concerns regarding the stability of the vesicles on the surface of the 
-                    nanoparticles compared to the bacterial membrane. professor Dang suggested that 
-                    this instability might lead to the destruction of the nanoparticle structure 
-                    when separating them with antibodies. Consequently, he proposed that it would 
+                  <li>During our discussion on the self-assembly of bio-synthetic
+                    nanoparticles and antibodies in Escherichia coli, professor Dang expressed
+                    concerns regarding the stability of the vesicles on the surface of the
+                    nanoparticles compared to the bacterial membrane. professor Dang suggested that
+                    this instability might lead to the destruction of the nanoparticle structure
+                    when separating them with antibodies. Consequently, he proposed that it would
                     be more feasible for us to synthesize and assemble the components separately.</li>
-                 <li>Another topic of our discussion was elution during the separation of nanoparticles. 
-                  professor Dang suggested that we could employ organic solvents for washing and 
-                  filtration. Additionally, considering the necessity of a layer of PEG membrane,
-                   professor Dang recommended attempting to dissolve PEG in organic solvents to 
-                   achieve the desired replacement.</li>
-                  <li>Professor Dang opined that the surface composition of the nanoparticles 
+                  <li>Another topic of our discussion was elution during the separation of nanoparticles.
+                    professor Dang suggested that we could employ organic solvents for washing and
+                    filtration. Additionally, considering the necessity of a layer of PEG membrane,
+                    professor Dang recommended attempting to dissolve PEG in organic solvents to
+                    achieve the desired replacement.</li>
+                  <li>Professor Dang opined that the surface composition of the nanoparticles
                     is not necessarily crucial. As long as the final objective of antibody
-                     connectivity is achieved, the existence of amino and carboxyl groups on the
-                      surface of bio-synthesized nanoparticles should facilitate connection. 
-                      Professor Dang also proposed the possibility of employing harsh solvents to 
-                      wash the nanoparticles and observe their binding behavior with antibodies.</li>
-                <li>In relation to connecting the antibodies and nanoparticles, professor Dang 
-                  mentioned the utilization of EDC (1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide). </li>
-                <li>Overall, an additional point to consider is that using PEG coating might 
-                  not be meaningful. Commercially available chemically-synthesized nanoparticles 
-                  are already coated with PEG. Therefore, the coating on the surface of bio-synthesized
-                   nanoparticles lacks significance.</li>
-              </ol>
+                    connectivity is achieved, the existence of amino and carboxyl groups on the
+                    surface of bio-synthesized nanoparticles should facilitate connection.
+                    Professor Dang also proposed the possibility of employing harsh solvents to
+                    wash the nanoparticles and observe their binding behavior with antibodies.</li>
+                  <li>In relation to connecting the antibodies and nanoparticles, professor Dang
+                    mentioned the utilization of EDC (1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide). </li>
+                  <li>Overall, an additional point to consider is that using PEG coating might
+                    not be meaningful. Commercially available chemically-synthesized nanoparticles
+                    are already coated with PEG. Therefore, the coating on the surface of bio-synthesized
+                    nanoparticles lacks significance.</li>
+                </ol>
               </div>
             </div>
           </div>
@@ -206,7 +210,7 @@ the world. Consider how the world affects your work and how your work affects th
     <div id="3" class="month">
       <div class="container mx-auto mt-5">
         <h1 class="pt-5 mx-auto text-center">
-          Yaofeng ZHOU
+          这里放专题名称
         </h1>
         <hr>
         <div class="card mx-auto text-center">
@@ -223,45 +227,45 @@ the world. Consider how the world affects your work and how your work affects th
               <div class="vertical-line"></div>
               <div class="right-column">
                 <ol>
-                  <li>In terms of target therapy, Dr. ZHOU discussed a study by Ouajdi Felfoul 
-                    et al. (2016) that proposes a novel approach involving the direct use of 
+                  <li>In terms of target therapy, Dr. ZHOU discussed a study by Ouajdi Felfoul
+                    et al. (2016) that proposes a novel approach involving the direct use of
                     anaerobic bacteria for target therapy.</li>
-                  <li> ZHOU also addressed the potential limitations of our target therapy. 
-                    When nanoparticles coated with antibodies are introduced into the human 
-                    body, they tend to attract numerous proteins, resulting in the formation 
-                    of a protein corona around the nanoparticles. This protein corona can 
+                  <li> ZHOU also addressed the potential limitations of our target therapy.
+                    When nanoparticles coated with antibodies are introduced into the human
+                    body, they tend to attract numerous proteins, resulting in the formation
+                    of a protein corona around the nanoparticles. This protein corona can
                     significantly affect the nanoparticles' biological behavior and fate.</li>
-                  <li>In regards to antibody-nanoparticle conjugation, Dr. ZHOU recommended 
+                  <li>In regards to antibody-nanoparticle conjugation, Dr. ZHOU recommended
                     referring to a review in Advanced Materials (Antibody Conjugation of Nanoparticles
-                     as Therapeutics for Breast Cancer Treatment, Int. J. Mol. Sci., 2020),
-                      which discusses various methods for antibody-nanoparticle conjugation. 
-                      This review greatly expanded our understanding of conjugation techniques.</li>
-                  <li>Dr. ZHOU also highlighted the work of Professor Zhang Xianzheng in the 
+                    as Therapeutics for Breast Cancer Treatment, Int. J. Mol. Sci., 2020),
+                    which discusses various methods for antibody-nanoparticle conjugation.
+                    This review greatly expanded our understanding of conjugation techniques.</li>
+                  <li>Dr. ZHOU also highlighted the work of Professor Zhang Xianzheng in the
                     field of conjugation, which is highly relevant to our research topic.
                   </li>
-                  <li>Dr. ZHOU emphasized the importance of ensuring the specificity of the 
-                    conjugation, in order to prevent the antibody's functional domain from 
-                    binding to the nanoparticles. He recommended modifying the antibody's tail 
+                  <li>Dr. ZHOU emphasized the importance of ensuring the specificity of the
+                    conjugation, in order to prevent the antibody's functional domain from
+                    binding to the nanoparticles. He recommended modifying the antibody's tail
                     through PEGylation or the use of a branched tail, as well as considering
-                     the use of a secondary antibody to address this issue.
+                    the use of a secondary antibody to address this issue.
                   </li>
-                  <li>Dr. ZHOU also mentioned the potential interference posed by Extracellular 
+                  <li>Dr. ZHOU also mentioned the potential interference posed by Extracellular
                     Polymeric Substances (EPS) on the functionality of nanoparticles. Subsequently,
-                     we discovered a study by Gao et al. (2019) that investigated the adsorption of
-                      EPS from <i>E. coli</i> onto titanium dioxide nanoparticles (nTiO), demonstrating 
-                      that EPS effectively reduced the concentration of nTiO in the solution. 
-                      Furthermore, a study by Wang et al. (2016) found that EPS produced by <i>E. coli</i>
-                       could sequester nanoparticles, thereby diminishing their bactericidal activity.
-                  </li>  
-                  <li>To measure the interaction kinetics and affinity between biomolecules, 
-                    Dr. ZHOU recommended employing Bio-Layer Interferometry (BLI), which enables 
-                    the detection of antibody-antigen interactions in target therapy.
-                  </li> 
-                  <li>Regarding the separation of nanoparticles from <i>E. coli</i>, Dr. ZHOU discussed
-                     the use of PD-10. However, we later discovered that this technique is only 
-                     suitable for the elution of ferric chloride.</li>
+                    we discovered a study by Gao et al. (2019) that investigated the adsorption of
+                    EPS from <i>E. coli</i> onto titanium dioxide nanoparticles (nTiO), demonstrating
+                    that EPS effectively reduced the concentration of nTiO in the solution.
+                    Furthermore, a study by Wang et al. (2016) found that EPS produced by <i>E. coli</i>
+                    could sequester nanoparticles, thereby diminishing their bactericidal activity.
                   </li>
-                  </ol>
+                  <li>To measure the interaction kinetics and affinity between biomolecules,
+                    Dr. ZHOU recommended employing Bio-Layer Interferometry (BLI), which enables
+                    the detection of antibody-antigen interactions in target therapy.
+                  </li>
+                  <li>Regarding the separation of nanoparticles from <i>E. coli</i>, Dr. ZHOU discussed
+                    the use of PD-10. However, we later discovered that this technique is only
+                    suitable for the elution of ferric chloride.</li>
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
@@ -274,19 +278,20 @@ the world. Consider how the world affects your work and how your work affects th
           </div>
         </div>
       </div>
-    </div>    
+    </div>
 
     <div id="4" class="month">
       <div class="container mx-auto mt-5">
         <h1 class="pt-5 mx-auto text-center">
-          Yilong Zou
+          这里放专题名称
         </h1>
         <hr>
         <div class="card mx-auto text-center">
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
-                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yilong-zou.jpg" alt="Professor Yilong ZOU" width="250" height="">
+                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yilong-zou.jpg" alt="Professor Yilong ZOU"
+                  width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Yilong Zou</h3>
                 <br>
                 <p style="color:#009DBE">School of Life Sciences</p>
@@ -297,35 +302,35 @@ the world. Consider how the world affects your work and how your work affects th
               <div class="vertical-line"></div>
               <div class="right-column">
                 <ol>
-                  <li>Dr. Zou emphasizes the catalytic role of ferrous ions (Fe<sup>2+</sup>) 
-                    in ferroptosis and suggests that conducting experiments to validate the 
+                  <li>Dr. Zou emphasizes the catalytic role of ferrous ions (Fe<sup>2+</sup>)
+                    in ferroptosis and suggests that conducting experiments to validate the
                     functional similarities of our iron oxide nanoparticles (IONPs) is necessary.
                   </li>
                   <li>Additionally, he asserts that IONPs can serve as a sustained-release agent
-                     for iron ions, which he views as a significant advantage in our project.
+                    for iron ions, which he views as a significant advantage in our project.
                   </li>
-                  <li>Furthermore, Dr. Zou raises the important concern of considering the 
+                  <li>Furthermore, Dr. Zou raises the important concern of considering the
                     components of the coating applied to the IONPs, as certain toxic substances
-                     have the potential to elicit an immune response in vivo.
+                    have the potential to elicit an immune response in vivo.
                   </li>
                   <li>Regarding the experimental design, he suggests adhering to the hierarchy
-                     principle and conducting a feasibility study before proceeding with formal
-                      experiments.
+                    principle and conducting a feasibility study before proceeding with formal
+                    experiments.
                   </li>
-                  <li>He proposes a definition of synthetic biology as the manipulation of gene 
+                  <li>He proposes a definition of synthetic biology as the manipulation of gene
                     editing to link together more than three proteins. In light of this definition,
-                     he contends that our project does not substantially fall under the category of
-                      synthetic biology and emphasizes the need to present relevant data to enhance
-                       its competitiveness.
+                    he contends that our project does not substantially fall under the category of
+                    synthetic biology and emphasizes the need to present relevant data to enhance
+                    its competitiveness.
                   </li>
-                  <li>Dr. Zou also highlights that antibodies operate within a non-cell-autonomous 
-                    context. This implies that conducting animal experiments may be necessary to 
+                  <li>Dr. Zou also highlights that antibodies operate within a non-cell-autonomous
+                    context. This implies that conducting animal experiments may be necessary to
                     effectively test their efficacy.
                   </li>
-                  <li>Lastly, he kindly offers the assistance of his science assistant as a 
-                    counselor for our project, and proposes conducting experiments in his 
+                  <li>Lastly, he kindly offers the assistance of his science assistant as a
+                    counselor for our project, and proposes conducting experiments in his
                     laboratory.</li>
-                  </ol>
+                </ol>
               </div>
             </div>
           </div>
@@ -338,19 +343,20 @@ the world. Consider how the world affects your work and how your work affects th
           </div>
         </div>
       </div>
-    </div>    
+    </div>
 
     <div id="5" class="month">
       <div class="container mx-auto mt-5">
         <h1 class="pt-5 mx-auto text-center">
-          Longxing CAO
+          这里放专题名称
         </h1>
         <hr>
         <div class="card mx-auto text-center">
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
-                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-longxing-cao.png" alt="Professor Longxing CAO" width="250" height="">
+                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-longxing-cao.png" alt="Professor Longxing CAO"
+                  width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Longxing CAO</h3>
                 <br>
                 <p style="color:#009DBE">School of Life Sciences</p>
@@ -361,18 +367,18 @@ the world. Consider how the world affects your work and how your work affects th
               <div class="vertical-line"></div>
               <div class="right-column">
                 <ol>
-                <li>Cao suggested directly coupling the antibody to the nanoparticle due to 
-                  the instability of the long-coupled structure. However, he also highlighted
-                   that chemical cross-linking lacks directionality.
-                </li> 
-                <li>Additionally, Dr. Cao emphasized that the complexities associated with
-                   glycosylation during the synthesis of antibodies in <i>E. coli</i> could potentially
+                  <li>Cao suggested directly coupling the antibody to the nanoparticle due to
+                    the instability of the long-coupled structure. However, he also highlighted
+                    that chemical cross-linking lacks directionality.
+                  </li>
+                  <li>Additionally, Dr. Cao emphasized that the complexities associated with
+                    glycosylation during the synthesis of antibodies in <i>E. coli</i> could potentially
                     impact antibody stability.
-                </li>
-                <li>Furthermore, Dr. Cao mentioned the possibility of designing a protein cage that
-                   can self-assemble with antibodies. However, he acknowledged that our current 
-                   capabilities might not be sufficient for handling such a complex process.
-                </li>
+                  </li>
+                  <li>Furthermore, Dr. Cao mentioned the possibility of designing a protein cage that
+                    can self-assemble with antibodies. However, he acknowledged that our current
+                    capabilities might not be sufficient for handling such a complex process.
+                  </li>
                 </ol>
               </div>
             </div>
@@ -386,20 +392,21 @@ the world. Consider how the world affects your work and how your work affects th
           </div>
         </div>
       </div>
-    </div>   
+    </div>
 
 
     <div id="6" class="month">
       <div class="container mx-auto mt-5">
         <h1 class="pt-5 mx-auto text-center">
-          Yue ZHANG
+          这里放专题名称
         </h1>
         <hr>
         <div class="card mx-auto text-center">
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
-                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yue-zhang.jpg" alt="Professor Yue ZHANG" width="250" height="">
+                <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yue-zhang.jpg" alt="Professor Yue ZHANG"
+                  width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Yue ZHANG</h3>
                 <br>
                 <p style="color:#009DBE">School of Engineering</p>
@@ -410,27 +417,27 @@ the world. Consider how the world affects your work and how your work affects th
               <div class="vertical-line"></div>
               <div class="right-column">
                 <ol>
-                <li>Dr. Zhang believes that our system may face difficulties in carrying 
-                  drugs due to the assembly of nanoparticles in E.coli. However, she suggests 
-                  that we could potentially use antibacterial polypeptides to create a pore in 
-                  the membrane of the nanoparticles, through which drugs can be inserted.
-                </li>
-                <li>In regards to the conjugation of antibodies with nanoparticles, Dr. Zhang 
-                  mentioned three methods: azide-alkyne cycloaddition, biotin-avidin conjugation, 
-                  and EDC-NHS reaction. We have found some relevant articles on this topic and will 
-                  further discuss and decide on the most suitable approach.
-                </li>
-                 <li>Regarding our hypothesis that the coating of nanoparticles consists of lipids, 
-                  Dr. Zhang recommends observing our samples under TEM (transmission electron microscope)
-                   to determine whether there is a membrane surrounding the nanoparticles, with an 
-                   approximate size of 5nm, which is consistent with the size of a biological membrane.
-                </li>
-                <li>For the characterization of components on the surface of the nanoparticles, Dr. 
-                  Zhang suggests conducting Mass Spectrum analysis to identify the proteins present.
-                </li>
-                <li>Furthermore, Dr. Zhang kindly informed us that her lab has an ultra-high-speed 
-                  centrifuge available for our use, should the need arise.
-                </li>
+                  <li>Dr. Zhang believes that our system may face difficulties in carrying
+                    drugs due to the assembly of nanoparticles in E.coli. However, she suggests
+                    that we could potentially use antibacterial polypeptides to create a pore in
+                    the membrane of the nanoparticles, through which drugs can be inserted.
+                  </li>
+                  <li>In regards to the conjugation of antibodies with nanoparticles, Dr. Zhang
+                    mentioned three methods: azide-alkyne cycloaddition, biotin-avidin conjugation,
+                    and EDC-NHS reaction. We have found some relevant articles on this topic and will
+                    further discuss and decide on the most suitable approach.
+                  </li>
+                  <li>Regarding our hypothesis that the coating of nanoparticles consists of lipids,
+                    Dr. Zhang recommends observing our samples under TEM (transmission electron microscope)
+                    to determine whether there is a membrane surrounding the nanoparticles, with an
+                    approximate size of 5nm, which is consistent with the size of a biological membrane.
+                  </li>
+                  <li>For the characterization of components on the surface of the nanoparticles, Dr.
+                    Zhang suggests conducting Mass Spectrum analysis to identify the proteins present.
+                  </li>
+                  <li>Furthermore, Dr. Zhang kindly informed us that her lab has an ultra-high-speed
+                    centrifuge available for our use, should the need arise.
+                  </li>
                 </ol>
               </div>
             </div>
@@ -444,7 +451,7 @@ the world. Consider how the world affects your work and how your work affects th
           </div>
         </div>
       </div>
-    </div>   
+    </div>
 
 
 
