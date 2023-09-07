@@ -7,6 +7,32 @@ advisors, instructors, and individuals not on the team roster. This requirement 
 these can and should be displayed throughout your wiki.{% endblock %}
 
 {% block page_content %}
+
+<!-- Header -->
+<link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
+<div class="sky single_slider d-flex align-items-center" style="background-image: url('https://static.igem.wiki/teams/4702/wiki/result-for-notebook/group-photo-1.jpg');
+background-size:cover">
+  <section class="col-md-12 text-center"
+    <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
+    <div class="container header">
+      <div class="row">
+        <div class="">
+          <p class="text-light" style="font-size:70px;">Attributions</p>
+          <div class=" ">
+            <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
+              This page must show the attribution form of your project. This includes the work done by each of the
+              student members on your team and any work that was done by people outside of your team, including the host labs,
+              advisors, instructors, and individuals not on the team roster. This requirement is not about literature references -
+              these can and should be displayed throughout your wiki.
+            </p>
+            <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 <style>
   .anchor {
     position: relative;
@@ -22,22 +48,9 @@ these can and should be displayed throughout your wiki.{% endblock %}
   }
 </style>
 <div id="1" class="anchor">
-  <p>fuck wgh</p>
+
 </div>
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #2</h4>
-      <p>Describe what work your team members did and what other people did for your project.</p>
-      <p>The form that bas been embded in an iframe in this page shows your team's Project Attribution form. This page
-        must keep the form as it is.</p>
-      <p>If you use a different website framework, make sure to embed the right URL for your team's form.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/deliverables/project-attribution">Project Attribution
-          page</a> for more information.</p>
-    </div>
-  </div>
-</div>
+
 
 <!--
   ======================================================================
@@ -64,5 +77,18 @@ these can and should be displayed throughout your wiki.{% endblock %}
   <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 
 </div>
-
+<div class="row mt-4">
+  <div class="col">
+    <div class="bd-callout bd-callout-info">
+      <h4>Bronze Medal Criterion #2</h4>
+      <p>Describe what work your team members did and what other people did for your project.</p>
+      <p>The form that bas been embded in an iframe in this page shows your team's Project Attribution form. This page
+        must keep the form as it is.</p>
+      <p>If you use a different website framework, make sure to embed the right URL for your team's form.</p>
+      <hr>
+      <p>Please see the <a href="https://competition.igem.org/deliverables/project-attribution">Project Attribution
+          page</a> for more information.</p>
+    </div>
+  </div>
+</div>
 {% endblock %}

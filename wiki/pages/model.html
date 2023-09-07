@@ -4,6 +4,32 @@
 {% block lead %}Explain your model's assumptions, data, parameters, and results in a way that anyone could understand.{% endblock %}
 
 {% block page_content %}
+<!-- Header -->
+<link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
+<div class="sky single_slider d-flex align-items-center" style="background:linear-gradient(
+      110deg,
+      #6fd7d0 0%,
+      #96daf7 32%, 
+      #66bfe5 57%, 
+      rgba(0, 76, 197, 0.8) 100%
+  )">
+  <section class="col-md-12 text-center">
+    <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
+    <div class="container header">
+      <div class="row">
+        <div class="">
+          <p class="text-light" style="font-size:70px;">Model</p>
+          <div class=" ">
+            <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
+              Explain your model's assumptions, data, parameters, and results in a way that anyone could understand.
+            </p>
+            <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
 <div class="row mt-4">
   <div class="col">

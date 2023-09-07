@@ -5,6 +5,34 @@
 the world. Consider how the world affects your work and how your work affects the world.{% endblock %}
 
 {% block page_content %}
+<!-- Header -->
+<link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
+<div class="sky single_slider d-flex align-items-center" style="background:linear-gradient(
+      110deg,
+      #6fd7d0 0%,
+      #96daf7 32%, 
+      #66bfe5 57%, 
+      rgba(0, 76, 197, 0.8) 100%
+  )">
+  <section class="col-md-12 text-center">
+    <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
+    <div class="container header">
+      <div class="row">
+        <div class="">
+          <p class="text-light" style="font-size:70px;">Human Practices</p>
+          <div class=" ">
+            <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
+              We ask every team to think deeply and creatively about whether their project is responsible and good for
+              the world. Consider how the world affects your work and how your work affects the world. 
+            </p>
+            <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'HP.css') }}" rel="stylesheet">

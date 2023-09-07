@@ -4,9 +4,36 @@
 {% block lead %}<b>Welcome to iGEM 2023!</b> Your team has been approved and you are ready to start the iGEM season!{%endblock %}
 
 {% block page_content %}
+<!-- Header -->
+<link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
+<div class="sky single_slider d-flex align-items-center" style="background:linear-gradient(
+      110deg,
+      #6fd7d0 0%,
+      #96daf7 32%, 
+      #66bfe5 57%, 
+      rgba(0, 76, 197, 0.8) 100%
+  )">
+  <section class="col-md-12 text-center">
+    <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
+    <div class="container header">
+      <div class="row">
+        <div class="">
+          <p class="text-light" style="font-size:70px;">Home</p>
+          <div class=" ">
+            <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
+              <b>Welcome to Westlake-China!</b> Our team has been approved and we are ready to start the iGEM season!  
+            </p>
+            <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 
 <div class="row Home">
-  <div class="col">
+  <div class="col gaspcol">
     <h2>Before you start</h2>
     <hr>
     <p>Please read the following pages:</p>
@@ -18,7 +45,7 @@
   </div>
 </div>
 <div class="row mt-4">
-  <div class="col">
+  <div class="col gaspcol">
     <h2>Styling your wiki</h2>
     <hr>
     <p>Feel free to customize the page styling according to your preferences, or you can simply leave the style as it
@@ -31,7 +58,7 @@
   </div>
 </div>
 <div class="row mt-4">
-  <div class="col-lg-8">
+  <div class="col-lg-8 gaspcol">
     <h2>Tips</h2>
     <hr>
     <p>This wiki will be your team's first interaction with the rest of the world, so here are a few tips to help you
@@ -48,7 +75,7 @@
       <li>Have lots of fun!</li>
     </ul>
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 gaspcol">
     <h2>Inspiration</h2>
     <hr>
     <p>You can also view other team wikis for inspiration! Here are some examples:</p>
@@ -64,10 +91,6 @@
     </ul>
   </div>
 </div>
-<script>
-gsap.from(".col", {
-  scrollTrigger: ".col", delay: 0.3,
-  duration: 1, y: -50, opacity: 0, ease: "power4.out", stagger: 0.3
-});</script>
+
 
 {% endblock %}

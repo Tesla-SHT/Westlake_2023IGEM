@@ -1,10 +1,44 @@
 {% extends "layout.html" %}
 
+
 {% block title %}Notebook{% endblock %}
 
 {% block page_content %}
+
+
+
+
 <link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'notebook.css') }}" rel="stylesheet">
+
+<!-- Header -->
+<link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
+<div class="sky single_slider d-flex align-items-center" style="background:linear-gradient(
+      110deg,
+      #6fd7d0 0%,
+      #96daf7 32%, 
+      #66bfe5 57%, 
+      rgba(0, 76, 197, 0.8) 100%
+  )">
+  <section class="col-md-12 text-center">
+    <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
+    <div class="container header">
+      <div class="row">
+        <div class="">
+          <p class="text-light" style="font-size:70px;">Notebook</p>
+          <div class=" ">
+            <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
+            Add some summary.  
+            </p>
+            <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
 
 <style>
   .card-header:hover {
@@ -19,6 +53,11 @@
   <div id="sidebar" class=" ol-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3  ">
     <hr>
     <ul class="navigation nav nav-pills flex-column mb-auto">
+      <li>
+        <a href="#June" class="nav-link">
+          June
+        </a>
+      </li>
       <li>
         <a href="#July" class="nav-link">
           July
@@ -48,12 +87,366 @@
   </ul>
   </div>-->
   <div class="mp-content offset-md-3 col-md-9 col-lg-9">
+    <div id="June" class="month">
+      <div class="container mx-auto mt-5 w-90">
+        <h1 class="pt-5 mx-auto text-center">
+          June
+        </h1>
+        <hr>
+        <div class="card mx-auto">
+          <div class="card-header ani-card-header">6/23  </div>
+          <div class="card-body ani-card-body">
+            <p>Participants: Gehua WENG </p>
+            <p>Prepared BL21 activation and we put them into shaker at 37 ℃ and 220 rpm for 1 day.
+              Besides we packaged LB medium into two 100 ml flask, one 60 ml flask and one 150 ml flask, prepared for BL21 and BL21 transferred with pGLO cultured with 10 mM and 1 mM FeCl¬¬3.
+              And we prepared 0.5 M 10 ml and saved at 4℃.
+              As pGLO carried with GFP, which can help us easily observe if the bacteria is transferred and can express the vector successfully. Additionally, in our preliminary stage, we planned to use pGLO to carry our targeted protein. 
+              We planned to add 0.1% arabinose to our LB medium for GFP carried by pGLO need arabinose to express GFP. As the following figure:
+              <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/notebook-6-23-1.png"
+              alt="GFP expression level under different concentration of ferric ion treatment" width="800" height="">
+            
+              <p>Sited from BIO-RAD: 
+                <a href="https://www.bio-rad.com/zh-cn/applications-technologies/pglo-plasmid-map-resources?ID=NISQOC15">
+                  pGLO Plasmid Map and Resources | Bio-Rad</a>
+                  <br>
+                So we prepared 20% arabinose for 50 ml and saved at 4℃.
+                </p>
+            <p align="right">Recorded by Gehua WENG</p>
+          </div>
+        </div>
+        <br>
+        <div class="card mx-auto">
+          <div class="card-header ani-card-header">6/24 Ferric Ion Induced Nanoparticle Synthesis </div>
+          <div class="card-body ani-card-body">
+            <p>Participants: Gehua WENG, Yuqi SHEN </p>
+            <p>Our first experimental BL21 are as follow table: </p>
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+              <div class="container w-80 h-100 mx-auto mt-3 mb-3">
+                <div class="row mt-4" style="text-align:justify">
+                  <div class="col">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th colspan="1" scope="col">Bacteria</th>
+                          <th colspan="2" scope="col">BL21</th>
+                          <th colspan="4" scope="col">BL21+pGLO</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td>Bottle</td>
+                          <td>60ml LB</td>
+                          <td>150ml LB</td>
+                          <td>100ml LB</td>
+                          <td>100ml LB</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>FeCl<sub>3</sub></td>
+                          <td>1.2ml</td>
+                          <td>300μl</td>
+                          <td>2ml</td>
+                          <td>200μl</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>Arabinose</td>
+                          <td>300μl</td>
+                          <td>750μl</td>
+                          <td>500μl</td>
+                          <td>500μl</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>Ampicillin</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>+</td>
+                          <td>+</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>They were put into shaker at 37℃ and 200 rpm for 3 days.</p>
+            <p align="right">Recorded by Gehua WENG</p>
+          </div>
+        </div>
+        <br>
+        <div class="card mx-auto">
+          <div class="card-header ani-card-header">6/27 Nanoparticle Expression Induced Strain Collection </div>
+          <div class="card-body ani-card-body">
+            <p>Participants: Gehua WENG </p>
+            <p>We took out the bacteria and centrifuged them at 3000 rpm 4℃ for 15 min. Besides, we respectively stored the supernatant and the precipitate at 4℃ and -80℃.
+            <br>
+            </p>
+            <p align="right">Recorded by Gehua WENG</p>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
     <div id="July" class="month">
       <div class="container mx-auto mt-5 w-90">
         <h1 class="pt-5 mx-auto text-center">
           July
         </h1>
         <hr>
+        <div class="card mx-auto">
+          <div class="card-header ani-card-header">7/3 Medium Preparation </div>
+          <div class="card-body ani-card-body">
+            <p>Participants: Shuoyi HU, Gehua WENG: </p>
+            <p>
+              We set the gradient table and stepped in to prepare medium required.<br>
+              &nbsp;<br>
+              <b>Medium<br>&nbsp;</b><br>
+              <b>LB</b><br>
+              <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="container w-80 h-40 mx-auto mt-3 mb-3">
+                  <div class="row mt-4" style="text-align:justify">
+                    <div class="col">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th colspan="0" scope="col">Components</th>
+                            <th colspan="1" scope="col">Content</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>Tryptone</td>
+                            <td>10.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Yeast Extract</td>
+                            <td>5.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>NaCl</td>
+                            <td>10.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Deionized water</td>
+                            <td>1 L</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <b>LB low-salt</b><br>
+              <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="container w-80 h-40 mx-auto mt-3 mb-3">
+                  <div class="row mt-4" style="text-align:justify">
+                    <div class="col">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th colspan="0" scope="col">Components</th>
+                            <th colspan="1" scope="col">Content</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>Tryptone</td>
+                            <td>10.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Yeast Extract</td>
+                            <td>5.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>NaCl</td>
+                            <td>5.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Deionized water</td>
+                            <td>1 L</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <b>MH</b><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refer the <a href="https://meilunhelper.com/uploads/guide/MMT031.pdf">commercial protocols</a> .
+              <p>&nbsp;</p>
+              <br><b>TSB (standard one)</b>
+            </p>
+              <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="container w-80 h-40 mx-auto mt-3 mb-3">
+                  <div class="row mt-4" style="text-align:justify">
+                    <div class="col">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th colspan="0" scope="col">Components</th>
+                            <th colspan="1" scope="col">Content</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>Distilled water</td>
+                            <td>1.0 L</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Tryptone (Pancreatic Digest of Casein)</td>
+                            <td>17.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Soytone (Peptic Digest of Soybean)</td>
+                            <td>3.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Glucose (= Dextrose)</td>
+                            <td>2.50 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Sodium Chloride</td>
+                            <td>5.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Dipotassium Phosphate</td>
+                            <td>2.5 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>The final pH is about 7.3 ± 0.2 (you can measure the pH for amendment)
+                <br>*Adjusted and/or supplemented as required to meet performance criteria.
+                </p>
+              <b>9K Medium</b><br>
+              <p>&nbsp;</p>
+              <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <p>Solution 1:</p>
+                <div class="container w-80 h-40 mx-auto mt-3 mb-3">
+                  <div class="row mt-4" style="text-align:justify">
+                    <div class="col">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th colspan="0" scope="col">Components</th>
+                            <th colspan="1" scope="col">Content</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>Distilled water</td>
+                            <td>500 mL</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Tryptone (Pancreatic Digest of Casein)</td>
+                            <td>17.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>(NH<sub>4</sub>)<sub>2</sub>SO<sub>2</sub> </td>
+                            <td>3.0 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>KCl</td>
+                            <td>0.1 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>K<sub>2</sub>HPO<sub>2</sub></td>
+                            <td>0.5 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>MgSO<sub>4</sub>·7H<sub>2</sub>O</td>
+                            <td>0.5 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Ca(NO<sub>3</sub>)<sub>2</sub> </td>
+                            <td>0.01 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+                </div>
+                <p>Solution 2:</p>
+                <div class="container w-80 h-40 mx-auto mt-3 mb-3">
+                  <div class="row mt-4" style="text-align:justify">
+                    <div class="col">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th colspan="0" scope="col">Components</th>
+                            <th colspan="1" scope="col">Content</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>Distilled water</td>
+                            <td>250 mL</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>FeSO<sub>4</sub>·7H<sub>2</sub>O</td>
+                            <td>44.22 g</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>H<sub>2</sub>SO<sub>4</sub></td>
+                            <td>1 mL</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <p align="right">Recorded by Gehua WENG</p>
+          </div>
+        </div>
+        <br>
+        <div class="card mx-auto">
+          <div class="card-header ani-card-header">7/12 MH medium Preparation </div>
+          <div class="card-body ani-card-body">
+            <p>Participants: Yixiao XIAO: </p>
+            <p>We prepared MH medium about 1 L for the second batch of bacteria.</p>
+            <p align="right">Recorded by Gehua WENG</p>
+          </div>
+        </div>
+        <br>
         <div class="card mx-auto">
           <div class="card-header ani-card-header">7/15 Dialysis Bag Activation </div>
           <div class="card-body ani-card-body">
