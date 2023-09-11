@@ -8,6 +8,3 @@
         return false;
     });
 })(jQuery);
-console.log("fuckwgh");
-alert("fuckwgh");
-

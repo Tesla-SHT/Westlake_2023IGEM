@@ -7,13 +7,7 @@
 
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" style="background:linear-gradient(
-      110deg,
-      #6fd7d0 0%,
-      #96daf7 32%, 
-      #66bfe5 57%, 
-      rgba(0, 76, 197, 0.8) 100%
-  )">
+<div class="sky single_slider d-flex align-items-center" style="background-image: url('https://static.igem.wiki/teams/4702/wiki/experiment/experiment-background.jpg');background-size:cover">
   <section class="col-md-12 text-center">
     <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
     <div class="container header">
@@ -37,8 +31,9 @@
 
 <!--sidebar-->
 <div class="row" style="">
-  <div id="sidebar" class="ol-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3"
-    style="padding-right:0;padding-left:0">
+  <div id="sidebar" class="col-md-3 col-lg-3 sidebar  flex-column flex-shrink-0 p-3"
+    style="text-align: center;">
+
     <hr>
     <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
       <li>
@@ -119,6 +114,16 @@
         </h1>
         <hr>
         <div class="card mx-auto text-center">
+          <div class="card-header">Material</div>
+          <div class="card-body">
+            1. LB Broth: 10g/L Tryptone, 5g/L Yeast, 10g/L NaCl, sterilized after dissolving above content in water.
+            <br>2. Stock Ampicillin
+            <br>3. 0.1M MgCl<sub>2</sub>
+            <br>4. 0.1M CaCl<sub>2</sub>
+            <br>5. Glycerol Stock Bacterial Cells (SHuffle strain in our case)
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
           <div class="card-header">Day 1</div>
           <div class="card-body">
             1. Taking out one tube of frozen glycerol stock bacterial cells from -80ºC storage. (SHuffle strain in our
@@ -164,6 +169,16 @@
         </h1>
         <hr>
         <div class="card mx-auto text-center">
+          <div class="card-header">Material</div>
+          <div class="card-body">
+            1. LB Broth: 10g/L Tryptone, 5g/L Yeast, 10g/L NaCl, sterilized after dissolving above content in water.
+            <br>2. Stock Ampicillin
+            <br>3. Glycerol Stock Bacterial Cells (SHuffle strain in our case)
+            <br>4. 10 ng vectors for transformation (pGLO and genetically modified pGLO in our case)
+            <br>5. LB plate with anphicilin (0.1 g/L in our case)
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
           <div class="card-header">Day 1</div>
           <div class="card-body">
             1. Taking out one tube of frozen glycerol stock competent bacterial cells from -80ºC storage. (SHuffle
@@ -198,6 +213,15 @@
           </a><sup class="author" style="font-size:medium"><a href="#a1">[3]</a></sup>
         </h1>
         <hr>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Material</div>
+          <div class="card-body">
+            1. LB Broth: 10g/L Tryptone, 5g/L Yeast, 10g/L NaCl, sterilized after dissolving above content in water.
+            <br>2. Stock Ampicillin
+            <br>3. 20% Arabinose solution (mass fraction)
+            <br>4. Stock bacteria culture (SHuffle strain in our case)
+          </div>
+        </div>
         <div class="card mx-auto text-center">
           <div class="card-header">Day 1</div>
           <div class="card-body">
@@ -247,19 +271,19 @@
           <div class="card-body">
             <ol>
               <li>
-                Buffer A:
+                <b>Buffer A</b>:
                 150 mM NaCl,
                 20 mM Tris-HCl pH 8.0
               </li>
               <li>
                 High-pressure homogenizer (Union-Biotech(shanghai)Co., Ltd.)</li>
               <li>
-                Filtration membrane (0.45 μm, Millipore, Item No. SLHPR33RB)</li>
+                Filtration membrane (0.45 μm, Millipore, Catalog number: SLHPR33RB)</li>
               <li>
                 AKTA purification system (Union-Biotech(shanghai)Co., Ltd.)</li>
               <li>
-                HisTrapTM HP His tag protein purification column (Cytiva, Item No.17524701)</li>
-              <li> -Buffer B:
+                HisTrapTM HP His tag protein purification column (Cytiva, Catalog number:17524701)</li>
+              <li> <b>Buffer B</b>:
                 150 mM NaCl,
                 20 mM Tris-HCl,
                 1 M imidazole, pH adjusted to 8.0 by HCl</li>
@@ -280,7 +304,7 @@
             <br>3. Centrifugation at 11000 rcf for 30 minutes.
             <br>4. Collect the supernatant and filtrate through 0.45 μL filtration membrane for the preparation of
             running AKTA purification system.
-            <br>5. HisTrapTM HP His tag protein purification column (Item No.17524701) are applied onto the AKTA system
+            <br>5. HisTrapTM HP His tag protein purification column (Catalog number:17524701) are applied onto the AKTA system
             (Union-Biotech(shanghai)Co., Ltd.). The program is set to pre-charge the flow path with 10 column volume
             with Buffer A, then 12 column volume of the supernatant containing sample protein are applied onto the
             column. After that, 10 column volume buffer A are applied to wash out the unbonded protein. Finally, a
@@ -365,7 +389,7 @@
         <div class="card mx-auto text-center">
           <div class="card-body">
             Our BCA test are conducted by using <a
-            href="https://www.beyotime.com/product/P0010.htm">Enhanced BCA Protein Assay Kit from Beyotime (Item No. P0009)</a>.
+            href="https://www.beyotime.com/product/P0010.htm">Enhanced BCA Protein Assay Kit from Beyotime (Catalog number: P0009)</a>.
             <br>Standard Instruction protocol could be found in the <a
               href="https://www.beyotime.com/Manual/P0009_Enhanced%20BCA%20Protein%20Assay%20Kit.pdf">link</a>
             <br>
@@ -394,6 +418,8 @@
               <li>LB Broth: 10g/L Tryptone, 5g/L Yeast, 10g/L NaCl, sterilized after dissolving above content in water.
               </li>
               <li>Stock Ampicillin</li>
+              <li>0.5 M FeCl<sub>3</sub> solution</li>
+              <li>0.22 μL filter membrane</li>
             </ol>
           </div>
         </div>
@@ -441,6 +467,16 @@
           </a><sup class="author" style="font-size:medium"><a href="#a2">[8]</a></sup>
         </h1>
         <hr>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Material</div>
+          <div class="card-body">
+            1. NHS-PEG-Maleimide (MW 3400)
+            <br>2. DMSO
+            <br>3. 3kDa Ultrafiltration tube (Catalog number: UFC9003, Millipore)
+            <br>4. 10kDa Ultrafiltration tube (Catalog number: UFC901024, Millipore)
+            <br>5. Stock Nanoparticle solution
+          </div>
+        </div>
         <div class="card mx-auto text-center">
           <div class="card-header">Preperation</div>
           <div class="card-body">
@@ -503,8 +539,8 @@
               <li>
                 Deionized water</li>
               <li>High-pressure homogenizer (Union-Biotech(shanghai)Co., Ltd.)</li>
-              <li>100 kDa Ultracentrifugation tube (Item No. UFC9100, Millipore)</li>
-              <li>3 kDa Ultracentrifugation tube (Item No. UFC9003, Millipore)</li>
+              <li>100 kDa Ultracentrifugation tube (Catalog number: UFC9100, Millipore)</li>
+              <li>3 kDa Ultracentrifugation tube (Catalog number: UFC9003, Millipore)</li>
               <li>Buffer A:
                 150 mM NaCl,
                 20 mM Tris-HCl</li>
@@ -539,10 +575,29 @@
         </h1>
         <hr>
         <div class="card mx-auto text-center">
+          <div class="card-header">Material</div>
+          <div class="card-body">
+            <p>
+              1. DMEM High Glucose H-21 Media (Catalog number: 11965084)
+              <br>2. RPMI 1640 basal Media (Catalog number: 12633012)
+              <br>3. Fetal Bovine Serum (Catalog number:10099141C)
+              <br>4. Penicillin, Streptomycin
+              <br>5. Trypsin/EDTA
+              <br>6. Dulbecco's Phosphate Buffered Saline
+              <br>7. Cell strains
+              <br>8. Tissue culture dish
+              <br>9. 15 ml Falcon tube
+              <br>10. 37ºC water bath
+              <br>11. 37ºC 5% CO<sub>2</sub> incubator
+              <br>12. Insulin (Catalog number: I860440-25mg)
+            </p>
+       </div>
+        </div>
+        <div class="card mx-auto text-center">
           <div class="card-header">MDA-MB-231 (HER2 negative cells) Culture</div>
           <div class="card-body">
           <p>Culture medium: 450 ml DMEM High Glucose H-21 Media, 50 ml (to 10%) <a
-            href="https://www.thermofisher.cn/order/catalog/product/10099141C">Fetal Bovine Serum (Item No.10099141C)</a>, 5 ml Pen Strep</p>
+            href="https://www.thermofisher.cn/order/catalog/product/10099141C">Fetal Bovine Serum (Catalog number:10099141C)</a>, 5 ml Pen Strep</p>
            <p> Thawing Cells:
           <br>  1. Take one vial immediately in 37ºC water bath. Transfer the content to a 15 ml Falcon tube already containing 10 ml of fresh medium.
           <br>  2. Spin down at 1200 rpm for 3 min at 4ºC. Aspirate supernatant and resuspend cells in fresh medium and transfer to 10cm tissue culture dish and cultured at 37°C in 5% CO<sub>2</sub>. Change medium about every 3 days.
@@ -555,7 +610,6 @@
           <br>  5. Spin down at 1200rpm for 3 min. Aspirate supernatant.
           <br>  6. Add 8 ml of media to the 15ml tube with cell pellet, and pipette up and down to mix. Subculture ratio is about 1:10. 
           <br>  7. Put the cells into 37°C with 5% CO<sub>2</sub>.
-            
           </p>
             <a
               href="https://genome.ucsc.edu/ENCODE/protocols/cell/human/MDA-MB231-S_Farnham_protocol.pdf#:~:text=Open%20the%20vial%20and%20transfer%20the%20content%20to,and%20medium%20is%20changed%20about%20every%203%20days.">Reference Linkage</a>
@@ -566,7 +620,7 @@
           <div class="card-body">
            <p>Culture medium: 500 ml <a
             href="https://www.thermofisher.cn/order/catalog/product/12633012#:~:text=Advanced%20RPMI%20%28Roswell%20Park%20Memorial%20Institute%29%201640%20is,with%20no%20change%20in%20growth%20rate%20or%20morphology.">RPMI 1640 basal Media</a> , 100 ml (to about 20%) <a
-            href="https://www.thermofisher.cn/order/catalog/product/10099141C">Fetal Bovine Serum</a>, 5 ml Pen Strep, 2μg/ml insulin</p>
+            href="https://www.thermofisher.cn/order/catalog/product/10099141C">Fetal Bovine Serum</a>, 5 ml Penicillin, Streptomycin, 2μg/ml insulin</p>
            <p>Thawing Cells:
             1. Take one vial immediately in 37℃ water bath. Transfer the content to a 15 ml Falcon tube already containing 8 ml of fresh medium.
             2. Spin down at 1000 rpm for 3 min. Aspirate supernatant and resuspend cells in fresh medium and transfer to 10cm tissue culture dish and cultured at 37°C in 5% CO<sub>2</sub>. Change medium about every 2 days.
@@ -599,6 +653,20 @@
         </h1>
         <hr>
         <div class="card mx-auto text-center">
+          <div class="card-header">Material</div>
+          <div class="card-body">
+          <p>
+            1. Cell Counting Kit-8 (CCK-8) (Catalog number: ab228554, Abcam)
+            <br>2. 96-well plate
+            <br>3. 37ºC, 5% CO<sub>2</sub> incubator
+            <br>4. 37ºC water bath
+            <br>5. 96-well plate reader
+            <br>6. WST-8 Solution
+          </p> 
+        </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Primary Steps</div>
           <div class="card-body">
           <p>  1. Plate 10,000 cells in 100 µl per well for a 96 well plate 
             <br>2. Add test compounds into cells and incubate for 24 hours in a 37ºC, 5% CO<sub></sub>2</sub> incubator.
@@ -612,6 +680,7 @@
               href="https://www.abcam.com/products/assay-kits/cell-counting-kit-8-wst-8--cck8-ab228554.html">Reference 2</a>
           </div>
         </div>
+      </div>
       </div>
     </div>
 
