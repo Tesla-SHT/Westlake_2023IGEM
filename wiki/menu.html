@@ -1,26 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!--<style>
+  .navbar-nav .nav-link {
+    color: black;
+  }
+</style>-->
+
+<!---- TEAM NAME ---->
+<nav class="navbar navbar-expand-lg text-black navbar-dark fixed-top" style="padding:0px">
   <div class="container">
-
-    <!---- TEAM NAME ---->                       
-     <div class="content" style="height:100px;padding:0;border:0;margin:0">
-      <img src="https://static.igem.wiki/teams/4702/wiki/logo.png" style="height:100px">
+    <div class="" style="height:80px;padding-right:20px;border:0;margin:0">
+      <a href="https://2023.igem.wiki/westlake-china/"><img src="https://static.igem.wiki/teams/4702/wiki/logo.png"
+          style="height:80px"></a>
     </div>
-
     <!---- SMALL SCREEN MENU ICON ---->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="content" style="padding-right:20px;border:0;margin:0">
-        <img src="https://static.igem.wiki/teams/4702/wiki/logo.png" style="height:100px">
-      </div>
-      <ul class="navbar-nav ml-auto left-aligned justify-content-end">
+    <div class="collapse navbar-collapse " id="navbarSupportedContent" style="
+    justify-content: flex-end; ">
+      <ul class="nav-ani navbar-nav ml-auto left-aligned justify-content-end">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Leckerli+One&display=swap"
           rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <!---- HOME ---->
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('home') }}">Home</a>
