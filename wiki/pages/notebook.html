@@ -2817,9 +2817,13 @@
                 From DLS analysis, we can see that the equivalant hydrodynamic size of our biologically
                 synthesized nanoparticle solution system is 6.37 nm with an average baseline index 8.8, and the detailed
                 reported result could be found in the pdf file below:
-                <a
-                  href="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/result-for-notebook/0917-dls-bio.pdf">DLS
-                  analysis of Biologically Synthesized Nanoparticle.</a>
+
+              <div class="card mx-auto text-center">
+                <div class="card-header ani-card-header"> DLS analysis of Biologically Synthesized Nanoparticle</div>
+                <div class="card-body ani-card-body">
+                  <div id="pdf-container-1"></div>
+                </div>
+              </div>
               <p>While if we look into the report, we have most the peak of intensity lay around 7.5 nm,
                 as the peak below one was more likely to be the attachment dropped when ultrasonication was conducted.
               </p>
@@ -2828,9 +2832,12 @@
                 For the Chemically synthesized nanoparticle solution system, the equivalant hydrodynamic size
                 is 348.92 nm with an average baseline index 1.27, and the detailed reported result could
                 be found in the pdf file below:
-                <a
-                  href="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/result-for-notebook/0917-dls-chem.pdf">DLS
-                  analysis of Chemically Synthesized Nanoparticle.</a>
+                <div class="card mx-auto text-center">
+                  <div class="card-header ani-card-header"> DLS analysis of Chemically Synthesized Nanoparticle</div>
+                  <div class="card-body ani-card-body">
+                    <div id="pdf-container-2"></div>
+                  </div>
+                </div>
               <p>This result for Chemically synthesized nanoparticle was less trustable as in detailed
                 peak of intensity graph there had clumps could be observed, indicating too long storage time before
                 doing DLS analysis. </p>
@@ -2846,9 +2853,12 @@
                 From Zeta Potential analysis, we can see that the zeta potential of our biologically
                 synthesized nanoparticle solution system is -19.98 mV, and the detailed reported result could be found
                 in the pdf file below:
-                <a
-                  href="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/result-for-notebook/bio-zeta-potential-0917.pdf">Zeta
-                  Potential analysis of Biologically Synthesized Nanoparticle.</a>
+                <div class="card mx-auto text-center">
+                  <div class="card-header ani-card-header">Zeta Potential analysis of Biologically Synthesized Nanoparticle</div>
+                  <div class="card-body ani-card-body">
+                    <div id="pdf-container-3"></div>
+                  </div>
+                </div>
               </p>
               <p>For the reliability of the data, the following parameter could be analysed:
                 <br>Zeta Potential Range: Looking at the range of zeta potential values (-31.19 mV to -14.51 mV),
@@ -2870,9 +2880,12 @@
               <p>For Chemically
                 synthesized nanoparticle, the zeta potential is -18.46 mV, and the detailed reported result could be
                 found in the pdf file below:
-                <a
-                  href="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/result-for-notebook/chem-zeta-potential-0917.pdf">Zeta
-                  Potential analysis of Chemically Synthesized Nanoparticle.</a>
+                <div class="card mx-auto text-center">
+                  <div class="card-header ani-card-header">Zeta Potential analysis of Biologically Synthesized Nanoparticle</div>
+                  <div class="card-body ani-card-body">
+                    <div id="pdf-container-3">Zeta Potential analysis of Chemically Synthesized Nanoparticle</div>
+                  </div>
+                </div>
               </p>
               <p>For the reliability of the data, the following parameter could be analysed:
                 <br>Zeta Potential Range: The range of zeta potential values in the data set is -25.60 mV to -9.41 mV,
@@ -2957,6 +2970,7 @@
     </ul>
   </div>
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.js"></script>
 <script src="{{ url_for('static', filename = 'card.js') }}"></script>
+<script src="{{ url_for('static', filename = 'pdf.js') }}"></script>
 {% endblock %}
