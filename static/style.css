@@ -193,3 +193,6 @@ footer a {
   left:0;
   right:0;
 }
+.text-light{
+  -webkit-text-stroke: 0.3px #000;
+}

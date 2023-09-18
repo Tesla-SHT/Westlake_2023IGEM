@@ -5,15 +5,11 @@
 the world. Consider how the world affects your work and how your work affects the world.{% endblock %}
 
 {% block page_content %}
+
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" style="background:linear-gradient(
-      110deg,
-      #6fd7d0 0%,
-      #96daf7 32%, 
-      #66bfe5 57%, 
-      rgba(0, 76, 197, 0.8) 100%
-  )">
+<div class="sky single_slider d-flex align-items-center"
+  style="background-image: url('https://static.igem.wiki/teams/4702/wiki/hp/hp-cover.jpg');background-size:cover">
   <section class="col-md-12 text-center">
     <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
     <div class="container header">
@@ -85,6 +81,29 @@ the world. Consider how the world affects your work and how your work affects th
         <hr>
         <!--专家介绍-->
         <div class="card mx-auto text-center">
+
+          <!--问题-->
+          <div class="card-header ani-card-header">Questions we asked</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>When isolating and synthesizing nano iron particles from E. coli, we encounter the need to remove a
+                significant amount of biomaterial. Could you please recommend an effective washing agent that can
+                achieve good removal results without significantly damaging the surface composition of the nano iron
+                particles?</li>
+              <li>How can we achieve the coupling between antibodies and the surface of iron oxide nanoparticles? We are
+                considering two approaches: direct coupling to the isolated iron oxide nanoparticles, where the surface
+                coating component may be phospholipids, and pre-coating the nanoparticles with a layer of PEG
+                (polyethylene glycol) before coupling. Do you have any suggestions for the design of coupling
+                components? We have thought about the Spytag/Spycatcher system.</li>
+              <li>Is it possible to enhance the connection between the tail end of the antibodies and the nanoparticles
+                through a biocompatible method of modifying the binding site?
+              </li>
+              <li>
+                After synthesizing our antibodies, we aim to improve their targeting efficiency. Are there any
+                biocompatible methods available to modify the binding site at the head end of the antibodies?</li>
+            </ol>
+          </div>
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -99,6 +118,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
                   <li>During our discussion on the self-assembly of bio-synthetic
                     nanoparticles and antibodies in Escherichia coli, professor Dang expressed
@@ -128,31 +148,18 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
           </div>
-          <!--问题-->
-          <div class="card-header ani-card-header">Questions </div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>When isolating and synthesizing nano iron particles from E. coli, we encounter the need to remove a
-                significant amount of biomaterial. Could you please recommend an effective washing agent that can
-                achieve good removal results without significantly damaging the surface composition of the nano iron
-                particles?</li>
-              <li>How can we achieve the coupling between antibodies and the surface of iron oxide nanoparticles? We are
-                considering two approaches: direct coupling to the isolated iron oxide nanoparticles, where the surface
-                coating component may be phospholipids, and pre-coating the nanoparticles with a layer of PEG
-                (polyethylene glycol) before coupling. Do you have any suggestions for the design of coupling
-                components? We have thought about the Spytag/Spycatcher system.</li>
-              <li>Is it possible to enhance the connection between the tail end of the antibodies and the nanoparticles
-                through a biocompatible method of modifying the binding site?
-              </li>
-              <li>
-                After synthesizing our antibodies, we aim to improve their targeting efficiency. Are there any
-                biocompatible methods available to modify the binding site at the head end of the antibodies?</li>
-            </ol>
-          </div>
         </div>
         <!--如果要在这个栏目再放一个专家及问题，把上面专家和问题复制下来，并且在下面一行加上换行<br> -->
         <br>
         <div class="card mx-auto text-center">
+
+          <!--问题-->
+          <div class="card-header ani-card-header">Questions we asked</div>
+          <div class="card-body ani-card-body">
+            <ol>
+            </ol>
+          </div>
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -164,25 +171,27 @@ the world. Consider how the world affects your work and how your work affects th
                 <p>Chemistry<br>
                   Materials Science and Engineering<br>
                   Laboratory of Nanosynthesis<br>
-                  </p>
+                </p>
                 <a href="http://www.nanosynthesis.cn/">View More</a>
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
                 </ol>
               </div>
             </div>
           </div>
+        </div>
+        <br>
+        <div class="card mx-auto text-center">
           <!--问题-->
-          <div class="card-header ani-card-header">Questions </div>
+          <div class="card-header ani-card-header">Questions we asked</div>
           <div class="card-body ani-card-body">
             <ol>
             </ol>
           </div>
-        </div>
-        <br>
-        <div class="card mx-auto text-center">
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -194,22 +203,18 @@ the world. Consider how the world affects your work and how your work affects th
                 <p>Chemistry<br>
                   Physics<br>
                   Ultrafast Laser Spectroscopy and Surface/Interface Physical Chemistry Laboratory<br>
-                  </p>
+                </p>
                 <a href="https://hfwgroup.westlake.edu.cn/">View more</a>
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
                 </ol>
               </div>
             </div>
           </div>
-          <!--问题-->
-          <div class="card-header ani-card-header">Questions </div>
-          <div class="card-body ani-card-body">
-            <ol>
-            </ol>
-          </div>
+
         </div>
       </div>
     </div>
@@ -220,6 +225,26 @@ the world. Consider how the world affects your work and how your work affects th
         </h1>
         <hr>
         <div class="card mx-auto text-center">
+
+          <div class="card-header ani-card-header">Questions</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>Can E. coli be cultured in SOB (Super Optimal Broth) protein medium?</li>
+              <li>Is it possible for antibodies to be synthesized in E. coli without the formation of double sulfur
+                bonds at the wrong location?</li>
+              <li>Can iron oxide nanoparticles (IONPs) be conjugated with antibodies, similar to how gold nanoparticles
+                (Au NPs) and antibodies form an Au-S bond?</li>
+              <li>What should be prioritized when conducting tests with iron oxide nanoparticles, and how can we
+                optimize the conditions for the best product?</li>
+              <li> Is it feasible to construct an AI model to predict interactions between nanoparticles and proteins,
+                considering the limited experimental data available in this field?</li>
+              <li>What are the challenges and considerations involved in the mass production of iron oxide
+                nanoparticles, such as comparing biosynthesis yield with chemosynthesis, reaction time, reactant
+                inhomogeneity, and controlling particle size?</li>
+
+            </ol>
+          </div>
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -234,6 +259,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
                   <li>We discussed culture medium proteins for E.coli, such as SOB (Super Optimal Broth) protein.</li>
                   <li>The synthesis of antibodies in E.coli was also addressed. Dr. Zhang pointed out that even when
@@ -272,19 +298,7 @@ the world. Consider how the world affects your work and how your work affects th
             </div>
 
           </div>
-          
-          <div class="card-header ani-card-header">Questions</div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>Can E. coli be cultured in SOB (Super Optimal Broth) protein medium?</li>
-              <li>Is it possible for antibodies to be synthesized in E. coli without the formation of double sulfur bonds at the wrong location?</li>
-              <li>Can iron oxide nanoparticles (IONPs) be conjugated with antibodies, similar to how gold nanoparticles (Au NPs) and antibodies form an Au-S bond?</li>
-              <li>What should be prioritized when conducting tests with iron oxide nanoparticles, and how can we optimize the conditions for the best product?</li>
-              <li> Is it feasible to construct an AI model to predict interactions between nanoparticles and proteins, considering the limited experimental data available in this field?</li>
-              <li>What are the challenges and considerations involved in the mass production of iron oxide nanoparticles, such as comparing biosynthesis yield with chemosynthesis, reaction time, reactant inhomogeneity, and controlling particle size?</li>
 
-            </ol>
-          </div>
         </div>
       </div>
     </div>
@@ -297,72 +311,83 @@ the world. Consider how the world affects your work and how your work affects th
         </h1>
         <hr>
         <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="subfield">
-              <div class="left-column">
-                <img src="" alt="Dr. ZHOU" width="250" height="">
-                <h3 style="text-align: center;padding-top: 15px;">Yaofeng ZHOU</h3>
-                <br>
-                <p style="color:#009DBE">School of Engineering</p>
-                <p>Cheng Research group</p>
-                <a href="https://www.cheng-lab.com/">View more</a>
-              </div>
-              <div class="vertical-line"></div>
-              <div class="right-column">
-                <ol>
-                  <li>In terms of target therapy, Dr. ZHOU discussed a study by Ouajdi Felfoul
-                    et al. (2016) that proposes a novel approach involving the direct use of
-                    anaerobic bacteria for target therapy.</li>
-                  <li> ZHOU also addressed the potential limitations of our target therapy.
-                    When nanoparticles coated with antibodies are introduced into the human
-                    body, they tend to attract numerous proteins, resulting in the formation
-                    of a protein corona around the nanoparticles. This protein corona can
-                    significantly affect the nanoparticles' biological behavior and fate.</li>
-                  <li>In regards to antibody-nanoparticle conjugation, Dr. ZHOU recommended
-                    referring to a review in Advanced Materials (Antibody Conjugation of Nanoparticles
-                    as Therapeutics for Breast Cancer Treatment, Int. J. Mol. Sci., 2020),
-                    which discusses various methods for antibody-nanoparticle conjugation.
-                    This review greatly expanded our understanding of conjugation techniques.</li>
-                  <li>Dr. ZHOU also highlighted the work of Professor Zhang Xianzheng in the
-                    field of conjugation, which is highly relevant to our research topic.
-                  </li>
-                  <li>Dr. ZHOU emphasized the importance of ensuring the specificity of the
-                    conjugation, in order to prevent the antibody's functional domain from
-                    binding to the nanoparticles. He recommended modifying the antibody's tail
-                    through PEGylation or the use of a branched tail, as well as considering
-                    the use of a secondary antibody to address this issue.
-                  </li>
-                  <li>Dr. ZHOU also mentioned the potential interference posed by Extracellular
-                    Polymeric Substances (EPS) on the functionality of nanoparticles. Subsequently,
-                    we discovered a study by Gao et al. (2019) that investigated the adsorption of
-                    EPS from <i>E. coli</i> onto titanium dioxide nanoparticles (nTiO), demonstrating
-                    that EPS effectively reduced the concentration of nTiO in the solution.
-                    Furthermore, a study by Wang et al. (2016) found that EPS produced by <i>E. coli</i>
-                    could sequester nanoparticles, thereby diminishing their bactericidal activity.
-                  </li>
-                  <li>To measure the interaction kinetics and affinity between biomolecules,
-                    Dr. ZHOU recommended employing Bio-Layer Interferometry (BLI), which enables
-                    the detection of antibody-antigen interactions in target therapy.
-                  </li>
-                  <li>Regarding the separation of nanoparticles from <i>E. coli</i>, Dr. ZHOU discussed
-                    the use of PD-10. However, we later discovered that this technique is only
-                    suitable for the elution of ferric chloride.</li>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
+
           <div class="card-header ani-card-header">Questions</div>
           <div class="card-body ani-card-body">
             <ol>
-              <li>Can anaerobic bacteria be directly used for targeted therapy, as proposed in the study by Ouajdi Felfoul et al. (2016)?</li>
-              <li>What are the potential limitations of our targeted therapy, specifically in relation to the formation of a protein corona around nanoparticles coated with antibodies?</li>
-              <li>Are there any specific methods or techniques for the conjugation of antibodies and nanoparticles that we should refer to? (Referring to the Advanced Materials review and the work of Professor Zhang Xianzheng)</li>
-              <li>How can we ensure the specificity of the antibody-nanoparticle conjugation and prevent the functional domain of the antibody from binding to the nanoparticles?</li>
-              <li>What is the impact of Extracellular Polymeric Substances (EPS) on the functionality of nanoparticles, and are there any studies that have investigated this?</li>
-              <li>What method can be used to measure the interaction kinetics and affinity between biomolecules, specifically in relation to antibody-antigen interactions in target therapy?</li>
-              <li>What technique can be used for the separation of nanoparticles from E. coli, considering that PD-10 is only suitable for the elution of ferric chloride?</li>
+              <li>Can anaerobic bacteria be directly used for targeted therapy, as proposed in the study by Ouajdi
+                Felfoul et al. (2016)?</li>
+              <li>What are the potential limitations of our targeted therapy, specifically in relation to the formation
+                of a protein corona around nanoparticles coated with antibodies?</li>
+              <li>Are there any specific methods or techniques for the conjugation of antibodies and nanoparticles that
+                we should refer to? (Referring to the Advanced Materials review and the work of Professor Zhang
+                Xianzheng)</li>
+              <li>How can we ensure the specificity of the antibody-nanoparticle conjugation and prevent the functional
+                domain of the antibody from binding to the nanoparticles?</li>
+              <li>What is the impact of Extracellular Polymeric Substances (EPS) on the functionality of nanoparticles,
+                and are there any studies that have investigated this?</li>
+              <li>What method can be used to measure the interaction kinetics and affinity between biomolecules,
+                specifically in relation to antibody-antigen interactions in target therapy?</li>
+              <li>What technique can be used for the separation of nanoparticles from E. coli, considering that PD-10 is
+                only suitable for the elution of ferric chloride?</li>
             </ol>
+          </div>
+        </div>
+        <hr>
+        <div class="card-body">
+          <div class="subfield">
+            <div class="left-column">
+              <img src="" alt="Dr. ZHOU" width="250" height="">
+              <h3 style="text-align: center;padding-top: 15px;">Yaofeng ZHOU</h3>
+              <br>
+              <p style="color:#009DBE">School of Engineering</p>
+              <p>Cheng Research group</p>
+              <a href="https://www.cheng-lab.com/">View more</a>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="right-column">
+              <h3>Your title</h3>
+              <ol>
+                <li>In terms of target therapy, Dr. ZHOU discussed a study by Ouajdi Felfoul
+                  et al. (2016) that proposes a novel approach involving the direct use of
+                  anaerobic bacteria for target therapy.</li>
+                <li> ZHOU also addressed the potential limitations of our target therapy.
+                  When nanoparticles coated with antibodies are introduced into the human
+                  body, they tend to attract numerous proteins, resulting in the formation
+                  of a protein corona around the nanoparticles. This protein corona can
+                  significantly affect the nanoparticles' biological behavior and fate.</li>
+                <li>In regards to antibody-nanoparticle conjugation, Dr. ZHOU recommended
+                  referring to a review in Advanced Materials (Antibody Conjugation of Nanoparticles
+                  as Therapeutics for Breast Cancer Treatment, Int. J. Mol. Sci., 2020),
+                  which discusses various methods for antibody-nanoparticle conjugation.
+                  This review greatly expanded our understanding of conjugation techniques.</li>
+                <li>Dr. ZHOU also highlighted the work of Professor Zhang Xianzheng in the
+                  field of conjugation, which is highly relevant to our research topic.
+                </li>
+                <li>Dr. ZHOU emphasized the importance of ensuring the specificity of the
+                  conjugation, in order to prevent the antibody's functional domain from
+                  binding to the nanoparticles. He recommended modifying the antibody's tail
+                  through PEGylation or the use of a branched tail, as well as considering
+                  the use of a secondary antibody to address this issue.
+                </li>
+                <li>Dr. ZHOU also mentioned the potential interference posed by Extracellular
+                  Polymeric Substances (EPS) on the functionality of nanoparticles. Subsequently,
+                  we discovered a study by Gao et al. (2019) that investigated the adsorption of
+                  EPS from <i>E. coli</i> onto titanium dioxide nanoparticles (nTiO), demonstrating
+                  that EPS effectively reduced the concentration of nTiO in the solution.
+                  Furthermore, a study by Wang et al. (2016) found that EPS produced by <i>E. coli</i>
+                  could sequester nanoparticles, thereby diminishing their bactericidal activity.
+                </li>
+                <li>To measure the interaction kinetics and affinity between biomolecules,
+                  Dr. ZHOU recommended employing Bio-Layer Interferometry (BLI), which enables
+                  the detection of antibody-antigen interactions in target therapy.
+                </li>
+                <li>Regarding the separation of nanoparticles from <i>E. coli</i>, Dr. ZHOU discussed
+                  the use of PD-10. However, we later discovered that this technique is only
+                  suitable for the elution of ferric chloride.</li>
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
 
@@ -376,6 +401,24 @@ the world. Consider how the world affects your work and how your work affects th
         </h1>
         <hr>
         <div class="card mx-auto text-center">
+
+          <div class="card-header ani-card-header">Questions</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>We currently have two approaches for coupling antibodies to the surface of iron oxide nanoparticles.
+                The first approach involves direct coupling with isolated iron oxide nanoparticles, where the surface
+                coating component could be phospholipids. The second approach involves first forming a layer of
+                polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any suggestions for
+                protein design for coupling? We have considered the Spytag/Spycatcher system. Also, do you think breast
+                cancer cells are highly sensitive to ferroptosis?</li>
+              <li>Do you think our synthesized iron oxide nanoparticles can induce apoptosis in breast cancer cells
+                after entering them? </li>
+              <li>Do you think our synthesized iron oxide nanoparticles can induce apoptosis in breast cancer cells
+                after entering them?</li>
+
+            </ol>
+          </div>
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -390,6 +433,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
                   <li>Dr. Zou emphasizes the catalytic role of ferrous ions (Fe<sup>2+</sup>)
                     in ferroptosis and suggests that conducting experiments to validate the
@@ -423,15 +467,6 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
           </div>
-          <div class="card-header ani-card-header">Questions</div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>We currently have two approaches for coupling antibodies to the surface of iron oxide nanoparticles. The first approach involves direct coupling with isolated iron oxide nanoparticles, where the surface coating component could be phospholipids. The second approach involves first forming a layer of polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any suggestions for protein design for coupling? We have considered the Spytag/Spycatcher system. Also, do you think breast cancer cells are highly sensitive to ferroptosis?</li>
-              <li>Do you think our synthesized iron oxide nanoparticles can induce apoptosis in breast cancer cells after entering them?  </li>
-              <li>Do you think our synthesized iron oxide nanoparticles can induce apoptosis in breast cancer cells after entering them?</li>
-            
-            </ol>
-          </div>
         </div>
 
       </div>
@@ -444,6 +479,27 @@ the world. Consider how the world affects your work and how your work affects th
         </h1>
         <hr>
         <div class="card mx-auto text-center">
+
+          <div class="card-header ani-card-header">Questions</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>When isolating synthesized iron nanoparticles from E. coli, we need to remove a significant amount of
+                biomass. Do you have any recommendations for effective washing agents that can remove biomass without
+                significantly damaging the surface composition of the nanoparticles?</li>
+              <li>We currently have two approaches for coupling antibodies to the surface of iron oxide nanoparticles.
+                The first approach involves direct coupling with isolated iron oxide nanoparticles, where the surface
+                coating component could be phospholipids. The second approach involves first forming a layer of
+                polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any suggestions for
+                protein design for the coupling? We have considered the Spytag/Spycatcher system.</li>
+              <li>Is it possible to use our computational methods to identify proteins that can achieve strong binding
+                between the antibody tail and the nanoparticles?</li>
+              <li>Can we use our computational methods to evaluate the targeting efficiency in our current breast cancer
+                antibody library and target database?</li>
+              <li>Do you have any recommendations for our administration route?</li>
+              <li>Are there any widely used kinetic models for drug behavior in the body?</li>
+            </ol>
+          </div>
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -458,6 +514,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
                   <li>Cao suggested directly coupling the antibody to the nanoparticle due to
                     the instability of the long-coupled structure. However, he also highlighted
@@ -474,21 +531,32 @@ the world. Consider how the world affects your work and how your work affects th
                 </ol>
               </div>
             </div>
-          </div>          
-          <div class="card-header ani-card-header">Questions</div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>When isolating synthesized iron nanoparticles from E. coli, we need to remove a significant amount of biomass. Do you have any recommendations for effective washing agents that can remove biomass without significantly damaging the surface composition of the nanoparticles?</li>
-              <li>We currently have two approaches for coupling antibodies to the surface of iron oxide nanoparticles. The first approach involves direct coupling with isolated iron oxide nanoparticles, where the surface coating component could be phospholipids. The second approach involves first forming a layer of polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any suggestions for protein design for the coupling? We have considered the Spytag/Spycatcher system.</li>
-              <li>Is it possible to use our computational methods to identify proteins that can achieve strong binding between the antibody tail and the nanoparticles?</li>
-              <li>Can we use our computational methods to evaluate the targeting efficiency in our current breast cancer antibody library and target database?</li>
-              <li>Do you have any recommendations for our administration route?</li>
-              <li>Are there any widely used kinetic models for drug behavior in the body?</li>
-            </ol>
           </div>
         </div>
         <br>
         <div class="card mx-auto text-center">
+
+          <div class="card-header ani-card-header">Questions</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>Have you tried using other materials for coating the nanoparticles, such as polyethylene glycol (PEG)?
+              </li>
+              <li>We currently have two approaches for coupling antibodies to the surface of iron oxide nanoparticles.
+                The first approach involves direct coupling with isolated iron oxide nanoparticles, where the surface
+                coating component could be phospholipids (similar to cell membranes). The second approach involves first
+                forming a layer of polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have
+                any suggestions for protein design for the coupling? We have considered the Spytag/Spycatcher system.
+              </li>
+              <li>In terms of targeting efficiency, do you think your researched antimicrobial peptides have a higher
+                affinity for certain pathological cells compared to traditional antibodies? Or, what are the advantages
+                of antimicrobial peptides, and can we apply them to our project?</li>
+              <li>Do you have any relevant research on targeted therapy for breast cancer using nanoparticles? Do you
+                have any overall recommendations for our project?</li>
+              <li>Have you conducted any research on the pharmacokinetics of drugs in the body? Do you have any
+                recommendations for modeling and evaluating our administration methods and drug effects?</li>
+            </ol>
+          </div>
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -529,16 +597,6 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
           </div>
-          <div class="card-header ani-card-header">Questions</div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>Have you tried using other materials for coating the nanoparticles, such as polyethylene glycol (PEG)?</li>
-              <li>We currently have two approaches for coupling antibodies to the surface of iron oxide nanoparticles. The first approach involves direct coupling with isolated iron oxide nanoparticles, where the surface coating component could be phospholipids (similar to cell membranes). The second approach involves first forming a layer of polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any suggestions for protein design for the coupling? We have considered the Spytag/Spycatcher system.</li>
-              <li>In terms of targeting efficiency, do you think your researched antimicrobial peptides have a higher affinity for certain pathological cells compared to traditional antibodies? Or, what are the advantages of antimicrobial peptides, and can we apply them to our project?</li>
-              <li>Do you have any relevant research on targeted therapy for breast cancer using nanoparticles? Do you have any overall recommendations for our project?</li>
-              <li>Have you conducted any research on the pharmacokinetics of drugs in the body? Do you have any recommendations for modeling and evaluating our administration methods and drug effects?</li>
-            </ol>
-          </div>
         </div>
       </div>
     </div>
@@ -552,6 +610,22 @@ the world. Consider how the world affects your work and how your work affects th
         <hr>
         <!--专家介绍-->
         <div class="card mx-auto text-center">
+
+          <!--问题-->
+          <div class="card-header ani-card-header">Questions we asked</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>What is the potential of photo-thermal therapy using specific nanoparticle materials in heating the
+                targeted area?</li>
+              <li>Can you elaborate on the recent advancements in using Raman spectroscopy to differentiate between
+                tumor and healthy tissue boundaries during surgery?</li>
+              <li> How do the restrictions on drug use and the cautious drug development process impact the translation
+                of scientific research into clinical trials?</li>
+              <li>Can you provide more information about the China Breast Cancer Guidelines and how they contribute to
+                our understanding of breast cancer therapy?</li>
+            </ol>
+          </div>
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -566,33 +640,52 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
-                  <li>Ms. Lu believed that targeted therapy and immunotherapy hold great promise for future oncotherapy, as antitumor specificity is a crucial consideration in this field.</li>
-                  <li> She also mentioned the importance of PD-L1 (Programmed Death Ligand 1) and ICB (Immune Checkpoint Blockade) as current targets in oncology therapy.</li>
-                  <li> With regard to our nanoparticles that target Her2+ breast cancer cells, she emphasized the need to consider the expression of the antibodies in normal cells.</li>
-                  <li>Based on her experience, she asserted that the function of a drug within the body (in vivo) is the most significant factor in therapy, as sometimes the effects of drugs in vivo and in vitro can be reversed.</li>
-                  <li> She encouraged us to conduct experiments in mice to confirm the in vivo effect of our nanoparticles.</li>
-                  <li> Ms. Lu also discussed the potential benefits of combination therapy involving both first-line and second-line drugs, which could increase patients' sensitivity to the treatment.</li>
-                  <li> Adding to her points, she explained that targeted therapy and immunotherapy are interconnected, as targeted therapy can stimulate the release of antigens from diseased cells, triggering immune responses.</li>
-                  
+                  <li>Ms. Lu believed that targeted therapy and immunotherapy hold great promise for future oncotherapy,
+                    as antitumor specificity is a crucial consideration in this field.</li>
+                  <li> She also mentioned the importance of PD-L1 (Programmed Death Ligand 1) and ICB (Immune Checkpoint
+                    Blockade) as current targets in oncology therapy.</li>
+                  <li> With regard to our nanoparticles that target Her2+ breast cancer cells, she emphasized the need
+                    to consider the expression of the antibodies in normal cells.</li>
+                  <li>Based on her experience, she asserted that the function of a drug within the body (in vivo) is the
+                    most significant factor in therapy, as sometimes the effects of drugs in vivo and in vitro can be
+                    reversed.</li>
+                  <li> She encouraged us to conduct experiments in mice to confirm the in vivo effect of our
+                    nanoparticles.</li>
+                  <li> Ms. Lu also discussed the potential benefits of combination therapy involving both first-line and
+                    second-line drugs, which could increase patients' sensitivity to the treatment.</li>
+                  <li> Adding to her points, she explained that targeted therapy and immunotherapy are interconnected,
+                    as targeted therapy can stimulate the release of antigens from diseased cells, triggering immune
+                    responses.</li>
+
                 </ol>
               </div>
             </div>
-          </div>
-          <!--问题-->
-          <div class="card-header ani-card-header">Questions </div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>What is the potential of photo-thermal therapy using specific nanoparticle materials in heating the targeted area?</li>
-              <li>Can you elaborate on the recent advancements in using Raman spectroscopy to differentiate between tumor and healthy tissue boundaries during surgery?</li>
-              <li> How do the restrictions on drug use and the cautious drug development process impact the translation of scientific research into clinical trials?</li>
-              <li>Can you provide more information about the China Breast Cancer Guidelines and how they contribute to our understanding of breast cancer therapy?</li>
-            </ol>
           </div>
         </div>
         <!--如果要在这个栏目再放一个专家及问题，把上面专家和问题复制下来，并且在下面一行加上换行<br> -->
         <br>
         <div class="card mx-auto text-center">
+
+          <!--问题-->
+          <div class="card-header ani-card-header">Questions we asked</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>What makes targeted therapy and immunotherapy promising for future oncotherapy?</li>
+              <li> Can you explain the importance of PD-L1 and ICB as targets in oncology therapy?</li>
+              <li>How should we consider the expression of antibodies in normal cells when designing nanoparticles
+                targeting Her2+ breast cancer cells?</li>
+              <li>What is the significance of the in vivo function of a drug compared to its effects in vitro?</li>
+              <li>Is it recommended to conduct experiments in mice to confirm the in vivo effect of our nanoparticles?
+              </li>
+              <li>Can you elaborate on the potential benefits of combination therapy involving both first-line and
+                second-line drugs?</li>
+              <li>How are targeted therapy and immunotherapy interconnected, particularly in terms of stimulating immune
+                responses through the release of antigens from diseased cells?</li>
+            </ol>
+          </div>
+          <hr>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -607,32 +700,43 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
-                  <li>Mr. Yang highlighted the type of nanoparticle material being used and suggested exploring photo-thermal therapy as a means to heat this material.</li>
-                  <li> According to him, surgery is currently the most effective therapy for tumors. Additionally, he mentioned recent advancements in using Raman spectroscopy to differentiate between tumor and healthy tissue boundaries.</li>
-                  <li> Mr. Yang acknowledged that clinical trials often lag behind scientific research and emphasized the strict restrictions on drug use, resulting in cautious drug development.</li>
-                  <li> He also provided us with the China Breast Cancer Guidelines, which deepen our understanding of breast cancer therapy.</li>
+                  <li>Mr. Yang highlighted the type of nanoparticle material being used and suggested exploring
+                    photo-thermal therapy as a means to heat this material.</li>
+                  <li> According to him, surgery is currently the most effective therapy for tumors. Additionally, he
+                    mentioned recent advancements in using Raman spectroscopy to differentiate between tumor and healthy
+                    tissue boundaries.</li>
+                  <li> Mr. Yang acknowledged that clinical trials often lag behind scientific research and emphasized
+                    the strict restrictions on drug use, resulting in cautious drug development.</li>
+                  <li> He also provided us with the China Breast Cancer Guidelines, which deepen our understanding of
+                    breast cancer therapy.</li>
                 </ol>
               </div>
             </div>
           </div>
-          <!--问题-->
-          <div class="card-header ani-card-header">Questions </div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>What makes targeted therapy and immunotherapy promising for future oncotherapy?</li>
-              <li> Can you explain the importance of PD-L1 and ICB as targets in oncology therapy?</li>
-              <li>How should we consider the expression of antibodies in normal cells when designing nanoparticles targeting Her2+ breast cancer cells?</li>
-              <li>What is the significance of the in vivo function of a drug compared to its effects in vitro?</li>
-              <li>Is it recommended to conduct experiments in mice to confirm the in vivo effect of our nanoparticles?</li>
-              <li>Can you elaborate on the potential benefits of combination therapy involving both first-line and second-line drugs?</li>
-              <li>How are targeted therapy and immunotherapy interconnected, particularly in terms of stimulating immune responses through the release of antigens from diseased cells?</li>
-            </ol>
-          </div>
         </div>
         <br>
-        
+
         <div class="card mx-auto text-center">
+
+          <!--问题-->
+          <div class="card-header ani-card-header">Questions we asked</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>Is using nanoparticles conjugated with antibodies meaningful if there is already a commercialized
+                antibody, trastuzumab, for HER2 target therapy?</li>
+              <li> Can trastuzumab be used as a control in our project?</li>
+              <li>What is the recommendation for our project in terms of encapsulating drugs in nanoparticles to
+                efficiently kill cancer cells and reduce side effects?</li>
+              <li>Should we consider targeting other cancer cells since HER2-positive cells have already been
+                extensively studied?</li>
+              <li>How can we determine the concentration of our biosynthetic nanoparticles? Are Inductively Coupled
+                Plasma Optical Emission Spectroscopy (ICP-OES) or Inductively Coupled Plasma Mass Spectrometry (ICP-MS)
+                suitable methods for this purpose?</li>
+
+            </ol>
+          </div>
           <div class="card-body">
             <div class="subfield">
               <div class="left-column">
@@ -647,28 +751,25 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
               <div class="vertical-line"></div>
               <div class="right-column">
+                <h3>Your title</h3>
                 <ol>
-                  <li>Ms.Yang thought that if we just use our nanoparticles conjugated with antibodies, the project will not be promising and meaningful since there is already some commerialized antibodies, trastuzumab for HER2 target therapy.</li>
+                  <li>Ms.Yang thought that if we just use our nanoparticles conjugated with antibodies, the project will
+                    not be promising and meaningful since there is already some commerialized antibodies, trastuzumab
+                    for HER2 target therapy.</li>
                   <li>Another way she recommended is that we can use trastuzumab as a control.</li>
-                  <li>So she recommended that we capsule some drug in the nanoparticles which can not only kill the cancer cells efficiently but also reduce the side effects of the original chemotherapy.</li>
-                  <li>Additionally she suggested we can try to target other cancer cells since HER2 positive cells have been studied too much.</li>
-                  <li>She noticed that we can't determine the concentration of our biosynthetic nanoparticles and she added that concentration gradient test is crucial in clinical trial so we need to figure out its concentration for further application. Later we checked out that Inductively Coupled Plasma Optical Emission Spectroscopy (ICP-OES) or Inductively Coupled Plasma Mass Spectrometry (ICP-MS) may be candidates.</li>
+                  <li>So she recommended that we capsule some drug in the nanoparticles which can not only kill the
+                    cancer cells efficiently but also reduce the side effects of the original chemotherapy.</li>
+                  <li>Additionally she suggested we can try to target other cancer cells since HER2 positive cells have
+                    been studied too much.</li>
+                  <li>She noticed that we can't determine the concentration of our biosynthetic nanoparticles and she
+                    added that concentration gradient test is crucial in clinical trial so we need to figure out its
+                    concentration for further application. Later we checked out that Inductively Coupled Plasma Optical
+                    Emission Spectroscopy (ICP-OES) or Inductively Coupled Plasma Mass Spectrometry (ICP-MS) may be
+                    candidates.</li>
 
                 </ol>
               </div>
             </div>
-          </div>
-          <!--问题-->
-          <div class="card-header ani-card-header">Questions </div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>Is using nanoparticles conjugated with antibodies meaningful if there is already a commercialized antibody, trastuzumab, for HER2 target therapy?</li>
-              <li> Can trastuzumab be used as a control in our project?</li>
-              <li>What is the recommendation for our project in terms of encapsulating drugs in nanoparticles to efficiently kill cancer cells and reduce side effects?</li>
-              <li>Should we consider targeting other cancer cells since HER2-positive cells have already been extensively studied?</li>
-              <li>How can we determine the concentration of our biosynthetic nanoparticles? Are Inductively Coupled Plasma Optical Emission Spectroscopy (ICP-OES) or Inductively Coupled Plasma Mass Spectrometry (ICP-MS) suitable methods for this purpose?</li>
-
-            </ol>
           </div>
         </div>
       </div>
