@@ -13,7 +13,7 @@
 
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" style="background:linear-gradient(
+<div class="sky single_slider d-flex align-items-center" id="cover-image"style="background:linear-gradient(
       110deg,
       #6fd7d0 0%,
       #96daf7 32%, 
@@ -86,7 +86,7 @@
     <li><a href="January">January</a></li>
   </ul>
   </div>-->
-  <div class="mp-content offset-md-3 col-md-9 col-lg-9">
+  <div class="mp-content offset-md-3 col-md-9 col-lg-9 gaspcol">
     <div id="June" class="month">
       <div class="container mx-auto mt-5 w-90">
         <h1 class="pt-5 mx-auto text-center">
@@ -2957,8 +2957,46 @@
               <p>BCA Protein Concentration Test were conducted following the protocol of 
                 <a href="{{ url_for('pages', page='experiments') }}#5">BCA Protein Concentration Test</a>. <br>
                 Standard Curve of BCA test was shown below:</p>
-              <p>Using the standard curve, the concentration of the sample was calculated as below:</p> 
-
+                <img
+                src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/result-for-notebook/0918-bca.png"
+                alt="Antibody-cys-his protein concentration result" width="480" height=" ">
+              <p>Using the standard curve, the concentration of the sample was calculated as below: (the dillution factor before BCA test was considered already) </p> 
+              <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="container w-80 h-40 mx-auto mt-3 mb-3">
+                  <div class="row mt-4" style="text-align:justify">
+                    <div class="col">
+                      <table class="table table-hover">
+                        <tbody>
+                          <tr>
+                            <td>Sample Name</td>
+                            <td>Protein concentration (mg/ml)</td>
+                          </tr>
+                          <tr>
+                            <td>18°C induced A05</td>
+                            <td>4.236</td>
+                          </tr>
+                          <tr>
+                            <td>18°C induced A06</td>
+                            <td>1.517</td>
+                          </tr>
+                          <tr>
+                            <td>18°C induced A07</td>
+                            <td>0.707</td>
+                          </tr>
+                          <tr>
+                            <td>37°C induced A06</td>
+                            <td>1.654</td>
+                          </tr>
+                          <tr>
+                            <td>37°C induced A07</td>
+                            <td>2.269</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
                 <p align="right">Recorded by Shuoyi HU</p>
                 <p><b style="font-size: large;">
                   NHS-PEG-Maleimide Linking</b></p>

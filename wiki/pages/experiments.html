@@ -7,7 +7,8 @@
 
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" style="background-image: url('https://static.igem.wiki/teams/4702/wiki/experiment/experiment-background.jpg');background-size:cover">
+<div class="sky single_slider d-flex align-items-center" id="cover-image"
+  style="background-image: url('https://static.igem.wiki/teams/4702/wiki/experiment/experiment-background.jpg');background-size:cover">
   <section class="col-md-12 text-center">
     <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
     <div class="container header">
@@ -16,7 +17,7 @@
           <p class="text-light" style="font-size:70px;">Experiments</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-            Add some summary.  
+              Add some summary.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -31,8 +32,7 @@
 
 <!--sidebar-->
 <div class="row" style="">
-  <div id="sidebar" class="col-md-3 col-lg-3 sidebar  flex-column flex-shrink-0 p-3"
-    style="text-align: center;">
+  <div id="sidebar" class="col-md-3 col-lg-3 sidebar  flex-column flex-shrink-0 p-3" style="text-align: center;">
 
     <hr>
     <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
@@ -98,14 +98,14 @@
         </a>
       </li>
       <li>
-        <a href="#Author" class="nav-link">
+        <a href="#13" class="nav-link">
           Author & Reference
         </a>
       </li>
     </ul>
     <hr>
   </div>
-  <div class="mp-content offset-md-3 col-md-9 col-lg-9" style="padding-right:0;padding-left:0">
+  <div class="mp-content offset-md-3 col-md-9 col-lg-9 gaspcol" style="padding-right:0;padding-left:0">
     <div id="1" class="month">
       <div class="container mx-auto mt-5 ">
         <h1 class="pt-5 mx-auto text-center">
@@ -146,16 +146,20 @@
           <div class="card-body">
             1. Inoculate 150 mL of LB media with 1.5 mL starter culture (1:100) and grow in 37°C shaker.
             <br>2. Measure the OD<sub>600</sub> till it reaches 0.4-0.6(no exceeding 0.6), collect the culture in 50 ml
-            centrifugation tube. Then immediately put the cells on ice. Chill the culture on ice for 20-30 minutes, swirling
+            centrifugation tube. Then immediately put the cells on ice. Chill the culture on ice for 20-30 minutes,
+            swirling
             occasionally to ensure even cooling.
             <br>3. Harvest the cells by centrifugation at 3000 rcf for 15 minutes at 4°C.
-            <br>4. Decant the supernatant and gently resuspend the pellet in 50 mL of pre-chilled 0.1M MgCl<sub>2</sub>. Keep on
+            <br>4. Decant the supernatant and gently resuspend the pellet in 50 mL of pre-chilled 0.1M MgCl<sub>2</sub>.
+            Keep on
             ice for 20 minutes.
             <br>5. Harvest the cells by centrifugation at 3000 rcf for 15 minutes at 4°C. Decant the supernatant and
-            resuspend the pellet in 50 mL of pre-chilled 0.1M CaCl<sub>2</sub>. Keep this suspension on ice for 20 minutes.
+            resuspend the pellet in 50 mL of pre-chilled 0.1M CaCl<sub>2</sub>. Keep this suspension on ice for 20
+            minutes.
             <br>6. Harvest the cells by centrifugation at 3000 rcf for 15 minutes at 4°C. Decant the supernatant and
             resuspend the pellet in 5 mL of pre-chilled ice cold.0.1M CaCl<sub>2</sub>,15% glycerol solution.
-            <br>7. Aliquot 100 μL compentent cell into sterile 1.5 mL microfuge tubes and snap freeze with liquid nitrogen. Store frozen
+            <br>7. Aliquot 100 μL compentent cell into sterile 1.5 mL microfuge tubes and snap freeze with liquid
+            nitrogen. Store frozen
             cells in the -80°C freezer.
           </div>
         </div>
@@ -187,7 +191,8 @@
             <br>3. Add 10 ng vectors for transformation into the tube.
             <br>4. Heat shock at 42ºC water bath for 90 seconds.
             <br>5. Keep on ice for two minutes.
-            <br>6. Add 500 μL antibiotic free LB broth into the 1.5 mL EP tube. Incubate the tubes for 30 minutes at 37ºC shaker at 220 rpm to
+            <br>6. Add 500 μL antibiotic free LB broth into the 1.5 mL EP tube. Incubate the tubes for 30 minutes at
+            37ºC shaker at 220 rpm to
             allow antibiotic resistance gene expressed.
             <br>7. Concentrate the cell by conducting centrifugation at 4000 rcf for one minute.
             <br>8. Discard the supernatant and leave around 100 μL cell culture, spread the cell onto LB plate with
@@ -304,7 +309,8 @@
             <br>3. Centrifugation at 11000 rcf for 30 minutes.
             <br>4. Collect the supernatant and filtrate through 0.45 μL filtration membrane for the preparation of
             running AKTA purification system.
-            <br>5. HisTrapTM HP His tag protein purification column (Catalog number:17524701) are applied onto the AKTA system
+            <br>5. HisTrapTM HP His tag protein purification column (Catalog number:17524701) are applied onto the AKTA
+            system
             (Union-Biotech(shanghai)Co., Ltd.). The program is set to pre-charge the flow path with 10 column volume
             with Buffer A, then 12 column volume of the supernatant containing sample protein are applied onto the
             column. After that, 10 column volume buffer A are applied to wash out the unbonded protein. Finally, a
@@ -339,8 +345,10 @@
               <li>
                 Protein samples</li>
               <li>
-                Running Buffer (SDS-PAGE 10× SDS Running Buffer: Tris base 30.3 g, Glycine 144.4 g, Sodium Dodecyl Sulfate	10 g 
-                Dissolve in 1 L of ddH<sub>O</sub>, composition could be different under different cases, dilluted before use)</li>
+                Running Buffer (SDS-PAGE 10× SDS Running Buffer: Tris base 30.3 g, Glycine 144.4 g, Sodium Dodecyl
+                Sulfate 10 g
+                Dissolve in 1 L of ddH<sub>O</sub>, composition could be different under different cases, dilluted
+                before use)</li>
               <li>
                 Protein ladder</li>
               <li>
@@ -388,8 +396,8 @@
         <hr>
         <div class="card mx-auto text-center">
           <div class="card-body">
-            Our BCA test are conducted by using <a
-            href="https://www.beyotime.com/product/P0010.htm">Enhanced BCA Protein Assay Kit from Beyotime (Catalog number: P0009)</a>.
+            Our BCA test are conducted by using <a href="https://www.beyotime.com/product/P0010.htm">Enhanced BCA
+              Protein Assay Kit from Beyotime (Catalog number: P0009)</a>.
             <br>Standard Instruction protocol could be found in the <a
               href="https://www.beyotime.com/Manual/P0009_Enhanced%20BCA%20Protein%20Assay%20Kit.pdf">link</a>
             <br>
@@ -439,7 +447,8 @@
             <br>3. Add bacteria culture using 1:100 dilution by volume. (For 150 mL LB medium add 1.5 mL bacteria strain
             prepared in Day 1)
             <br>4. Incubate at 37ºC in the shaker at 220 rpm till the OD<sub>600</sub> of the culture reach 0.1.
-            <br>5. Immediately add FeCl<sub>3</sub> solution to final concentration of 5 mM Fe<sup>3+</sup>. (In our case, 0.5 M FeCl<sub>3</sub>
+            <br>5. Immediately add FeCl<sub>3</sub> solution to final concentration of 5 mM Fe<sup>3+</sup>. (In our
+            case, 0.5 M FeCl<sub>3</sub>
             solution are prepared as stock solution, and add using a 1:100 dilution, stock solution filtrated though
             0.22 μL filter membrane)
             <br>6. Incubate at 37ºC in the shaker at 220 rpm for one day in 37ºC.
@@ -503,7 +512,7 @@
 
 
 
-   <div id="9" class="month">
+    <div id="9" class="month">
       <div class="container mx-auto mt-5  ">
         <h1 class="pt-5 mx-auto text-center">
           EDC/NHS Conjugation
@@ -513,28 +522,30 @@
         <div class="card mx-auto text-center">
           <div class="card-header">Material</div>
           <div class="card-body">
-          <p>
-            1. 0.1M PBS
-            2. 0.2M EDC·HCl
-            3. 0.2M NHS
-            4. 10kDa Ultrafiltration tube (Catalog number: UFC5010BK)
-            5. Stock Nanoparticle solution
-            6. Antibody solution
-          </p>
+            <p>
+              1. 0.1M PBS
+              2. 0.2M EDC·HCl
+              3. 0.2M NHS
+              4. 10kDa Ultrafiltration tube (Catalog number: UFC5010BK)
+              5. Stock Nanoparticle solution
+              6. Antibody solution
+            </p>
           </div>
         </div>
         <div class="card mx-auto text-center">
           <div class="card-header">Primary Part</div>
           <div class="card-body">
             <p>
-                    1) 200 μL of our bio-synthetic nanoparticles and 0.4mg (8μL in volume) chemo-synthetic nanoparticles were transferred to two eppendorf tubes.
-              <br>  2) 200 μL 0.1M PBS was added to the second tube to make up for the difference
-              <br>  2)Then 200 μL 0.1M PBS was added to each of the tubes to mix it thoroughly.
-              <br>  3)Then, 60 µL of 0.2 M EDC·HCl and 120 µL 0.2 M of NHS were added to each tube.
-              <br>  4)After 10 min, 30 μg antibody was added to the EDC/NHS-activated NPs solutions. 
-              <br>  5)After 24 h, the solution was transferred to 10 KD ultrafiltration tube and centrifuged for 20 min at 14000 RPM to remove the unbounded antibody.
-              <br>  6)Finally, the obtained antibody-conjugated NPs (IONPs-antibody) were collected in EP tubes.
-                
+              1) 200 μL of our bio-synthetic nanoparticles and 0.4mg (8μL in volume) chemo-synthetic nanoparticles were
+              transferred to two eppendorf tubes.
+              <br> 2) 200 μL 0.1M PBS was added to the second tube to make up for the difference
+              <br> 2)Then 200 μL 0.1M PBS was added to each of the tubes to mix it thoroughly.
+              <br> 3)Then, 60 µL of 0.2 M EDC·HCl and 120 µL 0.2 M of NHS were added to each tube.
+              <br> 4)After 10 min, 30 μg antibody was added to the EDC/NHS-activated NPs solutions.
+              <br> 5)After 24 h, the solution was transferred to 10 KD ultrafiltration tube and centrifuged for 20 min
+              at 14000 RPM to remove the unbounded antibody.
+              <br> 6)Finally, the obtained antibody-conjugated NPs (IONPs-antibody) were collected in EP tubes.
+
             </p>
           </div>
         </div>
@@ -567,17 +578,32 @@
         </div>
         <div class="card mx-auto text-center">
           <div class="card-header">Procedure</div>
-          <div class="card-body">1. Resuspend the cell pellet for each 50 mL centrifuge tube with around 10 mL deionized water for high pressure homogenization. (For 150 mL culture system, homogenizing at 750 bar for 3 minutes, the broken cell system could be concentrated in one 50 mL centrifugation tube after homogenization, using homogenizer from Union-Biotech(shanghai)Co., Ltd.)
+          <div class="card-body">1. Resuspend the cell pellet for each 50 mL centrifuge tube with around 10 mL deionized
+            water for high pressure homogenization. (For 150 mL culture system, homogenizing at 750 bar for 3 minutes,
+            the broken cell system could be concentrated in one 50 mL centrifugation tube after homogenization, using
+            homogenizer from Union-Biotech(shanghai)Co., Ltd.)
             <br>2. Centrifugation at 11000 rcf under 4ºC for 30 minutes.
-            <br>3. Discard the supernatant, add 10 ml deionized water, vortex the system for 1 minutes. (Notice that now there should still have a lot iron salt precipitate at the bottom of the tube, while the cell debris should already be resuspended, this could prevent jamming in the ultrafiltration step followed).
-            <br>4. Carefully put the tube into an ice bath and then put the whole system into ultrasonic cleaners and run the cleaners for 15 minutes.
-            <br>5. Without disrupting the precipitate, move the supernatant into activated 100 kDa Ultracentrifugation tube.
-            <br>6. Centrifugation at 5000 rcf under 4ºC for 25 minutes. Note that if there still have more than 2 mL liquids above the filtration membrane, centrifugation at 5000 rcf under 4ºC for another 20 minutes. 
-            <br>7. Discard the filtration membrane and carefully put the tube into an ice bath and then put the whole system into ultrasonic cleaners and run the cleaners for 15 minutes.
+            <br>3. Discard the supernatant, add 10 ml deionized water, vortex the system for 1 minutes. (Notice that now
+            there should still have a lot iron salt precipitate at the bottom of the tube, while the cell debris should
+            already be resuspended, this could prevent jamming in the ultrafiltration step followed).
+            <br>4. Carefully put the tube into an ice bath and then put the whole system into ultrasonic cleaners and
+            run the cleaners for 15 minutes.
+            <br>5. Without disrupting the precipitate, move the supernatant into activated 100 kDa Ultracentrifugation
+            tube.
+            <br>6. Centrifugation at 5000 rcf under 4ºC for 25 minutes. Note that if there still have more than 2 mL
+            liquids above the filtration membrane, centrifugation at 5000 rcf under 4ºC for another 20 minutes.
+            <br>7. Discard the filtration membrane and carefully put the tube into an ice bath and then put the whole
+            system into ultrasonic cleaners and run the cleaners for 15 minutes.
             <br>8. Transfer the flow through into activated 3 kDa Ultracentrifugation tube.
-            <br>9. Centrifugation at 5000 rcf under 4ºC for 25 minutes. Note that if there still have more than 5 mL liquids above the filtration membrane, centrifugation at 5000 rcf under 4ºC for another 20 minutes till there only have around 2 mL liquids above the filtration membrane.
-            <br>10. Collect the liquid above the filtration membrane. Carefully put the tube into an ice bath and then put the whole system into ultrasonic cleaners and run the cleaners for 15 minutes. This sample could be used for TEM characterization.
-            Note: In this experiment design, we use deionized water for the solution system to avoid the interference of mineral salt in TEM analysis. But if the target is to get nanoparticle with all membrane protein on the surface biologically active, please use Buffer A to take the place of deionized water.
+            <br>9. Centrifugation at 5000 rcf under 4ºC for 25 minutes. Note that if there still have more than 5 mL
+            liquids above the filtration membrane, centrifugation at 5000 rcf under 4ºC for another 20 minutes till
+            there only have around 2 mL liquids above the filtration membrane.
+            <br>10. Collect the liquid above the filtration membrane. Carefully put the tube into an ice bath and then
+            put the whole system into ultrasonic cleaners and run the cleaners for 15 minutes. This sample could be used
+            for TEM characterization.
+            Note: In this experiment design, we use deionized water for the solution system to avoid the interference of
+            mineral salt in TEM analysis. But if the target is to get nanoparticle with all membrane protein on the
+            surface biologically active, please use Buffer A to take the place of deionized water.
           </div>
         </div>
       </div>
@@ -608,57 +634,70 @@
               <br>11. 37ºC 5% CO<sub>2</sub> incubator
               <br>12. Insulin (Catalog number: I860440-25mg)
             </p>
-       </div>
+          </div>
         </div>
         <div class="card mx-auto text-center">
           <div class="card-header">MDA-MB-231 (HER2 negative cells) Culture</div>
           <div class="card-body">
-          <p>Culture medium: 450 ml DMEM High Glucose H-21 Media, 50 ml (to 10%) <a
-            href="https://www.thermofisher.cn/order/catalog/product/10099141C">Fetal Bovine Serum (Catalog number:10099141C)</a>, 5 ml Pen Strep</p>
-           <p> Thawing Cells:
-          <br>  1. Take one vial immediately in 37ºC water bath. Transfer the content to a 15 ml Falcon tube already containing 10 ml of fresh medium.
-          <br>  2. Spin down at 1200 rpm for 3 min at 4ºC. Aspirate supernatant and resuspend cells in fresh medium and transfer to 10cm tissue culture dish and cultured at 37°C in 5% CO<sub>2</sub>. Change medium about every 3 days.
-          <br>  Subculture
-          <br>  After cell culture reaches 80-85% confluence, subculture is conducted.
-          <br>  1. Remove media from dish.
-          <br>  2. Wash 1x with 10 ml of Dulbecco's Phosphate Buffered Saline (without Ca<sup>2+</sup> or Mg<sup>2+</sup>)
-          <br>  3. Add 1 ml of 0.05% Trypsin and trypsinize for 3-5 min at 37°C.
-          <br>  4. Add 8 ml of media to neutralize the trypsin and use it to rinse the dish by pipetting up and down 4-5 times to detach the cells off.
-          <br>  5. Spin down at 1200rpm for 3 min. Aspirate supernatant.
-          <br>  6. Add 8 ml of media to the 15ml tube with cell pellet, and pipette up and down to mix. Subculture ratio is about 1:10. 
-          <br>  7. Put the cells into 37°C with 5% CO<sub>2</sub>.
-          </p>
+            <p>Culture medium: 450 ml DMEM High Glucose H-21 Media, 50 ml (to 10%) <a
+                href="https://www.thermofisher.cn/order/catalog/product/10099141C">Fetal Bovine Serum (Catalog
+                number:10099141C)</a>, 5 ml Pen Strep</p>
+            <p> Thawing Cells:
+              <br> 1. Take one vial immediately in 37ºC water bath. Transfer the content to a 15 ml Falcon tube already
+              containing 10 ml of fresh medium.
+              <br> 2. Spin down at 1200 rpm for 3 min at 4ºC. Aspirate supernatant and resuspend cells in fresh medium
+              and transfer to 10cm tissue culture dish and cultured at 37°C in 5% CO<sub>2</sub>. Change medium about
+              every 3 days.
+              <br> Subculture
+              <br> After cell culture reaches 80-85% confluence, subculture is conducted.
+              <br> 1. Remove media from dish.
+              <br> 2. Wash 1x with 10 ml of Dulbecco's Phosphate Buffered Saline (without Ca<sup>2+</sup> or
+              Mg<sup>2+</sup>)
+              <br> 3. Add 1 ml of 0.05% Trypsin and trypsinize for 3-5 min at 37°C.
+              <br> 4. Add 8 ml of media to neutralize the trypsin and use it to rinse the dish by pipetting up and down
+              4-5 times to detach the cells off.
+              <br> 5. Spin down at 1200rpm for 3 min. Aspirate supernatant.
+              <br> 6. Add 8 ml of media to the 15ml tube with cell pellet, and pipette up and down to mix. Subculture
+              ratio is about 1:10.
+              <br> 7. Put the cells into 37°C with 5% CO<sub>2</sub>.
+            </p>
             <a
-              href="https://genome.ucsc.edu/ENCODE/protocols/cell/human/MDA-MB231-S_Farnham_protocol.pdf#:~:text=Open%20the%20vial%20and%20transfer%20the%20content%20to,and%20medium%20is%20changed%20about%20every%203%20days.">Reference Linkage</a>
+              href="https://genome.ucsc.edu/ENCODE/protocols/cell/human/MDA-MB231-S_Farnham_protocol.pdf#:~:text=Open%20the%20vial%20and%20transfer%20the%20content%20to,and%20medium%20is%20changed%20about%20every%203%20days.">Reference
+              Linkage</a>
           </div>
         </div>
         <div class="card mx-auto text-center">
           <div class="card-header">BT474 (HER2 positive cells) Culture</div>
           <div class="card-body">
-           <p>Culture medium: 500 ml <a
-            href="https://www.thermofisher.cn/order/catalog/product/12633012#:~:text=Advanced%20RPMI%20%28Roswell%20Park%20Memorial%20Institute%29%201640%20is,with%20no%20change%20in%20growth%20rate%20or%20morphology.">RPMI 1640 basal Media</a> , 100 ml (to about 20%) <a
-            href="https://www.thermofisher.cn/order/catalog/product/10099141C">Fetal Bovine Serum</a>, 5 ml Penicillin, Streptomycin, 2μg/ml insulin</p>
-           <p>Thawing Cells:
-            1. Take one vial immediately in 37℃ water bath. Transfer the content to a 15 ml Falcon tube already containing 8 ml of fresh medium.
-            2. Spin down at 1000 rpm for 3 min. Aspirate supernatant and resuspend cells in fresh medium and transfer to 10cm tissue culture dish and cultured at 37°C in 5% CO<sub>2</sub>. Change medium about every 2 days.
-           </p>
-           <p> Subculture
-            After cell culture reaches 70-75% confluence, subculture is conducted.
-            1. Remove media from dish.
-            2. Wash 1x with 10 ml of Dulbecco's Phosphate Buffered Saline.
-            3. Add 1 ml of trypsin/EDTA for about 10 min at 37°C.
-            4. Add 6 ml of media to neutralize the trypsin and use it to rinse the dish by pipetting up and down 4-5 times to detach the cells off.
-            5. Spin down at 1200rpm for 3 min. Aspirate supernatant.
-            6. Add 6 ml of media to the 15ml tube with cell pellet, and pipette up and down to mix. Subculture ratio is about 1:3/1:4. 
-            7. Put the cells into 37°C with 5% CO<sub>2</sub>.
-          </p>
-            <a
-            href="https://www.atcc.org/products/htb-20">Reference Linkage</a>
-        
+            <p>Culture medium: 500 ml <a
+                href="https://www.thermofisher.cn/order/catalog/product/12633012#:~:text=Advanced%20RPMI%20%28Roswell%20Park%20Memorial%20Institute%29%201640%20is,with%20no%20change%20in%20growth%20rate%20or%20morphology.">RPMI
+                1640 basal Media</a> , 100 ml (to about 20%) <a
+                href="https://www.thermofisher.cn/order/catalog/product/10099141C">Fetal Bovine Serum</a>, 5 ml
+              Penicillin, Streptomycin, 2μg/ml insulin</p>
+            <p>Thawing Cells:
+              1. Take one vial immediately in 37℃ water bath. Transfer the content to a 15 ml Falcon tube already
+              containing 8 ml of fresh medium.
+              2. Spin down at 1000 rpm for 3 min. Aspirate supernatant and resuspend cells in fresh medium and transfer
+              to 10cm tissue culture dish and cultured at 37°C in 5% CO<sub>2</sub>. Change medium about every 2 days.
+            </p>
+            <p> Subculture
+              After cell culture reaches 70-75% confluence, subculture is conducted.
+              1. Remove media from dish.
+              2. Wash 1x with 10 ml of Dulbecco's Phosphate Buffered Saline.
+              3. Add 1 ml of trypsin/EDTA for about 10 min at 37°C.
+              4. Add 6 ml of media to neutralize the trypsin and use it to rinse the dish by pipetting up and down 4-5
+              times to detach the cells off.
+              5. Spin down at 1200rpm for 3 min. Aspirate supernatant.
+              6. Add 6 ml of media to the 15ml tube with cell pellet, and pipette up and down to mix. Subculture ratio
+              is about 1:3/1:4.
+              7. Put the cells into 37°C with 5% CO<sub>2</sub>.
+            </p>
+            <a href="https://www.atcc.org/products/htb-20">Reference Linkage</a>
+
           </div>
         </div>
 
-        
+
       </div>
     </div>
 
@@ -672,68 +711,66 @@
         <div class="card mx-auto text-center">
           <div class="card-header">Material</div>
           <div class="card-body">
-          <p>
-            1. Cell Counting Kit-8 (CCK-8) (Catalog number: ab228554, Abcam)
-            <br>2. 96-well plate
-            <br>3. 37ºC, 5% CO<sub>2</sub> incubator
-            <br>4. 37ºC water bath
-            <br>5. 96-well plate reader
-            <br>6. WST-8 Solution
-          </p> 
-        </div>
+            <p>
+              1. Cell Counting Kit-8 (CCK-8) (Catalog number: ab228554, Abcam)
+              <br>2. 96-well plate
+              <br>3. 37ºC, 5% CO<sub>2</sub> incubator
+              <br>4. 37ºC water bath
+              <br>5. 96-well plate reader
+              <br>6. WST-8 Solution
+            </p>
+          </div>
         </div>
         <div class="card mx-auto text-center">
           <div class="card-header">Primary Steps</div>
           <div class="card-body">
-          <p>  1. Plate 10,000 cells in 100 µl per well for a 96 well plate 
-            <br>2. Add test compounds into cells and incubate for 24 hours in a 37ºC, 5% CO<sub></sub>2</sub> incubator.
-            <br>  3. For blank wells (medium without cells), add the same amount of test compounds.
-            <br>4. Add 10 µl/well (96 well plate) or 5 µl/well (384-well plate) of WST-8 Solution to each well. Protect from the light and incubate for 1-4 hours at 37ºC.
-            <br>5. Measure the absorbance increase at 460 nm.
-          </p>
+            <p> 1. Plate 10,000 cells in 100 µl per well for a 96 well plate
+              <br>2. Add test compounds into cells and incubate for 24 hours in a 37ºC, 5% CO<sub></sub>2</sub>
+              incubator.
+              <br> 3. For blank wells (medium without cells), add the same amount of test compounds.
+              <br>4. Add 10 µl/well (96 well plate) or 5 µl/well (384-well plate) of WST-8 Solution to each well.
+              Protect from the light and incubate for 1-4 hours at 37ºC.
+              <br>5. Measure the absorbance increase at 460 nm.
+            </p>
             <a
-              href="https://www.abcam.com/ps/products/228/ab228554/documents/Cell-Counting-Kit-protocol-book-v2d-ab228554%20(website).pdf">Reference 1</a>
-            <a
-              href="https://www.abcam.com/products/assay-kits/cell-counting-kit-8-wst-8--cck8-ab228554.html">Reference 2</a>
+              href="https://www.abcam.com/ps/products/228/ab228554/documents/Cell-Counting-Kit-protocol-book-v2d-ab228554%20(website).pdf">Reference
+              1</a>
+            <a href="https://www.abcam.com/products/assay-kits/cell-counting-kit-8-wst-8--cck8-ab228554.html">Reference
+              2</a>
           </div>
         </div>
       </div>
-      </div>
     </div>
-
-
-
-
-
-
-    <div class="container mx-auto mt-5  " id="Author">
-      <h1 class="pt-5 mx-auto text-center">
-        Author & Reference
-      </h1>
-      <div class="card mx-auto text-center">
-
-        <div class="card-body">
-          <ul>
-            <h3>Author</h3>
-            <li id="a1">Shuoyi HU:
-              <a href="#1">[1]</a>
-              <a href="#2">[2]</a>
-              <a href="#3">[3]</a>
-              <a href="#4">[4]</a>
-              <a href="#5">[5]</a>
-              <a href="#6">[6]</a>
-              <a href="#7">[7]</a>
-              <a href="#10">[10]</a>
-
-            </li>
-            <li id="a2">Songnan REN:<a href="#8">[8]</a></li>
-            
-            <li id="a4">Shijie HE:<a href="#9">[9]</a></li>
-            <li id="a3">Yixiao XIAO:
-              <a href="#11">[11]</a>
-              <a href="#12">[12]</a>
-            </li>
-          </ul>
+    <div id="13" class="month">
+      <div class="container mx-auto mt-5  " id="Author">
+        <h1 class="pt-5 mx-auto text-center">
+          Author & Reference
+        </h1>
+        <div class="card mx-auto text-center">
+  
+          <div class="card-body">
+            <ul>
+              <h3>Author</h3>
+              <li id="a1">Shuoyi HU:
+                <a href="#1">[1]</a>
+                <a href="#2">[2]</a>
+                <a href="#3">[3]</a>
+                <a href="#4">[4]</a>
+                <a href="#5">[5]</a>
+                <a href="#6">[6]</a>
+                <a href="#7">[7]</a>
+                <a href="#10">[10]</a>
+  
+              </li>
+              <li id="a2">Songnan REN:<a href="#8">[8]</a></li>
+  
+              <li id="a4">Shijie HE:<a href="#9">[9]</a></li>
+              <li id="a3">Yixiao XIAO:
+                <a href="#11">[11]</a>
+                <a href="#12">[12]</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
