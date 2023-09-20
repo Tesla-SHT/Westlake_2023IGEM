@@ -5,6 +5,7 @@
 
 {% block page_content %}
 <!-- Header -->
+
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
 <div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background-image:url('https://static.igem.wiki/teams/4702/wiki/results/results/background.jpg');background-size:cover">
@@ -274,5 +275,6 @@
     </ul>
   </div>
 </div>
+<script src="{{ url_for('static', filename = 'card.js') }}"></script>
 
 {% endblock %}

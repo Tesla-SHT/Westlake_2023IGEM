@@ -8,6 +8,7 @@
 
 
 
+<link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'notebook.css') }}" rel="stylesheet">
 
 <!-- Header -->
@@ -39,9 +40,17 @@
 
 
 
+<style>
+  .card-header:hover {
+    cursor: pointer;
+    background-color: #bae8fd;
+    /* 悬停时颜色变化 */
+
+  }
+</style>
 <!--sidebar-->
 <div class="row">
-  <div id="sidebar" class=" col-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3  ">
+  <div id="sidebar" class=" ol-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3  ">
     <hr>
     <ul class="navigation nav nav-pills flex-column mb-auto">
       <li>
@@ -3030,4 +3039,7 @@
     </ul>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.js"></script>
+<script src="{{ url_for('static', filename = 'card.js') }}"></script>
+<script src="{{ url_for('static', filename = 'pdf.js') }}"></script>
 {% endblock %}
