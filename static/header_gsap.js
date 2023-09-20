@@ -11,14 +11,17 @@ const coverImageHeight = coverImage.offsetHeight;
 // 创建动画效果
 const sidebarAnimation = gsap.from("#sidebar", { duration: 1, opacity: 0, x: -500 });
 const columnAnimation = gsap.from(".gaspcol", {
-  duration: 1, y: -50, opacity: 0, ease: "power4.out", stagger: 0.3
+  duration: 0.6, y: -50, opacity: 0, 
 });
 window.addEventListener('DOMContentLoaded', () => {
   // 判断初始位置是否需要显示侧边栏
   if (window.pageYOffset >= coverImageHeight) {
     sidebarAnimation.play();
+    columnAnimation.play();
+
   } else {
     sidebarAnimation.reverse();
+    columnAnimation.reverse(); 
   }
 });
 // 添加滚动事件监听器

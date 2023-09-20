@@ -196,3 +196,9 @@ footer a {
 .text-light{
   -webkit-text-stroke: 0.3px #000;
 }
+
+.card-header:hover {
+  cursor: pointer;
+  background-color: #bae8fd;
+  /* 悬停时颜色变化 */
+}

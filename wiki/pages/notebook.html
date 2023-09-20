@@ -8,7 +8,6 @@
 
 
 
-<link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'notebook.css') }}" rel="stylesheet">
 
 <!-- Header -->
@@ -40,17 +39,9 @@
 
 
 
-<style>
-  .card-header:hover {
-    cursor: pointer;
-    background-color: #bae8fd;
-    /* 悬停时颜色变化 */
-
-  }
-</style>
 <!--sidebar-->
 <div class="row">
-  <div id="sidebar" class=" ol-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3  ">
+  <div id="sidebar" class=" col-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3  ">
     <hr>
     <ul class="navigation nav nav-pills flex-column mb-auto">
       <li>
@@ -2945,11 +2936,12 @@
             <div class="card-body ani-card-body">
               <p><b style="font-size: large;">
                 Nanoparticle Extraction from Supernatant of Ferric Ion Induced Culture</b>
-              <p>
                 <p>
                   Participant: Shuoyi HU
-                </p>              
-              </p>
+                </p>          
+              <p>The supernatant cell homogenization after centrifugation of 5 mM 
+                Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> induced culture were filtrated through the 0.22 μm filtration membrane
+              and then filtrated through 100 kD ultrafiltration membrane for future treatment and analysis.</p>    
               <p align="right">Recorded by Shuoyi HU</p>
               <p><b style="font-size: large;">
                 BCA Protein Concentration Test</b></p>
@@ -3038,7 +3030,4 @@
     </ul>
   </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.js"></script>
-<script src="{{ url_for('static', filename = 'card.js') }}"></script>
-<script src="{{ url_for('static', filename = 'pdf.js') }}"></script>
 {% endblock %}
