@@ -7,6 +7,7 @@
 
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'description.css') }}" rel="stylesheet">
 <div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background:linear-gradient(
       110deg,
       #6fd7d0 0%,
@@ -31,6 +32,20 @@
     </div>
   </section>
 </div>
+
+
+<div>
+  <h2 style="text-align: center;">Flow Chart</h2>
+  <section class="timeline">
+    <ul>
+      <li>
+        <div>
+          <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        </div>
+      </li>
+    </ul>
+  </section>
+  </div>
 
 <div class="row mt-4">
   <div class="col-lg-12">
@@ -123,5 +138,5 @@
     <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
   </div>
 </div>
-
+<script src="{{ url_for('static', filename = 'description.js') }}"></script>
 {% endblock %}

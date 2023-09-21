@@ -1,5 +1,5 @@
 body {
-  font-family:  'Roboto', Inconsolata, monospace,Helvetica, 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', Inconsolata, monospace, Helvetica, 'Helvetica Neue', sans-serif;
 
 }
 
@@ -80,29 +80,30 @@ body {
   color: white;
 }
 
- .navbar-nav>li>a:hover,
+.navbar-nav>li>a:hover,
 .navbar-nav>li>a:focus,
 .dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus 
-{
+.dropdown-menu>li>a:focus {
   color: rgb(240, 141, 0);
-  background: transparent!important;
+  background: transparent !important;
 }
 
 .dropdown-menu {
-  padding-top:0;
-  margin-top:0;
+  padding-top: 0;
+  margin-top: 0;
   transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
   max-height: 0;
   opacity: 0;
-  overflow: hidden; 
+  overflow: hidden;
   border: none;
 }
+
 .dropdown-item {
-  margin:0!important;
+  margin: 0 !important;
 }
+
 /* 鼠标悬停时显示下拉 */
- .dropdown-menu {
+.dropdown-menu {
   max-height: 500px;
   /* 根据需要调整最大高度 */
   opacity: 1;
@@ -184,15 +185,27 @@ footer a {
   text-decoration: underline;
 }
 
-.main-container{
-  max-width:100%;
-  padding:0;
-  width:100%;
-  margin:0;
-  top:0;
-  left:0;
-  right:0;
+.main-container {
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-.text-light{
+
+.text-light {
+  font-size : 120px!important;
   -webkit-text-stroke: 0.3px #000;
+  color: #fff;
+  background: -webkit-linear-gradient(45deg, #d8d8e2, #d8f1e7 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+hr {
+  text-align: center;
+    width: 10%;
+    margin-left:auto;
+    margin-right:auto;
 }
