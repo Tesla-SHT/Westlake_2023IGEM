@@ -6,6 +6,7 @@
 {% block page_content %}
 <!-- Header -->
 
+
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
 <div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background-image:url('https://static.igem.wiki/teams/4702/wiki/results/results/background.jpg');background-size:cover">
@@ -98,19 +99,76 @@
         <div class="card mx-auto text-center">
           <div class="card-header">Method Description</div>
           <div class="card-body">
-            ***
+            In our examination, 
+            <a href="https://www.thermofisher.com/us/en/home/electron-microscopy/products/transmission-electron-microscopes/talos-l120c-tem.html">
+            Talos L120C G2 Transmission Electron Microscope</a> were used for the characterization of the nanoparticles.
+            <br>Basically, this microscope utilizes a beam of electrons instead of light to visualize the sample, enabling incredibly 
+            detailed images with a resolution down to the sub-nanometer scale.
+            <br>To begin the analysis, we prepare a sample of the nanoparticles by depositing a thin layer onto a carbon-coated copper
+             grid. This grid is carefully loaded into the Talos L120C G2 TEM, ensuring proper positioning for imaging and analysis.
+            <br>Once the sample is inserted, we set the imaging parameters according to our specific requirements. The TEM employs a
+             high-energy electron beam that is directed onto the sample. As the electrons interact with the nanoparticles, they 
+             scatter and interact with the internal structure of the particles.
+            <br>We observe and capture the scattering patterns produced by the interaction of the electrons with the nanoparticles. 
+            These patterns are collected by a detector and transformed into high-resolution images, providing us with detailed 
+            information about the morphology, size, and distribution of the nanoparticles.
+            <br>In addition to imaging, we also utilize Selected Area Electron Diffraction (SAED) analysis with the Talos 
+            L120C G2 TEM. By selecting a specific area of interest on the sample using an aperture, we focus the electron beam
+             onto that region. The resulting diffraction pattern reveals the crystalline properties and orientation of the nanoparticles,
+              enabling us to determine their structural characteristics.
+            <br>They provide us with valuable information about the size, shape, and distribution of the nanoparticles, 
+            as well as give us one way to compare the sample with uninduced control to show the success of the synthetic process.
           </div>
         </div>
         <div class="card mx-auto text-center">
           <div class="card-header">Results / Data</div>
           <div class="card-body">
-            ***
-          </div>
+            The representative TEM figures of the biologically synthesized nanoparticles and the negative control with no ferric ion induction are shown below.
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0009-20230825-1107-92000-x-ceta.jpg" width="480" height=" " alt="TEM Result for Biologically Synthesized Nanoparticle">
+            <p>Figure 1. Biologically Synthesized Nanoparticle by 5 mM FeCl<sub>3</sub> Induction Attached to Biomass.</p>
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0017-20230823-1011-190-kx-ceta.jpg" width="480" height=" " alt="TEM Result for Biologically Synthesized Nanoparticle">
+            <p>Figure 2. Biologically Synthesized Nanoparticle by 5 mM FeCl<sub>3</sub> Induction Detached from Biomass through ultrasonication.</p>
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0009-20230825-0939-310-kx-ceta.jpg" width="480" height=" " alt="TEM Result for Negative Control">
+            <p>Figure 3. Negative Control for Nanoparticle without Ferric Ion Induction.</p>
+            To get the size distribution of the nanoparticles, we use ImageJ to analyze the TEM images. 
+            Multiple figures were chosen for data processing. In total fifty to seventy particles were randomly selected in each figure, 
+            the size distribution statistical chart of the nanoparticles is shown below.
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/biologically-synthesized-nanoparticle-distribution-figure.jpg" width="500" height=" " alt="Biologically Synthesized Nanoparticle Size Distribution">
+            <p>Figure 4. Size Distribution of the Biologically Synthesized Nanoparticles.
+            <p>From the size distribution statistical data, the Polydispersity Index of the samples in each view field was calculated and shown as below: </p>
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/pdi-samples.jpg" width="500" height=" " alt="Polydispersity Index of the Samples in Each View Field">
+            <p>Figure 5. Polydispersity Index of the Samples in Each View Field.
+          </p>
+            <p>All the figures used for data processing are labelled and shown in the supplementary data section below.
+            </p>
+            </div>
         </div>
         <div class="card mx-auto text-center">
           <div class="card-header">Analysis / Discussion</div>
           <div class="card-body">
-            ***
+            Firstly, the comparison between ferric induced culture and uninduced culture shows the success of the biological 
+            synthesis of the nanoparticles. There are no nanoparticles observed in the uninduced culture, (the faint grain in 
+            the TEM figure for uninduced culture were actually some inorganic salt as when electron-beam were fired to the sample,
+             the salt grain would disappear), while the induced culture shows a large amount of nanoparticles attached to the biomass or off the biomass.
+            <br><br>Secondly, the size distribution of the nanoparticles shows that the nanoparticles are in the range of 5-10 nm, this means that 
+            almost all the nanoparticle synthesized by us are in superparamagnetic state, indicating the applicability of biologically synthesized nanoparticle in tumor
+            penetration or tumor accumulation.
+            <br><br>Thirdly, the comparison between the sample attached to the biomass and the sample detached from the biomass shows 
+            that in separation of the biological synthesized nanoparticles, ultrasonication chose by us is a proper method to detach 
+            the nanoparticles from the biomass.
+            <br><br>Fourthly, the Polydispersity Index of the samples in each view field shows that the nanoparticles are relatively uniform in size.
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Supplementary Datas</div>
+          <div class="card-body">
+            The supplementary figures and statistical information of the TEM characterization of the biologically synthesized nanoparticles could be found in the pdf file below.
+              <div class="card mx-auto text-center">
+                <div class="card-header ani-card-header">TEM Characterization of Biologically Synthesized Nanoparticles and Size Distribution Statistics</div>
+                <div class="card-body ani-card-body">
+                  <div id="pdf-container-5"></div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -118,18 +176,67 @@
     <div id="3" class="month">
       <div class="container mx-auto mt-5  ">
         <h1 class="pt-5 mx-auto text-center">
-          DLS Characterization of Biologically Synthesized Nanoparticles
+          DLS Characterization of Biologically Synthesized Nanoparticles and Zeta Potential Measurement
           </a><sup class="author" style="font-size:medium"><a href="#a1">[3]</a></sup>
         </h1>
         <hr>
         <div class="card mx-auto text-center">
           <div class="card-header">Method Description</div>
           <div class="card-body">
+            For the DLS characterization and Zeta Potential measurement of the biologically synthesized nanoparticles, we use
+            <a href="https://www.brookhaveninstruments.com/product/nanobrook-series/">Brookhaven NanoBrook Series</a>. 
+            <br>This advanced instrument utilizes Dynamic Light Scattering (DLS) technology, which allows us to measure the 
+            size distribution of nanoparticles in a liquid suspension. By analyzing the fluctuations in the intensity of scattered 
+            light caused by the random motion of nanoparticles, we can obtain valuable information about their size, 
+            size distribution, and polydispersity.
+            <br>
+            <br>When it comes to analyzing our biologically synthesized nanoparticles, the NanoBrook Series offers a 
+            user-friendly and efficient workflow. Firstly, we prepare a sample of our nanoparticles in a suitable liquid 
+            medium, ensuring that the sample is well-dispersed. We then introduce the sample into the NanoBrook instrument, 
+            where it is carefully illuminated with a laser beam.
+            <br><br>The scattered light from the nanoparticles is collected and analyzed, allowing us to obtain valuable data 
+            on the size distribution of the particles. This information is crucial for evaluating the quality of our synthesized 
+            nanoparticles and understanding their behavior in biological systems.
+            <br><br>Besides, the NanoBrook Series enables us to measure the Zeta Potential of our nanoparticles, \
+            which is a key parameter that provides insights into the stability 
+            and surface charge of nanoparticles. Also, by assessing the electric potential at the particle's surface, we can gain 
+            a deeper understanding of their interactions with their environment.
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Results / Data</div>
+          <div class="card-body">
+            <b style="font-size: large;">DLS Analysis</b>
+            <br>
+            The size distribution pattern of the biologically synthesized nanoparticles using log scale is shown below:
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/bio-dls.jpg"
+             width="500" height=" " alt="Biologically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis">
+            <p>Figure 1. Biologically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
+            <p>From the size distribution pattern, the average hydrodynamic diameter of nanoparticles is 7.23 nm.
+          <br><br>The size distribution pattern of the chemically synthesized nanoparticle using log scale is shown below:
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-dls.jpg"
+             width="500" height=" " alt="Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis">
+            <p>Figure 2. Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
+            <p>From the size distribution pattern, the average hydrodynamic diameter of nanoparticles is 252.41 nm.
+              <br>
+            For clearer representation, the linear scale size distribution pattern of the chemically synthesized nanoparticle is shown below:
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-linear-scale-dls.jpg"
+             width="500" height=" " alt="Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis">
+            <p>Figure 3. Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
+            <b style="font-size: large;">
+            Zeta Potential Measurement </b>
+            <br>
+
+        </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Analysis / Discussion</div>
+          <div class="card-body">
             ***
           </div>
         </div>
         <div class="card mx-auto text-center">
-          <div class="card-header">***</div>
+          <div class="card-header">Supplementary Datas</div>
           <div class="card-body">
             ***
           </div>
@@ -163,7 +270,8 @@
           Cytotoxicity Examination of the Biologically Synthesized Nanoparticles and Chemically Synthesized Nanoparticle
           </a><sup class="author" style="font-size:medium"><a href="#a1">[5]</a></sup>
         </h1>
-        <hr>        <div class="card mx-auto text-center">
+        <hr>        
+        <div class="card mx-auto text-center">
           <div class="card-header">Method Description</div>
           <div class="card-body">
             ***
@@ -187,14 +295,23 @@
           His-tagged protein purification
           </a><sup class="author" style="font-size:medium"><a href="#a1">[6]</a></sup>
         </h1>
-        <hr>        <div class="card mx-auto text-center">
+        <hr>        
+        <div class="card mx-auto text-center">
           <div class="card-header">Method Description</div>
+          <div class="card-body">
+            In our vector design for scFv domain of anti-HER2 antibody, we add a 6 × His-tag to the terminal of the scFv domain.
+            <br>Therefore, we use the <a href="https://www.cytivalifesciences.com/en/us/shop/chromatography/prepacked-columns/affinity-tagged-protein/histrap-hp-histidine-tagged-protein-purification-columns-p-00250">
+              HisTrap HP His tag protein purification column</a> and the Union AKTA system to purify the His-tagged protein.
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">***</div>
           <div class="card-body">
             ***
           </div>
         </div>
         <div class="card mx-auto text-center">
-          <div class="card-header">***</div>
+          <div class="card-header">Supplementary Data</div>
           <div class="card-body">
             ***
           </div>
@@ -276,5 +393,8 @@
   </div>
 </div>
 <script src="{{ url_for('static', filename = 'card.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.js"></script>
+<script src="{{ url_for('static', filename = 'pdf.js') }}"></script>
+
 
 {% endblock %}

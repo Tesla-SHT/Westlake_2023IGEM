@@ -1,8 +1,16 @@
 
 //淡入淡出，卡片收缩
 document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll(".card");
-
+  let cards = document.querySelectorAll(".card");
+  cards = Array.from(cards).filter(card => {
+    const children = card.children;
+    for (let i = 0; i < children.length; i++) {
+      if (children[i].classList.contains("ani-card-header")) {
+        return true;
+      }
+    }
+    return false;
+  });
   cards.forEach((card) => {
     const header = card.querySelector(".ani-card-header");
     const body = card.querySelector(".ani-card-body");

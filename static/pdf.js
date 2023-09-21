@@ -44,3 +44,5 @@ displayPDF('https://static.igem.wiki/teams/4702/wiki/result-for-notebook/result-
 // 在另一个地方展示另一个PDF
 displayPDF('https://static.igem.wiki/teams/4702/wiki/result-for-notebook/result-for-notebook/chem-zeta-potential-0917.pdf','pdf-container-4');
 // 可以在需要的地方继续调用displayPDF函数来展示其他PDF文件
+
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/nanoparticle-size-distribution-supplementary-information-compressed.pdf','pdf-container-5');
