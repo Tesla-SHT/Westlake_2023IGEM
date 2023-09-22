@@ -203,9 +203,3 @@ footer a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-hr {
-  text-align: center;
-    width: 10%;
-    margin-left:auto;
-    margin-right:auto;
-}

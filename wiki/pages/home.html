@@ -1,34 +1,50 @@
 {% extends "layout.html" %}
 
 {% block title %}Home{% endblock %}
-{% block lead %}<b>Welcome to iGEM 2023!</b> Your team has been approved and you are ready to start the iGEM season!{%endblock %}
+{% block lead %}<b>Welcome to iGEM 2023!</b> Your team has been approved and you are ready to start the iGEM
+season!{%endblock %}
 
 {% block page_content %}
 <!-- Header -->
+  <link href="{{ url_for('static', filename = 'button.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background:linear-gradient(
+<div class="sky single_slider d-flex align-items-center" id="cover-image" style="background:linear-gradient(
       110deg,
       #6fd7d0 0%,
       #96daf7 32%, 
       #66bfe5 57%, 
       rgba(0, 76, 197, 0.8) 100%
   )">
+  
+  <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
   <section class="col-md-12 text-center">
-    <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
-    <div class="container header">
+
+    <div class="container header"style="z-index:100000000000000!important;">
       <div class="row">
-        <div class="">
+        <div class="drop-shadow">
+          <div class="glass"></div>
           <p class="text-light" style="font-size:70px;">Home</p>
-          <div class=" ">
-            <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              <b>Welcome to Westlake-China!</b> Our team has been approved and we are ready to start the iGEM season!  
-            </p>
-            <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
-          </div>
+        </div>
+        <div class=" ">
+          <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
+            <b>Welcome to Westlake-China!</b> Our team has been approved and we are ready to start the iGEM season!
+          </p>
+          <button class="btn btn-3 hover-border-3">
+            <a href = "www.baidu.com"><span>hover me</span></a>
+          </button>
         </div>
       </div>
     </div>
+
   </section>
+  <!--
+    <svg class="text-center" style="display:inline-block;text-align:center;bottom:235px;position:absolute;margin:auto" xmlns="http://www.w3.org/2000/svg"
+      width="48" height="48" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+      <path fill-rule="evenodd"
+        d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+    </svg>-->
 </div>
 
 
