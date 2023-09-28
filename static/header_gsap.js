@@ -32,21 +32,13 @@ window.addEventListener('scroll', () => {
   const documentHeight = document.documentElement.scrollHeight;
   // 切换侧边栏显示
   if ((scrollPosition >= coverImageHeight-200) && (scrollPosition + windowHeight < documentHeight-footer.offsetHeight)) {
-    // 显示侧边栏
     sidebarAnimation.play()
-    // 设置侧边栏可见
   } else {
-    // 隐藏侧边栏
     sidebarAnimation.reverse();
-    // 设置侧边栏隐藏
   }
   if (scrollPosition >= coverImageHeight-500) {
-    // 显示侧边栏
     columnAnimation.play();
-    // 设置侧边栏可见
   } else {
-    // 隐藏侧边栏
     columnAnimation.reverse(); 
-    // 设置侧边栏隐藏
   }
 });

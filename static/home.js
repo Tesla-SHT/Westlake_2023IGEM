@@ -251,3 +251,54 @@ window.addEventListener('scroll', () => {
         requestAnimationFrame(animateScroll);
     }
 });*/
+
+const footer = document.querySelector('#footer');
+const sidebarAnimation = gsap.from("#sidebar", { duration: 1, opacity: 0, x: -500 });
+window.addEventListener('DOMContentLoaded', () => {
+    // 判断初始位置是否需要显示侧边栏
+    if (window.pageYOffset <= 50) {
+        sidebarAnimation.play();
+    } else {
+        sidebarAnimation.reverse();
+    }
+});
+window.addEventListener('scroll', () => {
+    // 计算滚动位置
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    // 切换侧边栏显示
+    if (scrollPosition + windowHeight < documentHeight - footer.offsetHeight) {
+        sidebarAnimation.play()
+    } else {
+        sidebarAnimation.reverse();
+    }
+});
+const sidebar = document.getElementById("sidebar");
+const toggleButton = document.getElementById("sidebar-toggle");
+
+// 监听鼠标移动事件
+document.addEventListener("mousemove", (event) => {
+    // 检查鼠标是否在屏幕的左侧区域
+    if (event.clientX < 150) {
+        // 使用GSAP动画显示侧边栏
+        gsap.to(sidebar, { left: 0 });
+        gsap.to(toggleButton, { left: -300 })
+    } else {
+        // 使用GSAP动画隐藏侧边栏
+        gsap.to(sidebar, { left: -200 });
+        gsap.to(toggleButton, { left: 100});
+    }
+});
+
+// 监听最小化按钮或图标的鼠标移入事件
+toggleButton.addEventListener("mouseenter", () => {
+    // 使用GSAP动画展开侧边栏
+    gsap.to(sidebar, { left: -200 });
+});
+
+// 监听最小化按钮或图标的鼠标移出事件
+toggleButton.addEventListener("mouseleave", () => {
+    // 使用GSAP动画将侧边栏滑动回最小化位置
+    gsap.to(sidebar, { left:    0 });
+});

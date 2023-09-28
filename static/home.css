@@ -1,3 +1,21 @@
+/*side bar*/
+#sidebar-toggle {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#sidebar-toggle img {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
 @keyframes fade-in {
   0% {
       opacity: 0;
