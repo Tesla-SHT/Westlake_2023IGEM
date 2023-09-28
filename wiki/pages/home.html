@@ -12,11 +12,62 @@ season!{%endblock %}
 <link href="{{url_for('static', filename = 'home.css')}}" rel="stylesheet">
 
 
+<link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
+
+
 <script src="https://unpkg.com/splitting@1.0.5/dist/splitting.min.js"></script>
 
+<div id="sidebar" class="col-md-3 col-lg-3 sidebar  flex-column flex-shrink-0 p-3" style="text-align: center;z-index:99999;">
+    
+  <hr>
+  <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
+    <li>
+      <a href="#1" class="nav-link">
+        Competent Cell Preparation
+      </a>
+    </li>
+    <li>
+      <a href="#2" class="nav-link">
+        Competent Cell Transformation
+      </a>
+    </li>
+    <li>
+      <a href="#3" class="nav-link">
+        Culture development for protein extraction
+      </a>
+    </li>
+    <li>
+      <a href="#4" class="nav-link">
+        His-tagged protein purification
+      </a>
+    </li>
+    <li>
+      <a href="#5" class="nav-link">
+        Protein electrophoresis
+      </a>
+    </li>
+    <li>
+      <a href="#6" class="nav-link">
+        BCA test
+      </a>
+    </li>
+    <li>
+      <a href="#7" class="nav-link">
+        Nanoparticle Biosynthesis
+      </a>
+    </li>
+    <li>
+      <a href="#8" class="nav-link">
+        NHS-PEG-Maleimide Linking Protocol
+      </a>
+    </li>
+  </ul>
+  <hr>
+</div>
 <div id="wrap">
   <div id="panels">
-    <section class="panel">
+    <section class="panel"id = "1">
       <h1 data-splitting="words">Holy Moly Stromboli</h1>
       <div class="image">
         <div class="inner"></div>
@@ -28,47 +79,48 @@ season!{%endblock %}
         <div class="inner"></div>
       </div>
     </section>
-    <section class="panel">      <div class="cont" style="-webkit-transform:scaleX(-1);">
-      <div class="mouse"></div>
-      <div class="app"style="margin:auto auto; text-align: center;
+    <section class="panel"id = "2">
+      <div class="cont" style="-webkit-transform:scaleX(-1);">
+        <div class="mouse"></div>
+        <div class="app" style="margin:auto auto; text-align: center;
       display: flex;
       justify-content: center;">
-        <div class="app__bgimg">
-          <div class="app__bgimg-image app__bgimg-image--1">
+          <div class="app__bgimg">
+            <div class="app__bgimg-image app__bgimg-image--1">
+            </div>
+            <div class="app__bgimg-image app__bgimg-image--2">
+            </div>
           </div>
-          <div class="app__bgimg-image app__bgimg-image--2">
+          <div class="app__img">
+            <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png"
+              alt="city" />
+          </div>
+
+          <div class="app__text app__text--1">
+            <div class="app__text-line app__text-line--4">imperdiet </div>
+            <div class="app__text-line app__text-line--3">ut le</div>
+            <div class="app__text-line app__text-line--2">non tincidunt </div>
+            <div class="app__text-line app__text-line--1"><img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
+          </div>
+
+          <div class="app__text app__text--2">
+            <div class="app__text-line app__text-line--4">habitant</div>
+            <div class="app__text-line app__text-line--3">ut eget</div>
+            <div class="app__text-line app__text-line--2">Nam imperdiet</div>
+            <div class="app__text-line app__text-line--1"><img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
           </div>
         </div>
-        <div class="app__img">
-          <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png"
-            alt="city" />
-        </div>
-    
-        <div class="app__text app__text--1">
-          <div class="app__text-line app__text-line--4">imperdiet </div>
-          <div class="app__text-line app__text-line--3">ut le</div>
-          <div class="app__text-line app__text-line--2">non tincidunt </div>
-          <div class="app__text-line app__text-line--1"><img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
-        </div>
-    
-        <div class="app__text app__text--2">
-          <div class="app__text-line app__text-line--4">habitant</div>
-          <div class="app__text-line app__text-line--3">ut eget</div>
-          <div class="app__text-line app__text-line--2">Nam imperdiet</div>
-          <div class="app__text-line app__text-line--1"><img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
+        <div class="pages">
+          <ul class='pages__list'>
+            <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
+            <li data-target='2' class='pages__item pages__item--2'></li>
+          </ul>
         </div>
       </div>
-      <div class="pages">
-        <ul class='pages__list'>
-          <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
-          <li data-target='2' class='pages__item pages__item--2'></li>
-        </ul>
-      </div>
-    </div>
     </section>
-    <section class="panel">
+    <section class="panel" id = "3">
       <h1 data-splitting="words">I’ve Been Stricken by Chicken</h1>
       <div class="image">
         <div class="inner"></div>
@@ -80,7 +132,7 @@ season!{%endblock %}
         <div class="inner"></div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel"id = "4">
       <h1 data-splitting="words">I’ve Been Stricken by Chicken</h1>
       <div class="image">
         <div class="inner"></div>
@@ -92,7 +144,7 @@ season!{%endblock %}
         <div class="inner"></div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel"id = "5">
       <h1 data-splitting="words">I’ve Been Stricken by Chicken</h1>
       <div class="image">
         <div class="inner"></div>
@@ -104,7 +156,7 @@ season!{%endblock %}
         <div class="inner"></div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel"id = "6">
       <h1 data-splitting="words">I’ve Been Stricken by Chicken</h1>
       <div class="image">
         <div class="inner"></div>
@@ -116,7 +168,7 @@ season!{%endblock %}
         <div class="inner"></div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel"id = "7">
       <h1 data-splitting="words">I’ve Been Stricken by Chicken</h1>
       <div class="image">
         <div class="inner"></div>
@@ -128,7 +180,7 @@ season!{%endblock %}
         <div class="inner"></div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel"id = "8">
       <h1 data-splitting="words">I’ve Been Stricken by Chicken</h1>
       <div class="image">
         <div class="inner"></div>
@@ -140,7 +192,7 @@ season!{%endblock %}
         <div class="inner"></div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel"id = "9">
       <h1 data-splitting="words">I’ve Been Stricken by Chicken</h1>
       <div class="image">
         <div class="inner"></div>
@@ -152,7 +204,7 @@ season!{%endblock %}
         <div class="inner"></div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel"id = "10">
       <h1 data-splitting="words">I’ve Been Stricken by Chicken</h1>
       <div class="image">
         <div class="inner"></div>
@@ -185,5 +237,6 @@ season!{%endblock %}
 
 
 <script src="{{ url_for('static', filename = 'home.js') }}"></script>
+<script src="{{ url_for('static', filename = 'card.js') }}"></script>
 
 {% endblock %}
