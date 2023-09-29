@@ -44,9 +44,6 @@
   }
 }
 
-.spacer {
-  height: 2678px;
-}
 
 @media (max-width: 480px) {
   .accordion {

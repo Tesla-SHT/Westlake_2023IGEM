@@ -90,6 +90,36 @@
     </ul>
   </section>
 </div>
+<!--图表-->
+<div id = "ChartExample" style="width:600px; height:400px;"></div>
+<script type="text/javascript">
+  // 基于准备好的dom，初始化echarts实例
+  var myChart = echarts.init(document.getElementById('main'));
+
+  // 指定图表的配置项和数据
+  var option = {
+    title: {
+      text: 'ECharts 入门示例'
+    },
+    tooltip: {},
+    legend: {
+      data: ['销量']
+    },
+    xAxis: {
+      data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+    },
+    yAxis: {},
+    series: [
+      {
+        name: '销量',
+        type: 'bar',
+        data: [5, 20, 36, 10, 10, 20]
+      }
+    ]
+  };
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+</script>
 
 <div id="wrapper">
   <div id="content">
@@ -97,34 +127,136 @@
     <div class="accordions">
       <div class="accordion">
         <div class="title">
-          All-screen design.
+          Current Status of Cancer, with a Focus on Breast Cancer
         </div>
         <div class="text">
-          Lets you immerse yourself in whatever you’re reading, watching, or creating. The 10.9-inch Liquid Retina
-          display features advanced technologies like True Tone, P3 wide color, and an antireflective coating.1
+          Cancer continues to be a global health concern, with breast cancer 
+          ranking among the most prevalent and life-threatening malignancies 
+          worldwide. The increasing incidence of breast cancer underscores the 
+          urgent need for innovative treatment strategies. In the public data 
+          from World Health Organization (WHO), breast cancer tops the list 
+          as the most commonly diagnosed cancer worldwide and claims 
+          a significant number of lives.
+          <br><br> Breast cancer is a heterogeneous disease characterized by 
+          the uncontrolled growth of cells in the breast tissue. It is the 
+          most common cancer among women, with a significant impact on their 
+          health and quality of life. Advances in early detection and treatment 
+          have improved survival rates, but challenges persist, including late-stage 
+          diagnoses and resistance to conventional therapies.
+          <br><br>The global burden of breast cancer is substantial, 
+          with millions of new cases diagnosed annually. Geographical 
+          disparities in incidence and mortality rates emphasize the 
+          importance of tailored approaches to prevention, diagnosis, 
+          and treatment. Breast cancer awareness, research, and healthcare 
+          infrastructure play pivotal roles in addressing this global challenge.
+          <br></div>
+      </div>
+      <div class="accordion">
+        <div class="title">Current Problems in Treating Breast Cancer</div>
+        <div class="text">
+          Treating breast cancer remains a complex and multifaceted 
+          challenge, despite significant advancements in the field 
+          of oncology. Several current problems and challenges 
+          persist in the treatment of breast cancer:
+          <br><br>
+          <b style="font-size: large;">Late-stage Diagonsis</b><br>
+          One of the most significant challenges is the late-stage 
+          diagnosis of breast cancer. Many patients are diagnosed 
+          when the disease has already reached an advanced stage, 
+          reducing treatment options and overall survival rates. 
+          Enhancing early detection methods and improving breast 
+          cancer screening programs are essential to address this issue.
+          <br><br>
+          <b style="font-size: large;">Tumor Heterogeneity</b><br>
+          Breast cancer is not a single disease but a heterogeneous 
+          group of diseases with varying molecular subtypes. Each 
+          subtype may require different treatment strategies. 
+          Tailoring treatments to the specific subtype of breast 
+          cancer is crucial for optimizing outcomes, but this can 
+          complicate treatment decision-making.
+          <br><br>
+          <b style="font-size: large;">Resistance to Therapy</b><br>
+          Resistance to therapy, whether it's chemotherapy, hormonal 
+          therapy, or targeted therapy, remains a significant concern. 
+          Breast cancer cells can develop resistance to treatment over 
+          time, leading to disease progression. Researchers are 
+          actively studying the mechanisms of resistance to develop 
+          more effective therapies.
+          <br><br>
+          <b style="font-size: large;">Toxicity and Side Effects</b><br>
+          Toxicity and Side Effects: Breast cancer treatments, including 
+          chemotherapy and radiation therapy, can cause severe side 
+          effects and toxicity. These side effects can impact a patient's 
+          quality of life and sometimes result in treatment interruptions 
+          or discontinuations. Finding ways to minimize side effects 
+          while maintaining treatment efficacy is an ongoing challenge.
+          <br><br>
+          <b style="font-size: large;">Cost of Treatment</b><br>
+          Breast cancer treatment can be expensive, and the financial 
+          burden can be overwhelming for patients and their families. 
+          Access to innovative therapies and adequate insurance coverage 
+          remains a concern, and addressing the cost of cancer care is 
+          crucial for improving patient outcomes and reducing disparities in care.
         </div>
       </div>
       <div class="accordion">
-        <div class="title"> Beauty all around.</div>
+        <div class="title">Current Status of Iron Oxide Nanoparticle Synthesis</div>
         <div class="text">
-          The breakthrough M1 chip is now in Air. An 8-core CPU delivers up to 60 percent faster performance than the
-          previous generation, making Air a creative and mobile gaming powerhouse. Multitask smoothly between powerful
-          apps and play graphics-intensive games. And with M1, you can go even further with your creativity with apps
-          like SketchUp.
+          Iron oxide nanoparticles have emerged as versatile materials with promising 
+          applications in the medical field,. The synthesis of these nanoparticles 
+          can be categorized into three main approaches: physical synthesis, chemical 
+          synthesis, and biological synthesis, 
+          each with its own set of advantages and disadvantages.  
+          <br><br>
+          <b style="font-size: large;">Physical Synthesis</b><br>
+          Historically, physical synthesis methods have been employed to produce 
+          iron oxide nanoparticles. These methods involve high-temperature processes 
+          such as thermal decomposition and laser ablation. While physical synthesis 
+          techniques yield nanoparticles with excellent crystallinity and controlled 
+          size distribution, they often suffer from limited scalability and can require 
+          harsh reaction conditions, which may not be ideal for medical applications.
+          <br><br>
+          <b style="font-size: large;">Chemical Synthesis</b><br>
+          Chemical synthesis techniques, such as co-precipitation and solvothermal 
+          methods, have become more prevalent due to their scalability and relative 
+          simplicity. These methods enable the fine-tuning of nanoparticle properties 
+          like size, shape, and surface functionalization. However, they may introduce 
+          impurities and require the use of toxic reagents, raising concerns about 
+          biocompatibility for medical use. Also the chemical synthesis process requires 
+          toxic or harmful reagents, which may augment the environmental concerns.
+          <br><br>
+          <b style="font-size: large;">Biological Synthesis</b><br>
+          The advent of biological synthesis methods has garnered considerable 
+          interest in recent years. Utilizing microorganisms, plants, or 
+          biomolecules, this approach offers eco-friendly and biocompatible 
+          routes to produce iron oxide nanoparticles. Biologically synthesized 
+          nanoparticles often exhibit excellent biocompatibility and can be 
+          tailored for specific medical applications. However, the control over 
+          size and shape can be more challenging compared to chemical methods.
         </div>
       </div>
       <div class="accordion">
-        <div class="title">Take Center Stage.</div>
+        <div class="title">Application of Iron Oxide Nanoparticles in Medical Field Currently</div>
         <div class="text">
-          The 12MP Ultra Wide front camera enables Center Stage, making video calls more natural and content creation
-          more fun. As you move around, the camera automatically pans to keep you centered in the shot. When others join
-          or leave the frame, the view expands or zooms in.
+          In the medical field, iron oxide nanoparticles have found several potential 
+          applications, including but not limited to:
+          <br><br>
+          <b style="font-size: large;">Magnetic Resonance Imaging (MRI)</b><br>
+          Iron oxide nanoparticles are utilized as contrast agents in MRI scans due to 
+          their magnetic properties, aiding in the detection and characterization of cancerous lesions.
+          <br><br>
+          <b style="font-size: large;">Drug Delivery</b><br>
+          Their surface properties and unique ability for agent design 
+          allow for the attachment of therapeutic agents, 
+          facilitating targeted drug delivery to cancer cells while minimizing systemic side effects.
+          <br><br>
+          <b style="font-size: large;">Hyperthermia Treatment</b><br>
+          Iron oxide nanoparticles can generate heat when exposed to an alternating 
+          magnetic field, making them suitable for hyperthermia therapy, where cancer 
+          cells are selectively heated and destroyed.
+          <br><br>
+          <b style="font-size: large;">..............................</b><br>
         </div>
-      </div>
-      <div class="accordion">
-        <div class="title">Pretty everywhere.</div>
-        <div class="text">Join superfast 5G wireless networks when you’re on the go. Download files, play multiplayer
-          games, stream movies, check in with friends, and more.</div>
       </div>
     </div>
   </div>
@@ -174,7 +306,6 @@
 </div>
 
 
-<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
 <div class="row mt-4">
   <div class="col">
     <div class="bd-callout bd-callout-info">

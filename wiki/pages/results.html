@@ -253,11 +253,146 @@
         <div class="card mx-auto text-center">
           <div class="card-header">Method Description</div>
           <div class="card-body">
-            ***
+            Basically, we used the immunostainning to examine the conjugation of the scFv domain to the HER2 positive cell.
+            <br>As we only synthesized the scFv domain of the anti-HER2 antibody with his-tag attached to the end, we could not 
+            directly find a secondary antibody with fluorescent tag to bind to the scFv domain. Therefore, we use the mouse 
+            derived anti-polyhis antibody to attach the scFv domain synthesized by us and then use the tertiary goat derived 
+            anti-mouse antibody to label the anti-polyhis antibody.
+            <br><br>
+            For convenience of explanation, here we called the scFv domain to be the primary antibody, the anti-polyhis antibody
+            to be the secondary antibody and the anti-mouse antibody to be the tertiary antibody.
+            <br><br>
+            Generally, to test the conjugation, we added these three antibodies to the HER2 positive cell and HER2 negative cell.
+            And to see the if the secondary antibody has relatively good specificity to the primary antibody, we also added one group 
+            that only have the secondary antibody and the tertiary antibody to the HER2 positive cell and HER2 negative cell.
+            Also, the background and unstained fluorescent signal were also tested by two groups, one is only add the primary and secondary 
+            antibody to the HER2 positive cell and HER2 negative cell, the other is only add the secondary and 
+            tertiary antibody to the HER2 positive cell and HER2 negative cell.
+            <br><br>
+            Final result were tested by the confocal microscopy and flow cytometry analysis to see the mean fluorescence intensity of the cells.      
+            <br>We have the detailed design of the test as below:
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+              <div class="container w-80 h-100 mx-auto mt-3 mb-3">
+                <div class="row mt-4" style="text-align:justify">
+                  <div class="col">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th colspan="1" scope="col">Cell Strain</th>
+                          <th colspan="3" scope="col">Treatment of the cells</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td>Anti HER2 scFv domain antibody</td>
+                          <td>Anti His tag antibody (mouse derived)</td>
+                          <td>Goat Anti-Mouse-IgG</td>
+                        </tr>
+                        <tr>
+                          <td>SK-BR-3 treatment 1 <br>(three replica)</td>
+                          <td>-</td>
+                          <td>+</td>
+                          <td>+</td>
+                        </tr>
+                        <tr>
+                          <td>SK-BR-3 treatment 2<br>(three replica)</td>
+                          <td>+</td>
+                          <td>+</td>
+                          <td>+</td>
+                        </tr>
+
+                        <tr>
+                          <td>SK-BR-3 treatment 3<br>(three replica)</td>
+                          <td>+</td>
+                          <td>+</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>SK-BR-3 treatment 4<br>(three replica)</td>
+                          <td>+</td>
+                          <td>-</td>
+                          <td>+</td>
+                        </tr>
+                        <tr>
+                          <td>MDA-MB-231 treatment 1 <br>(four replica)</td>
+                          <td>-</td>
+                          <td>+</td>
+                          <td>+</td>
+                        </tr>
+                        <tr>
+                          <td>MDA-MB-231 treatment 2 <br>(three replica)</td>
+                          <td>+</td>
+                          <td>+</td>
+                          <td>+</td>
+                        </tr>
+                        <tr>
+                          <td>MDA-MB-231 treatment 3<br>(two replica)</td>
+                          <td>+</td>
+                          <td>+</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>MDA-MB-231 treatment 4<br>(two replica)</td>
+                          <td>+</td>
+                          <td>-</td>
+                          <td>+</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card mx-auto text-center">
-          <div class="card-header">***</div>
+          <div class="card-header">Result</div>
+          <div class="card-body">
+            Sadly, the result of the confocal microscopy and flow cytometry analysis shows that the secondary 
+            antibody has not much specificity to the primary antibody, indicating we couldn't test the conjugation of 
+            the scFv domain to the HER2 positive cell using this method. We have the group only added the secondary and 
+            tertiary antibody also show strong fluorescent signal, which should not occur if the secondary antibody is a 
+            good one.
+            <br><br>The mean fluorescent intensity of the SK-BR3 under different treatment are shown below:<br>
+            <img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-9-28.jpg" 
+            width="500" height=" " alt="Mean Fluorescent Intensity of the SK-BR3 under Different Treatment">
+            <p><b>Figure 1. Mean Fluorescent Intensity of the SK-BR3 under Different Treatment.</b> 
+              Note that as the background comparison groups were not included in the figure as the effective 
+              counted area were over 100 times smaller than positive groups, this way the mean fluorescent intensity is not useful.</p>
+              <br>To further show the success of negative result, the figures of the confocal microscopy result after setting the photo to 8 bit and auto the threshold are shown below:
+              <br><img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b3-12-airyscan-processing-09-c2.jpg"
+              width="500" height=" " alt="Confocal Microscopy Result of the SK-BR3 under Primary and Secondary Antibody Treatment">
+              <p><b>Figure 2. Confocal Microscopy Result of the SK-BR3 under Primary and Secondary Antibody Treatment.</b> 
+                <br>The figure shows that the background signal is weak, indicating the background fluorescence is weak.</p>
+              <p>And the corresponding figure under bright field is shown below: </p>
+              <img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b3-12-airyscan-processing-09-c3.jpg"
+              width="500" height=" " alt="Bright Field Channel Result of the SK-BR3 under Primary and Secondary Antibody Treatment">
+              <p><b>Figure 3. Bright Field Channel Result of the SK-BR3 under Primary and Secondary Antibody Treatment.</b>
+                <img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b4-13-airyscan-processing-12-c2.jpg"
+                width="500" height=" " alt="Confocal Microscopy Result of the SK-BR3 under Primary and Tertiary Antibody Treatment">
+                <p><b>Figure 4. Confocal Microscopy Result of the SK-BR3 under Primary and Tertiary Antibody Treatment.</b> 
+                  <br>The figure shows that the background signal is weak, indicating the specificity of tertiary antibody is high 
+                  and was washed thoroughly.</p>
+                  <p>And the corresponding figure under bright field is shown below: </p>
+                  <img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b4-13-airyscan-processing-12-c3.jpg"
+                  width="500" height=" " alt="Bright Field Channel Result of the SK-BR3 under Primary and Tertiary Antibody Treatment">
+                  <p>
+                    <b>Figure 5. Bright Field Channel Result of the SK-BR3 under Primary and Tertiary Antibody Treatment.</b>
+                  </p>
+              <br>
+              <p>The flow cytometry result also support the conclusion that the 
+                secondary antibody didn't show specificity towards the scFv domain.</p>
+                <img src="https://static.igem.wiki/teams/4702/wiki/results/results/28-sep-2023-layout.jpg"
+                width="500" height=" " alt="Flow Cytometry Result of the SK-BR3 under Different Treatment">
+                <p><b>Figure 6. Flow Cytometry Result of the SK-BR3 under Different Treatment.</b> 
+                  <br>The figure shows no obvious difference between the group adding all three antibody and 
+                  the group adding only secondary and tertiary antibodies, while two negative control show 
+                  normal result. </p>
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Future Plan</div>
           <div class="card-body">
             ***
           </div>
