@@ -36,7 +36,7 @@ window.addEventListener('scroll', () => {
   } else {
     sidebarAnimation.reverse();
   }
-  if (scrollPosition >= coverImageHeight-500) {
+  if (scrollPosition >= coverImageHeight-200) {
     columnAnimation.play();
   } else {
     columnAnimation.reverse(); 

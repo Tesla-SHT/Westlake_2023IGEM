@@ -274,31 +274,33 @@ window.addEventListener('scroll', () => {
         sidebarAnimation.reverse();
     }
 });
-const sidebar = document.getElementById("sidebar");
-const toggleButton = document.getElementById("sidebar-toggle");
+window.onload = function () {
+    const sidebar = document.getElementById("sidebar");
+    const toggleButton = document.getElementById("sidebar-toggle");
 
-// 监听鼠标移动事件
-document.addEventListener("mousemove", (event) => {
-    // 检查鼠标是否在屏幕的左侧区域
-    if (event.clientX < 150) {
-        // 使用GSAP动画显示侧边栏
-        gsap.to(sidebar, { left: 0 });
-        gsap.to(toggleButton, { left: -300 })
-    } else {
-        // 使用GSAP动画隐藏侧边栏
+    // 监听鼠标移动事件
+    document.addEventListener("mousemove", (event) => {
+        // 检查鼠标是否在屏幕的左侧区域
+        if (event.clientX < 150 && window.pageYOffset >= 50) {
+            // 使用GSAP动画显示侧边栏
+            gsap.to(sidebar, { left: 0 });
+            gsap.to(toggleButton, { left: -300 })
+        } else {
+            // 使用GSAP动画隐藏侧边栏
+            gsap.to(sidebar, { left: -200 });
+            gsap.to(toggleButton, { left: 100 });
+        }
+    });
+
+    // 监听最小化按钮或图标的鼠标移入事件
+    toggleButton.addEventListener("mouseenter", () => {
+        // 使用GSAP动画展开侧边栏
         gsap.to(sidebar, { left: -200 });
-        gsap.to(toggleButton, { left: 100});
-    }
-});
+    });
 
-// 监听最小化按钮或图标的鼠标移入事件
-toggleButton.addEventListener("mouseenter", () => {
-    // 使用GSAP动画展开侧边栏
-    gsap.to(sidebar, { left: -200 });
-});
-
-// 监听最小化按钮或图标的鼠标移出事件
-toggleButton.addEventListener("mouseleave", () => {
-    // 使用GSAP动画将侧边栏滑动回最小化位置
-    gsap.to(sidebar, { left:    0 });
-});
+    // 监听最小化按钮或图标的鼠标移出事件
+    toggleButton.addEventListener("mouseleave", () => {
+        // 使用GSAP动画将侧边栏滑动回最小化位置
+        gsap.to(sidebar, { left: 0 });
+    });
+}
