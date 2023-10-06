@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Results{% endblock %}
 {% block lead %}You can describe the results of your project and your future plans here.{% endblock %}
 
@@ -9,7 +9,8 @@
 
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background-image:url('https://static.igem.wiki/teams/4702/wiki/results/results/background.jpg');background-size:cover">
+<div class="sky single_slider d-flex align-items-center" id="cover-image"
+  style="background-image:url('https://static.igem.wiki/teams/4702/wiki/results/results/background.jpg');background-size:cover">
 
   <section class="col-md-12 text-center">
     <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
@@ -19,7 +20,8 @@
           <p class="text-light" style="font-size:70px;">Results</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              You can describe the results of your project and your future plans here.  
+              We successfully synthesized the Iron Oxide Nanoparticles (IONPs) in <i>E. coli</i> ,separate the IONPs 
+              and got the characterization result of IONPs.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -52,16 +54,21 @@
       </li>
       <li>
         <a href="#4" class="nav-link">
-          Examination of the Conjugation with scFV Domain to the HER2 Positive Cell
+          Characterization of Nanoparticles Synthesized by Different Time and Ferric Ion Induction Concentration
         </a>
       </li>
       <li>
         <a href="#5" class="nav-link">
-          Cytotoxicity Examination of the Biologically Synthesized Nanoparticles and Chemically Synthesized Nanoparticle
+          Examination of the Conjugation with scFV Domain to the HER2 Positive Cell
         </a>
       </li>
       <li>
         <a href="#6" class="nav-link">
+          Cytotoxicity Examination of the Biologically Synthesized Nanoparticles and Chemically Synthesized Nanoparticle
+        </a>
+      </li>
+      <li>
+        <a href="#7" class="nav-link">
           His-tagged protein purification
         </a>
       </li>
@@ -73,477 +80,823 @@
     </ul>
     <hr>
   </div>
-  <div class="mp-content offset-md-3 col-md-8 col-lg-8 gaspcol" style="padding-right:0;padding-left:0">
-    <div id="1" class="month">
+
+  <div class="mp-content offset-md-3 col-md-8 col-lg-8" style="padding-right:0;padding-left:0">
+    <div id="1" class="month gaspcol">
       <div class="container mx-auto mt-5 ">
         <h1 class="pt-5 mx-auto text-center">
           Summary
           </a><sup class="author" style="font-size:medium"><a href="#a1">[1]</a></sup>
         </h1>
-        <hr>
+        <hr class="hr-ani">
         <div class="card mx-auto text-center">
-          <div class="card-header">***</div>
+          <div class="card-header">Explanation about Parameters Tested by Us</div>
+          <div class="card-body">
+            Since we are a team that focus on the biosynthesis and application of
+            the Iron Oxide Nanoparticles, sepecially the specific targeting of the
+            antibody linked Iron Oxide Nanoparticles to the HER2 positive cell,
+            following important things were tested by us:
+            <br><br>1. Whether the bacteria strain chosen by us could properly
+            synthesize the Iron Oxide Nanoparticles, and which magnetic state it would be in,
+            what would the average diameter and polydispersity of the biologically
+            synthesized nanoparticles, whether the method we used to separate IONPs was good.
+            This should be tested by TEM and DLS analysis
+            after using the method we designed to separate the nanoparticles.
+            <br><br>2. Whether the scFv domain of the anti-HER2 antibody could be properly
+            expressed in the bacteria strain chosen by us, and whether the protein could be
+            biologically active after purification (which means that binding with HER-2 positive
+            cells should occur). This should be tested by immunostaining, flow cytometry
+            analysis and western blot analysis by setting proper comparison
+            groups and conduct the same staining to HER-2 negative cells.
+            <br><br>3. Whether the biologically synthesized nanoparticles could be conjugated with
+            the scFv domain of the anti-HER2 antibody effectively. This should be tested also by
+            immunostaining if the second task could be proven. Or we could conduct the conjugation
+            method on the chemically synthesized nanoparticles which shows significant cytotoxicity,
+            and compare the result with unlinked groups to indirectly show both the biological activity
+            of scFv synthesized by us and the success of the conjugation methods.
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Major Achievements</div>
+          <div class="card-body">
+            1. We successfully synthesized the Iron Oxide Nanoparticles (IONPs) <i>E. coli</i>
+            and separate the IONPs using method designed and tested by ourselves.
+            <br><br>2. We successfully characterized the IONPs using TEM and DLS and found that using
+            our method, the IONPs got by us were generally in superparamagnetic state and suitable for
+            application need magnetic induction and don't want the particle to aggregrate.
+            <br><br>3. We successfully synthesized the scFv domain of anti HER2 antibody in <i>E. coli</i>
+            and purified the protein using His-tag purification column.
+            <br><br>4. We showed that the biologically synthesized IONPs have no obvious cytotoxicity
+            to the HER2 positive cell and the HER2 negative cell, as a comparison, the chemically
+            synthesized IONPs have obvious cytotoxicity to
+            the HER2 positive cell and the HER2 negative cell. And the linkage with scFv domain to the
+            chemically synthesized IONPs could increase the cytotoxicity
+            of the IONPs to the HER2 positive cell.
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Approaches Without Success / Unexplained Confusion in Data We Got </div>
+          <div class="card-body">
+            1. We tried to use the immunostaining to examine the conjugation of the scFv domain 
+            to the HER2 positive cell. But the result shows that the 
+            <a href="https://www.sigmaaldrich.cn/CN/zh/product/sigma/sab4200620">anti-polyhis antibody</a> 
+            has not much specificity to the primary antibody, indicating we couldn't 
+            test the conjugation of the scFv domain to the HER2 positive cell using 
+            this method or to say this antibody.
+            <br>2. Now the binding affinity of the antibody designed by us could only be 
+            partially given from the cytotoxicity examination, which is not quite convicing.
+            <br>3. In one of our DLS characterization, the hydrodynamic diameter of the 
+            nanoparticles were much greater than other repeats through exactly 
+            the same treatment, which is unexplained. And the only difference observed by us is that, 
+            only this time there exist partially ropy stuff 
+            (like crude DNA extract) in the supernantant after 
+            centrifugation of the cell lysate. We are not sure whether this is the reason 
+            for the unusual hydrodynamic diameter.
+          </div>
+        </div>
+        <div class="card mx-auto text-center">
+          <div class="card-header">Future Work</div>
           <div class="card-body">
             ***
           </div>
         </div>
       </div>
     </div>
-    <div id="2" class="month">
+    <div id="2" class="month gaspcol">
       <div class="container mx-auto mt-5  ">
         <h1 class="pt-5 mx-auto text-center">
           TEM Characterization of Biologically Synthesized Nanoparticles
           </a><sup class="author" style="font-size:medium"><a href="#a1">[2]</a></sup>
         </h1>
-        <hr>
+        <hr class="hr-ani">
         <div class="card mx-auto text-center">
           <div class="card-header">Method Description</div>
           <div class="card-body">
-            In our examination, 
-            <a href="https://www.thermofisher.com/us/en/home/electron-microscopy/products/transmission-electron-microscopes/talos-l120c-tem.html">
-            Talos L120C G2 Transmission Electron Microscope</a> were used for the characterization of the nanoparticles.
-            <br>Basically, this microscope utilizes a beam of electrons instead of light to visualize the sample, enabling incredibly 
+            In our examination,
+            <a
+              href="https://www.thermofisher.com/us/en/home/electron-microscopy/products/transmission-electron-microscopes/talos-l120c-tem.html">
+              Talos L120C G2 Transmission Electron Microscope</a> were used for the characterization of the
+            nanoparticles.
+            <br>Basically, this microscope utilizes a beam of electrons instead of light to visualize the sample,
+            enabling incredibly
             detailed images with a resolution down to the sub-nanometer scale.
-            <br>To begin the analysis, we prepare a sample of the nanoparticles by depositing a thin layer onto a carbon-coated copper
-             grid. This grid is carefully loaded into the Talos L120C G2 TEM, ensuring proper positioning for imaging and analysis.
-            <br>Once the sample is inserted, we set the imaging parameters according to our specific requirements. The TEM employs a
-             high-energy electron beam that is directed onto the sample. As the electrons interact with the nanoparticles, they 
-             scatter and interact with the internal structure of the particles.
-            <br>We observe and capture the scattering patterns produced by the interaction of the electrons with the nanoparticles. 
-            These patterns are collected by a detector and transformed into high-resolution images, providing us with detailed 
+            <br>To begin the analysis, we prepare a sample of the nanoparticles by depositing a thin layer onto a
+            carbon-coated copper
+            grid. This grid is carefully loaded into the Talos L120C G2 TEM, ensuring proper positioning for imaging and
+            analysis.
+            <br>Once the sample is inserted, we set the imaging parameters according to our specific requirements. The
+            TEM employs a
+            high-energy electron beam that is directed onto the sample. As the electrons interact with the
+            nanoparticles, they
+            scatter and interact with the internal structure of the particles.
+            <br>We observe and capture the scattering patterns produced by the interaction of the electrons with the
+            nanoparticles.
+            These patterns are collected by a detector and transformed into high-resolution images, providing us with
+            detailed
             information about the morphology, size, and distribution of the nanoparticles.
-            <br>In addition to imaging, we also utilize Selected Area Electron Diffraction (SAED) analysis with the Talos 
-            L120C G2 TEM. By selecting a specific area of interest on the sample using an aperture, we focus the electron beam
-             onto that region. The resulting diffraction pattern reveals the crystalline properties and orientation of the nanoparticles,
-              enabling us to determine their structural characteristics.
-            <br>They provide us with valuable information about the size, shape, and distribution of the nanoparticles, 
-            as well as give us one way to compare the sample with uninduced control to show the success of the synthetic process.
+            <br>In addition to imaging, we also utilize Selected Area Electron Diffraction (SAED) analysis with the
+            Talos
+            L120C G2 TEM. By selecting a specific area of interest on the sample using an aperture, we focus the
+            electron beam
+            onto that region. The resulting diffraction pattern reveals the crystalline properties and orientation of
+            the nanoparticles,
+            enabling us to determine their structural characteristics.
+            <br>They provide us with valuable information about the size, shape, and distribution of the nanoparticles,
+            as well as give us one way to compare the sample with uninduced control to show the success of the synthetic
+            process.
           </div>
         </div>
         <div class="card mx-auto text-center">
-          <div class="card-header">Results / Data</div>
+          <div class="card-header">Results / Data of 5 mM FeCl<sub>3</sub> Induced Culture</div>
           <div class="card-body">
-            The representative TEM figures of the biologically synthesized nanoparticles and the negative control with no ferric ion induction are shown below.<br>
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0009-20230825-1107-92000-x-ceta.jpg" width="480" height=" " alt="TEM Result for Biologically Synthesized Nanoparticle">
-            <p>Figure 1. Biologically Synthesized Nanoparticle by 5 mM FeCl<sub>3</sub> Induction Attached to Biomass.</p>
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0017-20230823-1011-190-kx-ceta.jpg" width="480" height=" " alt="TEM Result for Biologically Synthesized Nanoparticle">
-            <p>Figure 2. Biologically Synthesized Nanoparticle by 5 mM FeCl<sub>3</sub> Induction Detached from Biomass through ultrasonication.</p>
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0009-20230825-0939-310-kx-ceta.jpg" width="480" height=" " alt="TEM Result for Negative Control">
-            <p>Figure 3. Negative Control for Nanoparticle without Ferric Ion Induction.</p>
-            To get the size distribution of the nanoparticles, we use ImageJ to analyze the TEM images. 
-            Multiple figures were chosen for data processing. In total fifty to seventy particles were randomly selected in each figure, 
-            the size distribution statistical chart of the nanoparticles is shown below.<br>
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/biologically-synthesized-nanoparticle-distribution-figure.jpg" width="500" height=" " alt="Biologically Synthesized Nanoparticle Size Distribution">
-            <p>Figure 4. Size Distribution of the Biologically Synthesized Nanoparticles.
-            <p>From the size distribution statistical data, the Polydispersity Index of the samples in each view field was calculated and shown as below: </p>
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/pdi-samples.jpg" width="500" height=" " alt="Polydispersity Index of the Samples in Each View Field">
-            <p>Figure 5. Polydispersity Index of the Samples in Each View Field.
-          </p>
-            <p>All the figures used for data processing are labelled and shown in the supplementary data section below.
+            The representative TEM figures of the biologically synthesized nanoparticles and the negative control with
+            no ferric ion induction are shown below.<br>
+            <div align="center"><img
+                src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0009-20230825-1107-92000-x-ceta.jpg"
+                style="width:50%" alt="TEM Result for Biologically Synthesized Nanoparticle"></div>
+            <p>Figure 1. Biologically Synthesized Nanoparticle by 5 mM FeCl<sub>3</sub> Induction Attached to Biomass.
             </p>
-            </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Analysis / Discussion</div>
-          <div class="card-body">
-            Firstly, the comparison between ferric induced culture and uninduced culture shows the success of the biological 
-            synthesis of the nanoparticles. There are no nanoparticles observed in the uninduced culture, (the faint grain in 
-            the TEM figure for uninduced culture were actually some inorganic salt as when electron-beam were fired to the sample,
-             the salt grain would disappear), while the induced culture shows a large amount of nanoparticles attached to the biomass or off the biomass.
-            <br><br>Secondly, the size distribution of the nanoparticles shows that the nanoparticles are in the range of 5-10 nm, this means that 
-            almost all the nanoparticle synthesized by us are in superparamagnetic state, indicating the applicability of biologically synthesized nanoparticle in tumor
-            penetration or tumor accumulation.
-            <br><br>Thirdly, the comparison between the sample attached to the biomass and the sample detached from the biomass shows 
-            that in separation of the biological synthesized nanoparticles, ultrasonication chose by us is a proper method to detach 
-            the nanoparticles from the biomass.
-            <br><br>Fourthly, the Polydispersity Index of the samples in each view field shows that the nanoparticles are relatively uniform in size.
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Supplementary Datas</div>
-          <div class="card-body">
-            The supplementary figures and statistical information of the TEM characterization of the biologically synthesized nanoparticles could be found in the pdf file below.
-              <div class="card mx-auto text-center">
-                <div class="card-header ani-card-header">TEM Characterization of Biologically Synthesized Nanoparticles and Size Distribution Statistics</div>
-                <div class="card-body ani-card-body">
-                  <div id="pdf-container-5"></div>
-                </div>
+            <div align="center"><img
+                src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0017-20230823-1011-190-kx-ceta.jpg"
+                style="width:50%" alt="TEM Result for Biologically Synthesized Nanoparticle"></div>
+            <p>Figure 2. Biologically Synthesized Nanoparticle by 5 mM FeCl<sub>3</sub> Induction Detached from Biomass
+              through ultrasonication.</p>
+            <div align="center"><img
+                src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/0009-20230825-0939-310-kx-ceta.jpg"
+                style="width:50%" alt="TEM Result for Negative Control"></div>
+            <p>Figure 3. Negative Control for Nanoparticle without Ferric Ion Induction.</p>
+            To get the size distribution of the nanoparticles, we use ImageJ to analyze the TEM images.
+            Multiple figures were chosen for data processing. In total fifty to seventy particles were randomly selected
+            in each figure,
+            the size distribution statistical chart of the nanoparticles is shown below.<br>
+            <div align="center"><img
+                src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/biologically-synthesized-nanoparticle-distribution-figure.jpg"
+                style="width:50%" alt="Biologically Synthesized Nanoparticle Size Distribution"></div>
+              <p>Figure 4. Size Distribution of the Biologically Synthesized Nanoparticles.
+              <p>From the size distribution statistical data, the Polydispersity Index of the samples in each view field
+                was calculated and shown as below: </p>
+              <div align="center"><img
+                  src="https://static.igem.wiki/teams/4702/wiki/results/tem-characterization-of-biologically-synthesized-nanoparticles/pdi-samples.jpg"
+                  style="width:50%" alt="Polydispersity Index of the Samples in Each View Field"></div>
+                <p>Figure 5. Polydispersity Index of the Samples in Each View Field.
+                </p>
+                <p>All the figures used for data processing are labelled and shown in the supplementary data section
+                  below.
+                </p>
               </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="3" class="month">
-      <div class="container mx-auto mt-5  ">
-        <h1 class="pt-5 mx-auto text-center">
-          DLS Characterization of Biologically Synthesized Nanoparticles and Zeta Potential Measurement
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[3]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Method Description</div>
-          <div class="card-body">
-            For the DLS characterization and Zeta Potential measurement of the biologically synthesized nanoparticles, we use
-            <a href="https://www.brookhaveninstruments.com/product/nanobrook-series/">Brookhaven NanoBrook Series</a>. 
-            <br>This advanced instrument utilizes Dynamic Light Scattering (DLS) technology, which allows us to measure the 
-            size distribution of nanoparticles in a liquid suspension. By analyzing the fluctuations in the intensity of scattered 
-            light caused by the random motion of nanoparticles, we can obtain valuable information about their size, 
-            size distribution, and polydispersity.
-            <br>
-            <br>When it comes to analyzing our biologically synthesized nanoparticles, the NanoBrook Series offers a 
-            user-friendly and efficient workflow. Firstly, we prepare a sample of our nanoparticles in a suitable liquid 
-            medium, ensuring that the sample is well-dispersed. We then introduce the sample into the NanoBrook instrument, 
-            where it is carefully illuminated with a laser beam.
-            <br><br>The scattered light from the nanoparticles is collected and analyzed, allowing us to obtain valuable data 
-            on the size distribution of the particles. This information is crucial for evaluating the quality of our synthesized 
-            nanoparticles and understanding their behavior in biological systems.
-            <br><br>Besides, the NanoBrook Series enables us to measure the Zeta Potential of our nanoparticles, \
-            which is a key parameter that provides insights into the stability 
-            and surface charge of nanoparticles. Also, by assessing the electric potential at the particle's surface, we can gain 
-            a deeper understanding of their interactions with their environment.
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Results / Data</div>
-          <div class="card-body">
-            <b style="font-size: large;">DLS Analysis</b>
-            <br>
-            The size distribution pattern of the biologically synthesized nanoparticles using log scale is shown below:
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/bio-dls.jpg"
-             width="500" height=" " alt="Biologically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis">
-            <p>Figure 1. Biologically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
-            <p>From the size distribution pattern, the average hydrodynamic diameter of nanoparticles is 7.23 nm.
-          <br><br>The size distribution pattern of the chemically synthesized nanoparticle using log scale is shown below:
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-dls.jpg"
-             width="500" height=" " alt="Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis">
-            <p>Figure 2. Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
-            <p>From the size distribution pattern, the average hydrodynamic diameter of nanoparticles is 252.41 nm.
-              <br>
-            For clearer representation, the linear scale size distribution pattern of the chemically synthesized nanoparticle is shown below:
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-linear-scale-dls.jpg"
-             width="500" height=" " alt="Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis">
-            <p>Figure 3. Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
-            <b style="font-size: large;">
-            Zeta Potential Measurement </b>
-            <br>
-
-        </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Analysis / Discussion</div>
-          <div class="card-body">
-            ***
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Supplementary Datas</div>
-          <div class="card-body">
-            ***
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="4" class="month">
-      <div class="container mx-auto mt-5  ">
-        <h1 class="pt-5 mx-auto text-center">
-          Examination of the Conjugation with scFV Domain to the HER2 Positive Cell
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[4]</a></sup>
-        </h1>
-        <hr>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Method Description</div>
-          <div class="card-body">
-            Basically, we used the immunostainning to examine the conjugation of the scFv domain to the HER2 positive cell.
-            <br>As we only synthesized the scFv domain of the anti-HER2 antibody with his-tag attached to the end, we could not 
-            directly find a secondary antibody with fluorescent tag to bind to the scFv domain. Therefore, we use the mouse 
-            derived anti-polyhis antibody to attach the scFv domain synthesized by us and then use the tertiary goat derived 
-            anti-mouse antibody to label the anti-polyhis antibody.
-            <br><br>
-            For convenience of explanation, here we called the scFv domain to be the primary antibody, the anti-polyhis antibody
-            to be the secondary antibody and the anti-mouse antibody to be the tertiary antibody.
-            <br><br>
-            Generally, to test the conjugation, we added these three antibodies to the HER2 positive cell and HER2 negative cell.
-            And to see the if the secondary antibody has relatively good specificity to the primary antibody, we also added one group 
-            that only have the secondary antibody and the tertiary antibody to the HER2 positive cell and HER2 negative cell.
-            Also, the background and unstained fluorescent signal were also tested by two groups, one is only add the primary and secondary 
-            antibody to the HER2 positive cell and HER2 negative cell, the other is only add the secondary and 
-            tertiary antibody to the HER2 positive cell and HER2 negative cell.
-            <br><br>
-            Final result were tested by the confocal microscopy and flow cytometry analysis to see the mean fluorescence intensity of the cells.      
-            <br>We have the detailed design of the test as below:
-            <div class="shadow-lg p-3 mb-5 bg-white rounded">
-              <div class="container w-80 h-100 mx-auto mt-3 mb-3">
-                <div class="row mt-4" style="text-align:justify">
-                  <div class="col">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th colspan="1" scope="col">Cell Strain</th>
-                          <th colspan="3" scope="col">Treatment of the cells</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td></td>
-                          <td>Anti HER2 scFv domain antibody</td>
-                          <td>Anti His tag antibody (mouse derived)</td>
-                          <td>Goat Anti-Mouse-IgG</td>
-                        </tr>
-                        <tr>
-                          <td>SK-BR-3 treatment 1 <br>(three replica)</td>
-                          <td>-</td>
-                          <td>+</td>
-                          <td>+</td>
-                        </tr>
-                        <tr>
-                          <td>SK-BR-3 treatment 2<br>(three replica)</td>
-                          <td>+</td>
-                          <td>+</td>
-                          <td>+</td>
-                        </tr>
-
-                        <tr>
-                          <td>SK-BR-3 treatment 3<br>(three replica)</td>
-                          <td>+</td>
-                          <td>+</td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>SK-BR-3 treatment 4<br>(three replica)</td>
-                          <td>+</td>
-                          <td>-</td>
-                          <td>+</td>
-                        </tr>
-                        <tr>
-                          <td>MDA-MB-231 treatment 1 <br>(four replica)</td>
-                          <td>-</td>
-                          <td>+</td>
-                          <td>+</td>
-                        </tr>
-                        <tr>
-                          <td>MDA-MB-231 treatment 2 <br>(three replica)</td>
-                          <td>+</td>
-                          <td>+</td>
-                          <td>+</td>
-                        </tr>
-                        <tr>
-                          <td>MDA-MB-231 treatment 3<br>(two replica)</td>
-                          <td>+</td>
-                          <td>+</td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>MDA-MB-231 treatment 4<br>(two replica)</td>
-                          <td>+</td>
-                          <td>-</td>
-                          <td>+</td>
-                        </tr>
-                      </tbody>
-                    </table>
+            </div>
+            <div class="card mx-auto text-center">
+              <div class="card-header">Analysis / Discussion</div>
+              <div class="card-body">
+                Firstly, the comparison between ferric induced culture and uninduced culture shows the success of the
+                biological
+                synthesis of the nanoparticles. There are no nanoparticles observed in the uninduced culture, (the faint
+                grain in
+                the TEM figure for uninduced culture were actually some inorganic salt as when electron-beam were fired
+                to the sample,
+                the salt grain would disappear), while the induced culture shows a large amount of nanoparticles
+                attached to the biomass or off the biomass.
+                <br><br>Secondly, the size distribution of the nanoparticles shows that the nanoparticles are in the
+                range of 5-10 nm, this means that
+                almost all the nanoparticle synthesized by us are in superparamagnetic state, indicating the
+                applicability of biologically synthesized nanoparticle in tumor
+                penetration or tumor accumulation.
+                <br><br>Thirdly, the comparison between the sample attached to the biomass and the sample detached from
+                the biomass shows
+                that in separation of the biological synthesized nanoparticles, ultrasonication chose by us is a proper
+                method to detach
+                the nanoparticles from the biomass.
+                <br><br>Fourthly, the Polydispersity Index of the samples in each view field shows that the
+                nanoparticles are relatively uniform in size.
+              </div>
+            </div>
+            <div class="card mx-auto text-center">
+              <div class="card-header">Supplementary Datas</div>
+              <div class="card-body">
+                The supplementary figures and statistical information of the TEM characterization of the biologically
+                synthesized nanoparticles could be found in the pdf file below.
+                <div class="card mx-auto text-center">
+                  <div class="card-header ani-card-header">TEM Characterization of Biologically Synthesized
+                    Nanoparticles and Size Distribution Statistics</div>
+                  <div class="card-body ani-card-body">
+                    <div id="pdf-container-5"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Result</div>
-          <div class="card-body">
-            Sadly, the result of the confocal microscopy and flow cytometry analysis shows that the secondary 
-            antibody has not much specificity to the primary antibody, indicating we couldn't test the conjugation of 
-            the scFv domain to the HER2 positive cell using this method. We have the group only added the secondary and 
-            tertiary antibody also show strong fluorescent signal, which should not occur if the secondary antibody is a 
-            good one.
-            <br><br>The mean fluorescent intensity of the SK-BR3 under different treatment are shown below:<br>
-            <img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-9-28.jpg" 
-            width="500" height=" " alt="Mean Fluorescent Intensity of the SK-BR3 under Different Treatment">
-            <p><b>Figure 1. Mean Fluorescent Intensity of the SK-BR3 under Different Treatment.</b> 
-              Note that as the background comparison groups were not included in the figure as the effective 
-              counted area were over 100 times smaller than positive groups, this way the mean fluorescent intensity is not useful.</p>
-              <br>To further show the success of negative result, the figures of the confocal microscopy result after setting the photo to 8 bit and auto the threshold are shown below:
-              <br><img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b3-12-airyscan-processing-09-c2.jpg"
-              width="500" height=" " alt="Confocal Microscopy Result of the SK-BR3 under Primary and Secondary Antibody Treatment">
-              <p><b>Figure 2. Confocal Microscopy Result of the SK-BR3 under Primary and Secondary Antibody Treatment.</b> 
-                <br>The figure shows that the background signal is weak, indicating the background fluorescence is weak.</p>
-              <p>And the corresponding figure under bright field is shown below: </p>
-              <img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b3-12-airyscan-processing-09-c3.jpg"
-              width="500" height=" " alt="Bright Field Channel Result of the SK-BR3 under Primary and Secondary Antibody Treatment">
-              <p><b>Figure 3. Bright Field Channel Result of the SK-BR3 under Primary and Secondary Antibody Treatment.</b>
-                <img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b4-13-airyscan-processing-12-c2.jpg"
-                width="500" height=" " alt="Confocal Microscopy Result of the SK-BR3 under Primary and Tertiary Antibody Treatment">
-                <p><b>Figure 4. Confocal Microscopy Result of the SK-BR3 under Primary and Tertiary Antibody Treatment.</b> 
-                  <br>The figure shows that the background signal is weak, indicating the specificity of tertiary antibody is high 
-                  and was washed thoroughly.</p>
-                  <p>And the corresponding figure under bright field is shown below: </p>
-                  <img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b4-13-airyscan-processing-12-c3.jpg"
-                  width="500" height=" " alt="Bright Field Channel Result of the SK-BR3 under Primary and Tertiary Antibody Treatment">
-                  <p>
-                    <b>Figure 5. Bright Field Channel Result of the SK-BR3 under Primary and Tertiary Antibody Treatment.</b>
-                  </p>
-              <br>
-              <p>The flow cytometry result also support the conclusion that the 
-                secondary antibody didn't show specificity towards the scFv domain.</p>
-                <img src="https://static.igem.wiki/teams/4702/wiki/results/results/28-sep-2023-layout.jpg"
-                width="500" height=" " alt="Flow Cytometry Result of the SK-BR3 under Different Treatment">
-                <p><b>Figure 6. Flow Cytometry Result of the SK-BR3 under Different Treatment.</b> 
-                  <br>The figure shows no obvious difference between the group adding all three antibody and 
-                  the group adding only secondary and tertiary antibodies, while two negative control show 
-                  normal result. </p>
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Future Plan</div>
-          <div class="card-body">
-            ***
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="5" class="month">
-      <div class="container mx-auto mt-5  ">
-        <h1 class="pt-5 mx-auto text-center">
-          Cytotoxicity Examination of the Biologically Synthesized Nanoparticles and Chemically Synthesized Nanoparticle
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[5]</a></sup>
-        </h1>
-        <hr>        
-        <div class="card mx-auto text-center">
-          <div class="card-header">Method Description</div>
-          <div class="card-body">
-            ***
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">***</div>
-          <div class="card-body">
-            ***
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div id="6" class="month">
-      <div class="container mx-auto mt-5  ">
-        <h1 class="pt-5 mx-auto text-center">
-          His-tagged protein purification
-          </a><sup class="author" style="font-size:medium"><a href="#a1">[6]</a></sup>
-        </h1>
-        <hr>        
-        <div class="card mx-auto text-center">
-          <div class="card-header">Method Description</div>
-          <div class="card-body">
-            In our vector design for scFv domain of anti-HER2 antibody, we add a 6 × His-tag to the terminal of the scFv domain of the anti-HER2 antibody.
-            <br>Therefore, we use the <a href="https://www.cytivalifesciences.com/en/us/shop/chromatography/prepacked-columns/affinity-tagged-protein/histrap-hp-histidine-tagged-protein-purification-columns-p-00250">
-              HisTrap HP His tag protein purification column</a> and the Union AKTA system to purify the His-tagged protein from the cell lysate.
-            <br><br>In our case, we are trying to express a eukaryotic gene in prokaryote <i>E. coli</i>, therefore, 
-            we chose the SHuffle strain for better disulfide bond formation in the protein expressed to best maintain 
-            the proper protein structure and avoid formation of inclusionbody.
-            <br><br>After the expression of the His-tagged protein, cell pellet were broken by high pressure homogenizer and the cell lysate were collected.
-            <br><br>Then, the cell lysate after dislodging the cell debris by centrifugation were loaded into the 
-            HisTrap HP His tag protein purification column and the His-tagged protein were eluted by imidazole.
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Results / Analysis</div>
-          <div class="card-body">
-            Basically, the His-tagged protein were successfully purified from the cell lysate, including 
-            the <b>scFv-polyhis</b>, <b>scFv-cys-polyhis</b> and <b>scFv-polyhis-cys</b>.
-            <br><br>The purity of the His-tagged protein were acceptable for further use. And the 
-            concentration of final product were in the range of 0.1-5 mg/ml, which are also proper 
-            for later use. By our method for protein expression and purification, when results are stable, 
-            we had a yield of 5 mg/ml with total volumn 100 μL from 150 mL culture, which is a satisfying result.
-            <br><br>The other thing we found is that, for scFv-cys-polyhis protein, the induction under 18 ℃ 
-            shows higher final concentration result than that under 37 ℃. This may be due to the fact that 
-            lower temperature would leave enough time for the protein to fold properly.
-            <br><br>The UV spectrum during purification process, the SDS-PAGE result and the concentration 
-            by BCA test could be found in the PDF file in the supplementary data.
-          </div>
-        </div>
-        <div class="card mx-auto text-center">
-          <div class="card-header">Supplementary Data</div>
-          <div class="card-body">
-            ***
-          </div>
-        </div>
-      </div>
-    </div>
+        <div id="3" class="month gaspcol">
+          <div class="container mx-auto mt-5  ">
+            <h1 class="pt-5 mx-auto text-center">
+              DLS and Zeta Potential Characterization of Biologically Synthesized Nanoparticles and Zeta Potential
+              Measurement
+              </a><sup class="author" style="font-size:medium"><a href="#a1">[3]</a></sup>
+            </h1>
+            <hr class="hr-ani">
+            <div class="card mx-auto text-center">
+              <div class="card-header">Method Description</div>
+              <div class="card-body">
+                For the DLS characterization and Zeta Potential measurement of the biologically synthesized
+                nanoparticles, we use
+                <a href="https://www.brookhaveninstruments.com/product/nanobrook-series/">Brookhaven NanoBrook
+                  Series</a>.
+                <br>This advanced instrument utilizes Dynamic Light Scattering (DLS) technology, which allows us to
+                measure the
+                size distribution of nanoparticles in a liquid suspension. By analyzing the fluctuations in the
+                intensity of scattered
+                light caused by the random motion of nanoparticles, we can obtain valuable information about their size,
+                size distribution, and polydispersity.
+                <br>
+                <br>When it comes to analyzing our biologically synthesized nanoparticles, the NanoBrook Series offers a
+                user-friendly and efficient workflow. Firstly, we prepare a sample of our nanoparticles in a suitable
+                liquid
+                medium, ensuring that the sample is well-dispersed. We then introduce the sample into the NanoBrook
+                instrument,
+                where it is carefully illuminated with a laser beam.
+                <br><br>The scattered light from the nanoparticles is collected and analyzed, allowing us to obtain
+                valuable data
+                on the size distribution of the particles. This information is crucial for evaluating the quality of our
+                synthesized
+                nanoparticles and understanding their behavior in biological systems.
+                <br><br>Besides, the NanoBrook Series enables us to measure the Zeta Potential of our nanoparticles, \
+                which is a key parameter that provides insights into the stability
+                and surface charge of nanoparticles. Also, by assessing the electric potential at the particle's
+                surface, we can gain
+                a deeper understanding of their interactions with their environment.
+              </div>
+            </div>
+            <div class="card mx-auto text-center">
+              <div class="card-header">Results / Data of 5 mM FeCl<sub>3</sub> Induced Culture</div>
+              <div class="card-body">
+                <b style="font-size: large;">DLS Analysis</b>
+                <br>
+                The size distribution pattern of the biologically synthesized nanoparticles using log scale is shown
+                below:
+                <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/bio-dls.jpg"
+                    width="500" height=" "
+                    alt="Biologically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis"></div>
+                  <p>Figure 1. Biologically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
+                  <p>From the size distribution pattern, the average hydrodynamic diameter of nanoparticles is 7.23 nm.
+                    <br><br>The size distribution pattern of the chemically synthesized nanoparticle using log scale is
+                    shown below:
+                  <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-dls.jpg"
+                      style="width:50%" alt="Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis"></div>                    
+                      <p>From the size distribution pattern, the average hydrodynamic diameter of nanoparticles is 252.41 nm.
+                      <br>Actually the real size of the chemically synthesized nanoparticle by TEM analysis is around 20 nm, but the 
+                    hydrodynamic diameter is much larger than the real size due to the aggregration of the nanoparticles, 
+                    this also indicate that the chemically synthesized nanoparticle 
+                    is not that stable and is easier to get precipitated out.
+                    <p>Figure 2. Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
+                      <br>
+                    For clearer representation, the linear scale size distribution pattern of the chemically synthesized nanoparticle is shown below:
+                    <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-linear-scale-dls.jpg"
+                      style="width:50%" alt="Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis"></div>
+                    <p>Figure 3. Chemically Synthesized Nanoparticle Size Distribution Pattern by DLS Analysis.</p>
+                    <b style="font-size: large;">
+                    Zeta Potential Measurement </b><br>
+                    For the chemically synthesized nanoparticle, the Zeta Potential measured
+                     by us shows an average of -20.26 mV, which is smaller than the biologically 
+                     synthesized nanoparticles.<br>
+                     Raw data of the Zeta Potential measurement of the chemically synthesized nanoparticle is shown below:<br>
+                      <img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-zeta.jpg" 
+                      alt="Zeta Potential Measurement of the Chemically Synthesized Nanoparticle"
+                      style="width:100%"><br>
+                      <p><b>Figure 4.</b> Zeta Potential Measurement of the Chemically Synthesized Nanoparticle.</p>
+                    And the supplementary all field data of the Zeta Potential 
+                    measurement of the chemically synthesized nanoparticle is 
+                    shown in the pdf file below:
+                    <div class="card mx-auto text-center">
+                      <div class="card-header ani-card-header">Zeta Potential Measurement of the Chemically Synthesized Nanoparticle</div>
+                      <div class="card-body ani-card-body">
+                        <div id="pdf-container-18"></div>
+                      </div></div>
+                </div>
+                </div>
+                <div class="card mx-auto text-center">
+                  <div class="card-header">Analysis / Discussion</div>
+                  <div class="card-body">
+                    ***
+                  </div>
+                </div>
+                <div class="card mx-auto text-center">
+                  <div class="card-header">Supplementary Datas</div>
+                  <div class="card-body">
+                    ***
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="4" class="month gaspcol">
+              <div class="container mx-auto mt-5  ">
+                <h1 class="pt-5 mx-auto text-center">
+                  Characterization of Nanoparticles Synthesized by Different Time and Ferric Ion Induction Concentration
+                  </a><sup class="author" style="font-size:medium"><a href="#a1">[4]</a></sup>
+                </h1>
+                <hr class="hr-ani">        
+                <div class="card mx-auto text-center">
+                  <div class="card-header">Description</div>
+                  <div class="card-body">
+                    To optimize the large scale biological nanoparticles synthesis, we tested the effect of 
+                    different ferric ion induction concentration and different induction time on the nanoparticles synthesis.
+                    Three time gradient including 24 hours, 36 hours and 48 hours were tested, and four ferric ion 
+                    induction concentration gradient including 0 mM, 2 mM, 5 mM and 7.5 mM were tested. These designs came from 
+                    our preliminary test that iron concentration over 10 mM would greatly inhibit the growth of the bacteria 
+                    and its protein expression level. 
+                    <br><br>For each group, the general process were controled to be the same as the protocol 
+                    written in our experiment page. And characterization were conducted by TEM and DLS analysis as introduced above.
+                  </div>
+                </div>
+                <div class="card mx-auto text-center">
+                  <div class="card-header">Iron Concentration Gradient</div>
+                  <div class="card-body">
+                      By DLS and Zeta Potential measurement, we found the optimized concentration of ferric ion for nanoparticle synthesis is 2.5 mM, 
+                      as no significant difference in average hydrodynamic diameter and polydispersity index was found between 2.5 mM 
+                      and 5 mM induced group but the absolute value of zeta potential of 2.5 mM induced group is 
+                      higher than 5 mM induced group, indicating a higher stability. Summarized data were shown in the following figures:
+                      <br>
+                      <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/hydrodynamic-diameter-1.jpg"
+                        alt="hydrodynamic summary figure" width="480" height=" ">
+                      <p><b>Figure 1.</b> Hydrodynamic diameter summary figure</p></div><br>
+                      <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/polydispersity-1.jpg"
+                        alt="polydispersity index summary figure" width="480" height=" ">  
+                      <p><b>Figure 2.</b> Polydispersity index summary figure</p></div><br>
+                      <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/zeta-potential-1.jpg"
+                        alt="zeta potential summary figure" width="480" height=" ">        
+                    <p><b>Figure 3.</b> Zeta potential summary figure</p></div>
 
-    <div id="13" class="month">
-      <div class="container mx-auto mt-5  " id="Author">
-        <h1 class="pt-5 mx-auto text-center">
-          Author & Reference
-        </h1>
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <ul>
-              <h3>Author</h3>
-              <li id="a1">Shuoyi HU:
-                <a href="#1">[1]</a>
-                <a href="#2">[2]</a>
-                <a href="#3">[3]</a> 
-                <a href="#6">[6]</a>  
-              </li>
-              <li id="a2">Yixiao XIAO:
-                <a href="#5">[5]</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                  </div>
+                </div>
+                <div class="card mx-auto text-center">
+                  <div class="card-header">Time gradient</div>
+                  <div class="card-body">
+                    Here as the concentration of the samples were too low, we failed to get reliable zeta potential
+                    data.
+                    And the hydrodynamic diameter and polydispersity index data were shown below:<br>
+                    <div align="center"><img
+                        src="https://static.igem.wiki/teams/4702/wiki/results/results/bio-nps-diameter-cell-lysate-sup.jpg"
+                        alt="hydrodynamic diameter summary figure" style="width:50%">
+                      <p><b>Figure 4.</b> Hydrodynamic diameter summary figure</p></div>
+                      <div align="center"><img
+                          src="https://static.igem.wiki/teams/4702/wiki/results/results/bio-nps-polydispersity-cell-lysate-sup.jpg"
+                          alt="polydispersity index summary figure" style="width:50%">
+                        <p><b>Figure 5.</b> Polydispersity index summary figure</p></div>
+                        Here we could see that the diameter of the IONPs varies according to different induction time,
+                        fulfilling
+                        different requirements for different usage. And as for specific targeting with
+                        the requirement of superparamagnetism, 24 hours induced group is the best choice.
+                  </div>
+                </div>
+                <div id="5" class="month gaspcol">
+                  <div class="container mx-auto mt-5  ">
+                    <h1 class="pt-5 mx-auto text-center">
+                      Examination of the Conjugation with scFv Domain to the HER2 Positive Cell
+                      </a><sup class="author" style="font-size:medium"><a href="#a1">[5]</a></sup>
+                    </h1>
+                    <hr class="hr-ani">
+                    <div class="card mx-auto text-center">
+                      <div class="card-header">Method Description</div>
+                      <div class="card-body">
+                        Basically, we used the immunostainning to examine the conjugation of the scFv domain to the HER2
+                        positive cell.
+                        <br>As we only synthesized the scFv domain of the anti-HER2 antibody with his-tag attached to
+                        the end, we could not
+                        directly find a secondary antibody with fluorescent tag to bind to the scFv domain. Therefore,
+                        we use the mouse
+                        derived anti-polyhis antibody to attach the scFv domain synthesized by us and then use the
+                        tertiary goat derived
+                        anti-mouse antibody to label the anti-polyhis antibody.
+                        <br><br>
+                        For convenience of explanation, here we called the scFv domain to be the primary antibody, the
+                        <a href="https://www.sigmaaldrich.cn/CN/zh/product/sigma/sab4200620">anti-polyhis antibody</a>
+                        to be the secondary antibody and the <a
+                          href="https://www.abcam.com/products/secondary-antibodies/goat-mouse-igg-hl-alexa-fluor-647-ab150115.html">anti-mouse
+                          antibody</a> to be the tertiary antibody.
+                        <br><br>
+                        Generally, to test the conjugation, we added these three antibodies to the HER2 positive cell
+                        and HER2 negative cell.
+                        And to see the if the secondary antibody has relatively good specificity to the primary
+                        antibody, we also added one group
+                        that only have the secondary antibody and the tertiary antibody to the HER2 positive cell and
+                        HER2 negative cell.
+                        Also, the background and unstained fluorescent signal were also tested by two groups, one is
+                        only add the primary and secondary
+                        antibody to the HER2 positive cell and HER2 negative cell, the other is only add the secondary
+                        and
+                        tertiary antibody to the HER2 positive cell and HER2 negative cell.
+                        <br><br>
+                        Final result were tested by the confocal microscopy and flow cytometry analysis to see the mean
+                        fluorescence intensity of the cells.
+                        <br>We have the detailed design of the test as below:
+                        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                          <div class="container w-80 h-100 mx-auto mt-3 mb-3">
+                            <div class="row mt-4" style="text-align:justify">
+                              <div class="col">
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th colspan="1" scope="col">Cell Strain</th>
+                                      <th colspan="3" scope="col">Treatment of the cells</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                      <td>Anti HER2 scFv domain antibody</td>
+                                      <td>Anti His tag antibody (mouse derived)</td>
+                                      <td>Goat Anti-Mouse-IgG</td>
+                                    </tr>
+                                    <tr>
+                                      <td>SK-BR-3 treatment 1 <br>(three replica)</td>
+                                      <td>-</td>
+                                      <td>+</td>
+                                      <td>+</td>
+                                    </tr>
+                                    <tr>
+                                      <td>SK-BR-3 treatment 2<br>(three replica)</td>
+                                      <td>+</td>
+                                      <td>+</td>
+                                      <td>+</td>
+                                    </tr>
+
+                                    <tr>
+                                      <td>SK-BR-3 treatment 3<br>(three replica)</td>
+                                      <td>+</td>
+                                      <td>+</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>SK-BR-3 treatment 4<br>(three replica)</td>
+                                      <td>+</td>
+                                      <td>-</td>
+                                      <td>+</td>
+                                    </tr>
+                                    <tr>
+                                      <td>MDA-MB-231 treatment 1 <br>(four replica)</td>
+                                      <td>-</td>
+                                      <td>+</td>
+                                      <td>+</td>
+                                    </tr>
+                                    <tr>
+                                      <td>MDA-MB-231 treatment 2 <br>(three replica)</td>
+                                      <td>+</td>
+                                      <td>+</td>
+                                      <td>+</td>
+                                    </tr>
+                                    <tr>
+                                      <td>MDA-MB-231 treatment 3<br>(two replica)</td>
+                                      <td>+</td>
+                                      <td>+</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>MDA-MB-231 treatment 4<br>(two replica)</td>
+                                      <td>+</td>
+                                      <td>-</td>
+                                      <td>+</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mx-auto text-center">
+                      <div class="card-header">Result</div>
+                      <div class="card-body">
+                        Sadly, the result of the confocal microscopy and flow cytometry analysis shows that the
+                        secondary
+                        antibody has not much specificity to the primary antibody, indicating we couldn't test the
+                        conjugation of
+                        the scFv domain to the HER2 positive cell using this method. We have the group only added the
+                        secondary and
+                        tertiary antibody also show strong fluorescent signal, which should not occur if the secondary
+                        antibody is a
+                        good one.
+                        <br><br>The mean fluorescent intensity of the SK-BR3 under different treatment are shown
+                        below:<br>
+                        <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-9-28.jpg"
+                            style="width:50%"
+                            alt="Mean Fluorescent Intensity of the SK-BR3 under Different Treatment"></div>
+                          <p><b>Figure 1. Mean Fluorescent Intensity of the SK-BR3 under Different Treatment.</b>
+                            Note that as the background comparison groups were not included in the figure as the
+                            effective
+                            counted area were over 100 times smaller than positive groups, this way the mean fluorescent
+                            intensity is not useful.</p>
+                          <br>To further show the success of negative result, the figures of the confocal microscopy
+                          result after setting the photo to 8 bit and auto the threshold are shown below:
+                          <br>
+                          <div align="center"><img
+                              src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b3-12-airyscan-processing-09-c2.jpg"
+                              style="width:50%"
+                              alt="Confocal Microscopy Result of the SK-BR3 under Primary and Secondary Antibody Treatment"></div>
+                            <p><b>Figure 2. Confocal Microscopy Result of the SK-BR3 under Primary and Secondary
+                                Antibody Treatment.</b>
+                              <br>The figure shows that the background signal is weak, indicating the background
+                              fluorescence is weak.
+                            </p>
+                            <p>And the corresponding figure under bright field is shown below: </p>
+                            <div align="center"><img
+                                src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b3-12-airyscan-processing-09-c3.jpg"
+                                style="width:50%"
+                                alt="Bright Field Channel Result of the SK-BR3 under Primary and Secondary Antibody Treatment"></div>
+                              <p><b>Figure 3. Bright Field Channel Result of the SK-BR3 under Primary and Secondary
+                                  Antibody Treatment.</b>
+                              <div align="center"><img
+                                  src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b4-13-airyscan-processing-12-c2.jpg"
+                                  style="width:50%"
+                                  alt="Confocal Microscopy Result of the SK-BR3 under Primary and Tertiary Antibody Treatment"></div>
+                                <p><b>Figure 4. Confocal Microscopy Result of the SK-BR3 under Primary and Tertiary
+                                    Antibody Treatment.</b>
+                                  <br>The figure shows that the background signal is weak, indicating the specificity of
+                                  tertiary antibody is high
+                                  and was washed thoroughly.
+                                </p>
+                                <p>And the corresponding figure under bright field is shown below: </p>
+                                <div align="center"><img
+                                    src="https://static.igem.wiki/teams/4702/wiki/results/results/skbr3-b4-13-airyscan-processing-12-c3.jpg"
+                                    style="width:50%"
+                                    alt="Bright Field Channel Result of the SK-BR3 under Primary and Tertiary Antibody Treatment"></div>
+                                  <p>
+                                    <b>Figure 5. Bright Field Channel Result of the SK-BR3 under Primary and Tertiary
+                                      Antibody Treatment.</b>
+                                  </p>
+                                  <br>
+                                  <p>The flow cytometry result also support the conclusion that the
+                                    secondary antibody didn't show specificity towards the scFv domain.</p>
+                                  <div align="center"><img
+                                      src="https://static.igem.wiki/teams/4702/wiki/results/results/28-sep-2023-layout.jpg"
+                                      style="width:50%"
+                                      alt="Flow Cytometry Result of the SK-BR3 under Different Treatment"></div>
+                                    <p><b>Figure 6. Flow Cytometry Result of the SK-BR3 under Different Treatment.</b>
+                                      <br>The figure shows no obvious difference between the group adding all three
+                                      antibody and
+                                      the group adding only secondary and tertiary antibodies, while two negative
+                                      control show
+                                      normal result.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="card mx-auto text-center">
+                                  <div class="card-header">Method Two by Western Blot Analysis</div>
+                                  <div class="card-body">
+                                    Besides, we conducted western blot test to see if the scFv domain could bind to the
+                                    HER2 protein.
+                                    This was done by firstly adding the scFv domain to the cell well for 12-24 hours,
+                                    then wash the
+                                    well with PBS several times to remove the unbound scFv domain, then extract the
+                                    protein for electrophoresis,
+                                    membrane transformation and staining. Comparison groups were the HER2 positive cell,
+                                    HER2 negative cell and empty well. Possible drawback of this design is that since
+                                    western
+                                    blot analysis required proper amount of protein content, the amount of scFv domain
+                                    added to the
+                                    cell plate may not be enough to show the band in the western blot analysis. We add
+                                    180 μL scFv-cys-polyhis
+                                    with 4.236 μg/μL concentration to the cell plate, which is 762 μg scFv-cys-polyhis
+                                    in total. But since we are
+                                    adding the protein into 10 cm cell dish, this amount is still small.
+                                    <br><br>Still the result showed no obvious band comparing to the positive control
+                                    group
+                                    (which have 20.544 μg protein in total by BCA test) in the western blot analysis,
+                                    indicating two possibilities:
+                                    <br>1. The scFv domain didn't bind to the HER2 protein.
+                                    <br>2. The amount of scFv domain added to the cell plate is not enough to show the
+                                    band in the western blot analysis.
+                                    <br><br>The result of the western blot analysis is shown below:<br>
+                                    <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/results/results/wb.png"
+                                        style="width:50%"
+                                        alt="Western Blot Analysis Result under Different Treatment"></div>
+                                      <p><b>Figure 7. Western Blot Analysis Result.</b></p>
+                                      <br><br>
+                                    </div>
+                                  </div>
+                                  <div class="card mx-auto text-center">
+                                    <div class="card-header">Future Plan</div>
+                                    <div class="card-body">
+                                      Though we failed to show the binding affinity of the scFv domain to the HER2
+                                      positive cell directly before the due day of this project, still we thought about
+                                      the method
+                                      to test the conjugation of the scFv domain to the HER2 positive cell.
+                                      <br><br>As in our design, there have one type of scFv domain with a cysteine along
+                                      with a
+                                      His-tag attached to the end of the scFv domain, indicating that we could make use
+                                      of the thiol group
+                                      for conjugation with a fluorescent tag with maleimide. In this way we don't need
+                                      to use
+                                      the secondary and tertiary antibody here. Or we could use other common method used
+                                      to link a
+                                      fluorescent tag to a protein, such as directly link with the amine group on the
+                                      scFv domain,
+                                      using biotin-streptavidin system or click chemistry.
+                                      <br><br>
+                                      As for the improvement of the western blot analysis design, we could add more scFv
+                                      domain
+                                      and add less positive control scFv protein to improve the contrast. And more
+                                      control groups
+                                      like cells without treated with scFv domain should be added to show the
+                                      specificity of the binding.
+                                      <br><br>
+                                      Also, we could change the design for the protein synthesized in the bacteria to
+                                      the full length
+                                      anti-HER2 antibody, which would make it easier to find proper secondary antibody
+                                      to test the
+                                      biological activity of it. But this would increase the risk of facing the problem
+                                      of improper folding in bacteria. So we think the first or second method
+                                      are more convenient for future examination.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="6" class="month gaspcol">
+                                <div class="container mx-auto mt-5  ">
+                                  <h1 class="pt-5 mx-auto text-center">
+                                    Cytotoxicity Examination of the Biologically Synthesized Nanoparticles and
+                                    Chemically Synthesized Nanoparticle
+                                    </a><sup class="author" style="font-size:medium"><a href="#a1">[6]</a></sup>
+                                  </h1>
+                                  <hr class="hr-ani">
+                                  <div class="card mx-auto text-center">
+                                    <div class="card-header">Method Description</div>
+                                    <div class="card-body">
+                                      ***
+                                    </div>
+                                  </div>
+                                  <div class="card mx-auto text-center">
+                                    <div class="card-header">***</div>
+                                    <div class="card-body">
+                                      ***
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div id="7" class="month gaspcol">
+                                <div class="container mx-auto mt-5  ">
+                                  <h1 class="pt-5 mx-auto text-center">
+                                    His-tagged protein purification
+                                    </a><sup class="author" style="font-size:medium"><a href="#a1">[7]</a></sup>
+                                  </h1>
+                                  <hr class="hr-ani">
+                                  <div class="card mx-auto text-center">
+                                    <div class="card-header">Method Description</div>
+                                    <div class="card-body">
+                                      In our vector design for scFv domain of anti-HER2 antibody, we add a 6 × His-tag
+                                      to the terminal of the scFv domain of the anti-HER2 antibody.
+                                      <br>Therefore, we use the <a
+                                        href="https://www.cytivalifesciences.com/en/us/shop/chromatography/prepacked-columns/affinity-tagged-protein/histrap-hp-histidine-tagged-protein-purification-columns-p-00250">
+                                        HisTrap HP His tag protein purification column</a> and the Union AKTA system to
+                                      purify the His-tagged protein from the cell lysate.
+                                      <br><br>In our case, we are trying to express a eukaryotic gene in prokaryote
+                                      <i>E. coli</i>, therefore,
+                                      we chose the SHuffle strain for better disulfide bond formation in the protein
+                                      expressed to best maintain
+                                      the proper protein structure and avoid formation of inclusionbody.
+                                      <br><br>After the expression of the His-tagged protein, cell pellet were broken by
+                                      high pressure homogenizer and the cell lysate were collected.
+                                      <br><br>Then, the cell lysate after dislodging the cell debris by centrifugation
+                                      were loaded into the
+                                      HisTrap HP His tag protein purification column and the His-tagged protein were
+                                      eluted by imidazole.
+                                    </div>
+                                  </div>
+                                  <div class="card mx-auto text-center">
+                                    <div class="card-header">Results / Analysis</div>
+                                    <div class="card-body">
+                                      Basically, the His-tagged protein were successfully purified from the cell lysate,
+                                      including
+                                      the <b>scFv-polyhis</b>, <b>scFv-cys-polyhis</b> and <b>scFv-polyhis-cys</b>.
+                                      <br><br>The purity of the His-tagged protein were acceptable for further use. And
+                                      the
+                                      concentration of final product were in the range of 0.1-5 mg/ml, which are also
+                                      proper
+                                      for later use. By our method for protein expression and purification, when results
+                                      are stable,
+                                      we had a yield of 5 mg/ml with total volumn 100 μL from 150 mL culture, which is a
+                                      satisfying result.
+                                      <br><br>The other thing we found is that, for scFv-cys-polyhis protein, the
+                                      induction under 18 ℃
+                                      shows higher final concentration result than that under 37 ℃. This may be due to
+                                      the fact that
+                                      lower temperature would leave enough time for the protein to fold properly.
+                                      <br><br>The UV spectrum during purification process, the SDS-PAGE result and the
+                                      concentration
+                                      by BCA test could be found in the PDF file in the supplementary data.
+                                    </div>
+                                  </div>
+                                  <div class="card mx-auto text-center">
+                                    <div class="card-header">Supplementary Data</div>
+                                    <div class="card-body">
+                                      The supplementary data including the UV<sub>280</sub> absorption monitoring
+                                      information, SDS-PAGE result and BCA test result
+                                      for protein purification could be seen in the pdf file shown below:
+                                      <div class="card mx-auto text-center">
+                                        <div class="card-header ani-card-header">His-tagged Protein Purification
+                                          Supplementary Data</div>
+                                        <div class="card-body ani-card-body">
+                                          <div id="pdf-container-9"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div id="13" class="month gaspcol">
+                                  <div class="container mx-auto mt-5  " id="Author">
+                                    <h1 class="pt-5 mx-auto text-center">
+                                      Author & Reference
+                                    </h1>
+                                    <div class="card mx-auto text-center">
+                                      <div class="card-body">
+                                        <ul>
+                                          <h3>Author</h3>
+                                          <li id="a1">Shuoyi HU:
+                                            <a href="#1">[1]</a>
+                                            <a href="#2">[2]</a>
+                                            <a href="#3">[3]</a>
+                                            <a href="#4">[4]</a>
+                                            <a href="#5">[5]</a>
+                                            <a href="#7">[7]</a>
+                                          </li>
+                                          <li id="a2">Yixiao XIAO:
+                                            <a href="#6">[6]</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
 
 
 
 
-<div class="row mt-4">
-  <div class="col-lg-5">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Clearly and objectively describe the results of your work.</li>
-      <li>Future plans for the project.</li>
-      <li>Considerations for replicating the experiments.</li>
-    </ul>
-  </div>
-  <div class="col-lg-7">
-    <h2>Describe what your results mean</h2>
-    <hr>
-    <ul>
-      <li>Interpretation of the results obtained during your project. Don't just show a plot/figure/graph/other, tell us what you think the data means. This is an important part of your project that the judges will look for.</li>
-      <li>Show data, but remember <b>all measurement and characterization data must also be on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</b> Otherwise these data will not be in consideration for any medals or part awards!</li>
-      <li>Consider including an analysis summary section to discuss what your results mean. Judges like to read what you think your data means, beyond all the data you have acquired during your project.</li>
-    </ul>
-  </div>
-</div>
-</div>
+                            <div class="row mt-4">
+                              <div class="col-lg-5">
+                                <h2>What should this page contain?</h2>
+                                <hr>
+                                <ul>
+                                  <li>Clearly and objectively describe the results of your work.</li>
+                                  <li>Future plans for the project.</li>
+                                  <li>Considerations for replicating the experiments.</li>
+                                </ul>
+                              </div>
+                              <div class="col-lg-7">
+                                <h2>Describe what your results mean</h2>
+                                <hr>
+                                <ul>
+                                  <li>Interpretation of the results obtained during your project. Don't just show a
+                                    plot/figure/graph/other, tell us what you think the data means. This is an important
+                                    part of your project that the judges will look for.</li>
+                                  <li>Show data, but remember <b>all measurement and characterization data must also be
+                                      on the Part's Main Page on the <a
+                                        href="http://parts.igem.org/Main_Page">Registry</a>.</b> Otherwise these data
+                                    will not be in consideration for any medals or part awards!</li>
+                                  <li>Consider including an analysis summary section to discuss what your results mean.
+                                    Judges like to read what you think your data means, beyond all the data you have
+                                    acquired during your project.</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Project Achievements</h2>
-    <hr>
-    <p>You can also include a list of bullet points (and links) of the successes and failures you have had over your summer. It is a quick reference page for the judges to see what you achieved during your summer.</p>
-    <ul>
-      <li>A list of linked bullet points of the successful results during your project</li>
-      <li>A list of linked bullet points of the unsuccessful results during your project. This is about being scientifically honest. If you worked on an area for a long time with no success, tell us so we know where you put your effort.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Newcastle/Results">2019 Newcastle</a></li>
-      <li><a href="https://2019.igem.org/Team:Munich/Results">2019 Munich</a></li>
-      <li><a href="https://2019.igem.org/Team:Tec-Chihuahua/Results">2019 Tec Chihuahua</a></li>
-      <li><a href="https://2020.igem.org/Team:Aalto-Helsinki/Results">2020 Aalto Helsinki</a></li>
-      <li><a href="https://2020.igem.org/Team:GreatBay_SCIE/Results">2020 GreatBay SCIE</a></li>
-      <li><a href="https://2020.igem.org/Team:Queens_Canada/Results">2020 Queens Canada</a></li>
-    </ul>
-  </div>
-</div>
-<script src="{{ url_for('static', filename = 'card.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.js"></script>
-<script src="{{ url_for('static', filename = 'pdf.js') }}"></script>
+                          <div class="row mt-4">
+                            <div class="col-lg-8">
+                              <h2>Project Achievements</h2>
+                              <hr>
+                              <p>You can also include a list of bullet points (and links) of the successes and failures
+                                you have had over your summer. It is a quick reference page for the judges to see what
+                                you achieved during your summer.</p>
+                              <ul>
+                                <li>A list of linked bullet points of the successful results during your project</li>
+                                <li>A list of linked bullet points of the unsuccessful results during your project. This
+                                  is about being scientifically honest. If you worked on an area for a long time with no
+                                  success, tell us so we know where you put your effort.</li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4">
+                              <h2>Inspirations</h2>
+                              <hr>
+                              <ul>
+                                <li><a href="https://2019.igem.org/Team:Newcastle/Results">2019 Newcastle</a></li>
+                                <li><a href="https://2019.igem.org/Team:Munich/Results">2019 Munich</a></li>
+                                <li><a href="https://2019.igem.org/Team:Tec-Chihuahua/Results">2019 Tec Chihuahua</a>
+                                </li>
+                                <li><a href="https://2020.igem.org/Team:Aalto-Helsinki/Results">2020 Aalto Helsinki</a>
+                                </li>
+                                <li><a href="https://2020.igem.org/Team:GreatBay_SCIE/Results">2020 GreatBay SCIE</a>
+                                </li>
+                                <li><a href="https://2020.igem.org/Team:Queens_Canada/Results">2020 Queens Canada</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <script src="{{ url_for('static', filename = 'card.js') }}"></script>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.js"></script>
+                          <script src="{{ url_for('static', filename = 'pdf.js') }}"></script>
 
 
-{% endblock %}
+                          {% endblock %}

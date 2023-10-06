@@ -51,3 +51,14 @@ displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/
 
 displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-dls-0921.pdf','pdf-container-7');
 displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-zeta-0921.pdf','pdf-container-8');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/protein-purification-supplementary-information-copy-1.pdf','pdf-container-9');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/0-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-10');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/results/2-5-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-11');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/5-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-12');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/7-5-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-13');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/results/zeta-potential-0-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-14');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/results/zeta-potential-2-5-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-15');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/zeta-potential-5-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-16');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/zeta-potential-7-5-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-17');
+
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-zeta-sup.pdf','pdf-container-18');
