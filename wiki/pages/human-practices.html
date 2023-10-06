@@ -8,7 +8,7 @@ the world. Consider how the world affects your work and how your work affects th
 
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" id = "cover-image"
+<div class="sky single_slider d-flex align-items-center" id="cover-image"
   style="background-image: url('https://static.igem.wiki/teams/4702/wiki/hp/hp-cover.jpg');background-size:cover">
   <section class="col-md-12 text-center">
     <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
@@ -80,33 +80,98 @@ the world. Consider how the world affects your work and how your work affects th
         </h1>
         <hr class="hr-ani">
         <!--专家介绍-->
-        <div class="card mx-auto text-center">
+        <div class="card mx-auto text-center" style="border:0px;">
 
-          <!--问题-->
-          <div class="card-header ani-card-header">Questions we asked</div>
-          <div class="card-body ani-card-body">
-            <ol>
-              <li>When isolating and synthesizing nano iron particles from E. coli, we encounter the need to remove a
-                significant amount of biomaterial. Could you please recommend an effective washing agent that can
-                achieve good removal results without significantly damaging the surface composition of the nano iron
-                particles?</li>
-              <li>How can we achieve the coupling between antibodies and the surface of iron oxide nanoparticles? We are
-                considering two approaches: direct coupling to the isolated iron oxide nanoparticles, where the surface
-                coating component may be phospholipids, and pre-coating the nanoparticles with a layer of PEG
-                (polyethylene glycol) before coupling. Do you have any suggestions for the design of coupling
-                components? We have thought about the Spytag/Spycatcher system.</li>
-              <li>Is it possible to enhance the connection between the tail end of the antibodies and the nanoparticles
-                through a biocompatible method of modifying the binding site?
-              </li>
-              <li>
-                After synthesizing our antibodies, we aim to improve their targeting efficiency. Are there any
-                biocompatible methods available to modify the binding site at the head end of the antibodies?</li>
-            </ol>
-          </div>
-          <hr>
           <div class="card-body">
+            <div class="section-blue">
+              <section id="projects" style="padding-top:0;">
+                <article>
+                  <div class="interviewee" align="center" style="height:800px"> <img
+                      src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" width="50%"
+                      alt="Screenshot of the Wall of Wonder." />
+                    <div style=" padding:0 25%;">
+                      <h3 style="text-align: center;padding-top: 15px;">Bobo DANG</h3>
+                      <br>
+                      <p style="color:rgb(70,158,180)">School of Life Sciences</p>
+                      <p>Biology<br>
+                        Laboratory of Protein Engineering and Protein Therapeutics</p>
+                      <a href="https://www.dang-lab.com/team">View more</a>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <!--Please do not write too much about the 需求和医院 below-->
+                    <div class="blackbox" id = "hpquestion">
+                      <h3>Looking for</h3>
+
+                    </div>
+                    <div class="blackbox hpquestion"id="hpquestion">
+                      <h3>Question</h3>
+                      <ol>
+                        <li>When isolating and synthesizing nano iron particles from E. coli, we encounter the need to
+                          remove a significant amount of biomaterial. Could you please recommend an effective washing agent that
+                          can
+                          achieve good removal results without significantly damaging the surface composition of the
+                          nano iron
+                          particles?</li>
+                        <li>How can we achieve the coupling between antibodies and the surface of iron oxide
+                          nanoparticles? We are
+                          considering two approaches: direct coupling to the isolated iron oxide nanoparticles, where
+                          the surface
+                          coating component may be phospholipids, and pre-coating the nanoparticles with a layer of PEG
+                          (polyethylene glycol) before coupling. Do you have any suggestions for the design of coupling
+                          components? We have thought about the Spytag/Spycatcher system.</li>
+                        <li>Is it possible to enhance the connection between the tail end of the antibodies and the
+                          nanoparticles
+                          through a biocompatible method of modifying the binding site?
+                        </li>
+                        <li>
+                          After synthesizing our antibodies, we aim to improve their targeting efficiency. Are there any
+                          biocompatible methods available to modify the binding site at the head end of the antibodies?
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="blackbox hpanswer">
+                      <h3>Your title</h3>
+                      <ol>
+                        <li>During our discussion on the self-assembly of bio-synthetic
+                          nanoparticles and antibodies in Escherichia coli, professor Dang expressed
+                          concerns regarding the stability of the vesicles on the surface of the
+                          nanoparticles compared to the bacterial membrane. professor Dang suggested that
+                          this instability might lead to the destruction of the nanoparticle structure
+                          when separating them with antibodies. Consequently, he proposed that it would
+                          be more feasible for us to synthesize and assemble the components separately.</li>
+                        <li>Another topic of our discussion was elution during the separation of nanoparticles.
+                          professor Dang suggested that we could employ organic solvents for washing and
+                          filtration. Additionally, considering the necessity of a layer of PEG membrane,
+                          professor Dang recommended attempting to dissolve PEG in organic solvents to
+                          achieve the desired replacement.</li>
+                        <li>Professor Dang opined that the surface composition of the nanoparticles
+                          is not necessarily crucial. As long as the final objective of antibody
+                          connectivity is achieved, the existence of amino and carboxyl groups on the
+                          surface of bio-synthesized nanoparticles should facilitate connection.
+                          Professor Dang also proposed the possibility of employing harsh solvents to
+                          wash the nanoparticles and observe their binding behavior with antibodies.</li>
+                        <li>In relation to connecting the antibodies and nanoparticles, professor Dang
+                          mentioned the utilization of EDC (1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide). </li>
+                        <li>Overall, an additional point to consider is that using PEG coating might
+                          not be meaningful. Commercially available chemically-synthesized nanoparticles
+                          are already coated with PEG. Therefore, the coating on the surface of bio-synthesized
+                          nanoparticles lacks significance.</li>
+                      </ol>
+                    </div>
+                    <!--<h4>Interviewer:</h4>
+                    <p>me</p>-->
+
+                  </div>
+
+                </article>
+              </section>
+            </div>
+            <!--old vision begin-->
             <div class="subfield">
-              <div class="left-column">
+
+
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" alt="Professor Bobo DANG"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Bobo DANG</h3>
@@ -147,6 +212,7 @@ the world. Consider how the world affects your work and how your work affects th
                 </ol>
               </div>
             </div>
+            <!--old vision end-->
           </div>
         </div>
         <!--如果要在这个栏目再放一个专家及问题，把上面专家和问题复制下来，并且在下面一行加上换行<br> -->
@@ -162,7 +228,7 @@ the world. Consider how the world affects your work and how your work affects th
           <hr>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hongyu-chen.jpg" alt="Professor Hongyu CHEN"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Hongyu CHEN</h3>
@@ -194,7 +260,7 @@ the world. Consider how the world affects your work and how your work affects th
           <hr>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hongfei-wang.jpg" alt="Professor Hongfei WANG"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Hongfei WANG</h3>
@@ -210,6 +276,56 @@ the world. Consider how the world affects your work and how your work affects th
               <div class="right-column">
                 <h3>Your title</h3>
                 <ol>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <br>
+        <div class="card mx-auto text-center">
+          <!--问题-->
+          <div class="card-header ani-card-header">Questions we asked</div>
+          <div class="card-body ani-card-body">
+            <ol>
+              <li>Are there any research efforts focused on determining the coating components of biologically
+                synthesized magnetic nanoparticles? Is there a way to identify the coating components?</li>
+              <li>Regarding the synthesis of magnetic nanoparticles through biological methods, are there any
+                well-established separation strategies available to separate the magnetic nanoparticles from organelles
+                or biomolecules of similar size?</li>
+              <li>If complete separation is challenging, would it have a significant impact on the characterization of
+                the nanoparticles? For example, would dynamic light scattering yield inaccurate results in this case? If
+                so, are there more suitable characterization techniques available?</li>
+            </ol>
+          </div>
+          <hr>
+          <div class="card-body">
+            <div class="subfield">
+              <div class="left-column" align="center" align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/people-photo/ljw.jpg" alt="Professor Hongfei WANG"
+                  width="200" height="">
+                <h3 style="text-align: center;padding-top: 15px;">Jiawei Liu</h3>
+                <br>
+                <p style="color:#009DBE">Institute of Geology and Geophysics, Chinese Academy of Sciences</p>
+                <a href="http://sourcedb.igg.cas.cn/cn/zjrck/202207/t20220715_6481608.html">View more</a>
+              </div>
+              <div class="vertical-line"></div>
+              <div class="right-column">
+                <h3>Your title</h3>
+                <ol>
+                  <li>The professor said that it may be necessary to detect and identify proteins, including chemical
+                    bond composition and three-dimensional structure analysis, and to understand some mechanisms of the
+                    biosynthetic nanoparticle process so that we can make better prediction and identification.</li>
+                  <li>We firstly doubted that we couldn't use the ultrafilteration due to the low spinning speed and the
+                    content may jam the device. However, after comparing Hemodialysis, Centrifugation, Chromatography
+                    and Ultrafiltration, Prof. Liu still suggested the last one. That's because ultrafiltration won't
+                    agglomerate the protein and He encouraged us to try various experiment methods since we can not
+                    ensure every step is correct in our procedure. As long as we have an idea, there is no need to worry
+                    about the failure.</li>
+                  <li>For this problem, incomplete separation can affect the physical and chemical data characterization
+                    of nanoparticle products, but for biocompatibility characterization such as cytotoxicity testing,
+                    unisolated substances usually do not have much impact, because other cell debris and metabolites
+                    usually do not affect the normal growth and differentiation of cells.</li>
                 </ol>
               </div>
             </div>
@@ -247,7 +363,7 @@ the world. Consider how the world affects your work and how your work affects th
           <hr>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" alt="Professor Kechun ZHANG"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Kechun Zhang</h3>
@@ -334,7 +450,7 @@ the world. Consider how the world affects your work and how your work affects th
         <hr>
         <div class="card-body">
           <div class="subfield">
-            <div class="left-column">
+            <div class="left-column" align="center">
               <img src="" alt="Dr. ZHOU" width="250" height="">
               <h3 style="text-align: center;padding-top: 15px;">Yaofeng ZHOU</h3>
               <br>
@@ -419,7 +535,7 @@ the world. Consider how the world affects your work and how your work affects th
           <hr>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yilong-zou.jpg" alt="Professor Yilong ZOU"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Yilong Zou</h3>
@@ -500,7 +616,7 @@ the world. Consider how the world affects your work and how your work affects th
           <hr>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-longxing-cao.png" alt="Professor Longxing CAO"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Longxing CAO</h3>
@@ -557,7 +673,7 @@ the world. Consider how the world affects your work and how your work affects th
           <hr>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yue-zhang.jpg" alt="Professor Yue ZHANG"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Yue ZHANG</h3>
@@ -626,7 +742,7 @@ the world. Consider how the world affects your work and how your work affects th
           <hr>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" alt="Professor Bobo DANG"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Jing Yang</h3>
@@ -686,7 +802,7 @@ the world. Consider how the world affects your work and how your work affects th
           <hr>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" alt="Professor Kechun ZHANG"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Si Lu</h3>
@@ -737,7 +853,7 @@ the world. Consider how the world affects your work and how your work affects th
           </div>
           <div class="card-body">
             <div class="subfield">
-              <div class="left-column">
+              <div class="left-column" align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" alt="Professor Kechun ZHANG"
                   width="250" height="">
                 <h3 style="text-align: center;padding-top: 15px;">Lixian Yang</h3>
@@ -774,69 +890,6 @@ the world. Consider how the world affects your work and how your work affects th
     </div>
 
 
-  </div>
-  <div class="row mt-4">
-    <div class="col">
-      <div class="bd-callout bd-callout-info">
-        <h4>Silver Medal Criterion #2</h4>
-        <p>Explain how you have determined your work is responsible and good for the world.</p>
-        <hr>
-        <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more
-          information.</p>
-      </div>
-
-      <div class="bd-callout bd-callout-info">
-        <h4>Best Integrated Human Practices</h4>
-        <p>To compete for the Best Integrated Human Practices prize, please describe your work on this page and also
-          fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging
-            form</a>.</p>
-        <p>How does your project affect society and how does society influence the direction of your project? How might
-          ethical considerations and stakeholder input guide your project purpose and design and the experiments you
-          conduct in the lab? How does this feedback enter into the process of your work all through the iGEM
-          competition? Document a thoughtful and creative approach to exploring these questions and how your project
-          evolved in the process to compete for this award!</p>
-        <hr>
-        <p>Please see the <a href="https://competition.igem.org/judging/awards">2023 Awards Page</a> for more
-          information.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mt-4">
-    <div class="col-lg-8">
-      <h2>Overview</h2>
-      <hr>
-      <p>At iGEM we believe societal considerations should be upfront and integrated throughout the design and execution
-        of synthetic biology projects. “Human Practices” refers to iGEM teams' efforts to actively consider how the
-        world affects their work and their work affects the world. Through your Human Practices activities, your team
-        should demonstrate how you have thought carefully and creatively about whether your project is responsible and
-        good for the world. We invite you to explore issues relating (but not limited) to the ethics, safety, security,
-        and sustainability of your project, and to show how this exploration feeds back into your project purpose,
-        design, and execution.</p>
-      <p>Please note you can compete for the Silver Medal criterion #2 and the Best Integrated Human Practices prize
-        with this page.</p>
-      <p>For more information, please see the <a
-          href="https://responsibility.igem.org/human-practices/what-is-human-practices">Human Practices Hub</a>.
-      <p>On this page, your team should document all of your Human Practices work and activities. You should write about
-        the Human Practices topics you considered in your project, document any activities you conducted to explore
-        these topics (such as engaging with experts and stakeholders), describe why you took a particular approach
-        (including referencing any work you built upon), and explain if and how you integrated takeaways from your Human
-        Practices work back into your project purpose, design and/or execution.</p>
-    </div>
-    <div class="col-lg-4">
-      <h2>Inspirations</h2>
-      <hr>
-      <ul>
-        <li><a href="https://2019.igem.org/Team:Thessaly/Human_Practices">2019 Thessaly</a></li>
-        <li><a href="https://2019.igem.org/Team:Linkoping_Sweden/Human_Practices">2019 Linkoping Sweden</a></li>
-        <li><a href="https://2019.igem.org/Team:FDR-HB_Peru/Human_Practices">2019 FDR HB Peru</a></li>
-        <li><a href="https://2020.igem.org/Team:William_and_Mary/Human_Practices">2020 William and Mary</a></li>
-        <li><a href="https://2020.igem.org/Team:Rochester/Human_Practices">2020 Rochester</a></li>
-        <li><a href="https://2020.igem.org/Team:Leiden/Human_Practices">2020 Leiden</a></li>
-        <li><a href="https://2020.igem.org/Team:Baltimore_BioCrew/Human_Practices">2020 Baltimore BioCrew</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<script src="{{ url_for('static', filename = 'card.js') }}"></script>
-{% endblock %}
+    <script src="{{ url_for('static', filename = 'card.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'HP.js') }}"></script>
+    {% endblock %}
