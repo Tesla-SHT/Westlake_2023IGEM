@@ -196,8 +196,8 @@ footer a {
 }
 
 .text-light {
-  font-size : 120px!important;
-  -webkit-text-stroke: 0.3px #000;
+  font-size : 120px;
+  -webkit-text-stroke: 1px #000;
   color: #fff;
   background: -webkit-linear-gradient(45deg, #d8d8e2, #d8f1e7 50%);
   -webkit-background-clip: text;

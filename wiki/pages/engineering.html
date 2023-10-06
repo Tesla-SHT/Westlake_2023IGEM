@@ -1,31 +1,91 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Engineering Success{% endblock %}
-{% block lead %}Demonstrate engineering success in a part of your project by going through at least one iteration of the engineering design cycle.{% endblock %}
+{% block lead %}Demonstrate engineering success in a part of your project by going through at least one iteration of the
+engineering design cycle.{% endblock %}
 
 {% block page_content %}
+<link href="{{ url_for('static', filename = 'engineering.css') }}" rel="stylesheet">
 
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background:linear-gradient(
-      110deg,
-      #6fd7d0 0%,
-      #96daf7 32%, 
-      #66bfe5 57%, 
-      rgba(0, 76, 197, 0.8) 100%
-  )">
-  <section class="col-md-12 text-center">
+<div class="sky single_slider d-flex align-items-center" id="cover-image"
+  style="background-image: url('https://static.igem.wiki/teams/4702/wiki/engineering/cover4.png');background-size:cover">
+  <section class=" col-md-12 text-center">
     <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
     <div class="container header">
       <div class="row">
         <div class="">
-          <p class="text-light" style="font-size:70px;">Engineering Success</p>
+          <p class="text-light" >Engineering Success</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              Demonstrate engineering success in a part of your project by going through at least one iteration of the engineering design cycle. 
+              Demonstrate engineering success in a part of your project by going through at least one iteration of the
+              engineering design cycle.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="col-md-12 text-center">
+  <section id="features">
+    <div class="features-inner">
+      <!-- Digital XRays-->
+
+      <div class="col-md-12  features-group has-animation animation-rtl" style="overflow-x:hidden">
+        <img src="https://static.igem.wiki/teams/4702/wiki/engineering/total3.png" width="100%">
+      </div>
+      <div class="features-group has-animation animation-rtl">
+        <div class="features-image"><img src="https://static.igem.wiki/teams/4702/wiki/engineering/e-coli-2.png"
+            width="100%">
+        </div>
+        <div class="features-text">
+          <h1>E. coli Strain Adoption</h1>
+          <p>Antibodies were required to achieve our goal to target cancer cells. We managed to synthesize antibodies in
+            E. coli by inducing external plasmids to express desired antibodies and took advantage of its low cost,
+            simplicity, and high yield.
+            However, it was not easy to validly express an eukaryotic gene in a prokaryotic cell due to its simpler
+            inner cell structure, lacking of endoplasmic reticulum and Golgi apparatus, which were crucial
+            to processing protein. These deficiencies might lead to incorrect structural features of antibodies.
+            Besides, in wild type strain of E. coli, the reducing cytoplasm would cause the formation of inclusion
+            bodies,
+            a kind of abnormal structure.
+            Considering that oxidizing environment was important to form disulfide bond, which was indispensable
+            for the biological activity of antibodies. To ensure antibody validity, we therefore adopted SHuffle strain
+            of E. coli, whose cytoplasm was semi-oxidizing, facilitating successful expression of biologically active
+            antibodies in E. coli.</p>
+        </div>
+      </div>
+      <!-- Dental Cleanings-->
+      <div class="features-group has-animation animation-ltr">
+        <div class="features-image inverted "><img
+            src="https://static.igem.wiki/teams/4702/wiki/engineering/antibody-type-adoption.png" width="100%" />
+        </div>
+        <div class="features-text inverted">
+          <h1>Antibody Type Adoption</h1>
+          <p>In consideration of relatively small size of our iron-oxide nanoparticles, to ensure the binding efficiency
+            between antibodies and nanoparticles, full-length recombinant antibodies might not be a decent option
+            because of their large size, which had the potential to lead to steric hinderance, and furthermore to
+            restrict the binding efficiency. Single-chain variable fragments (scFv) was composed of variable regions of
+            heavy (VH) and light (VL) chains of immunoglobulins, linked via a flexible short peptide linker. Its lack of
+            Fc domain enabled itself to possess a smaller size, which reduced the possibility of steric hinderance issue
+            to happen. Besides, due to scFv’s structural simplicity compared to full-length recombinant antibodies, the
+            probability of incorrect folding dramatically decreased since slight changes would be applied on the scFv,
+            since we were aiming to link it on our iron-oxide nanoparticles.</p>
+        </div>
+      </div>
+      <div class="features-group has-animation animation-rtl">
+        <div class="features-image"><img src="https://static.igem.wiki/teams/4702/wiki/engineering/plasmid-contruction.jpg"
+            width="50%">
+        </div>
+        <div class="features-text">
+          <h1>Plasmid Construction</h1>
+          <p>To fulfill successful expression of antibodies, plasmid construction was a crucial part. Focusing on breast
+            cancer, we selected HER2 as our targeting site. The pGLO plasmid we used had been verified to be able to
+            express protein since the expressed green-fluorescent protein (GFP) was visible to naked human eyes. </p>
         </div>
       </div>
     </div>
@@ -36,12 +96,17 @@
   <div class="col">
     <div class="bd-callout bd-callout-info">
       <h4>Silver Medal Criterion #1</h4>
-      <p>Demonstrate engineering success in a part of your project by going through at least one iteration of the engineering design cycle. This achievement should be distinct from your Contribution for Bronze.<p>
-      <p>If you plan to show engineering success by creating a new Part that has been shown to work as expected, you must document your contribution on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria.</p>
+      <p>Demonstrate engineering success in a part of your project by going through at least one iteration of the
+        engineering design cycle. This achievement should be distinct from your Contribution for Bronze.
+      <p>
+      <p>If you plan to show engineering success by creating a new Part that has been shown to work as expected, you
+        must document your contribution on the Part's Main Page on the <a
+          href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria.</p>
       <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
+      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.
+      </p>
     </div>
   </div>
 </div>
-
+<script src="{{ url_for('static', filename = 'engineering.js') }}"></script>
 {% endblock %}

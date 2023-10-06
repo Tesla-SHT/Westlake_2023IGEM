@@ -1,6 +1,9 @@
 
 //sequenced one-after-the-other
-gsap.to(".header", { duration: 1.5, y: -100 });//notice that there's no semicolon!
+var windowHeight = window.innerHeight;
+var changeAmount = -100 * (windowHeight / 1080); // 根据1080作为参考高度进行调整
+
+gsap.to(".header", { duration: 1.5, y: changeAmount });
 
 //侧边栏// 获取封面图片的高度
 

@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://static.igem.wiki/teams/4702/wiki/logo-v2.ico" sizes="any">
+  <link rel="icon" href="https://s10.aconvert.com/convert/p3r68-cdx67/arstq-p0kv4-001.ico" sizes="any">
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
@@ -113,8 +113,30 @@
         }
       });
     </script>
-    <!--回到顶部图标-->
 
+    <!--回到顶部图标--> <button onclick="scrollToTop()" style="padding:1px 8px" id="backtop" type="button"
+      class="btn btn-outline-danger btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30"
+        fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 18" style="padding:0;margin:0;">
+        <path
+          d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
+      </svg>
+    </button>
+
+    <script>window.onscroll = function () { scrollFunction() };
+      function scrollFunction() {// 当网页向下滑动 20px 出现"返回顶部" 按钮
+        console.log(121);
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("backtop").style.display = "block";
+        } else {
+          document.getElementById("backtop").style.display = "none";
+        }
+      }
+      // 点击按钮，平滑滚动到顶部
+      function scrollToTop() {    document.body.scrollTop = 0; // 兼容非标准模式下的浏览器
+    document.documentElement.scrollTop = 0; // 兼容标准模式下的浏览器
+      }
+
+    </script>
 
     <!--回到顶部结束-->
     <!-- Page Content -->
@@ -135,33 +157,7 @@
   <!--加载界面-->
   <script>$(function () {
       "use strict"; $(window).on('load', function (event) { $('.preloader').delay(500).fadeOut(500); });
-      $(window).on('scroll', function (event) {
-        var scroll = $(window).scrollTop();
-        if (scroll < 20) { $(".header_navbar").removeClass("sticky"); $(".header_navbar img").attr("src", "assets/images/logo.svg"); }
-        else { $(".header_navbar").addClass("sticky"); $(".header_navbar img").attr("src", "assets/images/logo-2.svg"); }
-      });
-      var scrollLink = $('.page-scroll');
-      $(window).scroll(function () {
-        var scrollbarLocation = $(this).scrollTop(); scrollLink.each(function () {
-          var sectionOffset = $(this.hash).offset().top - 73;
-          if (sectionOffset <= scrollbarLocation) { $(this).parent().addClass('active'); $(this).parent().siblings().removeClass('active'); }
-        });
-      });
-      $(".navbar-nav a").on('click', function () {
-        $(".navbar-collapse").removeClass("show");
-      });
-      $(".navbar-toggler").on('click', function () {
-        $(this).toggleClass("active");
-      }); $(".navbar-nav a").on('click', function () {
-        $(".navbar-toggler").removeClass('active');
-      });
-      $('.counter').counterUp({ delay: 10, time: 3000 });
-      $('.video-popup').magnificPopup({ type: 'iframe' });
-      $('.image-popup').magnificPopup({ type: 'image', gallery: { enabled: true } });
-      $('.testimonial_active').slick({ dots: true, infinite: true, arrows: false, speed: 800, slidesToShow: 2, slidesToScroll: 1, responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, } }, { breakpoint: 576, settings: { slidesToShow: 1, } }] });
-      $(window).on('scroll', function (event) { if ($(this).scrollTop() > 600) { $('.back-to-top').fadeIn(200) } else { $('.back-to-top').fadeOut(200) } });
-      $('.back-to-top').on('click', function (event) { event.preventDefault(); $('html, body').animate({ scrollTop: 0, }, 1500); });
-      $('select').niceSelect(); var wow = new WOW({ boxClass: 'wow', mobile: false, })
+
       wow.init();
 
       $(".preloader").delay(8000).fadeout(500);
