@@ -1,5 +1,6 @@
 /*basic display*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
 body {
   font-family: Roboto, sans-serif;
 }
@@ -42,6 +43,7 @@ body {
     margin: 0 2rem;
     align-self: center;
   }
+
   .features-image.inverted {
     grid-column: 3 / span 2;
   }
@@ -68,6 +70,7 @@ body {
     padding: 3rem 3rem 3rem 6rem;
     place-self: center;
   }
+
   .features-text.inverted {
     grid-column: 1 / span 2;
     padding: 3rem 6rem 3rem 3rem;
@@ -108,15 +111,18 @@ body {
   position: relative;
 }
 
-.has-animation p, .has-animation img {
+.has-animation p,
+.has-animation img {
   opacity: 0;
 }
 
-.has-animation.animate-in p, .has-animation.animate-in img {
+.has-animation.animate-in p,
+.has-animation.animate-in img {
   animation: textHidden 0.1s 0.5s forwards;
 }
 
-.has-animation.animate-in:before, .has-animation.animate-in:after {
+.has-animation.animate-in:before,
+.has-animation.animate-in:after {
   content: '';
   position: absolute;
   top: 0;
@@ -147,7 +153,7 @@ body {
 }
 
 .has-animation.animation-rtl.animate-in:after {
-  animation: revealRTL .5s  ease;
+  animation: revealRTL .5s ease;
 }
 
 @keyframes revealRTL {
@@ -155,10 +161,12 @@ body {
     width: 0;
     right: 0;
   }
+
   65% {
     width: 100%;
     right: 0;
   }
+
   100% {
     width: 0;
     right: 100%;
@@ -170,10 +178,12 @@ body {
     width: 0;
     left: 0;
   }
+
   65% {
     width: 100%;
     left: 0;
   }
+
   100% {
     width: 0;
     left: 100%;
@@ -184,7 +194,23 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
+}
+
+.rbar {
+  width: 10px;
+  height: auto;
+  background-color: orange;
+  padding: 30px 0 30px 0;
+  margin-bottom: 128px;
+}
+
+.lbar {
+  width: 10px;
+  height: auto;
+  background-color: orange;
+  padding: 30px 0 30px 0;
 }

@@ -62,3 +62,10 @@ displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/
 displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/zeta-potential-7-5-mm-fecl3-induced-resuspended-cell-pellet.pdf','pdf-container-17');
 
 displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/chem-zeta-sup.pdf','pdf-container-18');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/results/bio-5mm-fecl3-culture-sup-36h.pdf','pdf-container-19');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/results/bio-5mm-fecl3-culture-sup-48h.pdf','pdf-container-20');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/results/bio-5mm-fecl3-cell-lysate-sup-24h.pdf','pdf-container-21');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/results/bio-5mm-fecl3-cell-lysate-sup-36h.pdf','pdf-container-22');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/results/bio-5mm-fecl3-cell-lysate-sup-48h.pdf','pdf-container-23');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/result-for-notebook/result/bio-5mm-fecl3-culture-sup-24h.pdf','pdf-container-24');
+displayPDF('https://static.igem.wiki/teams/4702/wiki/results/dls-zeta-potential/zeta-bio.pdf','pdf-container-25');

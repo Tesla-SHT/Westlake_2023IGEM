@@ -144,6 +144,7 @@ font-size: 1rem;
 
 .hpanswer {
   overflow: auto;
+  padding-top: 0;
 }
 
 #hpquestion>h3 {
@@ -154,4 +155,15 @@ font-size: 1rem;
   position: sticky;
   top: 0;
   background-color: inherit;
+}
+
+.hpanswer>h3 {
+  color: rgb(203, 233, 157);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  position: sticky;
+  top: 0;
+  background-color: inherit;
+
 }
