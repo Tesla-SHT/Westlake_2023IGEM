@@ -203,36 +203,6 @@ footer a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-ol li:nth-child(1) {
-  list-style-type: '1️⃣';
-}
-ol li:nth-child(2) {
-  list-style-type: '2️⃣';
-}
-ol li:nth-child(3) {
-  list-style-type: '3️⃣';
-}
-ol li:nth-child(4) {
-  list-style-type: '4️⃣';
-}
-ol li:nth-child(5) {
-  list-style-type: '5️⃣';
-}
-ol li:nth-child(6) {
-  list-style-type: '6️⃣';
-}
-ol li:nth-child(7) {
-  list-style-type: '7️⃣';
-}
-ol li:nth-child(8) {
-  list-style-type: '8️⃣';
-}
-ol li:nth-child(9) {
-  list-style-type: '9️⃣';
-}
-ol li:nth-child(10) {
-  list-style-type: '🔟';
-}
 
 
 @media (max-width:767px) {

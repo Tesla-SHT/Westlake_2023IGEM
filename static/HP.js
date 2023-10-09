@@ -19,3 +19,17 @@ answerDivs.forEach(function(answerDiv) {
     answerDiv.style.maxHeight = (previousDivHeight*2/3-answerDiv.previousElementSibling.previousElementSibling.clientHeight) + "px";
 
 });
+
+var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+      el: '.blog-slider__pagination',
+      clickable: true,
+    }
+  });

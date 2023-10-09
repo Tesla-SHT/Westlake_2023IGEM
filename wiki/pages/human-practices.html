@@ -33,7 +33,7 @@ the world. Consider how the world affects your work and how your work affects th
     border: 0px;
   }
 </style>
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'HP.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
@@ -43,6 +43,11 @@ the world. Consider how the world affects your work and how your work affects th
     style="padding-right:0;padding-left:0">
     <hr>
     <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
+      <li>
+        <a href="#0" class="nav-link">
+          Overview
+        </a>
+      </li>
       <li>
         <a href="#1" class="nav-link">
           Nanoparticle Separation
@@ -78,6 +83,56 @@ the world. Consider how the world affects your work and how your work affects th
   </div>
   <div class="mp-content offset-md-3 col-md-9 col-lg-9 justify-content-end"
     style="padding-right:0;padding-left:0;margin-bottom:200px;">
+    <div id="0" class="month gaspcol">
+      <div class="container mx-auto mt-5">
+        <h1 class="pt-5 mx-auto text-center">
+          Overview
+        </h1>
+        <hr class="hr-ani">
+        <div class="blog-slider">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">26 December 2019</span>
+                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+              </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">26 December 2019</span>
+                <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+              </div>
+            </div>
+              
+            <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">26 December 2019</span>
+                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="blog-slider__pagination"></div>
+        </div>
+
+      </div>
+    </div>
     <div id="1" class="month gaspcol">
       <div class="container mx-auto mt-5">
         <h1 class="pt-5 mx-auto text-center">
@@ -110,7 +165,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>When isolating and synthesizing nano iron particles from E. coli, we encounter the need to
                           remove a significant amount of biomaterial. Could you please recommend an effective washing
@@ -204,7 +259,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li></li>
                       </ol>
@@ -251,7 +306,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li></li>
                       </ol>
@@ -297,7 +352,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>Are there any research efforts focused on determining the coating components of biologically
                           synthesized magnetic nanoparticles? Is there a way to identify the coating components?</li>
@@ -350,83 +405,7 @@ the world. Consider how the world affects your work and how your work affects th
           </div>
 
         </div>
-        <br>
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                      padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img>
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Haihua XIAO</h3>
-                      <img src="https://static.igem.wiki/teams/4702/wiki/hp/xhh.jpg" alt="Professor Hongfei WANG"
-                        width="80%" height="">
 
-                      <br>
-                      <p style="color:rgb(70,158,180)">Institute of Chemistry, Chinese Academy of Sciences</p>
-                      <p><br>
-                        ?</p>
-                      <a href="http://hhxiao.iccas.ac.cn/61">View more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
-                      <ol>
-                        <li>When considering drug delivery in our bio-synthetic system, what factors should be taken
-                          into account when selecting a suitable drug?
-                        </li>
-                        <li>Can you provide guidance on the general procedure for incubating a drug with nanoparticles?
-                        </li>
-                        <li>How can we determine the content of a specific element, such as iron, in the nanoparticle
-                          system?</li>
-                        <li>In terms of clinical trials, what are the typical stages and tests involved in evaluating
-                          the effectiveness and safety of a drug?</li>
-                        <li>Who are the key stakeholders in drug development, particularly in the context of clinical
-                          trials? </li>
-
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>For drug delivery in our bio-synthetic system, Professor Xiao recommended that we tried
-                          doxorubicin since it could conjugate with the aromatic ring of proteins on the coating of
-                          nanoparticles through some interactions.</li>
-                        <li>For the specific procedure, Professor Xiao suggested that we incubate doxorubicin with
-                          nanoparticles for about 1 or 2 hours and then remove it by dialysis. The concentration can be
-                          measured using ultraviolet absorption spectroscopy.</li>
-                        <li>For the measurement of iron content in the nanoparticle system, he suggested that we first
-                          dissolved the samples in a nitric acid solution to release iron ions. We can then use ICPMS
-                          (Inductively Coupled Plasma Mass Spectrometry) to measure the concentration of iron ions.</li>
-                        <li>For clinical trials, he referred to multiple periods and tests conducted on cells,
-                          organoids, as well as different animals such as mice, pigs, and monkeys. He also added that
-                          the major stakeholders in drug development are companies and industries, as they would invest
-                          significant amounts of money to promote clinical trials.</li>
-                        <li>Finally, he emphasized that for drug delivery, it had been easy to conduct the experiment
-                          and we could borrow some materials from other labs.
-                        </li>
-                      </ol>
-
-
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                        <p>me</p>-->
-
-                  </div>
-
-
-
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -461,7 +440,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>Can E. coli be cultured in SOB (Super Optimal Broth) protein medium?</li>
                         <li>Is it possible for antibodies to be synthesized in E. coli without the formation of double
@@ -579,7 +558,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>Can anaerobic bacteria be directly used for targeted therapy, as proposed in the study by
                           Ouajdi
@@ -660,6 +639,83 @@ the world. Consider how the world affects your work and how your work affects th
             </div>
           </div>
         </div>
+        <br>
+        <div class="card mx-auto text-center">
+          <div class="card-body">
+            <div class="section-blue">
+              <section id="projects" style="padding-top:0;">
+                <article>
+                  <div class="interviewee" align="center" style="
+                      padding-top: 30%;">
+                    <h3>Interviewee</h3>
+                    <img>
+                    <div style=" padding:0 25%;">
+                      <h3 style="text-align: center;padding-top: 15px;">Haihua XIAO</h3>
+                      <img src="https://static.igem.wiki/teams/4702/wiki/hp/xhh.jpg" alt="Professor Hongfei WANG"
+                        width="80%" height="">
+
+                      <br>
+                      <p style="color:rgb(70,158,180)">Institute of Chemistry, Chinese Academy of Sciences</p>
+                      <p><br>
+                        ?</p>
+                      <a href="http://hhxiao.iccas.ac.cn/61">View more</a>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <!--Please do not write too much about the 需求和医院 below-->
+                    <div class="blackbox" id="hpquestion">
+                      <h3>Looking for</h3>
+                    </div>
+                    <div class="blackbox hpquestion" id="hpquestion">
+                      <h3>Question we asked</h3>
+                      <ol>
+                        <li>When considering drug delivery in our bio-synthetic system, what factors should be taken
+                          into account when selecting a suitable drug?
+                        </li>
+                        <li>Can you provide guidance on the general procedure for incubating a drug with nanoparticles?
+                        </li>
+                        <li>How can we determine the content of a specific element, such as iron, in the nanoparticle
+                          system?</li>
+                        <li>In terms of clinical trials, what are the typical stages and tests involved in evaluating
+                          the effectiveness and safety of a drug?</li>
+                        <li>Who are the key stakeholders in drug development, particularly in the context of clinical
+                          trials? </li>
+
+                      </ol>
+                    </div>
+                    <div class="blackbox hpanswer">
+                      <h3>Your title</h3>
+                      <ol>
+                        <li>For drug delivery in our bio-synthetic system, Professor Xiao recommended that we tried
+                          doxorubicin since it could conjugate with the aromatic ring of proteins on the coating of
+                          nanoparticles through some interactions.</li>
+                        <li>For the specific procedure, Professor Xiao suggested that we incubate doxorubicin with
+                          nanoparticles for about 1 or 2 hours and then remove it by dialysis. The concentration can be
+                          measured using ultraviolet absorption spectroscopy.</li>
+                        <li>For the measurement of iron content in the nanoparticle system, he suggested that we first
+                          dissolved the samples in a nitric acid solution to release iron ions. We can then use ICPMS
+                          (Inductively Coupled Plasma Mass Spectrometry) to measure the concentration of iron ions.</li>
+                        <li>For clinical trials, he referred to multiple periods and tests conducted on cells,
+                          organoids, as well as different animals such as mice, pigs, and monkeys. He also added that
+                          the major stakeholders in drug development are companies and industries, as they would invest
+                          significant amounts of money to promote clinical trials.</li>
+                        <li>Finally, he emphasized that for drug delivery, it had been easy to conduct the experiment
+                          and we could borrow some materials from other labs.
+                        </li>
+                      </ol>
+
+
+                    </div>
+                    <!--<h4>Interviewer:</h4>
+                        <p>me</p>-->
+
+                  </div>
+
+
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -698,7 +754,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>We currently have two approaches for coupling antibodies to the surface of iron oxide
                           nanoparticles.
@@ -808,7 +864,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>When isolating synthesized iron nanoparticles from E. coli, we need to remove a significant
                           amount of
@@ -895,7 +951,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>Have you tried using other materials for coating the nanoparticles, such as polyethylene
                           glycol
@@ -981,7 +1037,7 @@ the world. Consider how the world affects your work and how your work affects th
     <div id="6" class="month gaspcol">
       <div class="container mx-auto mt-5">
         <h1 class="pt-5 mx-auto text-center">
-          Clinical Application of Nanoparticles
+          Clinical Trials
         </h1>
         <hr class="hr-ani">
         <!--专家介绍-->
@@ -1014,7 +1070,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>What is the potential of photo-thermal therapy using specific nanoparticle materials in
                           heating
@@ -1090,7 +1146,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>Is using nanoparticles conjugated with antibodies meaningful if there is already a
                           commercialized
@@ -1182,7 +1238,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                     </div>
                     <div class="blackbox hpanswer">
                       <h3>Your title</h3>
@@ -1244,7 +1300,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li>What are the different stages involved in clinical trials, and at which stage is our current
                           focus?</li>
@@ -1318,7 +1374,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Looking for</h3>
                     </div>
                     <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question</h3>
+                      <h3>Question we asked</h3>
                       <ol>
                         <li> How can we ensure that our questionnaire is suitable for patients, taking into
                           consideration its technical nature and potential difficulty in understanding therapy
