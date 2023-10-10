@@ -19,7 +19,56 @@ answerDivs.forEach(function (answerDiv) {
   answerDiv.style.maxHeight = (previousDivHeight * 2 / 3 - answerDiv.previousElementSibling.previousElementSibling.clientHeight) + "px";
 
 });
-
+var lookDivs = document.querySelectorAll(".hplook");
+var flagtar = {}, flagans = {}, flaglook = {};
+// 创建Intersection Observer实例
+window.addEventListener("scroll", () => {
+  targetDivs.forEach((div) => {
+    const rect = div.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // 判断div是否在屏幕可见区域内
+    if (rect.top < windowHeight && rect.bottom >= 0) {
+      if (div.style.opacity == 0) {
+        gsap.fromTo(div, { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 1, ease: "power2.out" });
+        flagtar[div.id] = 1;
+      }
+    }
+    else {
+      if (flagtar[div.id] == 0) {
+      gsap.to(div, { x: 100, opacity: 0, duration: 1, ease: "power2.out" });}
+    }
+  });
+  answerDivs.forEach((div) => {
+    const rect = div.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // 判断div是否在屏幕可见区域内
+    if (rect.top < windowHeight && rect.bottom >= 0) {
+      if (div.style.opacity == 0) {
+        gsap.fromTo(div, { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 1, ease: "power2.out" });
+        flagans[div.id] = 1;
+      }
+    }
+    else {
+      if (flagans[div.id] == 0) {
+      gsap.to(div, { x: 100, opacity: 0, duration: 1, ease: "power2.out" });}
+    }
+  });
+  lookDivs.forEach((div) => {
+    const rect = div.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // 判断div是否在屏幕可见区域内
+    if (rect.top < windowHeight && rect.bottom >= 0) {
+      if (div.style.opacity == 0) {
+        gsap.fromTo(div, { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 1, ease: "power2.out" });
+        flaglook[div.id] = 1;
+      }
+    }
+    else {
+      if (flaglook[div.id] == 0) {
+      gsap.to(div, { x: 100, opacity: 0, duration: 1, ease: "power2.out" });}
+    }
+  });
+});
 var swiper = new Swiper('.blog-slider', {
   spaceBetween: 30,
   effect: 'fade',
@@ -49,7 +98,7 @@ div1.addEventListener('click', (event) => {
     div1.classList.add('div-active');
     nav1.classList.add('href-active');
     div2.classList.remove('div-active');
-    
+
   });
 })
 

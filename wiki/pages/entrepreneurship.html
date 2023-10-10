@@ -1,13 +1,16 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Entrepreneurship{% endblock %}
-{% block lead %}The entrepreneurship prize recognizes exceptional effort to build a business case and commercialize an iGEM project.{% endblock %}
+{% block lead %}The entrepreneurship prize recognizes exceptional effort to build a business case and commercialize an
+iGEM project.{% endblock %}
 
 {% block page_content %}
 
+<link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'entrepreneurship.css') }}" rel="stylesheet">
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background:linear-gradient(
+<div class="sky single_slider d-flex align-items-center" id="cover-image" style="background:linear-gradient(
       110deg,
       #6fd7d0 0%,
       #96daf7 32%, 
@@ -22,7 +25,8 @@
           <p class="text-light">Entrepreneurship</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              The entrepreneurship prize recognizes exceptional effort to build a business case and commercialize an iGEM project.  
+              The entrepreneurship prize recognizes exceptional effort to build a business case and commercialize an
+              iGEM project.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -32,15 +36,102 @@
   </section>
 </div>
 
+<!--sidebar-->
+<div class="row">
+  <div id="sidebar" class=" ol-md-3  sidebar  flex-column flex-shrink-0 p-3  ">
+    <hr>
+    <ul class="navigation nav nav-pills flex-column mb-auto">
+      <li>
+        <a href="#1" class="nav-link">
+          Summary
+        </a>
+      </li>
+      <li>
+        <a href="#2" class="nav-link">
+          Customer Analysis
+        </a>
+      </li>
+      <li>
+        <a href="#3" class="nav-link">
+          Market Analysis
+        </a>
+      </li>
+      <li>
+        <a href="#4" class="nav-link">
+          Cost Analysis
+        </a>
+      </li>
+      <li>
+        <a href="#5" class="nav-link">
+          Future Plans
+        </a>
+      </li>
+      <li>
+        <a href="#6" class="nav-link">
+          References
+        </a>
+      </li>
+    </ul>
+    <hr>
+  </div>
+  <div class="mp-content offset-md-2 col-md-9 col-lg-9 ">
+    <div id="1" class="month gaspcol">
+      <div class="container mx-auto mt-5 w-90">
+        <h1 class="pt-5 mx-auto text-center" style="">
+          <span
+            style="background-color: rgb(254,232,154); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Summary</span>
+        </h1>
+        <hr class="hr-ani">
+        <br>
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="row">
+          <div class="col-lg-10">
+            <p>What we want to launch on the market is the iron-oxide nanoparticle mediated precise drug delivery
+              technique. It can help pharmaceutical companies to increase the efficiency of their drugs and decrease the
+              side effects of their drugs to normal tissues. We have discussed about our project with Chengyong Du, a
+              doctor in hospital, Haihua Xiao, a researcher in ICCAS, Yiran Cai, assistant to the president of Westlake
+              Pharmaceutical and have got their recognition. Some discussion between them and us is shown below. The
+              entrepreneurship could be mainly divided into these parts: Customer analysis, Market analysis, Cost
+              analysis, Research procedure analysis and Future plans.</p>
+          </div>
+          <div class="col-lg-2  " style="justify-content: space-around;">
+            <div class=" box green" style="margin:10px 0px;"> <button class="custom-btn btn-8"><a href="{{url_for('pages', page='human-practices', _anchor='Chengyong')}}"><span>Chengyong Du</span></a></button></div>
+            <div class=" box green"style="margin:10px 0px;"> <button class="custom-btn btn-8"><a href="{{url_for('pages', page='human-practices', _anchor='Haihua')}}"><span>Haihua Xiao</span></a></button></div>
+            <div class=" box green"style="margin:10px 0px;"> <button class="custom-btn btn-8"><a href="{{url_for('pages', page='human-practices', _anchor='Yiran')}}"><span>Yiran Cai</span></a></button></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.js"></script>
+<script src="{{ url_for('static', filename = 'card.js') }}"></script>
+<script src="{{ url_for('static', filename = 'pdf.js') }}"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 
 <div class="row mt-4">
   <div class="col">
     <div class="bd-callout bd-callout-info">
       <h4>Best Supporting Entrepreneurship</h4>
-      <p>The Best Supporting Entrepreneurship award recognizes exceptional effort to build a business case and commercialize an iGEM project. This award is open to all teams to show that entrepreneurship is something all teams can aspire to do with their project. This award can go to an new project, or to a previous project that a team aimed to commercialize. Have you filed a provisional patent on your project/device/process? Have you raised money to build and ship products? Have you pitched your idea to investors and received money? As always in iGEM, the aim is to impress the judges!</p>
-      <p>To compete for the Best Supporting Entrepreneurship prize, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
+      <p>The Best Supporting Entrepreneurship award recognizes exceptional effort to build a business case and
+        commercialize an iGEM project. This award is open to all teams to show that entrepreneurship is something all
+        teams can aspire to do with their project. This award can go to an new project, or to a previous project that
+        a
+        team aimed to commercialize. Have you filed a provisional patent on your project/device/process? Have you
+        raised
+        money to build and ship products? Have you pitched your idea to investors and received money? As always in
+        iGEM,
+        the aim is to impress the judges!</p>
+      <p>To compete for the Best Supporting Entrepreneurship prize, please describe your work on this page and also
+        fill
+        out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.
+      </p>
       <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2023 Awards Page</a> for more information.</p>
+      <p>Please see the <a href="https://competition.igem.org/judging/awards">2023 Awards Page</a> for more
+        information.
+      </p>
     </div>
   </div>
 </div>
@@ -49,8 +140,19 @@
   <div class="col-lg-8">
     <h2>Patents and intellectual property</h2>
     <hr>
-    <p>If your team is seriously considering commercializing and looking into building a company after the competition, you may want to look at how you are going to protect your work and secure investment. Investors will usually require some form of intellectual protection, so you may want to investigate how to apply for a patent or provisional patent in your country and region before disclosing your project at iGEM. Remember that you can only be evaluated in iGEM based on what you share on your wiki and at the Jamboree, so any work you don't present can't count towards your project.</p>
-    <p>This is an area where we are different as we care about sharing, openness and contributing to the community and investors don't always agree with these values. It is up to you and your team to decide what to do. Remember that most universities have a commercialization department and that you can talk to them before coming to a decision.</p>
+    <p>If your team is seriously considering commercializing and looking into building a company after the
+      competition,
+      you may want to look at how you are going to protect your work and secure investment. Investors will usually
+      require some form of intellectual protection, so you may want to investigate how to apply for a patent or
+      provisional patent in your country and region before disclosing your project at iGEM. Remember that you can only
+      be evaluated in iGEM based on what you share on your wiki and at the Jamboree, so any work you don't present
+      can't
+      count towards your project.</p>
+    <p>This is an area where we are different as we care about sharing, openness and contributing to the community and
+      investors don't always agree with these values. It is up to you and your team to decide what to do. Remember
+      that
+      most universities have a commercialization department and that you can talk to them before coming to a decision.
+    </p>
   </div>
   <div class="col-lg-4">
     <h2>Inspirations</h2>

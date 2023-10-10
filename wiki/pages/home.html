@@ -11,236 +11,156 @@ season!{%endblock %}
 
 <link href="{{url_for('static', filename = 'home.css')}}" rel="stylesheet">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
 
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
 
-
-<script src="https://unpkg.com/splitting@1.0.5/dist/splitting.min.js"></script>
-<div id="sidebar-toggle  min-sidebar"style="z-index:10000;">
-  <!-- 最小化按钮或图标 --><img src="https://static.igem.wiki/teams/4702/wiki/list-columns-reverse.svg" 
-    alt="list" width="30" height="30">
-</div>
-<div id="sidebar" class="col-md-3 col-lg-3 sidebar  flex-column flex-shrink-0 p-3"
-  style="text-align: center;z-index:99999;">
-
-  <hr>
-  <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
-    <li>
-      <a href="#1" class="nav-link">
-        Competent Cell Preparation
-      </a>
-    </li>
-    <li>
-      <a href="#2" class="nav-link">
-        Competent Cell Transformation
-      </a>
-    </li>
-    <li>
-      <a href="#3" class="nav-link">
-        Culture development for protein extraction
-      </a>
-    </li>
-    <li>
-      <a href="#4" class="nav-link">
-        His-tagged protein purification
-      </a>
-    </li>
-    <li>
-      <a href="#5" class="nav-link">
-        Protein electrophoresis
-      </a>
-    </li>
-    <li>
-      <a href="#6" class="nav-link">
-        BCA test
-      </a>
-    </li>
-    <li>
-      <a href="#7" class="nav-link">
-        Nanoparticle Biosynthesis
-      </a>
-    </li>
-    <li>
-      <a href="#8" class="nav-link">
-        NHS-PEG-Maleimide Linking Protocol
-      </a>
-    </li>
-  </ul>
-  <hr>
-</div>
-<div id="wrap">
-  <div id="panels">
-    <section class="panel" id="1">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <section class="panel" id="2">
-      <div class="cont" style="-webkit-transform:scaleX(-1);">
-        <div class="mouse"></div>
-        <div class="app" style="margin:auto auto; text-align: center;
-      display: flex;
-      justify-content: center;">
-          <div class="app__bgimg">
-            <div class="app__bgimg-image app__bgimg-image--1">
-            </div>
-            <div class="app__bgimg-image app__bgimg-image--2">
-            </div>
-          </div>
-          <div class="app__img">
-            <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png"
-              alt="city" />
-          </div>
-
-          <div class="app__text app__text--1">
-            <div class="app__text-line app__text-line--4">imperdiet </div>
-            <div class="app__text-line app__text-line--3">ut le</div>
-            <div class="app__text-line app__text-line--2">non tincidunt </div>
-            <div class="app__text-line app__text-line--1"><img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
-          </div>
-
-          <div class="app__text app__text--2">
-            <div class="app__text-line app__text-line--4">habitant</div>
-            <div class="app__text-line app__text-line--3">ut eget</div>
-            <div class="app__text-line app__text-line--2">Nam imperdiet</div>
-            <div class="app__text-line app__text-line--1"><img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
-          </div>
-        </div>
-        <div class="pages">
-          <ul class='pages__list'>
-            <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
-            <li data-target='2' class='pages__item pages__item--2'></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="panel" id="3">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <section class="panel" id="4">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <section class="panel" id="5">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <section class="panel" id="6">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <section class="panel" id="7">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <section class="panel" id="8">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <section class="panel" id="9">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <section class="panel" id="10">
-      <h1 data-splitting="words">Coming Soon</h1>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-      <div class="image right">
-        <div class="inner"></div>
-      </div>
-      <div class="image">
-        <div class="inner"></div>
-      </div>
-    </section>
-    <!-- 重复上述结构以创建其余的部分 -->
+<div class="top-section">
+  <div class="main-cta">
+    <h1>Lorem, ipsum <span>dolor</span> sit <span>amet es</span>.</h1>
   </div>
-  <div id="backgrounds">
-    <!-- 根据循环重复背景元素 -->
-    <!-- 示例： -->
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <!-- 重复上述结构以创建更多的背景元素 -->
+
+</div>
+
+<div class="background-section">
+  <h2>Background</h2>
+  <div class="middle-image">
+    <img src="https://static.pexels.com/photos/137108/pexels-photo-137108.jpeg" alt="Middle Image">
   </div>
 </div>
 
+<div class="Nanoparticles-section">
+  <br><br>
+  <div class="container-wrapper">
+    <div class="container-left ">
+      <h2 class="text-center" style="width:100%">Nanoparticles</h2>
+      <br>
+      <strong><span class="larger-text">What are nanoparticles?</span></strong>
+      <br><br>
+      They are particles which are a 1000 times smaller than the width of a hair.
+      Nanoparticles come in all shapes and can be made from various materials.
+      <br><br>
+      They have a variety of applications, for example, in cancer therapy, where they can produce heat that kills tumor
+      cells.
+      <br>
+      <br>
+      <strong><span class="larger-text">And how can you make them?</span></strong>
+      <br><br>
+      There are different ways of producing these nanoparticles
+      <br><br>
+      <span class="centered-text-1">Chemical &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Physical
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eletrochemical</span>
+      <br><br>
+      but these production methods all have their downsides.
+      <br><br>
+      <span class="centered-text-2"><strong>Inconsistent &nbsp;&nbsp;&nbsp; Not adaptable &nbsp;&nbsp;&nbsp; Toxic
+          &nbsp;&nbsp;&nbsp; Expensive</strong></span>
+    </div>
+    <div class="container-right">
+      <br>
+      <div class="image-container">
+        <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/notebook-6-23-1.png"
+          alt="GFP expression level under different concentration of ferric ion treatment" class="image" width="100%"
+          height="100%">
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="animation-container">
+    <p class=""><span class="larger-text-1 fade-in-text" style="">What can we do?</span></p>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="container-wrapper">    
+    <div class="container-left-1">
+      <br>
+      <div class="image-container">
+        <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/notebook-6-23-1.png"
+          alt="GFP expression level under different concentration of ferric ion treatment" class="image" width="100%"
+          height="100%">
+      </div>
+    </div>
+    <div class="container-right-1 ">
+      <br><br>
+      <strong><span class="larger-text">Biosynthesitic nanoparticles</span></strong>
+      <br><br><br>
+      Our genetically edited <i>E. coli</i> is used to synthesize Iron Oxide Nanoparticles (IONPs) by adding Fe<sup>3+</sup> for induction.
+      <br><br><br>
+      <a href="description.html">Go to our description page. </a>
+      <br><br><br>
+      <strong><span class="larger-text">What is special about our nanoparticles?</span></strong>
+      <br><br><br>
+      They are not just any nanoparticle! They have special abilities due to their properties. 
+      We then step into exploring therapeutic applications and drug delivery possibilities.     
+      <br><br><br><br><br><br>
+    </div>
+  </div>
+</div>
 
-<script src="{{ url_for('static', filename = 'home.js') }}"></script>
-<script src="{{ url_for('static', filename = 'card.js') }}"></script>
+<div class="Problem-section">
+  <h2>The problem</h2>
+  <div class="middle-image">
+    <img src="https://static.pexels.com/photos/137108/pexels-photo-137108.jpeg" alt="Middle Image">
+  </div>
+</div>
 
-{% endblock %}
+<div class="middle-section">
+  <h2>More Information:</h2>
+  <div class="middle-image">
+    <img src="https://static.pexels.com/photos/137108/pexels-photo-137108.jpeg" alt="Middle Image">
+  </div>
+</div>
+
+<div class="bottom-section">
+  <h2>Cell Experiments :</h2>
+  <div class="bottom-image">
+    <img src="https://images.pexels.com/photos/136049/pexels-photo-136049.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+      alt="Bottom Image">
+  </div>
+  <div class="content">
+    <div class="button_container">
+      <div class="button_su">
+        <span class="su_button_circle">
+        </span>
+        <a href="#" class="button_su_inner">
+          <span class="button_text_container">
+            Simple button
+          </span>
+        </a>
+      </div>
+
+      <div class="button_su">
+        <span class="su_button_circle">
+        </span>
+        <a href="#" class="button_su_inner">
+          <span class="button_text_container">
+            Another button
+          </span>
+        </a>
+      </div>
+
+      <div class="button_su">
+        <span class="su_button_circle">
+        </span>
+        <a href="#" class="button_su_inner">
+          <span class="button_text_container">
+            A third button
+          </span>
+        </a>
+      </div>
+
+    </div>
+    <div>
+      <div>
+
+
+        <br><br><br><br>
+        <iframe
+          title="MIT: GSHield: A Synthetic Biology Solution to Oral Mucositis (2022) - Project Promotion [English]"
+          width="80%" height="560" src="https://video.igem.org/w/prpJtM364Y5MmyzoDX9LDw" frameborder="0"
+          allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+
+        <script src="{{ url_for('static', filename = 'home.js') }}"></script>
+        <script src="{{ url_for('static', filename = 'card.js') }}"></script>
+
+        {% endblock %}

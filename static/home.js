@@ -1,306 +1,218 @@
-window.addEventListener('scroll', function () {
-    var element = document.getElementById('section1');
-    var position = element.getBoundingClientRect().top;
-
-    if (position < window.innerHeight) {
-        element.classList.add('fade-in-element');
-    }
-});
-window.addEventListener('scroll', function () {
-    var element = document.getElementById('section2');
-    var position = element.getBoundingClientRect().top;
-
-    if (position < window.innerHeight) {
-        element.classList.add('fade-in-element');
-    }
-}); window.addEventListener('scroll', function () {
-    var element = document.getElementById('section3');
-    var position = element.getBoundingClientRect().top;
-
-    if (position < window.innerHeight) {
-        element.classList.add('fade-in-element');
-    }
-}); window.addEventListener('scroll', function () {
-    var element = document.getElementById('section4');
-    var position = element.getBoundingClientRect().top;
-
-    if (position < window.innerHeight) {
-        element.classList.add('fade-in-element');
-    }
-});
-
-var spots = [
-    { d: 20, top: 10, left: 30, opacity: .01 },
-    { d: 30, top: 50, left: 90, opacity: .1 },
-    { d: 50, top: 500, left: 190, opacity: .2 },
-    { d: 10, top: 600, left: 270, opacity: .2 }
-];
-
-// Set height of spot-container
-var $spotsContainer = $(`<div id='spots-container'></div>`);
-$spotsContainer.css({
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    'z-index': 10
-});
-$('body').prepend($spotsContainer);
-$('#spots-container').height($(document).height());
-
-spots.forEach((spot, i) => {
-    var $spotEl = $(`<div class='spot sid${i}'></div>`);
-    $spotEl.css({
-        width: spot.d + 'px',
-        height: spot.d + 'px',
-        'border-radius': spot.d / 2 + 'px',
-        top: spot.top,
-        left: spot.left, op: 0
-    });
-    // console.log('i', i, $spotEl);
-    $('#spots-container').append($spotEl);
-});
-
-$(document).scroll(function () {
-    $('.spot').each(function () {
-        //  number of pixels that are hidden from view above viewport
-        const scrollTopHeight = $(document).scrollTop();
-        const windowHeight = $(window).height();
-        const triggerHeight = scrollTopHeight + .75 * windowHeight;
-        // position of div relative to document
-        const spotHeight = $(this).offset().top;
-
-        if (triggerHeight > spotHeight) {
-            const spotId = $(this).attr("class").split('sid')[1];
-            const opacity = spots[spotId].opacity;
-            $(this).fadeTo("slow", .15);
-        } else {
-            // $(this).fadeOut();
-        }
-    });
-    $('.vertical-line').each(function () {
-        const scrollTopHeight = $(document).scrollTop();
-        const windowHeight = $(window).height();
-        const triggerPosition = scrollTopHeight + .75 * windowHeight;
-        const linePosition = $(this).offset().top;
-        const lineId = $(this).attr("line-id")
-        if (triggerPosition > linePosition) {
-            $(this).addClass("vertical-line-id-" + lineId);
-        } else {
-            $(this).removeClass("vertical-line-id-" + lineId);
-        }
-    });
-});
-
-/*HP introduction (two slider with waves)*/
-
-$(document).ready(function () {
-    const $app = $('.app');
-    const $img = $('.app__img');
-    const $pageNav1 = $('.pages__item--1');
-    const $pageNav2 = $('.pages__item--2');
-    let animation = true;
-    let curSlide = 1;
-    let scrolledUp, nextSlide;
-
-    let pagination = function (slide, target) {
-        animation = true;
-        if (target === undefined) {
-            nextSlide = scrolledUp ? slide - 1 : slide + 1;
-        } else {
-            nextSlide = target;
-        }
-
-        $('.pages__item--' + nextSlide).addClass('page__item-active');
-        $('.pages__item--' + slide).removeClass('page__item-active');
-
-        $app.toggleClass('active');
-        setTimeout(function () {
-            animation = false;
-        }, 3000)
-    }
-
-    let navigateDown = function () {
-        if (curSlide > 1) return;
-        scrolledUp = false;
-        pagination(curSlide);
-        curSlide++;
-    }
-
-    let navigateUp = function () {
-        if (curSlide === 1) return;
-        scrolledUp = true;
-        pagination(curSlide);
-        curSlide--;
-    }
-
-    setTimeout(function () {
-        $app.addClass('initial');
-    }, 1500);
-
-    setTimeout(function () {
-        animation = false;
-    }, 4500);
-
-    $(document).on('mousewheel DOMMouseScroll', function (e) {
-        var delta = e.originalEvent.wheelDelta;
-        if (animation) return;
-        if (delta > 0 || e.originalEvent.detail < 0) {
-            navigateUp();
-        } else {
-            navigateDown();
-        }
-    });
-
-    $(document).on("click", ".pages__item:not(.page__item-active)", function () {
-        if (animation) return;
-        let target = +$(this).attr('data-target');
-        pagination(curSlide, target);
-        curSlide = target;
-    });
-});
-
-
-Splitting();
-document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
-    $('body').addClass("loaded");
-    gsap.utils.toArray("section").forEach(function (elem) {
-        ScrollTrigger.create({
-            trigger: elem,
-            onEnter: function () { $(elem).addClass('active') },
-            onEnterBack: function () { $(elem).addClass('active') },
-            onLeave: function () { $(elem).removeClass("active") },
-            onLeaveBack: function () { $(elem).removeClass("active") }
-
-        });
-    });
-    function slideIn(elem) {
-        gsap.fromTo(elem, {
-            y: "150%",
-            scale: 1,
-            duration: 1.5,
-            stagger: 1.5,
-            overwrite: "auto",
-            delay: 0,
-        },
-            {
-                y: "0%",
-                scale: 1,
-                duration: 1.75,
-                stagger: 1.5,
-                delay: 1,
-                overwrite: "auto",
-                ease: "power4.inOut"
-            });
-    }
-
-    ScrollTrigger.create({
-        trigger: document.body,
-        end: "bottom bottom",
-        snap: { snapTo: 0.1, duration: 0.6, delay: 0, ease: "power4.inOut" },
-        onUpdate: (self) => {
-            const totalVelocity = (self.getVelocity() / 1400);
-            const posVelocity = Math.abs((self.getVelocity() / 2400));
-            const totalScroll = (((self.progress - 0.1) * 100));
-            gsap.to("html", { "--velocity": totalVelocity, duration: 0.5 });
-            gsap.to("html", { "--posvelocity": posVelocity, duration: 0.5 });
-            gsap.to("html", {
-                "--total": totalScroll, duration: 0.05, onComplete: () => {
-                    gsap.to("html", { "--velocity": 0, "--posvelocity": 0, duration: 0.5, overwrite: "auto" })
-                }
-            });
-        },
-    });
-});
-/*
-const cont = document.querySelector('.cont');
-let isScrolling = false;
-let hasScrolledToTop = false;
-
-window.addEventListener('scroll', () => {
-    let contTop = cont.getBoundingClientRect().top;
-    let windowHeight = window.innerHeight;
-    if (contTop > windowHeight) { hasScrolledToTop = false; }
-    console.log(contTop,windowHeight);
-    if (!isScrolling && contTop < windowHeight / 2 &&contTop>0 && !hasScrolledToTop) { // 第一次滚动到顶部时触发
-        isScrolling = true;
-        hasScrolledToTop = true; // 设置标志以表示已滚动到顶部
-        let scrollDistance = contTop-windowHeight; // 计算需要滚动的距离
-        const duration = 500; // 滚动动画的持续时间（毫秒）
-        console.log('scrollDistance', scrollDistance);
-        window.scrollTo(0, window.scrollY+contTop);
-        let startTime = null;
-
-        function animateScroll(timestamp) {
-            if (!startTime) {
-                startTime = timestamp;
-            }
-
-            const progress = Math.min((timestamp - startTime) / duration, 1);
-            const newScrollTop = window.scrollY - scrollDistance * progress;
-
-            window.scrollTo(0, newScrollTop);
-
-            if (progress < 1) {
-                requestAnimationFrame(animateScroll);
-            } else {
-                isScrolling = false;
-            }
-        }
-
-        requestAnimationFrame(animateScroll);
-    }
-});*/
-
 const footer = document.querySelector('#footer');
 const sidebarAnimation = gsap.from("#sidebar", { duration: 1, opacity: 0, x: -500 });
 window.addEventListener('DOMContentLoaded', () => {
-    // 判断初始位置是否需要显示侧边栏
-    if (window.pageYOffset <= 50) {
-        sidebarAnimation.play();
-    } else {
-        sidebarAnimation.reverse();
-    }
+  // 判断初始位置是否需要显示侧边栏
+  if (window.pageYOffset <= 50) {
+    sidebarAnimation.play();
+  } else {
+    sidebarAnimation.reverse();
+  }
 });
 window.addEventListener('scroll', () => {
-    // 计算滚动位置
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-    // 切换侧边栏显示
-    if (scrollPosition + windowHeight < documentHeight - footer.offsetHeight) {
-        sidebarAnimation.play()
-    } else {
-        sidebarAnimation.reverse();
-    }
+  // 计算滚动位置
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight;
+  // 切换侧边栏显示
+  if (scrollPosition + windowHeight < documentHeight - footer.offsetHeight) {
+    sidebarAnimation.play()
+  } else {
+    sidebarAnimation.reverse();
+  }
 });
 window.onload = function () {
-    const sidebar = document.getElementById("sidebar");
-    const toggleButton = document.getElementById("sidebar-toggle");
+  const sidebar = document.getElementById("sidebar");
+  const toggleButton = document.getElementById("sidebar-toggle");
 
-    // 监听鼠标移动事件
-    document.addEventListener("mousemove", (event) => {
-        // 检查鼠标是否在屏幕的左侧区域
-        if (event.clientX < 150 && window.pageYOffset >= 50) {
-            // 使用GSAP动画显示侧边栏
-            gsap.to(sidebar, { left: 0 });
-            gsap.to(toggleButton, { left: -300 })
-        } else {
-            // 使用GSAP动画隐藏侧边栏
-            gsap.to(sidebar, { left: -200 });
-            gsap.to(toggleButton, { left: 100 });
-        }
-    });
+  // 监听鼠标移动事件
+  document.addEventListener("mousemove", (event) => {
+    // 检查鼠标是否在屏幕的左侧区域
+    if (event.clientX < 150 && window.pageYOffset >= 50) {
+      // 使用GSAP动画显示侧边栏
+      gsap.to(sidebar, { left: 0 });
+      gsap.to(toggleButton, { left: -300 })
+    } else {
+      // 使用GSAP动画隐藏侧边栏
+      gsap.to(sidebar, { left: -200 });
+      gsap.to(toggleButton, { left: 100 });
+    }
+  });
 
-    // 监听最小化按钮或图标的鼠标移入事件
-    toggleButton.addEventListener("mouseenter", () => {
-        // 使用GSAP动画展开侧边栏
-        gsap.to(sidebar, { left: -200 });
-    });
+  // 监听最小化按钮或图标的鼠标移入事件
+  toggleButton.addEventListener("mouseenter", () => {
+    // 使用GSAP动画展开侧边栏
+    gsap.to(sidebar, { left: -200 });
+  });
 
-    // 监听最小化按钮或图标的鼠标移出事件
-    toggleButton.addEventListener("mouseleave", () => {
-        // 使用GSAP动画将侧边栏滑动回最小化位置
-        gsap.to(sidebar, { left: 0 });
-    });
+  // 监听最小化按钮或图标的鼠标移出事件
+  toggleButton.addEventListener("mouseleave", () => {
+    // 使用GSAP动画将侧边栏滑动回最小化位置
+    gsap.to(sidebar, { left: 0 });
+  });
 }
+
+//背景样式
+
+$(document).ready(function () {
+  var $main_cta = $('.main-cta');
+
+  $(window).scroll(function () {
+    var s = $(this).scrollTop(),
+      d = $(document).height(),
+      c = $(this).height();
+
+    scrollPercent = (s / (d - c));
+
+    var position = (scrollPercent * ($(document).width() - $main_cta.width()));
+
+    $main_cta.css({
+      'left': position
+    });
+  });
+});
+
+$(document).ready(function () {
+  var $middle_image = $('.middle-image');
+
+  $(window).scroll(function () {
+    var s = $(this).scrollTop() - 280,
+      d = $(document).height(),
+      c = $(this).height();
+
+    scrollPercent = (s / (d - c));
+
+    var position = (scrollPercent * ($(document).width() - $middle_image.width()));
+
+    $middle_image.css({
+      'right': position
+    });
+  });
+});
+
+$(document).ready(function () {
+  var $bottom_image = $('.bottom-image');
+
+  $(window).scroll(function () {
+    var s = $(this).scrollTop() - 320,
+      d = $(document).height(),
+      c = $(this).height();
+
+    scrollPercent = (s / (d - c));
+
+    var position = (scrollPercent * ($(document).width() - $bottom_image.width()));
+
+    $bottom_image.css({
+      'left': position
+    });
+  });
+});
+//背景样式
+
+//button
+$(".button_su_inner").mouseenter(function (e) {
+  var parentOffset = $(this).offset();
+
+  var relX = e.pageX - parentOffset.left;
+  var relY = e.pageY - parentOffset.top;
+  $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+  $(this).prev(".su_button_circle").removeClass("desplode-circle");
+  $(this).prev(".su_button_circle").addClass("explode-circle");
+
+});
+
+$(".button_su_inner").mouseleave(function (e) {
+
+  var parentOffset = $(this).offset();
+
+  var relX = e.pageX - parentOffset.left;
+  var relY = e.pageY - parentOffset.top;
+  $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+  $(this).prev(".su_button_circle").removeClass("explode-circle");
+  $(this).prev(".su_button_circle").addClass("desplode-circle");
+
+});
+//button
+
+// 创建动画
+/*
+const fadeInText = gsap.from(".fade-in-text", {
+  opacity: 0,
+  x: -100,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".fade-in-text", // 触发元素
+    start: "center center", // 动画触发时机（元素进入屏幕中心时触发）
+    end: "center center", // 动laji画结束时机（元素仍然在屏幕中心时）
+    scrub: true, // 可以根据滚动位置控制动画进度
+  },
+});*/
+
+
+// 设置ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+const textDivs = document.querySelectorAll(".fade-in-text");
+const textDivsafter = document.querySelectorAll(".fade-in-text::after");
+console.log(textDivsafter);
+// 创建Intersection Observer实例
+window.addEventListener("scroll", () => {
+  textDivs.forEach((div) => {
+    const rect = div.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // 判断div是否在屏幕可见区域内
+    if (rect.top < windowHeight && rect.bottom >= 0) {
+      // 使用GSAP动画显示div
+      gsap.to(div, { dration: 2, x: 0, opacity: 1 });
+    } else {
+      // 使用GSAP动画隐藏div
+      gsap.to(div, { duration: 0.5, x: -500, opacity: 0, });
+    }
+  });
+});
+var flag = 0;
+const elementsToAnimate = document.querySelectorAll(".background-section"); // 遍历所有匹配的元素并应用动画
+window.addEventListener("scroll", () => {
+  elementsToAnimate.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // 判断div是否在屏幕可见区域内
+    if (rect.top < windowHeight && rect.bottom >= 0) {
+      // 使用GSAP动画显示div
+      if (!flag) {
+        gsap.set(element, { x: "100%" });
+        gsap.to(element, { x: "0%", duration: 1, ease: "power2.out" });
+        flag = 1;
+      }
+    } else {
+      // 使用GSAP动画隐藏div
+      if (!flag) {
+        gsap.set(element, { x: "100%" });
+        gsap.to(element, { x: "100%", duration: 1, });
+      }
+    }
+  });
+});
+
+
+
+// 创建动画
+/*
+const fadeInText = gsap.from(".fade-in-text", {
+  opacity: 0,
+  x: -100,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".fade-in-text",
+    start: "center center",
+    end: "center center",
+    scrub: true,
+    onEnter: () => {
+      // 当进入视口时，将横线的宽度设置为文本宽度，从左到右浮现
+      gsap.to(".fade-in-text::after", { width: "100%", ease: "power2.out" });
+    },
+    onLeaveBack: () => {
+      // 当离开视口时，将横线的宽度重置为0
+      gsap.to(".fade-in-text::after", { width: 0 });
+    },
+  },
+});*/
