@@ -25,7 +25,7 @@
 }
 
 .card{
-  box-shadow: 3px 3px 4px 4px rgba(70, 158, 180, 0.2);
+  box-shadow: 3px 3px 4px 4px rgba(70, 158, 180, 0.1);
 }
 .subfield {
   display: flex;

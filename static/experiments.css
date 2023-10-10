@@ -33,7 +33,7 @@
 text-align: left;
 }
 .card{
-  box-shadow: 5px 5px 6px 6px rgba(70, 158, 180, 0.2);
+  box-shadow: 3px 3px 4px 4px rgba(70, 158, 180, 0.1);
 }
 /*侧边栏*/
 
@@ -49,3 +49,6 @@ text-align: left;
   overflow-y: auto;
   /* Add scrollbar to the sidebar if content exceeds its height */
 }
+a[href="#a1"],a[href="#a2"],a[href="#a3"],a[href="#a4"]{
+  text-decoration: none;
+} 
