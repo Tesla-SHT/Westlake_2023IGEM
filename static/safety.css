@@ -12,7 +12,9 @@
 .card-body {
   display: none;
 }
-
+.card{
+  box-shadow: 5px 5px 6px 6px rgba(70, 158, 180, 0.2);
+}
 /* 添加淡入效果 */
 .card-body.active {
   display: block;

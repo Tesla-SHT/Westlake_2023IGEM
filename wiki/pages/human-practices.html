@@ -32,1396 +32,1522 @@ the world. Consider how the world affects your work and how your work affects th
   .card {
     border: 0px;
   }
+
+  @media screen and (max-width: 768px) {
+    .mp-content {
+      padding-right: 0px !important;
+    }
+  }
 </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'HP.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
-
-<div class="row" style="">
-  <div id="sidebar" class="ol-md-3 offset-md-1 sidebar  flex-column flex-shrink-0 p-3"
-    style="padding-right:0;padding-left:0">
-    <hr>
-    <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
-      <li>
-        <a href="#0" class="nav-link">
-          Overview
-        </a>
-      </li>
-      <li>
-        <a href="#1" class="nav-link">
-          Nanoparticle Separation
-        </a>
-      </li>
-      <li>
-        <a href="#2" class="nav-link">
-          General Synthetic Biology
-        </a>
-      </li>
-      <li>
-        <a href="#3" class="nav-link">
-          Nanoparticle Application
-        </a>
-      </li>
-      <li>
-        <a href="#4" class="nav-link">
-          Ferroptosis of Iron Oxide Nanoparticle
-        </a>
-      </li>
-      <li>
-        <a href="#5" class="nav-link">
-          Conjugation of Nanoparticle and Antibody
-        </a>
-      </li>
-      <li>
-        <a href="#6" class="nav-link">
-          Clinical Trials
-        </a>
-      </li>
-    </ul>
-    <hr>
-  </div>
-  <div class="mp-content offset-md-3 col-md-9 col-lg-9 justify-content-end"
-    style="padding-right:0;padding-left:0;margin-bottom:200px;">
-    <div id="0" class="month gaspcol">
-      <div class="container mx-auto mt-5">
-        <h1 class="pt-5 mx-auto text-center">
-          Overview
-        </h1>
-        <hr class="hr-ani">
-        <div class="blog-slider">
-          <div class="blog-slider__wrp swiper-wrapper">
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                
-                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-                <a href="#" class="blog-slider__button">READ MORE</a>
-              </div>
-            </div>
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                <a href="#" class="blog-slider__button">READ MORE</a>
-              </div>
-            </div>
-              
-            <div class="blog-slider__item swiper-slide">
-                <div class="blog-slider__img">
-                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                <a href="#" class="blog-slider__button">READ MORE</a>
-              </div>
-            </div>
-            
-          </div>
-          <div class="blog-slider__pagination"></div>
-        </div>
-
-      </div>
+<div class="">
+  <nav class="div-page">
+    <div class="page-button div1 div-active">
+      <a href="#" class="a1 href-active">Page 1</a>
     </div>
-    <div id="1" class="month gaspcol">
-      <div class="container mx-auto mt-5">
-        <h1 class="pt-5 mx-auto text-center">
-          Nanoparticle Separation
-        </h1>
-        <hr class="hr-ani">
-        <!--专家介绍-->
-        <div class="card mx-auto text-center" style="border:0px;">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                  padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder." />
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Bobo DANG</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">School of Life Sciences</p>
-                      <p>Biology<br>
-                        Laboratory of Protein Engineering and Protein Therapeutics</p>
-                      <a href="https://www.dang-lab.com/team">View more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>When isolating and synthesizing nano iron particles from E. coli, we encounter the need to
-                          remove a significant amount of biomaterial. Could you please recommend an effective washing
-                          agent that
-                          can
-                          achieve good removal results without significantly damaging the surface composition of the
-                          nano iron
-                          particles?</li>
-                        <li>How can we achieve the coupling between antibodies and the surface of iron oxide
-                          nanoparticles? We are
-                          considering two approaches: direct coupling to the isolated iron oxide nanoparticles, where
-                          the surface
-                          coating component may be phospholipids, and pre-coating the nanoparticles with a layer of PEG
-                          (polyethylene glycol) before coupling. Do you have any suggestions for the design of coupling
-                          components? We have thought about the Spytag/Spycatcher system.</li>
-                        <li>Is it possible to enhance the connection between the tail end of the antibodies and the
-                          nanoparticles
-                          through a biocompatible method of modifying the binding site?
-                        </li>
-                        <li>
-                          After synthesizing our antibodies, we aim to improve their targeting efficiency. Are there any
-                          biocompatible methods available to modify the binding site at the head end of the antibodies?
-                        </li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>During our discussion on the self-assembly of bio-synthetic
-                          nanoparticles and antibodies in Escherichia coli, professor Dang expressed
-                          concerns regarding the stability of the vesicles on the surface of the
-                          nanoparticles compared to the bacterial membrane. professor Dang suggested that
-                          this instability might lead to the destruction of the nanoparticle structure
-                          when separating them with antibodies. Consequently, he proposed that it would
-                          be more feasible for us to synthesize and assemble the components separately.</li>
-                        <li>Another topic of our discussion was elution during the separation of nanoparticles.
-                          professor Dang suggested that we could employ organic solvents for washing and
-                          filtration. Additionally, considering the necessity of a layer of PEG membrane,
-                          professor Dang recommended attempting to dissolve PEG in organic solvents to
-                          achieve the desired replacement.</li>
-                        <li>Professor Dang opined that the surface composition of the nanoparticles
-                          is not necessarily crucial. As long as the final objective of antibody
-                          connectivity is achieved, the existence of amino and carboxyl groups on the
-                          surface of bio-synthesized nanoparticles should facilitate connection.
-                          Professor Dang also proposed the possibility of employing harsh solvents to
-                          wash the nanoparticles and observe their binding behavior with antibodies.</li>
-                        <li>In relation to connecting the antibodies and nanoparticles, professor Dang
-                          mentioned the utilization of EDC (1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide). </li>
-                        <li>Overall, an additional point to consider is that using PEG coating might
-                          not be meaningful. Commercially available chemically-synthesized nanoparticles
-                          are already coated with PEG. Therefore, the coating on the surface of bio-synthesized
-                          nanoparticles lacks significance.</li>
-                      </ol>
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                    <p>me</p>-->
-
-                  </div>
-
-                </article>
-              </section>
-            </div>
-          </div>
-        </div>
-        <!--如果要在这个栏目再放一个专家及问题，把上面专家和问题复制下来，并且在下面一行加上换行<br> -->
-        <br>
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                  padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hongyu-chen.jpg" alt="Professor Hongyu CHEN"
-                      width="50%" height="">
-
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Hongyu Chen</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">School of Science<br>School of Engineering (Affiliated)</p>
-                      <p>Chemistry<br>
-                        Materials Science and Engineering<br>
-                        Laboratory of Nanosynthesis<br></p>
-                      <a href="http://www.nanosynthesis.cn">View more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li></li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li></li>
-                      </ol>
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                    <p>me</p>-->
-                  </div>
-                </article>
-              </section>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hongfei-wang.jpg" alt="Professor Hongfei WANG"
-                      width="50%" height="">
-
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Hongfei Wang</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">School of Science</p>
-                      <p>Chemistry<br>
-                        Physics<br>
-                        Ultrafast Laser Spectroscopy and Surface/Interface Physical Chemistry Laboratory</p>
-                      <a href="https://hfwgroup.westlake.edu.cn">View more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li></li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li></li>
-                      </ol>
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                  <p>me</p>-->
-                  </div>
-                </article>
-              </section>
-            </div>
-          </div>
-        </div>
-
-        <br>
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/people-photo/ljw.jpg"
-                      alt="Professor Hongfei WANG" width="50%" height="">
-
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Jiawei Liu</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">Institute of Geology and Geophysics, Chinese Academy of Sciences
-                      </p>
-                      <a href="http://sourcedb.igg.cas.cn/cn/zjrck/202207/t20220715_6481608.html">View more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>Are there any research efforts focused on determining the coating components of biologically
-                          synthesized magnetic nanoparticles? Is there a way to identify the coating components?</li>
-                        <li>Regarding the synthesis of magnetic nanoparticles through biological methods, are there any
-                          well-established separation strategies available to separate the magnetic nanoparticles from
-                          organelles
-                          or biomolecules of similar size?</li>
-                        <li>If complete separation is challenging, would it have a significant impact on the
-                          characterization of
-                          the nanoparticles? For example, would dynamic light scattering yield inaccurate results in
-                          this case? If
-                          so, are there more suitable characterization techniques available?</li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Protein analysis and decomposition </h3>
-                      <ol>
-                        <li>The professor said that it may be necessary to detect and identify proteins, including
-                          chemical
-                          bond composition and three-dimensional structure analysis, and to understand some mechanisms
-                          of the
-                          biosynthetic nanoparticle process so that we can make better prediction and identification.
-                        </li>
-                        <li>We firstly doubted that we couldn't use the ultrafilteration due to the low spinning speed
-                          and the
-                          content may jam the device. However, after comparing Hemodialysis, Centrifugation,
-                          Chromatography
-                          and Ultrafiltration, Prof. Liu still suggested the last one. That's because ultrafiltration
-                          won't
-                          agglomerate the protein and He encouraged us to try various experiment methods since we can
-                          not
-                          ensure every step is correct in our procedure. As long as we have an idea, there is no need to
-                          worry
-                          about the failure.</li>
-                        <li>For this problem, incomplete separation can affect the physical and chemical data
-                          characterization
-                          of nanoparticle products, but for biocompatibility characterization such as cytotoxicity
-                          testing,
-                          unisolated substances usually do not have much impact, because other cell debris and
-                          metabolites
-                          usually do not affect the normal growth and differentiation of cells.</li>
-                      </ol>
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                  <p>me</p>-->
-                  </div>
-                </article>
-              </section>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
+    <div class="page-button div2">
+      <a href="#" class="a2">Page 2</a>
     </div>
-    <div id="2" class="month gaspcol">
-      <div class="container mx-auto mt-5">
-        <h1 class="pt-5 mx-auto text-center">
-          General Synthetic Biology
-        </h1>
-        <hr class="hr-ani">
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                  padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder." />
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Kechun Zhang</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">School of Engineering</p>
-                      <p>Materials Science and Engineering<br>
-                        Laboratory of Biomanufacturing and New Materials</p>
-                      <a href="https://en.westlake.edu.cn/faculty/kechun-zhang.html">View more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>Can E. coli be cultured in SOB (Super Optimal Broth) protein medium?</li>
-                        <li>Is it possible for antibodies to be synthesized in E. coli without the formation of double
-                          sulfur
-                          bonds at the wrong location?</li>
-                        <li>Can iron oxide nanoparticles (IONPs) be conjugated with antibodies, similar to how gold
-                          nanoparticles
-                          (Au NPs) and antibodies form an Au-S bond?</li>
-                        <li>What should be prioritized when conducting tests with iron oxide nanoparticles, and how can
-                          we
-                          optimize the conditions for the best product?</li>
-                        <li> Is it feasible to construct an AI model to predict interactions between nanoparticles and
-                          proteins,
-                          considering the limited experimental data available in this field?</li>
-                        <li>What are the challenges and considerations involved in the mass production of iron oxide
-                          nanoparticles, such as comparing biosynthesis yield with chemosynthesis, reaction time,
-                          reactant
-                          inhomogeneity, and controlling particle size?</li>
-
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>We discussed culture medium proteins for E.coli, such as SOB (Super Optimal Broth) protein.
-                        </li>
-                        <li>The synthesis of antibodies in E.coli was also addressed. Dr. Zhang pointed out that even
-                          when
-                          using
-                          strains with partially blocked reduction pathways, there is a possibility of the double sulfur
-                          bond
-                          of
-                          the antibody forming at the wrong location. To confirm this, we referred to Ahmadzadeh et al.
-                          (2020),
-                          where it was found that our desired antibody can indeed be synthesized in E.coli.</li>
-                        <li>The conjugation of iron oxide nanoparticles (IONPs) and antibodies was another topic of our
-                          discussion. Dr. Zhang mentioned that previous research has shown that Au nanoparticles and
-                          antibodies
-                          can form the Au-S bond. However, there is no information available regarding whether this
-                          method
-                          works
-                          for iron oxide nanoparticles. Currently, we are working on this issue and drawing inspiration
-                          from
-                          Lee et al. (2021), who proposed the use of the SpyTag/SpyCatcher system for conjugation.</li>
-                        <li>Dr. Zhang advised us to pay attention to our schedule, as we will be conducting tests to
-                          validate
-                          our
-                          hypothesis. He suggested optimizing the conditions for producing the best product with iron
-                          oxide
-                          nanoparticles as a priority.</li>
-                        <li>We also inquired about the possibility of constructing an AI model to predict interactions
-                          between
-                          nanoparticles and proteins. However, Dr. Zhang pointed out that the limited amount of
-                          experimental
-                          data
-                          available in this field and the scarcity of published data make it necessary to postpone this
-                          plan.
-                          Perhaps in the future, when we have gathered more data, we will be able to proceed with this
-                          project.
-                        </li>
-                        <li>Lastly, we discussed the mass production of IONPs. Dr. Zhang emphasized the need to compare
-                          the
-                          biosynthesis yield with chemosynthesis. Additionally, mass production involves considerations
-                          such
-                          as
-                          reaction time and the inhomogeneity of reactants in a large reactor. Moreover, controlling the
-                          particle
-                          size of iron oxide nanoparticles poses a challenge.</li>
-                      </ol>
-
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                    <p>me</p>-->
-
-                  </div>
-
-                </article>
-              </section>
-            </div>
-          </div>
-
-
-
-
-        </div>
+  </nav>
+  <section class="page1">
+    <div class="row" style="">
+      <div id="sidebar" class=" ol-md-3  sidebar flex-column flex-shrink-0 " style="padding-right:0;padding-left:50px">
+        <hr>
+        <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
+          <li>
+            <a href="#0" class="nav-link">
+              Overview
+            </a>
+          </li>
+          <li>
+            <a href="#1" class="nav-link">
+              Nanoparticle Separation
+            </a>
+          </li>
+          <li>
+            <a href="#2" class="nav-link">
+              General Synthetic Biology
+            </a>
+          </li>
+          <li>
+            <a href="#3" class="nav-link">
+              Nanoparticle Application
+            </a>
+          </li>
+          <li>
+            <a href="#4" class="nav-link">
+              Ferroptosis of Iron Oxide Nanoparticle
+            </a>
+          </li>
+          <li>
+            <a href="#5" class="nav-link">
+              Conjugation of Nanoparticle and Antibody
+            </a>
+          </li>
+          <li>
+            <a href="#6" class="nav-link">
+              Clinical Trials
+            </a>
+          </li>
+        </ul>
+        <hr>
       </div>
-    </div>
+      <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
+        <div id="0" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+          <div class="container mx-auto mt-5">
+            <h1 class="pt-5 mx-auto text-center" style="">
+              <span
+                style="background-color: rgb(254,232,154); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Overview</span>
+            </h1>
+            <hr class="hr-ani">
+            <div class="blog-slider">
+              <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
 
-    <div id="3" class="month gaspcol">
-      <div class="container mx-auto mt-5">
-        <h1 class="pt-5 mx-auto text-center">
-          Nanoparticle Application
-        </h1>
-        <hr class="hr-ani">
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                  padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="" alt="Dr. ZHOU" width="50%" alt="Screenshot of the Wall of Wonder." />
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Yaofeng ZHOU</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">School of Engineering</p>
-                      <p>Cheng Research group</p>
-                      <a href="https://www.cheng-lab.com/">View more</a>
-                    </div>
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                      alt="">
                   </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>Can anaerobic bacteria be directly used for targeted therapy, as proposed in the study by
-                          Ouajdi
-                          Felfoul et al. (2016)?</li>
-                        <li>What are the potential limitations of our targeted therapy, specifically in relation to the
-                          formation
-                          of a protein corona around nanoparticles coated with antibodies?</li>
-                        <li>Are there any specific methods or techniques for the conjugation of antibodies and
-                          nanoparticles that
-                          we should refer to? (Referring to the Advanced Materials review and the work of Professor
-                          Zhang
-                          Xianzheng)</li>
-                        <li>How can we ensure the specificity of the antibody-nanoparticle conjugation and prevent the
-                          functional
-                          domain of the antibody from binding to the nanoparticles?</li>
-                        <li>What is the impact of Extracellular Polymeric Substances (EPS) on the functionality of
-                          nanoparticles,
-                          and are there any studies that have investigated this?</li>
-                        <li>What method can be used to measure the interaction kinetics and affinity between
-                          biomolecules,
-                          specifically in relation to antibody-antigen interactions in target therapy?</li>
-                        <li>What technique can be used for the separation of nanoparticles from E. coli, considering
-                          that PD-10 is
-                          only suitable for the elution of ferric chloride?</li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>In terms of target therapy, Dr. ZHOU discussed a study by Ouajdi Felfoul
-                          et al. (2016) that proposes a novel approach involving the direct use of
-                          anaerobic bacteria for target therapy.</li>
-                        <li> ZHOU also addressed the potential limitations of our target therapy.
-                          When nanoparticles coated with antibodies are introduced into the human
-                          body, they tend to attract numerous proteins, resulting in the formation
-                          of a protein corona around the nanoparticles. This protein corona can
-                          significantly affect the nanoparticles' biological behavior and fate.</li>
-                        <li>In regards to antibody-nanoparticle conjugation, Dr. ZHOU recommended
-                          referring to a review in Advanced Materials (Antibody Conjugation of Nanoparticles
-                          as Therapeutics for Breast Cancer Treatment, Int. J. Mol. Sci., 2020),
-                          which discusses various methods for antibody-nanoparticle conjugation.
-                          This review greatly expanded our understanding of conjugation techniques.</li>
-                        <li>Dr. ZHOU also highlighted the work of Professor Zhang Xianzheng in the
-                          field of conjugation, which is highly relevant to our research topic.
-                        </li>
-                        <li>Dr. ZHOU emphasized the importance of ensuring the specificity of the
-                          conjugation, in order to prevent the antibody's functional domain from
-                          binding to the nanoparticles. He recommended modifying the antibody's tail
-                          through PEGylation or the use of a branched tail, as well as considering
-                          the use of a secondary antibody to address this issue.
-                        </li>
-                        <li>Dr. ZHOU also mentioned the potential interference posed by Extracellular
-                          Polymeric Substances (EPS) on the functionality of nanoparticles. Subsequently,
-                          we discovered a study by Gao et al. (2019) that investigated the adsorption of
-                          EPS from <i>E. coli</i> onto titanium dioxide nanoparticles (nTiO), demonstrating
-                          that EPS effectively reduced the concentration of nTiO in the solution.
-                          Furthermore, a study by Wang et al. (2016) found that EPS produced by <i>E. coli</i>
-                          could sequester nanoparticles, thereby diminishing their bactericidal activity.
-                        </li>
-                        <li>To measure the interaction kinetics and affinity between biomolecules,
-                          Dr. ZHOU recommended employing Bio-Layer Interferometry (BLI), which enables
-                          the detection of antibody-antigen interactions in target therapy.
-                        </li>
-                        <li>Regarding the separation of nanoparticles from <i>E. coli</i>, Dr. ZHOU discussed
-                          the use of PD-10. However, we later discovered that this technique is only
-                          suitable for the elution of ferric chloride.</li>
-                        </li>
-                      </ol>
-
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                    <p>me</p>-->
-
+                  <div class="blog-slider__content">
+                    <span class="blog-slider__code">26 December 2019</span>
+                    <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                      voluptate repellendus magni illo ea animi? </div>
+                    <a href="#" class="blog-slider__button">READ MORE</a>
                   </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+                      alt="">
+                  </div>
+                  <div class="blog-slider__content">
+                    <span class="blog-slider__code">26 December 2019</span>
+                    <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                      voluptate repellendus magni illo ea animi?</div>
+                    <a href="#" class="blog-slider__button">READ MORE</a>
+                  </div>
+                </div>
 
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+                      alt="">
+                  </div>
+                  <div class="blog-slider__content">
+                    <span class="blog-slider__code">26 December 2019</span>
+                    <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                      voluptate repellendus magni illo ea animi?</div>
+                    <a href="#" class="blog-slider__button">READ MORE</a>
+                  </div>
+                </div>
 
-
+              </div>
+              <div class="blog-slider__pagination"></div>
             </div>
+
           </div>
         </div>
-        <br>
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
+        <div id="1" class="month gaspcol">
+          <div class="container mx-auto mt-5">
+            <h1 class="pt-5 mx-auto text-center" style="">
+              <span
+                style="background-color: rgb(254,232,154); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Nanoparticle
+                Separation</span>
+            </h1>
+
+            <hr class="hr-ani">
+            <!--专家介绍-->
+            <div class="card mx-auto text-center" style="border:0px;
+            ">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
                       padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img>
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Haihua XIAO</h3>
-                      <img src="https://static.igem.wiki/teams/4702/wiki/hp/xhh.jpg" alt="Professor Hongfei WANG"
-                        width="80%" height="">
-
-                      <br>
-                      <p style="color:rgb(70,158,180)">Institute of Chemistry, Chinese Academy of Sciences</p>
-                      <p><br>
-                        ?</p>
-                      <a href="http://hhxiao.iccas.ac.cn/61">View more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>When considering drug delivery in our bio-synthetic system, what factors should be taken
-                          into account when selecting a suitable drug?
-                        </li>
-                        <li>Can you provide guidance on the general procedure for incubating a drug with nanoparticles?
-                        </li>
-                        <li>How can we determine the content of a specific element, such as iron, in the nanoparticle
-                          system?</li>
-                        <li>In terms of clinical trials, what are the typical stages and tests involved in evaluating
-                          the effectiveness and safety of a drug?</li>
-                        <li>Who are the key stakeholders in drug development, particularly in the context of clinical
-                          trials? </li>
-
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>For drug delivery in our bio-synthetic system, Professor Xiao recommended that we tried
-                          doxorubicin since it could conjugate with the aromatic ring of proteins on the coating of
-                          nanoparticles through some interactions.</li>
-                        <li>For the specific procedure, Professor Xiao suggested that we incubate doxorubicin with
-                          nanoparticles for about 1 or 2 hours and then remove it by dialysis. The concentration can be
-                          measured using ultraviolet absorption spectroscopy.</li>
-                        <li>For the measurement of iron content in the nanoparticle system, he suggested that we first
-                          dissolved the samples in a nitric acid solution to release iron ions. We can then use ICPMS
-                          (Inductively Coupled Plasma Mass Spectrometry) to measure the concentration of iron ions.</li>
-                        <li>For clinical trials, he referred to multiple periods and tests conducted on cells,
-                          organoids, as well as different animals such as mice, pigs, and monkeys. He also added that
-                          the major stakeholders in drug development are companies and industries, as they would invest
-                          significant amounts of money to promote clinical trials.</li>
-                        <li>Finally, he emphasized that for drug delivery, it had been easy to conduct the experiment
-                          and we could borrow some materials from other labs.
-                        </li>
-                      </ol>
-
-
-                    </div>
-                    <!--<h4>Interviewer:</h4>
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder." />
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Bobo DANG</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">School of Life Sciences</p>
+                          <p>Biology<br>
+                            Laboratory of Protein Engineering and Protein Therapeutics</p>
+                          <a href="https://www.dang-lab.com/team">View more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>When isolating and synthesizing nano iron particles from E. coli, we encounter the need
+                              to
+                              remove a significant amount of biomaterial. Could you please recommend an effective
+                              washing
+                              agent that
+                              can
+                              achieve good removal results without significantly damaging the surface composition of the
+                              nano iron
+                              particles?</li>
+                            <li>How can we achieve the coupling between antibodies and the surface of iron oxide
+                              nanoparticles? We are
+                              considering two approaches: direct coupling to the isolated iron oxide nanoparticles,
+                              where
+                              the surface
+                              coating component may be phospholipids, and pre-coating the nanoparticles with a layer of
+                              PEG
+                              (polyethylene glycol) before coupling. Do you have any suggestions for the design of
+                              coupling
+                              components? We have thought about the Spytag/Spycatcher system.</li>
+                            <li>Is it possible to enhance the connection between the tail end of the antibodies and the
+                              nanoparticles
+                              through a biocompatible method of modifying the binding site?
+                            </li>
+                            <li>
+                              After synthesizing our antibodies, we aim to improve their targeting efficiency. Are there
+                              any
+                              biocompatible methods available to modify the binding site at the head end of the
+                              antibodies?
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>During our discussion on the self-assembly of bio-synthetic
+                              nanoparticles and antibodies in Escherichia coli, professor Dang expressed
+                              concerns regarding the stability of the vesicles on the surface of the
+                              nanoparticles compared to the bacterial membrane. professor Dang suggested that
+                              this instability might lead to the destruction of the nanoparticle structure
+                              when separating them with antibodies. Consequently, he proposed that it would
+                              be more feasible for us to synthesize and assemble the components separately.</li>
+                            <li>Another topic of our discussion was elution during the separation of nanoparticles.
+                              professor Dang suggested that we could employ organic solvents for washing and
+                              filtration. Additionally, considering the necessity of a layer of PEG membrane,
+                              professor Dang recommended attempting to dissolve PEG in organic solvents to
+                              achieve the desired replacement.</li>
+                            <li>Professor Dang opined that the surface composition of the nanoparticles
+                              is not necessarily crucial. As long as the final objective of antibody
+                              connectivity is achieved, the existence of amino and carboxyl groups on the
+                              surface of bio-synthesized nanoparticles should facilitate connection.
+                              Professor Dang also proposed the possibility of employing harsh solvents to
+                              wash the nanoparticles and observe their binding behavior with antibodies.</li>
+                            <li>In relation to connecting the antibodies and nanoparticles, professor Dang
+                              mentioned the utilization of EDC (1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide). </li>
+                            <li>Overall, an additional point to consider is that using PEG coating might
+                              not be meaningful. Commercially available chemically-synthesized nanoparticles
+                              are already coated with PEG. Therefore, the coating on the surface of bio-synthesized
+                              nanoparticles lacks significance.</li>
+                          </ol>
+                        </div>
+                        <!--<h4>Interviewer:</h4>
                         <p>me</p>-->
 
-                  </div>
+                      </div>
 
-
-
+                    </article>
+                  </section>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div id="4" class="month gaspcol">
-      <div class="container mx-auto mt-5">
-        <h1 class="pt-5 mx-auto text-center">
-          Ferroptosis of Iron Oxide Nanoparticle
-        </h1>
-        <hr class="hr-ani">
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                    padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yilong-zou.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder.">
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Yilong Zou</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">School of Life Sciences</p>
-                      <p>Biology<br>
-                        The Laboratory of Functional Lipidomics and Metabolic Regulation</p>
-                      <a href="https://www.yilongzou-lab.com/">View more</a>
-
-
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>We currently have two approaches for coupling antibodies to the surface of iron oxide
-                          nanoparticles.
-                          The first approach involves direct coupling with isolated iron oxide nanoparticles, where
-                          the
-                          surface
-                          coating component could be phospholipids. The second approach involves first forming a layer
-                          of
-                          polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any
-                          suggestions for
-                          protein design for coupling? We have considered the Spytag/Spycatcher system. Also, do you
-                          think
-                          breast
-                          cancer cells are highly sensitive to ferroptosis?</li>
-                        <li>Do you think our synthesized iron oxide nanoparticles can induce apoptosis in breast
-                          cancer
-                          cells
-                          after entering them? </li>
-                        <li>Do you think our synthesized iron oxide nanoparticles can induce apoptosis in breast
-                          cancer
-                          cells
-                          after entering them?</li>
-
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>Dr. Zou emphasizes the catalytic role of ferrous ions (Fe<sup>2+</sup>)
-                          in ferroptosis and suggests that conducting experiments to validate the
-                          functional similarities of our iron oxide nanoparticles (IONPs) is necessary.
-                        </li>
-                        <li>Additionally, he asserts that IONPs can serve as a sustained-release agent
-                          for iron ions, which he views as a significant advantage in our project.
-                        </li>
-                        <li>Furthermore, Dr. Zou raises the important concern of considering the
-                          components of the coating applied to the IONPs, as certain toxic substances
-                          have the potential to elicit an immune response in vivo.
-                        </li>
-                        <li>Regarding the experimental design, he suggests adhering to the hierarchy
-                          principle and conducting a feasibility study before proceeding with formal
-                          experiments.
-                        </li>
-                        <li>He proposes a definition of synthetic biology as the manipulation of gene
-                          editing to link together more than three proteins. In light of this definition,
-                          he contends that our project does not substantially fall under the category of
-                          synthetic biology and emphasizes the need to present relevant data to enhance
-                          its competitiveness.
-                        </li>
-                        <li>Dr. Zou also highlights that antibodies operate within a non-cell-autonomous
-                          context. This implies that conducting animal experiments may be necessary to
-                          effectively test their efficacy.
-                        </li>
-                        <li>Lastly, he kindly offers the assistance of his science assistant as a
-                          counselor for our project, and proposes conducting experiments in his
-                          laboratory.</li>
-                      </ol>
-
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                      <p>me</p>-->
-
-                  </div>
-
-
-
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-    </div>
-
-    <div id="5" class="month gaspcol">
-      <div class="container mx-auto mt-5">
-        <h1 class="pt-5 mx-auto text-center">
-          Conjugation of Nanoparticle and Antibody
-        </h1>
-        <hr class="hr-ani">
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                    padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-longxing-cao.png" width="50%"
-                      alt="Screenshot of the Wall of Wonder.">
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Longxing CAO</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">School of Life Sciences</p>
-                      <p>Biology<br>
-                        Computational Protein Design Lab</p>
-                      <a href="https://en.westlake.edu.cn/faculty/longxing-cao.html">View more</a>
-
-
-
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>When isolating synthesized iron nanoparticles from E. coli, we need to remove a significant
-                          amount of
-                          biomass. Do you have any recommendations for effective washing agents that can remove biomass
-                          without
-                          significantly damaging the surface composition of the nanoparticles?</li>
-                        <li>We currently have two approaches for coupling antibodies to the surface of iron oxide
-                          nanoparticles.
-                          The first approach involves direct coupling with isolated iron oxide nanoparticles, where the
-                          surface
-                          coating component could be phospholipids. The second approach involves first forming a layer
-                          of
-                          polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any
-                          suggestions for
-                          protein design for the coupling? We have considered the Spytag/Spycatcher system.</li>
-                        <li>Is it possible to use our computational methods to identify proteins that can achieve strong
-                          binding
-                          between the antibody tail and the nanoparticles?</li>
-                        <li>Can we use our computational methods to evaluate the targeting efficiency in our current
-                          breast
-                          cancer
-                          antibody library and target database?</li>
-                        <li>Do you have any recommendations for our administration route?</li>
-                        <li>Are there any widely used kinetic models for drug behavior in the body?</li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>Cao suggested directly coupling the antibody to the nanoparticle due to
-                          the instability of the long-coupled structure. However, he also highlighted
-                          that chemical cross-linking lacks directionality.
-                        </li>
-                        <li>Additionally, Dr. Cao emphasized that the complexities associated with
-                          glycosylation during the synthesis of antibodies in <i>E. coli</i> could potentially
-                          impact antibody stability.
-                        </li>
-                        <li>Furthermore, Dr. Cao mentioned the possibility of designing a protein cage that
-                          can self-assemble with antibodies. However, he acknowledged that our current
-                          capabilities might not be sufficient for handling such a complex process.
-                        </li>
-                      </ol>
-
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                      <p>me</p>-->
-
-                  </div>
-
-
-
-            </div>
-          </div>
-
-
-        </div>
-        <br>
-
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                    padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yue-zhang.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder.">
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Yue ZHANG</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">School of Engineering</p>
-                      <p>Materials Science and Engineering<br>Biology<br>
-                        Infection and immunomodulation Laboratory</p>
-                      <a href="https://yz.lab.westlake.edu.cn/index_en.html">View more</a>
-
-
-
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>Have you tried using other materials for coating the nanoparticles, such as polyethylene
-                          glycol
-                          (PEG)?
-                        </li>
-                        <li>We currently have two approaches for coupling antibodies to the surface of iron oxide
-                          nanoparticles.
-                          The first approach involves direct coupling with isolated iron oxide nanoparticles, where
-                          the
-                          surface
-                          coating component could be phospholipids (similar to cell membranes). The second approach
-                          involves
-                          first
-                          forming a layer of polyethylene glycol (PEG) on the surface, followed by coupling with PEG.
-                          Do
-                          you
-                          have
-                          any suggestions for protein design for the coupling? We have considered the
-                          Spytag/Spycatcher
-                          system.
-                        </li>
-                        <li>In terms of targeting efficiency, do you think your researched antimicrobial peptides have
-                          a
-                          higher
-                          affinity for certain pathological cells compared to traditional antibodies? Or, what are the
-                          advantages
-                          of antimicrobial peptides, and can we apply them to our project?</li>
-                        <li>Do you have any relevant research on targeted therapy for breast cancer using
-                          nanoparticles?
-                          Do
-                          you
-                          have any overall recommendations for our project?</li>
-                        <li>Have you conducted any research on the pharmacokinetics of drugs in the body? Do you have
-                          any
-                          recommendations for modeling and evaluating our administration methods and drug effects?
-                        </li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>Dr. Zhang believes that our system may face difficulties in carrying
-                          drugs due to the assembly of nanoparticles in E.coli. However, she suggests
-                          that we could potentially use antibacterial polypeptides to create a pore in
-                          the membrane of the nanoparticles, through which drugs can be inserted.
-                        </li>
-                        <li>In regards to the conjugation of antibodies with nanoparticles, Dr. Zhang
-                          mentioned three methods: azide-alkyne cycloaddition, biotin-avidin conjugation,
-                          and EDC-NHS reaction. We have found some relevant articles on this topic and will
-                          further discuss and decide on the most suitable approach.
-                        </li>
-                        <li>Regarding our hypothesis that the coating of nanoparticles consists of lipids,
-                          Dr. Zhang recommends observing our samples under TEM (transmission electron microscope)
-                          to determine whether there is a membrane surrounding the nanoparticles, with an
-                          approximate size of 5nm, which is consistent with the size of a biological membrane.
-                        </li>
-                        <li>For the characterization of components on the surface of the nanoparticles, Dr.
-                          Zhang suggests conducting Mass Spectrum analysis to identify the proteins present.
-                        </li>
-                        <li>Furthermore, Dr. Zhang kindly informed us that her lab has an ultra-high-speed
-                          centrifuge available for our use, should the need arise.
-                        </li>
-                      </ol>
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                      <p>me</p>-->
-
-                  </div>
-
-
-
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-    </div>
-
-
-    <div id="6" class="month gaspcol">
-      <div class="container mx-auto mt-5">
-        <h1 class="pt-5 mx-auto text-center">
-          Clinical Trials
-        </h1>
-        <hr class="hr-ani">
-        <!--专家介绍-->
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                    padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder.">
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Jing Yang</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)"></p>
-                      <p>?<br>
-                        ?</p>
-                      <a href="https://www.dang-lab.com/team">View more</a>
-
-
-
-
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>What is the potential of photo-thermal therapy using specific nanoparticle materials in
-                          heating
-                          the
-                          targeted area?</li>
-                        <li>Can you elaborate on the recent advancements in using Raman spectroscopy to differentiate
-                          between
-                          tumor and healthy tissue boundaries during surgery?</li>
-                        <li> How do the restrictions on drug use and the cautious drug development process impact the
-                          translation
-                          of scientific research into clinical trials?</li>
-                        <li>Can you provide more information about the China Breast Cancer Guidelines and how they
-                          contribute to
-                          our understanding of breast cancer therapy?</li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>Mr. Yang highlighted the type of nanoparticle material being used and suggested exploring
-                          photo-thermal therapy as a means to heat this material.</li>
-                        <li> According to him, surgery is currently the most effective therapy for tumors. Additionally,
-                          he
-                          mentioned recent advancements in using Raman spectroscopy to differentiate between tumor and
-                          healthy
-                          tissue boundaries.</li>
-                        <li> Mr. Yang acknowledged that clinical trials often lag behind scientific research and
-                          emphasized
-                          the strict restrictions on drug use, resulting in cautious drug development.</li>
-                        <li> He also provided us with the China Breast Cancer Guidelines, which deepen our understanding
-                          of
-                          breast cancer therapy.</li>
-                      </ol>
-
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                      <p>me</p>-->
-
-                  </div>
-
-
-
-            </div>
-          </div>
-          <!--问题-->
-
-        </div>
-        <!--如果要在这个栏目再放一个专家及问题，把上面专家和问题复制下来，并且在下面一行加上换行<br> -->
-        <br>
-
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
+            <!--如果要在这个栏目再放一个专家及问题，把上面专家和问题复制下来，并且在下面一行加上换行<br> -->
+            <br>
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
                       padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder.">
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Si Lu</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)"></p>
-                      <p>?<br>
-                        ?</p>
-                      <a href="#">?</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>Is using nanoparticles conjugated with antibodies meaningful if there is already a
-                          commercialized
-                          antibody, trastuzumab, for HER2 target therapy?</li>
-                        <li> Can trastuzumab be used as a control in our project?</li>
-                        <li>What is the recommendation for our project in terms of encapsulating drugs in
-                          nanoparticles to
-                          efficiently kill cancer cells and reduce side effects?</li>
-                        <li>Should we consider targeting other cancer cells since HER2-positive cells have already
-                          been
-                          extensively studied?</li>
-                        <li>How can we determine the concentration of our biosynthetic nanoparticles? Are Inductively
-                          Coupled
-                          Plasma Optical Emission Spectroscopy (ICP-OES) or Inductively Coupled Plasma Mass
-                          Spectrometry
-                          (ICP-MS)
-                          suitable methods for this purpose?</li>
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hongyu-chen.jpg"
+                          alt="Professor Hongyu CHEN" width="50%" height="">
 
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>Ms. Lu believed that targeted therapy and immunotherapy hold great promise for future
-                          oncotherapy,
-                          as antitumor specificity is a crucial consideration in this field.</li>
-                        <li> She also mentioned the importance of PD-L1 (Programmed Death Ligand 1) and ICB (Immune
-                          Checkpoint
-                          Blockade) as current targets in oncology therapy.</li>
-                        <li> With regard to our nanoparticles that target Her2+ breast cancer cells, she emphasized
-                          the
-                          need
-                          to consider the expression of the antibodies in normal cells.</li>
-                        <li>Based on her experience, she asserted that the function of a drug within the body (in
-                          vivo)
-                          is the
-                          most significant factor in therapy, as sometimes the effects of drugs in vivo and in vitro
-                          can
-                          be
-                          reversed.</li>
-                        <li> She encouraged us to conduct experiments in mice to confirm the in vivo effect of our
-                          nanoparticles.</li>
-                        <li> Ms. Lu also discussed the potential benefits of combination therapy involving both
-                          first-line and
-                          second-line drugs, which could increase patients' sensitivity to the treatment.</li>
-                        <li> Adding to her points, she explained that targeted therapy and immunotherapy are
-                          interconnected,
-                          as targeted therapy can stimulate the release of antigens from diseased cells, triggering
-                          immune
-                          responses.</li>
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Hongyu Chen</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">School of Science<br>School of Engineering (Affiliated)</p>
+                          <p>Chemistry<br>
+                            Materials Science and Engineering<br>
+                            Laboratory of Nanosynthesis<br></p>
+                          <a href="http://www.nanosynthesis.cn">View more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li></li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li></li>
+                          </ol>
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                        <p>me</p>-->
+                      </div>
+                    </article>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                    padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hongfei-wang.jpg"
+                          alt="Professor Hongfei WANG" width="50%" height="">
 
-                      </ol>
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Hongfei Wang</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">School of Science</p>
+                          <p>Chemistry<br>
+                            Physics<br>
+                            Ultrafast Laser Spectroscopy and Surface/Interface Physical Chemistry Laboratory</p>
+                          <a href="https://hfwgroup.westlake.edu.cn">View more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li></li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li></li>
+                          </ol>
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                      <p>me</p>-->
+                      </div>
+                    </article>
+                  </section>
+                </div>
+              </div>
+            </div>
 
-                    </div>
-                    <!--<h4>Interviewer:</h4>
+            <br>
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                    padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/people-photo/ljw.jpg"
+                          alt="Professor Hongfei WANG" width="50%" height="">
+
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Jiawei Liu</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">Institute of Geology and Geophysics, Chinese Academy of
+                            Sciences
+                          </p>
+                          <a href="http://sourcedb.igg.cas.cn/cn/zjrck/202207/t20220715_6481608.html">View more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>Are there any research efforts focused on determining the coating components of
+                              biologically
+                              synthesized magnetic nanoparticles? Is there a way to identify the coating components?
+                            </li>
+                            <li>Regarding the synthesis of magnetic nanoparticles through biological methods, are there
+                              any
+                              well-established separation strategies available to separate the magnetic nanoparticles
+                              from
+                              organelles
+                              or biomolecules of similar size?</li>
+                            <li>If complete separation is challenging, would it have a significant impact on the
+                              characterization of
+                              the nanoparticles? For example, would dynamic light scattering yield inaccurate results in
+                              this case? If
+                              so, are there more suitable characterization techniques available?</li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Protein analysis and decomposition </h3>
+                          <ol>
+                            <li>The professor said that it may be necessary to detect and identify proteins, including
+                              chemical
+                              bond composition and three-dimensional structure analysis, and to understand some
+                              mechanisms
+                              of the
+                              biosynthetic nanoparticle process so that we can make better prediction and
+                              identification.
+                            </li>
+                            <li>We firstly doubted that we couldn't use the ultrafilteration due to the low spinning
+                              speed
+                              and the
+                              content may jam the device. However, after comparing Hemodialysis, Centrifugation,
+                              Chromatography
+                              and Ultrafiltration, Prof. Liu still suggested the last one. That's because
+                              ultrafiltration
+                              won't
+                              agglomerate the protein and He encouraged us to try various experiment methods since we
+                              can
+                              not
+                              ensure every step is correct in our procedure. As long as we have an idea, there is no
+                              need to
+                              worry
+                              about the failure.</li>
+                            <li>For this problem, incomplete separation can affect the physical and chemical data
+                              characterization
+                              of nanoparticle products, but for biocompatibility characterization such as cytotoxicity
+                              testing,
+                              unisolated substances usually do not have much impact, because other cell debris and
+                              metabolites
+                              usually do not affect the normal growth and differentiation of cells.</li>
+                          </ol>
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                      <p>me</p>-->
+                      </div>
+                    </article>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div id="2" class="month gaspcol">
+          <div class="container mx-auto mt-5">
+            <h1 class="pt-5 mx-auto text-center" style="">
+              <span
+                style="background-color: rgb(254,232,154); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">General
+                Synthetic Biology</span>
+            </h1>
+            <hr class="hr-ani">
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                      padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder." />
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Kechun Zhang</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">School of Engineering</p>
+                          <p>Materials Science and Engineering<br>
+                            Laboratory of Biomanufacturing and New Materials</p>
+                          <a href="https://en.westlake.edu.cn/faculty/kechun-zhang.html">View more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>Can E. coli be cultured in SOB (Super Optimal Broth) protein medium?</li>
+                            <li>Is it possible for antibodies to be synthesized in E. coli without the formation of
+                              double
+                              sulfur
+                              bonds at the wrong location?</li>
+                            <li>Can iron oxide nanoparticles (IONPs) be conjugated with antibodies, similar to how gold
+                              nanoparticles
+                              (Au NPs) and antibodies form an Au-S bond?</li>
+                            <li>What should be prioritized when conducting tests with iron oxide nanoparticles, and how
+                              can
+                              we
+                              optimize the conditions for the best product?</li>
+                            <li> Is it feasible to construct an AI model to predict interactions between nanoparticles
+                              and
+                              proteins,
+                              considering the limited experimental data available in this field?</li>
+                            <li>What are the challenges and considerations involved in the mass production of iron oxide
+                              nanoparticles, such as comparing biosynthesis yield with chemosynthesis, reaction time,
+                              reactant
+                              inhomogeneity, and controlling particle size?</li>
+
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>We discussed culture medium proteins for E.coli, such as SOB (Super Optimal Broth)
+                              protein.
+                            </li>
+                            <li>The synthesis of antibodies in E.coli was also addressed. Dr. Zhang pointed out that
+                              even
+                              when
+                              using
+                              strains with partially blocked reduction pathways, there is a possibility of the double
+                              sulfur
+                              bond
+                              of
+                              the antibody forming at the wrong location. To confirm this, we referred to Ahmadzadeh et
+                              al.
+                              (2020),
+                              where it was found that our desired antibody can indeed be synthesized in E.coli.</li>
+                            <li>The conjugation of iron oxide nanoparticles (IONPs) and antibodies was another topic of
+                              our
+                              discussion. Dr. Zhang mentioned that previous research has shown that Au nanoparticles and
+                              antibodies
+                              can form the Au-S bond. However, there is no information available regarding whether this
+                              method
+                              works
+                              for iron oxide nanoparticles. Currently, we are working on this issue and drawing
+                              inspiration
+                              from
+                              Lee et al. (2021), who proposed the use of the SpyTag/SpyCatcher system for conjugation.
+                            </li>
+                            <li>Dr. Zhang advised us to pay attention to our schedule, as we will be conducting tests to
+                              validate
+                              our
+                              hypothesis. He suggested optimizing the conditions for producing the best product with
+                              iron
+                              oxide
+                              nanoparticles as a priority.</li>
+                            <li>We also inquired about the possibility of constructing an AI model to predict
+                              interactions
+                              between
+                              nanoparticles and proteins. However, Dr. Zhang pointed out that the limited amount of
+                              experimental
+                              data
+                              available in this field and the scarcity of published data make it necessary to postpone
+                              this
+                              plan.
+                              Perhaps in the future, when we have gathered more data, we will be able to proceed with
+                              this
+                              project.
+                            </li>
+                            <li>Lastly, we discussed the mass production of IONPs. Dr. Zhang emphasized the need to
+                              compare
+                              the
+                              biosynthesis yield with chemosynthesis. Additionally, mass production involves
+                              considerations
+                              such
+                              as
+                              reaction time and the inhomogeneity of reactants in a large reactor. Moreover, controlling
+                              the
+                              particle
+                              size of iron oxide nanoparticles poses a challenge.</li>
+                          </ol>
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
                         <p>me</p>-->
 
-                  </div>
+                      </div>
+
+                    </article>
+                  </section>
+                </div>
+              </div>
+
 
 
 
             </div>
           </div>
         </div>
-        <br>
-
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
+        <div id="3" class="month gaspcol">
+          <div class="container mx-auto mt-5">
+            <h1 class="pt-5 mx-auto text-center" style="">
+              <span
+                style="background-color: rgb(254,232,154); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Nanoparticle
+                Application</span>
+            </h1>
+            <hr class="hr-ani">
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
                       padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder.">
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Lixian Yang</h3>
-                      <br>
-                      <p style="color:rgb(70,158,180)">?</p>
-                      <p>?<br>
-                        ?</p>
-                      <a href="#">?</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>Ms.Yang thought that if we just use our nanoparticles conjugated with antibodies, the
-                          project will
-                          not be promising and meaningful since there is already some commerialized antibodies,
-                          trastuzumab
-                          for HER2 target therapy.</li>
-                        <li>Another way she recommended is that we can use trastuzumab as a control.</li>
-                        <li>So she recommended that we capsule some drug in the nanoparticles which can not only kill
-                          the
-                          cancer cells efficiently but also reduce the side effects of the original chemotherapy.</li>
-                        <li>Additionally she suggested we can try to target other cancer cells since HER2 positive cells
-                          have
-                          been studied too much.</li>
-                        <li>She noticed that we can't determine the concentration of our biosynthetic nanoparticles and
-                          she
-                          added that concentration gradient test is crucial in clinical trial so we need to figure out
-                          its
-                          concentration for further application. Later we checked out that Inductively Coupled Plasma
-                          Optical
-                          Emission Spectroscopy (ICP-OES) or Inductively Coupled Plasma Mass Spectrometry (ICP-MS) may
-                          be
-                          candidates.</li>
-                      </ol>
-                    </div>
-                    <!--<h4>Interviewer:</h4>
+                        <h3>Interviewee</h3>
+                        <img src="" alt="Dr. ZHOU" width="50%" alt="Screenshot of the Wall of Wonder." />
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Yaofeng ZHOU</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">School of Engineering</p>
+                          <p>Cheng Research group</p>
+                          <a href="https://www.cheng-lab.com/">View more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>Can anaerobic bacteria be directly used for targeted therapy, as proposed in the study
+                              by
+                              Ouajdi
+                              Felfoul et al. (2016)?</li>
+                            <li>What are the potential limitations of our targeted therapy, specifically in relation to
+                              the
+                              formation
+                              of a protein corona around nanoparticles coated with antibodies?</li>
+                            <li>Are there any specific methods or techniques for the conjugation of antibodies and
+                              nanoparticles that
+                              we should refer to? (Referring to the Advanced Materials review and the work of Professor
+                              Zhang
+                              Xianzheng)</li>
+                            <li>How can we ensure the specificity of the antibody-nanoparticle conjugation and prevent
+                              the
+                              functional
+                              domain of the antibody from binding to the nanoparticles?</li>
+                            <li>What is the impact of Extracellular Polymeric Substances (EPS) on the functionality of
+                              nanoparticles,
+                              and are there any studies that have investigated this?</li>
+                            <li>What method can be used to measure the interaction kinetics and affinity between
+                              biomolecules,
+                              specifically in relation to antibody-antigen interactions in target therapy?</li>
+                            <li>What technique can be used for the separation of nanoparticles from E. coli, considering
+                              that PD-10 is
+                              only suitable for the elution of ferric chloride?</li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>In terms of target therapy, Dr. ZHOU discussed a study by Ouajdi Felfoul
+                              et al. (2016) that proposes a novel approach involving the direct use of
+                              anaerobic bacteria for target therapy.</li>
+                            <li> ZHOU also addressed the potential limitations of our target therapy.
+                              When nanoparticles coated with antibodies are introduced into the human
+                              body, they tend to attract numerous proteins, resulting in the formation
+                              of a protein corona around the nanoparticles. This protein corona can
+                              significantly affect the nanoparticles' biological behavior and fate.</li>
+                            <li>In regards to antibody-nanoparticle conjugation, Dr. ZHOU recommended
+                              referring to a review in Advanced Materials (Antibody Conjugation of Nanoparticles
+                              as Therapeutics for Breast Cancer Treatment, Int. J. Mol. Sci., 2020),
+                              which discusses various methods for antibody-nanoparticle conjugation.
+                              This review greatly expanded our understanding of conjugation techniques.</li>
+                            <li>Dr. ZHOU also highlighted the work of Professor Zhang Xianzheng in the
+                              field of conjugation, which is highly relevant to our research topic.
+                            </li>
+                            <li>Dr. ZHOU emphasized the importance of ensuring the specificity of the
+                              conjugation, in order to prevent the antibody's functional domain from
+                              binding to the nanoparticles. He recommended modifying the antibody's tail
+                              through PEGylation or the use of a branched tail, as well as considering
+                              the use of a secondary antibody to address this issue.
+                            </li>
+                            <li>Dr. ZHOU also mentioned the potential interference posed by Extracellular
+                              Polymeric Substances (EPS) on the functionality of nanoparticles. Subsequently,
+                              we discovered a study by Gao et al. (2019) that investigated the adsorption of
+                              EPS from <i>E. coli</i> onto titanium dioxide nanoparticles (nTiO), demonstrating
+                              that EPS effectively reduced the concentration of nTiO in the solution.
+                              Furthermore, a study by Wang et al. (2016) found that EPS produced by <i>E. coli</i>
+                              could sequester nanoparticles, thereby diminishing their bactericidal activity.
+                            </li>
+                            <li>To measure the interaction kinetics and affinity between biomolecules,
+                              Dr. ZHOU recommended employing Bio-Layer Interferometry (BLI), which enables
+                              the detection of antibody-antigen interactions in target therapy.
+                            </li>
+                            <li>Regarding the separation of nanoparticles from <i>E. coli</i>, Dr. ZHOU discussed
+                              the use of PD-10. However, we later discovered that this technique is only
+                              suitable for the elution of ferric chloride.</li>
+                            </li>
+                          </ol>
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
                         <p>me</p>-->
-                  </div>
+
+                      </div>
+
+
+
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                          padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img>
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Haihua XIAO</h3>
+                          <img src="https://static.igem.wiki/teams/4702/wiki/hp/xhh.jpg" alt="Professor Hongfei WANG"
+                            width="80%" height="">
+
+                          <br>
+                          <p style="color:rgb(70,158,180)">Institute of Chemistry, Chinese Academy of Sciences</p>
+                          <p><br>
+                            ?</p>
+                          <a href="http://hhxiao.iccas.ac.cn/61">View more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>When considering drug delivery in our bio-synthetic system, what factors should be taken
+                              into account when selecting a suitable drug?
+                            </li>
+                            <li>Can you provide guidance on the general procedure for incubating a drug with
+                              nanoparticles?
+                            </li>
+                            <li>How can we determine the content of a specific element, such as iron, in the
+                              nanoparticle
+                              system?</li>
+                            <li>In terms of clinical trials, what are the typical stages and tests involved in
+                              evaluating
+                              the effectiveness and safety of a drug?</li>
+                            <li>Who are the key stakeholders in drug development, particularly in the context of
+                              clinical
+                              trials? </li>
+
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>For drug delivery in our bio-synthetic system, Professor Xiao recommended that we tried
+                              doxorubicin since it could conjugate with the aromatic ring of proteins on the coating of
+                              nanoparticles through some interactions.</li>
+                            <li>For the specific procedure, Professor Xiao suggested that we incubate doxorubicin with
+                              nanoparticles for about 1 or 2 hours and then remove it by dialysis. The concentration can
+                              be
+                              measured using ultraviolet absorption spectroscopy.</li>
+                            <li>For the measurement of iron content in the nanoparticle system, he suggested that we
+                              first
+                              dissolved the samples in a nitric acid solution to release iron ions. We can then use
+                              ICPMS
+                              (Inductively Coupled Plasma Mass Spectrometry) to measure the concentration of iron ions.
+                            </li>
+                            <li>For clinical trials, he referred to multiple periods and tests conducted on cells,
+                              organoids, as well as different animals such as mice, pigs, and monkeys. He also added
+                              that
+                              the major stakeholders in drug development are companies and industries, as they would
+                              invest
+                              significant amounts of money to promote clinical trials.</li>
+                            <li>Finally, he emphasized that for drug delivery, it had been easy to conduct the
+                              experiment
+                              and we could borrow some materials from other labs.
+                            </li>
+                          </ol>
+
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                            <p>me</p>-->
+
+                      </div>
+
+
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div id="4" class="month gaspcol">
+          <div class="container mx-auto mt-5">
+            <h1 class="pt-5 mx-auto text-center" style="">
+              <span
+                style="background-color: rgb(254,232,154); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Ferroptosis
+                of Iron Oxide Nanoparticle</span>
+            </h1>
+            <hr class="hr-ani">
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                        padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yilong-zou.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder.">
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Yilong Zou</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">School of Life Sciences</p>
+                          <p>Biology<br>
+                            The Laboratory of Functional Lipidomics and Metabolic Regulation</p>
+                          <a href="https://www.yilongzou-lab.com/">View more</a>
 
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/westlake-medicine.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder.">
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Yiran CAI</h3>
-                      <br>
 
-                      <p style="color:rgb(70,158,180)">Westlake Pharmaceuticals</p>
-                      <p>Westlake Pharmaceuticals CEO assistant</p>
-                      <a
-                        href="https://www.westlake.edu.cn/Innovation/StartupsPortfolio/Biotech/WestlakePharmaceuticals/index.shtml">View
-                        more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li>What are the different stages involved in clinical trials, and at which stage is our current
-                          focus?</li>
-                        <li>How can we increase efficiency in the early trial stage? Specifically, how can bio-synthetic
-                          nanoparticles be utilized to enhance the drug's effectiveness?</li>
-                        <li>How can we ensure safety as the trials progress? What measures can be taken to enhance the
-                          safety of our bio-friendly synthetic system?</li>
-                        <li>When considering the drug launch, how can we assess the affordability for patients? What
-                          steps should be taken to calculate the costs involved in our experiments?</li>
-                        <li>How does the cost of drug production relate to the technological process? What factors
-                          should be considered regarding the sequence and volume of drug production during the middle
-                          and later stages of clinical trials?</li>
-                        <li>In order to understand the market trend related to the signaling pathways in cancer
-                          development, what market surveys or research should be conducted?</li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>Ms. Cai first refers to the basic three-period clinical trials, from cells to the human
-                          body, and makes it clear that we may still be in the first stage.</li>
-                        <li>Then she points out that efficiency is the first concern in the early trial, so we plan to
-                          carry drugs on the bio-synthetic nanoparticles to increase their lethal effect.</li>
-                        <li>Furthermore, she emphasizes that safety is more important in the later trials, and we
-                          believe that our bio-friendly synthetic system appears to be safer.</li>
-                        <li>Lastly, she highlights that the affordability of patients is also a concern in the drug
-                          launch. Therefore, it is better for us to calculate the costs for our experiments first.
-                        </li>
-                        <li>Additionally, the cost is related to the technological process. She mentions that in the
-                          middle and later periods of clinical trials, the sequence and volume of drug production often
-                          become concerns for the company.
-                        </li>
-                        <li>In terms of the drug market, she concludes that her company focuses on the signaling
-                          pathways in cancer development. She suggests that to understand the trend of the drug market,
-                          we may need to conduct some market surveys.
-                        </li>
-                      </ol>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>We currently have two approaches for coupling antibodies to the surface of iron oxide
+                              nanoparticles.
+                              The first approach involves direct coupling with isolated iron oxide nanoparticles, where
+                              the
+                              surface
+                              coating component could be phospholipids. The second approach involves first forming a
+                              layer
+                              of
+                              polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any
+                              suggestions for
+                              protein design for coupling? We have considered the Spytag/Spycatcher system. Also, do you
+                              think
+                              breast
+                              cancer cells are highly sensitive to ferroptosis?</li>
+                            <li>Do you think our synthesized iron oxide nanoparticles can induce apoptosis in breast
+                              cancer
+                              cells
+                              after entering them? </li>
+                            <li>Do you think our synthesized iron oxide nanoparticles can induce apoptosis in breast
+                              cancer
+                              cells
+                              after entering them?</li>
 
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                  <p>me</p>-->
-                  </div>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>Dr. Zou emphasizes the catalytic role of ferrous ions (Fe<sup>2+</sup>)
+                              in ferroptosis and suggests that conducting experiments to validate the
+                              functional similarities of our iron oxide nanoparticles (IONPs) is necessary.
+                            </li>
+                            <li>Additionally, he asserts that IONPs can serve as a sustained-release agent
+                              for iron ions, which he views as a significant advantage in our project.
+                            </li>
+                            <li>Furthermore, Dr. Zou raises the important concern of considering the
+                              components of the coating applied to the IONPs, as certain toxic substances
+                              have the potential to elicit an immune response in vivo.
+                            </li>
+                            <li>Regarding the experimental design, he suggests adhering to the hierarchy
+                              principle and conducting a feasibility study before proceeding with formal
+                              experiments.
+                            </li>
+                            <li>He proposes a definition of synthetic biology as the manipulation of gene
+                              editing to link together more than three proteins. In light of this definition,
+                              he contends that our project does not substantially fall under the category of
+                              synthetic biology and emphasizes the need to present relevant data to enhance
+                              its competitiveness.
+                            </li>
+                            <li>Dr. Zou also highlights that antibodies operate within a non-cell-autonomous
+                              context. This implies that conducting animal experiments may be necessary to
+                              effectively test their efficacy.
+                            </li>
+                            <li>Lastly, he kindly offers the assistance of his science assistant as a
+                              counselor for our project, and proposes conducting experiments in his
+                              laboratory.</li>
+                          </ol>
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                          <p>me</p>-->
+
+                      </div>
+
+
+
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+        <div id="5" class="month gaspcol">
+          <div class="container mx-auto mt-5">
+            <h1 class="pt-5 mx-auto text-center" style="">
+              <span
+                style="background-color: rgb(254,232,154); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Conjugation
+                of Nanoparticle and Antibody</span>
+            </h1>
+            <hr class="hr-ani">
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                        padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-longxing-cao.png" width="50%"
+                          alt="Screenshot of the Wall of Wonder.">
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Longxing CAO</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">School of Life Sciences</p>
+                          <p>Biology<br>
+                            Computational Protein Design Lab</p>
+                          <a href="https://en.westlake.edu.cn/faculty/longxing-cao.html">View more</a>
+
+
+
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>When isolating synthesized iron nanoparticles from E. coli, we need to remove a
+                              significant
+                              amount of
+                              biomass. Do you have any recommendations for effective washing agents that can remove
+                              biomass
+                              without
+                              significantly damaging the surface composition of the nanoparticles?</li>
+                            <li>We currently have two approaches for coupling antibodies to the surface of iron oxide
+                              nanoparticles.
+                              The first approach involves direct coupling with isolated iron oxide nanoparticles, where
+                              the
+                              surface
+                              coating component could be phospholipids. The second approach involves first forming a
+                              layer
+                              of
+                              polyethylene glycol (PEG) on the surface, followed by coupling with PEG. Do you have any
+                              suggestions for
+                              protein design for the coupling? We have considered the Spytag/Spycatcher system.</li>
+                            <li>Is it possible to use our computational methods to identify proteins that can achieve
+                              strong
+                              binding
+                              between the antibody tail and the nanoparticles?</li>
+                            <li>Can we use our computational methods to evaluate the targeting efficiency in our current
+                              breast
+                              cancer
+                              antibody library and target database?</li>
+                            <li>Do you have any recommendations for our administration route?</li>
+                            <li>Are there any widely used kinetic models for drug behavior in the body?</li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>Cao suggested directly coupling the antibody to the nanoparticle due to
+                              the instability of the long-coupled structure. However, he also highlighted
+                              that chemical cross-linking lacks directionality.
+                            </li>
+                            <li>Additionally, Dr. Cao emphasized that the complexities associated with
+                              glycosylation during the synthesis of antibodies in <i>E. coli</i> could potentially
+                              impact antibody stability.
+                            </li>
+                            <li>Furthermore, Dr. Cao mentioned the possibility of designing a protein cage that
+                              can self-assemble with antibodies. However, he acknowledged that our current
+                              capabilities might not be sufficient for handling such a complex process.
+                            </li>
+                          </ol>
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                          <p>me</p>-->
+
+                      </div>
+
+
+
+                </div>
+              </div>
+
+
+            </div>
+            <br>
+
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                        padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yue-zhang.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder.">
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Yue ZHANG</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">School of Engineering</p>
+                          <p>Materials Science and Engineering<br>Biology<br>
+                            Infection and immunomodulation Laboratory</p>
+                          <a href="https://yz.lab.westlake.edu.cn/index_en.html">View more</a>
+
+
+
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>Have you tried using other materials for coating the nanoparticles, such as polyethylene
+                              glycol
+                              (PEG)?
+                            </li>
+                            <li>We currently have two approaches for coupling antibodies to the surface of iron oxide
+                              nanoparticles.
+                              The first approach involves direct coupling with isolated iron oxide nanoparticles, where
+                              the
+                              surface
+                              coating component could be phospholipids (similar to cell membranes). The second approach
+                              involves
+                              first
+                              forming a layer of polyethylene glycol (PEG) on the surface, followed by coupling with
+                              PEG.
+                              Do
+                              you
+                              have
+                              any suggestions for protein design for the coupling? We have considered the
+                              Spytag/Spycatcher
+                              system.
+                            </li>
+                            <li>In terms of targeting efficiency, do you think your researched antimicrobial peptides
+                              have
+                              a
+                              higher
+                              affinity for certain pathological cells compared to traditional antibodies? Or, what are
+                              the
+                              advantages
+                              of antimicrobial peptides, and can we apply them to our project?</li>
+                            <li>Do you have any relevant research on targeted therapy for breast cancer using
+                              nanoparticles?
+                              Do
+                              you
+                              have any overall recommendations for our project?</li>
+                            <li>Have you conducted any research on the pharmacokinetics of drugs in the body? Do you
+                              have
+                              any
+                              recommendations for modeling and evaluating our administration methods and drug effects?
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>Dr. Zhang believes that our system may face difficulties in carrying
+                              drugs due to the assembly of nanoparticles in E.coli. However, she suggests
+                              that we could potentially use antibacterial polypeptides to create a pore in
+                              the membrane of the nanoparticles, through which drugs can be inserted.
+                            </li>
+                            <li>In regards to the conjugation of antibodies with nanoparticles, Dr. Zhang
+                              mentioned three methods: azide-alkyne cycloaddition, biotin-avidin conjugation,
+                              and EDC-NHS reaction. We have found some relevant articles on this topic and will
+                              further discuss and decide on the most suitable approach.
+                            </li>
+                            <li>Regarding our hypothesis that the coating of nanoparticles consists of lipids,
+                              Dr. Zhang recommends observing our samples under TEM (transmission electron microscope)
+                              to determine whether there is a membrane surrounding the nanoparticles, with an
+                              approximate size of 5nm, which is consistent with the size of a biological membrane.
+                            </li>
+                            <li>For the characterization of components on the surface of the nanoparticles, Dr.
+                              Zhang suggests conducting Mass Spectrum analysis to identify the proteins present.
+                            </li>
+                            <li>Furthermore, Dr. Zhang kindly informed us that her lab has an ultra-high-speed
+                              centrifuge available for our use, should the need arise.
+                            </li>
+                          </ol>
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                          <p>me</p>-->
+
+                      </div>
+
+
+
+                </div>
+              </div>
+
+
+
 
             </div>
           </div>
         </div>
+        <div id="6" class="month gaspcol">
+          <div class="container mx-auto mt-5">
+            <h1 class="pt-5 mx-auto text-center" style="">
+              <span
+                style="background-color: rgb(254,232,154); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Cliinical Trials</span>
+            </h1>
+            <hr class="hr-ani">
+            <!--专家介绍-->
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                        padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder.">
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Jing Yang</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)"></p>
+                          <p>?<br>
+                            ?</p>
+                          <a href="https://www.dang-lab.com/team">View more</a>
 
-        <div class="card mx-auto text-center">
-          <div class="card-body">
-            <div class="section-blue">
-              <section id="projects" style="padding-top:0;">
-                <article>
-                  <div class="interviewee" align="center" style="
-                padding-top: 30%;">
-                    <h3>Interviewee</h3>
-                    <img src="https://static.igem.wiki/teams/4702/wiki/hp/dcy.jpg" width="50%"
-                      alt="Screenshot of the Wall of Wonder.">
-                    <div style=" padding:0 25%;">
-                      <h3 style="text-align: center;padding-top: 15px;">Chengyong Du</h3>
-                      <br>
 
-                      <p style="color:rgb(70,158,180)">the First Affiliated Hospital of Zhejiang University School of
-                        Medicine</p>
-                      <p>Doctor in Breast Center</p>
-                      <a>View more</a>
-                    </div>
-                  </div>
-                  <div class="text">
-                    <!--Please do not write too much about the 需求和医院 below-->
-                    <div class="blackbox" id="hpquestion">
-                      <h3>Looking for</h3>
-                    </div>
-                    <div class="blackbox hpquestion" id="hpquestion">
-                      <h3>Question we asked</h3>
-                      <ol>
-                        <li> How can we ensure that our questionnaire is suitable for patients, taking into
-                          consideration its technical nature and potential difficulty in understanding therapy
-                          definitions?
-                        </li>
-                        <li> What are the primary concerns of patients when it comes to a drug, particularly in terms of
-                          its efficacy and toxicity?
-                        </li>
-                        <li> In order to maximize the medical potential of our nanoparticles, should we consider testing
-                          them on different types of cancer?
-                        </li>
-                        <li> What is the recommended approach for developing a drug from the laboratory to the factory?
-                          Should we prioritize consultation with the factory as key stakeholders, rather than reaching
-                          out to patients at this stage?
-                        </li>
-                      </ol>
-                    </div>
-                    <div class="blackbox hpanswer">
-                      <h3>Your title</h3>
-                      <ol>
-                        <li>After reviewing our questionnaire, Dr. Du suggested that it is not suitable for patients as
-                          it is too technical and many patients may not understand the definitions of each therapy.</li>
-                        <li>He emphasized that the primary concerns for patients regarding a drug are its efficacy and
-                          toxicity.</li>
-                        <li>He also recommended testing our nanoparticles on different types of cancer to maximize their
-                          medical potential.</li>
-                        <li>Furthermore, based on his experience, he believed that the process of developing a drug from
-                          the laboratory to the factory involves multiple parties. In our case, he thought it is
-                          premature for us to reach out to patients. Instead, he proposed that we should consult
-                          directly with the factory, as they are the key stakeholders in our project.</li>
 
-                      </ol>
 
-                    </div>
-                    <!--<h4>Interviewer:</h4>
-                  <p>me</p>-->
-                  </div>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>What is the potential of photo-thermal therapy using specific nanoparticle materials in
+                              heating
+                              the
+                              targeted area?</li>
+                            <li>Can you elaborate on the recent advancements in using Raman spectroscopy to
+                              differentiate
+                              between
+                              tumor and healthy tissue boundaries during surgery?</li>
+                            <li> How do the restrictions on drug use and the cautious drug development process impact
+                              the
+                              translation
+                              of scientific research into clinical trials?</li>
+                            <li>Can you provide more information about the China Breast Cancer Guidelines and how they
+                              contribute to
+                              our understanding of breast cancer therapy?</li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>Mr. Yang highlighted the type of nanoparticle material being used and suggested
+                              exploring
+                              photo-thermal therapy as a means to heat this material.</li>
+                            <li> According to him, surgery is currently the most effective therapy for tumors.
+                              Additionally,
+                              he
+                              mentioned recent advancements in using Raman spectroscopy to differentiate between tumor
+                              and
+                              healthy
+                              tissue boundaries.</li>
+                            <li> Mr. Yang acknowledged that clinical trials often lag behind scientific research and
+                              emphasized
+                              the strict restrictions on drug use, resulting in cautious drug development.</li>
+                            <li> He also provided us with the China Breast Cancer Guidelines, which deepen our
+                              understanding
+                              of
+                              breast cancer therapy.</li>
+                          </ol>
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                          <p>me</p>-->
+
+                      </div>
+
+
+
+                </div>
+              </div>
+              <!--问题-->
 
             </div>
+            <!--如果要在这个栏目再放一个专家及问题，把上面专家和问题复制下来，并且在下面一行加上换行<br> -->
+            <br>
+
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                          padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder.">
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Si Lu</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)"></p>
+                          <p>?<br>
+                            ?</p>
+                          <a href="#">?</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>Is using nanoparticles conjugated with antibodies meaningful if there is already a
+                              commercialized
+                              antibody, trastuzumab, for HER2 target therapy?</li>
+                            <li> Can trastuzumab be used as a control in our project?</li>
+                            <li>What is the recommendation for our project in terms of encapsulating drugs in
+                              nanoparticles to
+                              efficiently kill cancer cells and reduce side effects?</li>
+                            <li>Should we consider targeting other cancer cells since HER2-positive cells have already
+                              been
+                              extensively studied?</li>
+                            <li>How can we determine the concentration of our biosynthetic nanoparticles? Are
+                              Inductively
+                              Coupled
+                              Plasma Optical Emission Spectroscopy (ICP-OES) or Inductively Coupled Plasma Mass
+                              Spectrometry
+                              (ICP-MS)
+                              suitable methods for this purpose?</li>
+
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>Ms. Lu believed that targeted therapy and immunotherapy hold great promise for future
+                              oncotherapy,
+                              as antitumor specificity is a crucial consideration in this field.</li>
+                            <li> She also mentioned the importance of PD-L1 (Programmed Death Ligand 1) and ICB (Immune
+                              Checkpoint
+                              Blockade) as current targets in oncology therapy.</li>
+                            <li> With regard to our nanoparticles that target Her2+ breast cancer cells, she emphasized
+                              the
+                              need
+                              to consider the expression of the antibodies in normal cells.</li>
+                            <li>Based on her experience, she asserted that the function of a drug within the body (in
+                              vivo)
+                              is the
+                              most significant factor in therapy, as sometimes the effects of drugs in vivo and in vitro
+                              can
+                              be
+                              reversed.</li>
+                            <li> She encouraged us to conduct experiments in mice to confirm the in vivo effect of our
+                              nanoparticles.</li>
+                            <li> Ms. Lu also discussed the potential benefits of combination therapy involving both
+                              first-line and
+                              second-line drugs, which could increase patients' sensitivity to the treatment.</li>
+                            <li> Adding to her points, she explained that targeted therapy and immunotherapy are
+                              interconnected,
+                              as targeted therapy can stimulate the release of antigens from diseased cells, triggering
+                              immune
+                              responses.</li>
+
+                          </ol>
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                            <p>me</p>-->
+
+                      </div>
+
+
+
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                          padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder.">
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Lixian Yang</h3>
+                          <br>
+                          <p style="color:rgb(70,158,180)">?</p>
+                          <p>?<br>
+                            ?</p>
+                          <a href="#">?</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>Ms.Yang thought that if we just use our nanoparticles conjugated with antibodies, the
+                              project will
+                              not be promising and meaningful since there is already some commerialized antibodies,
+                              trastuzumab
+                              for HER2 target therapy.</li>
+                            <li>Another way she recommended is that we can use trastuzumab as a control.</li>
+                            <li>So she recommended that we capsule some drug in the nanoparticles which can not only
+                              kill
+                              the
+                              cancer cells efficiently but also reduce the side effects of the original chemotherapy.
+                            </li>
+                            <li>Additionally she suggested we can try to target other cancer cells since HER2 positive
+                              cells
+                              have
+                              been studied too much.</li>
+                            <li>She noticed that we can't determine the concentration of our biosynthetic nanoparticles
+                              and
+                              she
+                              added that concentration gradient test is crucial in clinical trial so we need to figure
+                              out
+                              its
+                              concentration for further application. Later we checked out that Inductively Coupled
+                              Plasma
+                              Optical
+                              Emission Spectroscopy (ICP-OES) or Inductively Coupled Plasma Mass Spectrometry
+                              (ICP-MS) may
+                              be
+                              candidates.</li>
+                          </ol>
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                            <p>me</p>-->
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                    padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/westlake-medicine.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder.">
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Yiran CAI</h3>
+                          <br>
+
+                          <p style="color:rgb(70,158,180)">Westlake Pharmaceuticals</p>
+                          <p>Westlake Pharmaceuticals CEO assistant</p>
+                          <a
+                            href="https://www.westlake.edu.cn/Innovation/StartupsPortfolio/Biotech/WestlakePharmaceuticals/index.shtml">View
+                            more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li>What are the different stages involved in clinical trials, and at which stage is our
+                              current
+                              focus?</li>
+                            <li>How can we increase efficiency in the early trial stage? Specifically, how can
+                              bio-synthetic
+                              nanoparticles be utilized to enhance the drug's effectiveness?</li>
+                            <li>How can we ensure safety as the trials progress? What measures can be taken to enhance
+                              the
+                              safety of our bio-friendly synthetic system?</li>
+                            <li>When considering the drug launch, how can we assess the affordability for patients? What
+                              steps should be taken to calculate the costs involved in our experiments?</li>
+                            <li>How does the cost of drug production relate to the technological process? What factors
+                              should be considered regarding the sequence and volume of drug production during the
+                              middle
+                              and later stages of clinical trials?</li>
+                            <li>In order to understand the market trend related to the signaling pathways in cancer
+                              development, what market surveys or research should be conducted?</li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>Ms. Cai first refers to the basic three-period clinical trials, from cells to the human
+                              body, and makes it clear that we may still be in the first stage.</li>
+                            <li>Then she points out that efficiency is the first concern in the early trial, so we plan
+                              to
+                              carry drugs on the bio-synthetic nanoparticles to increase their lethal effect.</li>
+                            <li>Furthermore, she emphasizes that safety is more important in the later trials, and we
+                              believe that our bio-friendly synthetic system appears to be safer.</li>
+                            <li>Lastly, she highlights that the affordability of patients is also a concern in the drug
+                              launch. Therefore, it is better for us to calculate the costs for our experiments first.
+                            </li>
+                            <li>Additionally, the cost is related to the technological process. She mentions that in the
+                              middle and later periods of clinical trials, the sequence and volume of drug production
+                              often
+                              become concerns for the company.
+                            </li>
+                            <li>In terms of the drug market, she concludes that her company focuses on the signaling
+                              pathways in cancer development. She suggests that to understand the trend of the drug
+                              market,
+                              we may need to conduct some market surveys.
+                            </li>
+                          </ol>
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                      <p>me</p>-->
+                      </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card mx-auto text-center">
+              <div class="card-body">
+                <div class="section-blue">
+                  <section id="projects" style="padding-top:0;">
+                    <article>
+                      <div class="interviewee" align="center" style="
+                    padding-top: 30%;">
+                        <h3>Interviewee</h3>
+                        <img src="https://static.igem.wiki/teams/4702/wiki/hp/dcy.jpg" width="50%"
+                          alt="Screenshot of the Wall of Wonder.">
+                        <div style=" padding:0 25%;">
+                          <h3 style="text-align: center;padding-top: 15px;">Chengyong Du</h3>
+                          <br>
+
+                          <p style="color:rgb(70,158,180)">the First Affiliated Hospital of Zhejiang University School
+                            of
+                            Medicine</p>
+                          <p>Doctor in Breast Center</p>
+                          <a>View more</a>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <!--Please do not write too much about the 需求和医院 below-->
+                        <div class="blackbox" id="hpquestion">
+                          <h3>Looking for</h3>
+                        </div>
+                        <div class="blackbox hpquestion" id="hpquestion">
+                          <h3>Question we asked</h3>
+                          <ol>
+                            <li> How can we ensure that our questionnaire is suitable for patients, taking into
+                              consideration its technical nature and potential difficulty in understanding therapy
+                              definitions?
+                            </li>
+                            <li> What are the primary concerns of patients when it comes to a drug, particularly in
+                              terms of
+                              its efficacy and toxicity?
+                            </li>
+                            <li> In order to maximize the medical potential of our nanoparticles, should we consider
+                              testing
+                              them on different types of cancer?
+                            </li>
+                            <li> What is the recommended approach for developing a drug from the laboratory to the
+                              factory?
+                              Should we prioritize consultation with the factory as key stakeholders, rather than
+                              reaching
+                              out to patients at this stage?
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="blackbox hpanswer">
+                          <h3>Your title</h3>
+                          <ol>
+                            <li>After reviewing our questionnaire, Dr. Du suggested that it is not suitable for patients
+                              as
+                              it is too technical and many patients may not understand the definitions of each therapy.
+                            </li>
+                            <li>He emphasized that the primary concerns for patients regarding a drug are its efficacy
+                              and
+                              toxicity.</li>
+                            <li>He also recommended testing our nanoparticles on different types of cancer to maximize
+                              their
+                              medical potential.</li>
+                            <li>Furthermore, based on his experience, he believed that the process of developing a drug
+                              from
+                              the laboratory to the factory involves multiple parties. In our case, he thought it is
+                              premature for us to reach out to patients. Instead, he proposed that we should consult
+                              directly with the factory, as they are the key stakeholders in our project.</li>
+
+                          </ol>
+
+                        </div>
+                        <!--<h4>Interviewer:</h4>
+                      <p>me</p>-->
+                      </div>
+
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
-
-
       </div>
     </div>
+  </section>
+  <section class="page2">
+    hello hsj
+  </section>
+</div>
 
 
-    <script src="{{ url_for('static', filename = 'card.js') }}"></script>
-    <script src="{{ url_for('static', filename = 'HP.js') }}"></script>
-    {% endblock %}
+<script src="{{ url_for('static', filename = 'card.js') }}"></script>
+<script src="{{ url_for('static', filename = 'HP.js') }}"></script>
+{% endblock %}

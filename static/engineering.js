@@ -1,4 +1,5 @@
 var targetElements = document.querySelectorAll('.has-animation');
+let flag=0;
 window.addEventListener('scroll', () => {
     targetElements.forEach((element) => {
         var rect = element.getBoundingClientRect();
@@ -9,9 +10,11 @@ window.addEventListener('scroll', () => {
             // 当目标div出现时执行代码
             if (!element.classList.contains('animate-in')) {
                 element.classList.add('animate-in');
+                flag=1;
             }
-        } else {
+        } else if (flag==0){
             element.classList.remove('animate-in');
+            flag=1;
         }
     });
 });

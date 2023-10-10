@@ -467,3 +467,81 @@ font-size: 1rem;
     width: 30px;
   }
 }
+
+
+.div-page {
+  margin-top:30px;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.page-button {
+  flex: 1;
+  /* 让每个按钮均分父容器的宽度 */
+  border: 2px solid #0073e6;
+  /* 添加边框 */
+  padding: 30px;
+  font-size: 18px;
+  /* 调大字号 */
+  position: relative;
+  overflow: hidden;
+  border-bottom:none;
+  border-top:none;
+  border-right:none;
+  border-left-width: 10px;
+  border-radius: 4px;
+  background-color: #f7f8fa;
+  /* 隐藏溢出的内容 */
+}
+
+.page-button a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.page-button:hover {
+  background-color: #fff;
+  /* 按钮悬停时的背景颜色 */
+}
+.div-active{
+  background-color: rgb(70, 158, 180,0.3);
+}
+.href-active {
+  text-decoration: underline !important;
+  text-underline-offset: 10px;
+}
+
+.page-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  /* 初始背景颜色 */
+  transition: right 0.3s, background-color 0.3s;
+  /* 添加右侧位置和颜色的过渡效果 */
+  z-index: 0;
+}
+
+.page-button:hover::before {
+  right: 0;
+  /* 从右往左扩展 */
+  background-color: rgb(70, 158, 180,0.3);
+  /* 悬停时的背景颜色 */
+}
+
+.page2 {
+  display: none;
+}
