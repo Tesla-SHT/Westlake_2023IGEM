@@ -1,35 +1,3 @@
-/* 悬停和点击时的样式 */
-.card-header:hover {
-    cursor: pointer;
-    background-color: #f0f0f0;
-    /* 悬停时颜色变化 */
-}
-
-.card-header.active {
-    background-color: #ddd;
-    /* 点击时颜色变化 */
-}
-
-/* 初始状态隐藏card-body */
-.card-body {
-    display: none;
-}
-
-.shadow-lg {
-    box-shadow: 5px 5px 6px 6px rgba(70, 158, 180, 0.2);
-}
-
-/* 添加淡入效果 */
-.card-body.active {
-    display: block;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    /* 添加淡入过渡效果 */
-}
-
-.card-body.active.show {
-    opacity: 1;
-}
 
 
 .subfield {
@@ -183,4 +151,9 @@
 .btn-8 a{
     text-decoration: none;
     color: black;
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
