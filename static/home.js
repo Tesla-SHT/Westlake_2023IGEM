@@ -196,7 +196,7 @@ window.addEventListener("scroll", () => {
 
 
 // 创建动画
-/*
+
 const fadeInText = gsap.from(".fade-in-text", {
   opacity: 0,
   x: -100,
@@ -215,4 +215,42 @@ const fadeInText = gsap.from(".fade-in-text", {
       gsap.to(".fade-in-text::after", { width: 0 });
     },
   },
-});*/
+});
+
+
+const scrollTracker = document.getElementById("scroller");
+
+window.addEventListener("scroll", updateScrollTracker);
+
+function updateScrollTracker() {
+  const scrollTop = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const trackerHeight = windowHeight * 0.53; // 53% of the window height
+  const minTop = (windowHeight - trackerHeight) / 2;
+  
+  if (scrollTop <= minTop) {
+    scrollTracker.style.height = "0";
+  } else {
+    const newHeight = Math.min(scrollTop - minTop, trackerHeight);
+    scrollTracker.style.height = newHeight + "px";
+  }
+}
+
+$(window).scroll(function(){				 
+	$('.container p').each(function(){
+    	var scrollTop     = $(window).scrollTop(),
+        	elementOffset = $(this).offset().top,
+       		distance      = (elementOffset - scrollTop),
+			    windowHeight  = $(window).height(),
+			    breakPoint    = windowHeight*0.9;
+
+			if(distance > breakPoint) {
+				$(this).addClass("more-padding");	
+			}  if(distance < breakPoint) {
+				$(this).removeClass("more-padding");	
+			}
+	});
+});
+
+
+

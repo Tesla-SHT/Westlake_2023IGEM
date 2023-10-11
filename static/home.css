@@ -61,12 +61,12 @@
 }
 
 .container-right-1 {
-  width: 35%; /* 设置容器宽度为屏幕宽度的一半 */
+  width: 45%; /* 设置容器宽度为屏幕宽度的一半 */
   margin-right: 10%; /* 将左外边距设置为自动，使容器在屏幕左半部分水平居中 */
   margin-left: auto; /* 将右外边距设置为0，确保容器紧贴屏幕左边缘 */
   text-align: left;
   position: relative;
-  padding-left:100px;
+  padding-left:200px;
   overflow: hidden; /* 隐藏超出容器的内容 */
 }
 
@@ -88,6 +88,90 @@
   margin-right: auto; /* 将右外边距设置为0，确保容器紧贴屏幕左边缘 */
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 20vh;
+  --card-width: calc(var(--card-height) * 5);
+}
+
+.card {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 100%);
+  cursor: pointer;
+  font-family: cursive;
+  margin: 0 auto; /* 水平居中 */
+  font-size: 64px;
+}
+
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card:hover:before, .card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card::before {
+  content: "";
+  width: 102%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -1%;
+    animation: spin 5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity 5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
 }
 
 .centered-text-1 {
@@ -115,36 +199,36 @@
   font-size: 64px; /* 根据需要设置更大的字号值 */
 }
 
+.larger-text-2 {
+  font-size: 48px; /* 根据需要设置更大的字号值 */
+}
+
 a {
   font-size: large; /* Adjust the font size as needed */
 }
 
-.animation-container {
+/*.animation-container {
   position: relative;
   overflow: hidden;
-}
+}*/
 
 .fade-in-text {
   opacity: 0;
   position: relative;
 }
 
-.fade-in-text::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px; /* 设置横线的高度 */
-  background-color: #fff; /* 设置横线的颜色 */
-  transition: width 2s ease; /* 设置横线的过渡效果 */
-}
-.larger-text-1 {
-  display: inline-block; /* 让嵌套元素变成块级元素 */
-}
+
 /*主题背景样式*/
+body {
+  background: linear-gradient(to bottom, black 50%, white 50%) no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* 设置页面高度为视口高度 */
+  background-size: 100% 50%; /* 设置渐变高度为页面的一半 */
+}
+
 body{
-  color:#fff;
+  color:#000000;
   letter-spacing:1.75px;
   overflow-x:hidden;
 }
@@ -166,7 +250,7 @@ padding-left:295px;
 }
 
 .top-section{
-  background:#ccc url('https://images.pexels.com/photos/207301/pexels-photo-207301.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') no-repeat center center / cover;
+  background:#000000 url('https://images.pexels.com/photos/207301/pexels-photo-207301.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') no-repeat center center / cover;
   width:100%;
   height:100vh;
     background-attachment: fixed;
@@ -178,24 +262,24 @@ padding-left:295px;
 
 .background-section{
   display:block;
- margin:0 auto;
+  margin:0 auto;
   text-align:center;
   width:100%;
   height:10vh;
   background:#4700fa;
   padding-top:45px;
-  color:#fff;
+  color:#ffffff;
   letter-spacing:1.5px;
   position:relative;
   z-index:999;
-box-shadow: 2px -3px 10px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px -3px 10px rgba(0, 0, 0, 0.34);
 }
 
 .Nanoparticles-section{
   display:block;
   text-align:center;
   width:100%;
-  height:400vh;
+  height:190vh;
   background:#000000;
   padding-top:45px;
   color:#fff;
@@ -210,25 +294,14 @@ box-shadow: 2px -3px 10px rgba(0, 0, 0, 0.34);
  margin:0 auto;
   text-align:center;
   width:100%;
-  height:100vh;
-  background:#08e7cd;
+  height:200vh;
+  background: linear-gradient(30deg, #6682ba, #011e70); /* 45度角线性渐变 */
   padding-top:45px;
   color:#fff;
   letter-spacing:1.5px;
   position:relative;
   z-index:999;
 box-shadow: 2px -3px 10px rgba(0, 0, 0, 0.34);
-}
-
-.Problem-image{
-   position:relative;
-  float:right;
-  right:-140px;
-}
-.Problem-image img{
-  max-width:500px;
-  height:auto;
-  mix-blend-mode:darken;
 }
 
 .middle-section{
@@ -343,7 +416,7 @@ box-shadow: 2px -3px 10px rgba(0, 0, 0, 0.34);
 .button_su_inner{
     display: inline-block;
     background: #F8B627;
-    color: #F4F4F4;
+    color: #000000;
     font-size: 16px;
     font-weight: normal;
     width: 132px;
@@ -404,3 +477,87 @@ box-shadow: 2px -3px 10px rgba(0, 0, 0, 0.34);
 }
 /*button*/
 
+/*time line*/
+h1 {
+  font-size:2em;
+  text-align:center;
+  margin:20px 0 40px;
+  padding:0;
+}
+.timeline-container {
+	width:100%;
+	margin:0 auto;
+	overflow:auto;
+	padding:2%;
+}
+.right-content, .left-content {
+	float:left;
+	display:block;
+	width:50%;
+}
+.left-content {
+	border-right:8px solid #78B579;	
+	text-align:right;
+  padding-right:100px;
+  flex-direction: column; /* 设置左侧内容为纵向布局 */
+  border-radius: 5px; /* 为边框两端添加5px的圆角 */
+}
+.right-content {
+	border-left:8px solid #78B579;	
+	text-align:left;
+  padding-left:100px;
+  border-radius: 5px; /* 为边框两端添加5px的圆角 */
+}
+.left-content p {
+	margin:250px 0 0;
+}
+.right-content p {
+	margin:80px 0 150px;
+}
+.container p {
+-webkit-transition: all 0.7s ease-in-out;
+-moz-transition: all 0.7 ease-in-out;
+-ms-transition: all 0.7s ease-in-out;
+-o-transition: all 0.7s ease-in-out;
+transition: all 0.7s ease-in-out;	
+}
+
+.container-wrapper-1 {
+  display: flex;
+  justify-content: space-between; /* 使左右容器相互排布，无间距 */
+}
+
+.left-container, .right-container {
+  flex: 1; /* 填充可用空间，以平分容器 */
+  /* 可以添加其他样式，如背景颜色、边框等 */
+}
+
+.left-content .more-padding {
+  padding-right:100px;
+}
+.right-content .more-padding {
+  padding-left:100px;
+}
+
+.home-middle-col {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 53%;
+  overflow: hidden; /* 隐藏溢出部分 */
+}
+
+.scroll-container {
+  width: 15px;
+  position: relative;
+}
+
+.scroll-tracker {
+  width: 15px;
+  height: 0;
+  border-radius: 10px;
+  background: #78B579;
+}
