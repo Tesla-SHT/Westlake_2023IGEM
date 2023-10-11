@@ -25,32 +25,32 @@ season!{%endblock %}
 
 <div class="background-section">
   <h2>Background</h2>
-  <div class="middle-image">
-    <img src="https://static.pexels.com/photos/137108/pexels-photo-137108.jpeg" alt="Middle Image">
-  </div>
 </div>
 
 <div class="Nanoparticles-section">
-  <br><br>
+  <br><br><br><br><br><br>
   <div class="container-wrapper">
     <div class="container-left ">
       <h2 class="text-center" style="width:100%">Nanoparticles</h2>
       <br>
       <strong><span class="larger-text">What are nanoparticles?</span></strong>
       <br><br>
-      They are particles which are a 1000 times smaller than the width of a hair.
-      Nanoparticles come in all shapes and can be made from various materials.
+      Nanoparticles are tiny particles with diameters ranging from 1 to 100 nanometers, making them roughly 1000 times smaller than the width of a human hair. 
+      These minuscule entities come in various shapes and can be crafted from a wide array of materials.
       <br><br>
-      They have a variety of applications, for example, in cancer therapy, where they can produce heat that kills tumor
-      cells.
+      In recent times, nanoparticles containing metallic elements, particularly Iron Oxide Nanoparticles (IONPs), have gained significant prominence. 
+      IONPs are lauded for their exceptional biological compatibility and inherent ferromagnetism.
+      <br><br>
+      This is why our program is dedicated to the study of IONPs, as they offer a diverse range of applications. 
+      For instance, in the realm of cancer therapy, IONPs can generate heat that selectively targets and eradicates tumor cells.
       <br>
-      <br>
+      <br><br>
       <strong><span class="larger-text">And how can you make them?</span></strong>
       <br><br>
       There are different ways of producing these nanoparticles
       <br><br>
       <span class="centered-text-1">Chemical &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Physical
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eletrochemical</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coorecipitation</span>
       <br><br>
       but these production methods all have their downsides.
       <br><br>
@@ -58,19 +58,67 @@ season!{%endblock %}
           &nbsp;&nbsp;&nbsp; Expensive</strong></span>
     </div>
     <div class="container-right">
-      <br>
-      <div class="image-container">
-        <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/notebook-6-23-1.png"
-          alt="GFP expression level under different concentration of ferric ion treatment" class="image" width="100%"
-          height="100%">
-      </div>
+      <br><br><br>
+
+      <!--图表-->
+      <div id="ChartDom" style="width:100%;height:100%"></div> <!--style="width:600px; height:400px; margin:auto"-->
+      <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('ChartDom'));
+
+        // 指定图表的配置项和数据
+        option = {
+          title: {
+            text: 'Current status of IONPs synthesis methods',
+            left: 'center',
+            textStyle: {
+              color: 'blue',  // 设置标题字体颜色
+            }
+          },
+          tooltip: {
+            trigger: 'item',
+            formatter: '{a} <br/>{b}: {d}%', // 显示百分比
+          },
+          legend: {
+            orient: 'vertical',
+            top: '6%', // 设置标题距离容器顶部的距离，根据需要调整值
+            left: 'left',
+            textStyle: {
+              color: 'white',  // 设置图例字体颜色
+            }
+          },
+          series: [
+            {
+              name: 'Access From',
+              type: 'pie',
+              radius: '50%',
+              data: [
+                { value: 8, name: 'Physical methods' },
+                { value: 24, name: 'Other Chemical methods' },
+                { value: 23, name: 'Hydrothermal' },
+                { value: 18, name: 'Microemulsion' },
+                { value: 25, name: 'Coprecipitation' },
+                { value: 2, name: 'Biological mediated' }
+              ],
+              label: {
+                show: true,
+                color: 'white',  // 设置数据项字体颜色
+                // 可以根据需要调整透明度，例如：backgroundColor: 'rgba(255, 255, 255, 0.7)'
+              }
+            }
+          ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+      </script>
+
     </div>
   </div>
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="card">
     What can we do?
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="container-wrapper">
     <div class="container-left-1">
       <br>
@@ -113,8 +161,9 @@ season!{%endblock %}
       </div>
       <div class="right-content">
         <p><strong><span class="larger-text-2">THE PROBLEM</span></strong>
-        <br><br><br><br>
-        <img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/cancer-home.png" alt="breast cancer" height="150%" width="150%">
+          <br><br><br><br>
+          <img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/cancer-home-2.png" alt="breast cancer"
+            height="150%" width="150%">
         </p>
         <p></p>
         <p>Content 03</p>
@@ -130,8 +179,85 @@ season!{%endblock %}
   </div>
 </div>
 
-<div class="bottom-section">
+<div class="experiment-section">
   <h2>Cell Experiments :</h2>
+  <section id="timeline">
+
+    <div class="tl-item">
+
+      <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">2011</p>
+      </div>
+
+      <div class="tl-content">
+        <h1>Lorem ipsum dolor sit</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+      </div>
+
+    </div>
+
+    <div class="tl-item">
+
+      <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">2013</p>
+      </div>
+
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+        <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel
+          mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="tl-item">
+
+      <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">2014</p>
+      </div>
+
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+        <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet
+          varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id
+          cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium
+          sed.</p>
+      </div>
+
+    </div>
+
+    <div class="tl-item">
+
+      <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+
+      <div class="tl-year">
+        <p class="f2 heading--sanSerif">2016</p>
+      </div>
+
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
+        <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum
+          efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus,
+          bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor
+          elit.</p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<div class="bottom-section">
+  <h2>Human Practice :</h2>
   <div class="bottom-image">
     <img src="https://images.pexels.com/photos/136049/pexels-photo-136049.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
       alt="Bottom Image">

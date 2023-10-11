@@ -31,12 +31,12 @@
 }
 
 .container-left {
-  width: 35%; /* 设置容器宽度为屏幕宽度的一半 */
+  width: 40%; /* 设置容器宽度为屏幕宽度的一半 */
   margin-left: 10%; /* 将左外边距设置为自动，使容器在屏幕左半部分水平居中 */
   margin-right: auto; /* 将右外边距设置为0，确保容器紧贴屏幕左边缘 */
   text-align: left;
   position: relative;
-  padding-right:100px;
+  padding-right:150px;
   overflow: hidden; /* 隐藏超出容器的内容 */
 }
 
@@ -66,7 +66,7 @@
   margin-left: auto; /* 将右外边距设置为0，确保容器紧贴屏幕左边缘 */
   text-align: left;
   position: relative;
-  padding-left:200px;
+  padding-left:220px;
   overflow: hidden; /* 隐藏超出容器的内容 */
 }
 
@@ -84,8 +84,8 @@
 
 .container-left-1 {
   width: 35%; /* 设置容器宽度为屏幕宽度的一半 */
-  margin-left: 10%; /* 将左外边距设置为自动，使容器在屏幕左半部分水平居中 */
-  margin-right: auto; /* 将右外边距设置为0，确保容器紧贴屏幕左边缘 */
+  margin-right: -6%; /* 将左外边距设置为自动，使容器在屏幕左半部分水平居中 */
+  margin-left: auto; /* 将右外边距设置为0，确保容器紧贴屏幕左边缘 */
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
 }
@@ -102,7 +102,7 @@
 }
 
 .card {
-  background: #191c29;
+  background: #272c40;
   width: var(--card-width);
   height: var(--card-height);
   padding: 3px;
@@ -266,7 +266,7 @@ padding-left:295px;
   text-align:center;
   width:100%;
   height:10vh;
-  background:#4700fa;
+  background:rgb(0, 47, 167);
   padding-top:45px;
   color:#ffffff;
   letter-spacing:1.5px;
@@ -279,8 +279,8 @@ padding-left:295px;
   display:block;
   text-align:center;
   width:100%;
-  height:190vh;
-  background:#000000;
+  height:230vh;
+  background:rgb(70, 158, 180);
   padding-top:45px;
   color:#fff;
   letter-spacing:1.5px;
@@ -296,6 +296,21 @@ box-shadow: 2px -3px 10px rgba(0, 0, 0, 0.34);
   width:100%;
   height:200vh;
   background: linear-gradient(30deg, #6682ba, #011e70); /* 45度角线性渐变 */
+  padding-top:45px;
+  color:#fff;
+  letter-spacing:1.5px;
+  position:relative;
+  z-index:999;
+box-shadow: 2px -3px 10px rgba(0, 0, 0, 0.34);
+}
+
+.experiment-section{
+  display:block;
+ margin:0 auto;
+  text-align:center;
+  width:100%;
+  height:105vh;
+  background:#031625;
   padding-top:45px;
   color:#fff;
   letter-spacing:1.5px;
@@ -561,3 +576,124 @@ transition: all 0.7s ease-in-out;
   border-radius: 10px;
   background: #78B579;
 }
+
+/*4列*/
+/*body {
+  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size: 16px;
+  line-height: 1.75;
+}*/
+
+#timeline {
+  display: flex;
+  background-color: #031625;
+
+  &:hover {
+    .tl-item {
+      width: 23.3333%;
+    }
+  }
+}
+
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  
+  &:before, &:after {
+    transform: translate3d(0, 0, 0);
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+  }
+
+  &:after {
+    background: transparentize(#031625, 0.15);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  &:before {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  &:hover {
+    width: 30% !important;
+    
+    &:after {
+      opacity: 0;
+    }
+
+    &:before {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) translateY(0);
+      transition: opacity 1s ease, transform 1s ease 0.25s;
+    }
+    
+    .tl-content {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.75s ease 0.5s;
+    }
+
+    .tl-bg {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+  
+  h1 {
+    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #1779cf;
+    font-size: 1.44rem;
+    font-weight: normal;
+  }
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  
+  p {
+    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.728rem;
+    line-height: 0;
+  }
+}
+
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}
+

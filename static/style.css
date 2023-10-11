@@ -184,7 +184,9 @@ footer a {
   color: white;
   text-decoration: underline;
 }
-
+.table{
+  text-align:center;
+}
 .main-container {
   max-width: 100%;
   padding: 0;
