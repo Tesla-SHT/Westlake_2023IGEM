@@ -15,6 +15,7 @@ season!{%endblock %}
 
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet">
 
 <div class="top-section">
   <div class="main-cta">
@@ -23,8 +24,11 @@ season!{%endblock %}
 
 </div>
 
+
 <div class="background-section">
-  <h2>Background</h2>
+  <div id="h2middle">
+    <h2>Background</h2>
+  </div>
 </div>
 
 <div class="Nanoparticles-section">
@@ -35,14 +39,17 @@ season!{%endblock %}
       <br>
       <strong><span class="larger-text">What are nanoparticles?</span></strong>
       <br><br>
-      Nanoparticles are tiny particles with diameters ranging from 1 to 100 nanometers, making them roughly 1000 times smaller than the width of a human hair. 
+      Nanoparticles are tiny particles with diameters ranging from 1 to 100 nanometers, making them roughly 1000 times
+      smaller than the width of a human hair.
       These minuscule entities come in various shapes and can be crafted from a wide array of materials.
       <br><br>
-      In recent times, nanoparticles containing metallic elements, particularly Iron Oxide Nanoparticles (IONPs), have gained significant prominence. 
+      In recent times, nanoparticles containing metallic elements, particularly Iron Oxide Nanoparticles (IONPs), have
+      gained significant prominence.
       IONPs are lauded for their exceptional biological compatibility and inherent ferromagnetism.
       <br><br>
-      This is why our program is dedicated to the study of IONPs, as they offer a diverse range of applications. 
-      For instance, in the realm of cancer therapy, IONPs can generate heat that selectively targets and eradicates tumor cells.
+      This is why our program is dedicated to the study of IONPs, as they offer a diverse range of applications.
+      For instance, in the realm of cancer therapy, IONPs can generate heat that selectively targets and eradicates
+      tumor cells.
       <br>
       <br><br>
       <strong><span class="larger-text">And how can you make them?</span></strong>
@@ -57,6 +64,8 @@ season!{%endblock %}
       <span class="centered-text-2"><strong>Inconsistent &nbsp;&nbsp;&nbsp; Not adaptable &nbsp;&nbsp;&nbsp; Toxic
           &nbsp;&nbsp;&nbsp; Expensive</strong></span>
     </div>
+
+
     <div class="container-right">
       <br><br><br>
 
@@ -111,8 +120,8 @@ season!{%endblock %}
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
       </script>
-
     </div>
+
   </div>
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="card">
@@ -144,6 +153,7 @@ season!{%endblock %}
       <br><br><br><br><br><br>
     </div>
   </div>
+  <br><br><br><br><br><br>
 </div>
 
 <div class="Problem-section">
@@ -180,15 +190,16 @@ season!{%endblock %}
 </div>
 
 <div class="experiment-section">
-  <h2>Cell Experiments :</h2>
+  <h2>Experiments :</h2>
   <section id="timeline">
 
     <div class="tl-item">
 
-      <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+      <div class="tl-bg"
+        style="background-image: url(https://static.igem.wiki/teams/4702/wiki/home-photoes/96-well.jpg)"></div>
 
       <div class="tl-year">
-        <p class="f2 heading--sanSerif">2011</p>
+        <p class="f2 heading--sanSerif">cells</p>
       </div>
 
       <div class="tl-content">
@@ -202,7 +213,9 @@ season!{%endblock %}
 
     <div class="tl-item">
 
-      <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+      <div class="tl-bg"
+        style="background-image: url(https://static.igem.wiki/teams/4702/wiki/result-for-notebook/0003-20230923-0936-57000-x-ceta-1.jpg)">
+      </div>
 
       <div class="tl-year">
         <p class="f2 heading--sanSerif">2013</p>
@@ -253,50 +266,64 @@ season!{%endblock %}
 
     </div>
   </section>
-
 </div>
 
 <div class="bottom-section">
   <h2>Human Practice :</h2>
-  <div class="bottom-image">
-    <img src="https://images.pexels.com/photos/136049/pexels-photo-136049.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
-      alt="Bottom Image">
-  </div>
-  <div class="content">
-    <div class="button_container">
-      <div class="button_su">
-        <span class="su_button_circle">
-        </span>
-        <a href="#" class="button_su_inner">
-          <span class="button_text_container">
-            Simple button
-          </span>
-        </a>
+  <br><br><br><br><br><br>
+  <div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+
+          <img
+            src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+            alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+          <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Recusandae
+            voluptate repellendus magni illo ea animi? </div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
+      </div>
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img
+            src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+            alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+          <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Recusandae
+            voluptate repellendus magni illo ea animi?</div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
       </div>
 
-      <div class="button_su">
-        <span class="su_button_circle">
-        </span>
-        <a href="#" class="button_su_inner">
-          <span class="button_text_container">
-            Another button
-          </span>
-        </a>
-      </div>
-
-      <div class="button_su">
-        <span class="su_button_circle">
-        </span>
-        <a href="#" class="button_su_inner">
-          <span class="button_text_container">
-            A third button
-          </span>
-        </a>
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img
+            src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
+            alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+          <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Recusandae
+            voluptate repellendus magni illo ea animi?</div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
       </div>
     </div>
+    <div class="blog-slider__pagination"></div>
   </div>
 </div>
-
 <br><br><br><br>
 
 

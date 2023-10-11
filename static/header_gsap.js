@@ -8,15 +8,20 @@ gsap.to(".header", { duration: 1.5, y: changeAmount });
 //侧边栏// 获取封面图片的高度
 
 const coverImage = document.querySelector('#cover-image');
+const overView = document.querySelector('.overview');
 const footer = document.querySelector('#footer');
 const coverImageHeight = coverImage.offsetHeight;
+if (overView === null) {
+  var overviewHeight = 0;
+}
+else {var overviewHeight = overView.clientHeight+coverImageHeight;}
 
 // 创建动画效果
 const sidebarAnimation = gsap.from("#sidebar", { duration: 1, opacity: 0, x: -500 });
 
 window.addEventListener('DOMContentLoaded', () => {
   // 判断初始位置是否需要显示侧边栏
-  if (window.pageYOffset >= coverImageHeight) {
+  if (window.pageYOffset >= Math.max(coverImageHeight, overviewHeight)) {
     sidebarAnimation.play();
 
   } else {
@@ -30,7 +35,7 @@ window.addEventListener('scroll', () => {
   const windowHeight = window.innerHeight;
   const documentHeight = document.documentElement.scrollHeight;
   // 切换侧边栏显示
-  if ((scrollPosition >= coverImageHeight - 200) && (scrollPosition + windowHeight < documentHeight - footer.offsetHeight)) {
+  if ((scrollPosition >= Math.max(coverImageHeight,overviewHeight) - 200) && (scrollPosition + windowHeight < documentHeight - footer.offsetHeight)) {
     sidebarAnimation.play()
   } else {
     sidebarAnimation.reverse();

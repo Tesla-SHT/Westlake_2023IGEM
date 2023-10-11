@@ -1,3 +1,8 @@
+var h2back = document.getElementById("h2middle");
+var sectionheight = h2back.parentElement;
+console.log(sectionheight.clientHeight);
+h2back.style.paddingTop = (sectionheight.clientHeight - h2back.clientHeight) / 2 + "px";
+
 const footer = document.querySelector('#footer');
 const sidebarAnimation = gsap.from("#sidebar", { duration: 1, opacity: 0, x: -500 });
 window.addEventListener('DOMContentLoaded', () => {
@@ -227,7 +232,7 @@ function updateScrollTracker() {
   const windowHeight = window.innerHeight;
   const trackerHeight = windowHeight * 0.53; // 53% of the window height
   const minTop = (windowHeight - trackerHeight) / 2;
-  
+
   if (scrollTop <= minTop) {
     scrollTracker.style.height = "0";
   } else {
@@ -236,21 +241,34 @@ function updateScrollTracker() {
   }
 }
 
-$(window).scroll(function(){				 
-	$('.container p').each(function(){
-    	var scrollTop     = $(window).scrollTop(),
-        	elementOffset = $(this).offset().top,
-       		distance      = (elementOffset - scrollTop),
-			    windowHeight  = $(window).height(),
-			    breakPoint    = windowHeight*0.9;
+$(window).scroll(function () {
+  $('.container p').each(function () {
+    var scrollTop = $(window).scrollTop(),
+      elementOffset = $(this).offset().top,
+      distance = (elementOffset - scrollTop),
+      windowHeight = $(window).height(),
+      breakPoint = windowHeight * 0.9;
 
-			if(distance > breakPoint) {
-				$(this).addClass("more-padding");	
-			}  if(distance < breakPoint) {
-				$(this).removeClass("more-padding");	
-			}
-	});
+    if (distance > breakPoint) {
+      $(this).addClass("more-padding");
+    } if (distance < breakPoint) {
+      $(this).removeClass("more-padding");
+    }
+  });
 });
 
 
-
+// from HP
+var swiper = new Swiper('.blog-slider', {
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  // autoHeight: true,
+  pagination: {
+    el: '.blog-slider__pagination',
+    clickable: true,
+  }
+});
