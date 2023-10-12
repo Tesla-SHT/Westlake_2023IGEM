@@ -5,6 +5,11 @@
 accessible to our community.{% endblock %}
 
 {% block page_content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
 
@@ -61,8 +66,20 @@ accessible to our community.{% endblock %}
         <hr class="hr-ani">
         <div class="shadow-lg p-5 mb-5 bg-white rounded">
           <div class="row">
-            <div class="col-lg-10">
-              <p>123</p>
+            <div class="col-lg-12">
+              <p>
+                During our wet lab result analysis process, we encountered huge amount of data, and that's the point we
+                found the necessity of high throughput software for the tedious repeat process for the data analysis.
+                <br><br>Specifically, since we are synthesizing the iron oxide nanoparticles, we need to determine the
+                size distribution of the nanoparticle to judge the quality of the condition for synthesis, to deal with
+                large amount of data, we developed a software which could identify the nanoparticles in TEM result
+                figure and generate the diameter distribution statictis of the nanoparticles.
+                <br><br>And the other software is to help bunch analysis of the mean fluorescent intensity of confocal
+                figures. Generally we only need to type in the folder address and the program would generate the excel
+                file containing the mean fluorescent intensity result.
+                <br><br>Note that both the software could be "fine-tuned" by user's own requirement for data analysis,
+                and we also give a detailed guideline for customization of your own data analysis helper!
+              </p>
             </div>
           </div>
         </div>
@@ -78,7 +95,7 @@ accessible to our community.{% endblock %}
         <hr class="hr-ani">
         <div class="shadow-lg p-5 mb-5 bg-white rounded">
           <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-12">
               <p>We developed the Nanoparticle Size Distribution Counter software. This tool is designed to simplify and
                 expedite the analysis of multiple types of photos like Transmission Electron Microscopy (TEM) graphs,
                 microscopy graphs ect., enabling researchers to obtain accurate and comprehensive statistical
@@ -171,7 +188,7 @@ accessible to our community.{% endblock %}
         <hr class="hr-ani">
         <div class="shadow-lg p-5 mb-5 bg-white rounded">
           <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-12">
               <h2>Background</h2>
               <p>Although our starting point was a quantitative analysis of antibodies bound to the cell, actually, the
                 study of fluorescence intensity can also be used to quantify protein expression levels, examine changes
@@ -198,16 +215,71 @@ accessible to our community.{% endblock %}
               <h2>Code Procedure</h2>
               <p>
                 1. This code block is used for the input interface.
-                <br><br>
+              <pre>
+                  <code class="ImageJ Macro">
+  #@ File (label = "Input directory", style = "directory") input
+  #@ File (label = "Output directory", style = "directory") output
+  #@ String (label = "File suffix", value = ".tif") suffix
+  #@ String (label = "Keyword", value = "keyword") keyword
+                  </code>
+                </pre>
+              <br><br>
               <div align="center">
                 <img src="https://static.igem.wiki/teams/4702/wiki/software/mean-fluorescence-intensity/input.png"
                   width="80%" alt="Output">
               </div><br><br><br>
               2. After initialization, we will first start file processing, that is, finding every file in the specific
               folder (having subfolders) with the correct suffix and keyword.
+              <pre>
+                <code class="ImageJ Macro">
+  // Initialize a counter for processed files
+  n = 0;
+  // Start processing the input folder
+  processFolder(input);
+
+  // Function to scan folders/subfolders/files to find files with the correct suffix and keyword
+  function processFolder(input) {
+      // Get a list of files in the input directory
+      list = getFileList(input);
+      // Iterate through the list of files
+      for (i = 0; i < list.length; i++) {
+          // Check if the current item is a directory
+          if (File.isDirectory(input + File.separator + list[i]))
+              // Recursively process subfolders
+              processFolder(input + File.separator + list[i]);
+          else if (endsWith(list[i], suffix) && (indexOf(list[i], keyword) >= 0)) {
+              // If the file has the correct suffix and contains the keyword, process it
+              processFile(input, output, list[i], n);
+              // Increment the counter
+              n = n + 1;
+          }
+      }
+  }
+                  </code>
+              </pre>
               <br><br>
               3. Now we can just process every single image and measure their Mean Fluorescence Intensity! (Of course,
               you can DIY everything just using the recorder in ImageJ.)
+              <pre>
+                <code class="ImageJ Macro">
+  function processFile(input, output, file, index) {
+
+    print("Processing: " + input + File.separator + file);
+    print("Saving to: " + output);
+    open(input + File.separator + file);
+    // You can simply copy the commands from the recorder to replace the following code
+    run("32-bit");
+    close("");
+    setAutoThreshold("Default dark no-reset");
+    //run("Threshold...");
+    run("Set Measurements...", "display area mean standard modal min integrated limit redirect=None decimal=3");
+    run("Measure");
+    setResult("File Name", index, file);
+    saveAs("Results", output + File.separator + "Results.xls");
+    close("*");
+  }
+                </code>
+              </pre>
               <br><br>
               4. Methods of DIY
               <br><br>

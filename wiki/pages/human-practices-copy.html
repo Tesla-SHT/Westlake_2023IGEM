@@ -36,6 +36,14 @@ the world. Consider how the world affects your work and how your work affects th
       padding-right: 0px !important;
     }
   }
+
+  .page1 {
+    display: none;
+  }
+
+  .page2 {
+    display: block!important;
+  }
 </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
@@ -74,11 +82,11 @@ the world. Consider how the world affects your work and how your work affects th
 </div>
 </div>
 <nav class="div-page">
-  <div class="page-button div1 div-active">
-    <a href="#" class="a1 href-active">Page 1</a>
+  <div class="page-button div1">
+    <a href="#" class="a1">Page 1</a>
   </div>
-  <div class="page-button div2">
-    <a href="#" class="a2">Page 2</a>
+  <div class="page-button div2 div-active">
+    <a href="#" class="a2 href-active">Page 2</a>
   </div>
 </nav>
 <section class="page1">
@@ -1641,7 +1649,8 @@ the world. Consider how the world affects your work and how your work affects th
 </section>
 <section class="page2">
   <div class="row" style="padding-bottom:200px">
-    <div id="sidebar" class=" ol-md-3  sidebar flex-column flex-shrink-0 " style="top:15vh;padding-right:0;padding-left:50px">
+    <div id="sidebar" class=" ol-md-3  sidebar flex-column flex-shrink-0 "
+      style="top:15vh;padding-right:0;padding-left:50px">
       <hr>
       <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
         <li>
@@ -1743,7 +1752,7 @@ the world. Consider how the world affects your work and how your work affects th
                 <tr>
                   <td>
                     <div align="center">
-                      <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/smdongxi.jpg"
+                      <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/1111.jpg"
                         width="108%" alt="Offline sharing in CCiC." border=0>
                     </div>
                   </td>
@@ -1796,7 +1805,7 @@ the world. Consider how the world affects your work and how your work affects th
               monitoring and data analysis of body functions. This could be explored to incorporate sensing capabilities
               into our biosynthesized nanoparticles for monitoring therapeutic response and optimizing treatment.
               <div align="center">
-                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/zheshism.jpg"
+                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/picture2.jpg"
                   width="80%" alt="Bioelectronic materials.">
               </div>
               <br><br>2. Conducting polymer hydrogels: Conducting polymer hydrogels have been widely applied in neural

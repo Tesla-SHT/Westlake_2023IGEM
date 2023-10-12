@@ -1,6 +1,5 @@
 var h2back = document.getElementById("h2middle");
 var sectionheight = h2back.parentElement;
-console.log(sectionheight.clientHeight);
 h2back.style.paddingTop = (sectionheight.clientHeight - h2back.clientHeight) / 2 + "px";
 
 const footer = document.querySelector('#footer');
@@ -158,7 +157,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const textDivs = document.querySelectorAll(".fade-in-text");
 const textDivsafter = document.querySelectorAll(".fade-in-text::after");
-console.log(textDivsafter);
 // 创建Intersection Observer实例
 window.addEventListener("scroll", () => {
   textDivs.forEach((div) => {
