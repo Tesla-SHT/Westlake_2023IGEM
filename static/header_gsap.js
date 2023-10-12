@@ -7,6 +7,12 @@ gsap.to(".header", { duration: 1.5, y: changeAmount });
 
 //侧边栏// 获取封面图片的高度
 
+
+
+// 创建动画效果
+const sidebar = document.querySelectorAll('.sidebar');
+sidebar.forEach((div) => {
+const sidebarAnimation = gsap.from(div, { duration: 1, opacity: 0, x: -500 });
 const coverImage = document.querySelector('#cover-image');
 const overView = document.querySelector('.overview');
 const footer = document.querySelector('#footer');
@@ -14,11 +20,7 @@ const coverImageHeight = coverImage.offsetHeight;
 if (overView === null) {
   var overviewHeight = 0;
 }
-else {var overviewHeight = overView.clientHeight+coverImageHeight;}
-
-// 创建动画效果
-const sidebarAnimation = gsap.from("#sidebar", { duration: 1, opacity: 0, x: -500 });
-
+else {var overviewHeight = overView.clientHeight*2+coverImageHeight;}
 window.addEventListener('DOMContentLoaded', () => {
   // 判断初始位置是否需要显示侧边栏
   if (window.pageYOffset >= Math.max(coverImageHeight, overviewHeight)) {
@@ -41,7 +43,7 @@ window.addEventListener('scroll', () => {
     sidebarAnimation.reverse();
   }
 });
-
+});
 // 获取具有相同类名的所有div元素
 const gsapDivs = document.querySelectorAll(".gaspcol");
 const hrDivs = document.querySelectorAll(".hr-ani");
