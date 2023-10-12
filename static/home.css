@@ -9,6 +9,23 @@
   cursor: pointer;
 }
 
+.head-font {
+  font-family: 'Your-Desired-Font', sans-serif;
+}
+
+.headhead-font{
+  font-family: 'Ma Shan Zheng', cursive;
+font-family: 'Teko', sans-serif;
+}
+
+.colored-text {
+  color: #ffaa00; /* 这里设置你想要的颜色值 */
+}
+
+.colored-text-1 {
+  color: #ffaa00; /* 这里设置你想要的颜色值 */
+}
+
 #sidebar-toggle img {
   font-size: 20px;
   line-height: 30px;
@@ -34,6 +51,7 @@
   /* 水平居中 */
   align-items: center;
   /* 垂直居中 */
+  overflow: hidden;
 }
 
 .container-left {
@@ -99,7 +117,7 @@
   left: 0;
   height: 100%;
   /* 竖线的高度与容器高度相同 */
-  width: 8px;
+  width: 10px;
   /* Adjust the thickness of the line as needed */
   background-color: #ffaa00;
   /* Adjust the color of the line as needed */
@@ -149,7 +167,8 @@
 }
 
 :root {
-  --card-height: 12vw; /* 使用vw单位 */
+  --card-height: 12vw;
+  /* 使用vw单位 */
   --card-width: calc(var(--card-height) * 4);
 }
 
@@ -180,6 +199,7 @@
     --card-height: 5vh;
   }
 }
+
 .card:hover {
   color: rgb(88 199 250 / 100%);
   transition: color 1s;
@@ -488,21 +508,17 @@ h1 {
 }
 
 .left-content {
-  border-right: 8px solid #78B579;
+  border-right: 8px solid #f57f7f;
   text-align: right;
   padding-right: 100px;
   flex-direction: column;
   /* 设置左侧内容为纵向布局 */
-  border-radius: 5px;
-  /* 为边框两端添加5px的圆角 */
 }
 
 .right-content {
-  border-left: 8px solid #78B579;
+  border-left: 8px solid #f57f7f;
   text-align: left;
   padding-left: 100px;
-  border-radius: 5px;
-  /* 为边框两端添加5px的圆角 */
 }
 
 .left-content p {
@@ -565,13 +581,6 @@ h1 {
   border-radius: 10px;
   background: #78B579;
 }
-
-/*4列*/
-/*body {
-  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif; 
-  font-size: 16px;
-  line-height: 1.75;
-}*/
 
 #timeline {
   display: flex;
@@ -1036,12 +1045,12 @@ font-size: 1rem;
 }
 
 .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 8px 0!important;
+  margin: 8px 0 !important;
 }
 
 @media screen and (max-width: 768px) {
   .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 5px!important;
+    margin: 0 5px !important;
   }
 }
 

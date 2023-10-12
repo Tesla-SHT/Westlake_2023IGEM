@@ -1,18 +1,17 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Software{% endblock %}
-{% block lead %}Software in iGEM should make synthetic biology based on standard parts easier, faster, better or more accessible to our community.{% endblock %}
+{% block lead %}Software in iGEM should make synthetic biology based on standard parts easier, faster, better or more
+accessible to our community.{% endblock %}
 
 {% block page_content %}
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background:linear-gradient(
-      110deg,
-      #6fd7d0 0%,
-      #96daf7 32%, 
-      #66bfe5 57%, 
-      rgba(0, 76, 197, 0.8) 100%
-  )">
+
+<link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
+<div class="sky single_slider d-flex align-items-center" id="cover-image"
+  style="background-image:url('https://static.igem.wiki/teams/4702/wiki/software/particle-size-distribution-counter/software/cover-2.png');background-size:cover">
+
   <section class="col-md-12 text-center">
     <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
     <div class="container header">
@@ -21,7 +20,6 @@
           <p class="text-light">Software</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              Software in iGEM should make synthetic biology based on standard parts easier, faster, better or more accessible to our community.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -31,31 +29,217 @@
   </section>
 </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Software Tool</h4>
-      <p>Regardless what's the topic, iGEM projects often create or adapt computational tools to move the bigger project forward. Because they are born out of a direct practical need, these software tools (or new computational methods) can even prove surprisingly useful for others. Without necessarily being big or complex, they can make the crucial difference to a project's success. This award tries to find and honor such "nuggets" of computational work. To be eligible, your software has to be documented and made available under an OSI-approved open source license. Teams nominating themselves for this prize must host the source code of their software on the dedicated repository on iGEM's GitLab.</p>
-      <p>To compete for the Best Software Tool prize, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2023 Awards Page</a> for more information.</p>
+<div class="row" style="padding-bottom: 150px;">
+  <div id="sidebar" class=" ol-md-3  sidebar  flex-column flex-shrink-0 p-3  ">
+    <hr class="hr-ani">
+    <ul class="navigation nav nav-pills flex-column mb-auto">
+      <li>
+        <a href="#1" class="nav-link">
+          Summary
+        </a>
+      </li>
+      <li>
+        <a href="#2" class="nav-link">
+          Nanoparticle Size Distribution Generator
+        </a>
+      </li>
+      <li>
+        <a href="#3" class="nav-link">
+          High-throughput Cell Mean Fluorescent Processor
+        </a>
+      </li>
+    </ul>
+    <hr class="hr-ani">
+  </div>
+  <div class="mp-content offset-md-2 col-md-9 col-lg-9 ">
+    <div id="1" class="month gaspcol">
+      <div class="container mx-auto w-90">
+        <h1 class=" mx-auto text-center" style="">
+          <span
+            style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Summary</span>
+        </h1>
+        <hr class="hr-ani">
+        <div class="shadow-lg p-5 mb-5 bg-white rounded">
+          <div class="row">
+            <div class="col-lg-10">
+              <p>123</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <br>
+    <div id="2" class="month gaspcol">
+      <div class="container mx-auto w-90">
+        <h1 class=" mx-auto text-center" style="">
+          <span style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">
+            Nanoparticle Size Distribution Generator</span>
+        </h1>
+        <hr class="hr-ani">
+        <div class="shadow-lg p-5 mb-5 bg-white rounded">
+          <div class="row">
+            <div class="col-lg-10">
+              <p>We developed the Nanoparticle Size Distribution Counter software. This tool is designed to simplify and
+                expedite the analysis of multiple types of photos like Transmission Electron Microscopy (TEM) graphs,
+                microscopy graphs ect., enabling researchers to obtain accurate and comprehensive statistical
+                information about particle size distributions within a given sample.</p>
+              <h2>Description</h2>
+              <p>Our software uses Electron as the frontend frame and Python as the backend language. Its mechanism is
+                based on OpenCV, including image processing algorithms and statistical modeling techniques. The main
+                code can be divided by 4 steps:
+                <br><br>
+                1. Extract a plotting scale from the scaled image (make sure the color is white).
+                <br>2. Balance the image's lightness for more accurate recognition.
+                <br>3. Apply algorithms for the image adjustment.
+                <br>4. Draw the coutours of the nanoparticles and collect the diameters
+                <br><br>
+                It is important to note that the accuracy of the results depends on the quality of the input graph.
+                Therefore, it is recommended to ensure high-resolution and well-defined images for optimal analysis.
+                Additionally, users have the option to customize various parameters.<br><br>
+                Furthermore, when the object is very large (just one in the image), we can accurately measure its
+                diameter (the scale should be black though). This code is Diameter-Measurement.py, simple but useful.
+                And you can just enter the folder's name, this program will automatically process every image and export
+                the data to output.xlsx
+              </p>
+              <h3>Installation</h3>
+              <p>
+                Install npm <a href="https://nodejs.org/en">download npm</a>
+                <br><br>
+                Open cmd in the root dir:
+                <br>npm install electron
+                <br>npm install echart
+                <br>npm run start
+                <br>Relevant Doc: <a href="https://www.electronjs.org/docs/latest/tutorial/tutorial-first-app">Building
+                  your First App</a>
+                <br><br>
+                Packages for Python:
+                <br>import cv2
+                <br>import numpy
+                <br>import os
+                <br>import math
+                <br>import matplotlib.pyplot
+                <br>import sys
+              </p>
+              <h2>Usage</h2>
+              1. Take a TEM graph with a white plotting scale like the following one:
+              <div align="center">
+                <img
+                  src="https://static.igem.wiki/teams/4702/wiki/software/particle-size-distribution-counter/example.jpg"
+                  width="80%" alt="Sample TEM graph">
+              </div><br>
+              <br>
+              2. After entering the app, you can choose the file's path and enter the min-radius, max-radius, scale and
+              width of the distribution bars in the scale's unit. Then Click to process image!<br><br>
+              <div align="center">
+                <img
+                  src="https://static.igem.wiki/teams/4702/wiki/software/particle-size-distribution-counter/main-display.png"
+                  width="80%" alt="input interface">
+              </div>
+              <br>3. Then the app will generate an image with nanoparticles contoured with green color and circled with
+              red color.<br><br>
+              <div align="center">
+                <img
+                  src="https://static.igem.wiki/teams/4702/wiki/software/particle-size-distribution-counter/image.jpg"
+                  width="80%" alt="Output">
+              </div>
+              <br>And it will generate a bar graph, providing users with a clear and intuitive visualization of the
+              particle size distribution.<br><br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/software/particle-size-distribution-counter/bar.png"
+                  width="80%" alt="Output">
+              </div><br><br><br>
+              <h2>
+                Contributing
+              </h2>
+              <p>This code is open to contributions.
+              </p>
+              <h2>Authors and acknowledgment
+              </h2>
+              <p>The inspiration of this script came from Shouyi HU, and Haotian SHEN brought it into codes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="3" class="month gaspcol">
+      <div class="container mx-auto w-90">
+        <h1 class=" mx-auto text-center" style="">
+          <span style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">
+            High-throughput Cell Mean Fluorescent Processor</span>
+        </h1>
+        <hr class="hr-ani">
+        <div class="shadow-lg p-5 mb-5 bg-white rounded">
+          <div class="row">
+            <div class="col-lg-10">
+              <h2>Background</h2>
+              <p>Although our starting point was a quantitative analysis of antibodies bound to the cell, actually, the
+                study of fluorescence intensity can also be used to quantify protein expression levels, examine changes
+                in cellular processes, and compare signal intensities between different samples or experimental
+                conditions. Our project involves validating antibody-cell connections in cell experiments by observing
+                confocal fluorescence intensity. Considering that confocal analysis is a widely used technique in
+                current research, and standardization of confocal data image processing often involves repetitive
+                selection steps to calculate average fluorescence intensity.</p>
+              <h2>Introduction</h2>
+              <p>We have developed a script specifically designed for high-throughput analysis of confocal image
+                fluorescence intensity, inspired by the tedious data processing in wet lab experiments. This script
+                provides the high throughput processing of TIF images using macro language in Fiji. With our program, we
+                can directly perform automatic normalization and statistical analysis of fluorescence intensity for all
+                images in a given folder, significantly reducing repetitive workload and streamlining the process.
+                Actually, you can change the core codes with different functions in this high-throughput frame.</p>
+              <h2>Startup</h2>
+              <p>1. Download Fiji via <a
+                  href=" https://imagej.net/software/fiji/downloads">https://imagej.net/software/fiji/downloads</a>.
+                <br>2. Open Process_Folder.ijm in the Fiji app and click the "run" button at the bottom of the window.
+                <br>3. Choose the input directory containing the images and the output directory for the resulting data,
+                which
+                would be an Excel file.
+              </p>
+              <h2>Code Procedure</h2>
+              <p>
+                1. This code block is used for the input interface.
+                <br><br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/software/mean-fluorescence-intensity/input.png"
+                  width="80%" alt="Output">
+              </div><br><br><br>
+              2. After initialization, we will first start file processing, that is, finding every file in the specific
+              folder (having subfolders) with the correct suffix and keyword.
+              <br><br>
+              3. Now we can just process every single image and measure their Mean Fluorescence Intensity! (Of course,
+              you can DIY everything just using the recorder in ImageJ.)
+              <br><br>
+              4. Methods of DIY
+              <br><br>
+              Firstly, you should open the recorder to see what you will do in the form of Macro.
+              <br><br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/software/mean-fluorescence-intensity/record.png"
+                  width="80%" alt="Output">
+              </div><br><br><br>
+              - Remember to choose Macro language.
+              <br><br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/software/mean-fluorescence-intensity/recorder.png"
+                  width="80%" alt="Output">
+              </div><br><br><br>
+              - Now you can perform your measurement and every step will be recorded!
+              </p>
+              <h2>Contributing</h2>
+              <p>
+                This code is open to contributions.
+              </p>
+              <h2>Authors and acknowledgment</h2>
+              <p>The inspiration of this script came from Shouyi HU and Yixiao XIAO, and Haotian SHEN brought it into
+                codes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Sydney_Australia/Software">2019 Sydney Australia</a></li>
-      <li><a href="https://2019.igem.org/Team:SMMU-China/Software">2019 SMMU China</a></li>
-      <li><a href="https://2019.igem.org/Team:Grenoble-Alpes/Software">2019 Grenoble Alpes</a></li>
-      <li><a href="https://2020.igem.org/Team:DTU-Denmark/Software">2020 DTU Denmark</a></li>
-      <li><a href="https://2020.igem.org/Team:GunnVistaPingry_US/Software">2020 GunnVistaPingry US</a></li>
-      <li><a href="https://2020.igem.org/Team:Rochester/Software">2020 Rochester</a></li>
-    </ul>
-  </div>
-</div>
 
 {% endblock %}

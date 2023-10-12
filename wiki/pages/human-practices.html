@@ -18,8 +18,6 @@ the world. Consider how the world affects your work and how your work affects th
           <p class="text-light">Human Practices</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              We ask every team to think deeply and creatively about whether their project is responsible and good for
-              the world. Consider how the world affects your work and how your work affects the world.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -44,7 +42,7 @@ the world. Consider how the world affects your work and how your work affects th
 <link href="{{ url_for('static', filename = 'HP.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'card.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'engineering.css') }}" rel="stylesheet">
-<div class="overview">
+<div class="overview" id="0">
   <div class="row">
     <div class=" col-md-12 col-lg-12 "">
         <div class=" container mx-auto mt-5">
@@ -84,11 +82,16 @@ the world. Consider how the world affects your work and how your work affects th
   </div>
 </nav>
 <section class="page1">
-  <div class="row" style="">
+  <div class="row" style="margin-bottom: 100px;">
     <div id="sidebar" class=" ol-md-3  sidebar flex-column flex-shrink-0 " style="padding-right:0;padding-left:50px">
       <hr>
       <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
 
+        <li>
+          <a href="#0" class="nav-link">
+            Overview
+          </a>
+        </li>
         <li>
           <a href="#1" class="nav-link">
             Nanoparticle Separation
@@ -249,7 +252,7 @@ the world. Consider how the world affects your work and how your work affects th
                         width="50%" height="">
 
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Hongyu Chen</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Hongyu CHEN</h3>
                         <br>
                         <p style="color:rgb(70,158,180)">School of Science<br>School of Engineering (Affiliated)</p>
                         <p>Chemistry<br>
@@ -324,7 +327,7 @@ the world. Consider how the world affects your work and how your work affects th
                         alt="Professor Hongfei WANG" width="50%" height="">
 
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Hongfei Wang</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Hongfei WANG</h3>
                         <br>
                         <p style="color:rgb(70,158,180)">School of Science</p>
                         <p>Chemistry<br>
@@ -372,7 +375,7 @@ the world. Consider how the world affects your work and how your work affects th
                         alt="Professor Hongfei WANG" width="50%" height="">
 
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Jiawei Liu</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Jiawei LIU</h3>
                         <br>
                         <p style="color:rgb(70,158,180)">Institute of Geology and Geophysics, Chinese Academy of
                           Sciences
@@ -384,13 +387,14 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
-                        <p style="padding-left:10px">We seek to understand the research
-                          efforts related to identifying the coating components of biologically synthesized magnetic
-                          nanoparticles and inquire about established separation methods for isolating these
-                          nanoparticles from similar-sized biomolecules or organelles. Furthermore, they explore
-                          potential challenges in complete separation and the impact on nanoparticle characterization,
-                          specifically asking if dynamic light scattering might yield inaccurate results and if there
-                          are alternative characterization techniques available.</p>
+                        <p style="padding-left:10px">We are interested in understanding the research efforts related to
+                          the coating components of biologically synthesized magnetic nanoparticles and how we can
+                          identify these components. We also want to know if there are established strategies to
+                          separate the magnetic nanoparticles from organelles or biomolecules of similar size in
+                          biological synthesis. Additionally, we are curious about the impact of incomplete separation
+                          on nanoparticle characterization, particularly whether dynamic light scattering would yield
+                          inaccurate results in this scenario. Lastly, we are seeking information about alternative
+                          characterization techniques that may be more suitable.</p>
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -479,7 +483,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
                         alt="Screenshot of the Wall of Wonder." />
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Kechun Zhang</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Kechun ZHANG</h3>
                         <br>
                         <p style="color:rgb(70,158,180)">School of Engineering</p>
                         <p>Materials Science and Engineering<br>
@@ -491,6 +495,13 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px">We seek information and recommendations on E. coli culture,
+                          antibody synthesis, and conjugation of iron oxide nanoparticles (IONPs) with antibodies.
+                          Specifically, we want to know about culturing E. coli in SOB protein medium, synthesizing
+                          antibodies in E. coli without improper double sulfur bond formation, and conjugating IONPs
+                          with antibodies like Au NPs. Additionally, we seek guidance on optimizing IONP conditions,
+                          developing an AI model for nanoparticle-protein interactions, and addressing challenges in
+                          mass production.</p>
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -627,6 +638,13 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px"> Darko et al. (2022) compiled a list of 344 non-redundant
+                          abbreviations from reptile species descriptions. Oliveira et al. (2022) found that prone
+                          positioning in nonintubated individuals with COVID-19 improved outcomes. Rai et al. (2017)
+                          demonstrated the feasibility of using text-message surveys for real-time data collection in
+                          low-income clinic populations. Abdo (2021) discussed the use of simplified molecular input
+                          line system (SMILES) representation for molecular similarity searching, while Albrechtová et
+                          al. (2019) outlined procedures for quantifying plant structures using image analysis..</p>
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -724,14 +742,13 @@ the world. Consider how the world affects your work and how your work affects th
                       <h3>Interviewee</h3>
                       <img>
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Haihua XIAO</h3>
+
                         <img src="https://static.igem.wiki/teams/4702/wiki/hp/xhh.jpg" alt="Professor Hongfei WANG"
                           width="80%" height="">
-
+                        <h3 style="text-align: center;padding-top: 15px;">Haihua XIAO</h3>
                         <br>
                         <p style="color:rgb(70,158,180)">Institute of Chemistry, Chinese Academy of Sciences</p>
-                        <p><br>
-                          ?</p>
+                        <p>State Key Laboratory of Polymer Physics and Chemistry</p>
                         <a href="http://hhxiao.iccas.ac.cn/61">View more</a>
                       </div>
                     </div>
@@ -739,6 +756,13 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px"> We seek information and guidance on drug delivery in our
+                          bio-synthetic system. Specifically, we want to understand factors to consider when selecting a
+                          suitable drug and guidance on incubating drugs with nanoparticles. Additionally, we want to
+                          determine the elemental content, such as iron, in our nanoparticle system. Overall, we are
+                          interested in learning about stages and tests for evaluating drug effectiveness and safety in
+                          clinical trials, as well as the key stakeholders in drug development, particularly in clinical
+                          trials.</p>
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -822,13 +846,13 @@ the world. Consider how the world affects your work and how your work affects th
                       <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-yilong-zou.jpg" width="50%"
                         alt="Screenshot of the Wall of Wonder.">
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Yilong Zou</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Yilong ZOU</h3>
                         <br>
                         <p style="color:rgb(70,158,180)">School of Life Sciences</p>
                         <p>Biology<br>
                           The Laboratory of Functional Lipidomics and Metabolic Regulation</p>
                         <a href="https://www.yilongzou-lab.com/">View more</a>
-
+                        0
 
                       </div>
                     </div>
@@ -836,6 +860,13 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px">We seek guidance on coupling antibodies to iron oxide
+                          nanoparticles, considering direct coupling or coupling with a PEG layer. Specifically, we ask
+                          for suggestions on protein design using the Spytag/Spycatcher system. Additionally, we inquire
+                          about the sensitivity of breast cancer cells to ferroptosis and the potential of our
+                          synthesized iron oxide nanoparticles to induce apoptosis in these cells. Our questions focus
+                          on optimizing antibody coupling, understanding the effects of nanoparticles on breast cancer
+                          cells, and their potential to induce apoptosis.</p>
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -948,6 +979,17 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px">We seek guidance for various aspects of our research project.
+                          Firstly, we need effective washing agents for iron nanoparticles without surface damage.
+                          Secondly, we explore antibody coupling approaches, particularly the Spytag/Spycatcher system,
+                          and appreciate protein design suggestions. We also inquire about computational methods to
+                          identify proteins with strong binding and evaluate targeting efficiency in our breast cancer
+                          antibody library. Additionally, we seek recommendations for nanoparticle administration routes
+                          and widely used kinetic models for drug behavior. Our focus is on nanoparticle washing,
+                          antibody coupling, computational methods, administration routes, and kinetic models in our
+                          research project.</p>
+
+
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -1040,6 +1082,17 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px">We seek specific information and recommendations for our project.
+                          Firstly, we inquire about using polyethylene glycol (PEG) as an alternative coating for
+                          nanoparticles. Secondly, we discuss coupling antibodies to iron oxide nanoparticles,
+                          particularly the Spytag/Spycatcher system, and seek protein design suggestions. Additionally,
+                          we are interested in the advantages of antimicrobial peptides and their potential application
+                          in targeting efficiency. We also seek relevant research on targeted therapy for breast cancer
+                          using nanoparticles and recommendations for modeling drug pharmacokinetics and evaluating
+                          administration methods. Our inquiries revolve around alternative coatings, coupling
+                          strategies, antimicrobial peptides, breast cancer targeted therapy, and pharmacokinetics.</p>
+
+
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -1147,18 +1200,24 @@ the world. Consider how the world affects your work and how your work affects th
                       <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-bobo-dang.jpg" width="50%"
                         alt="Screenshot of the Wall of Wonder.">
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Jing Yang</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Jing YANG</h3>
                         <br>
                         <p style="color:rgb(70,158,180)"></p>
-                        <p>?<br>
-                          ?</p>
-                        <a href="https://www.dang-lab.com/team">View more</a>
+                        <p> Graduate student of colorectal surgery</p>
                       </div>
                     </div>
                     <div class="text">
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px">We seek information on several medical research and therapy topics.
+                          Firstly, we are interested in the potential of nanoparticle-based photo-thermal therapy for
+                          targeted heating. Secondly, we want to explore recent advancements in using Raman spectroscopy
+                          to distinguish tumor and healthy tissue boundaries during surgery. Additionally, we are
+                          curious about the impact of drug use restrictions and the drug development process on
+                          translating scientific research into clinical trials. Overall, we are seeking insights into
+                          nanoparticle-based therapies, surgical advancements, challenges in drug development and
+                          clinical translation, and the influence of national guidelines on breast cancer therapy.</p>
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -1229,18 +1288,26 @@ the world. Consider how the world affects your work and how your work affects th
                       <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
                         alt="Screenshot of the Wall of Wonder.">
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Si Lu</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Si LU</h3>
                         <br>
                         <p style="color:rgb(70,158,180)"></p>
-                        <p>?<br>
-                          ?</p>
-                        <a href="#">?</a>
+                        <p>Doctor of Oncology, Medical School of Zhejiang University</p>
                       </div>
                     </div>
                     <div class="text">
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px">We seek guidance for our project involving nanoparticles conjugated
+                          with antibodies for HER2 target therapy. Specifically, we question the significance of using
+                          these nanoparticles when trastuzumab is already available. Additionally, we inquire about the
+                          feasibility of using trastuzumab as a control and seek recommendations for effective drug
+                          encapsulation in nanoparticles. We also consider exploring alternative target options and
+                          suitable methods for nanoparticle concentration determination. Overall, we seek guidance on
+                          nanoparticles conjugated with antibodies, control selection, drug encapsulation, target
+                          options, and concentration determination methods.</p>
+
+
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -1322,12 +1389,12 @@ the world. Consider how the world affects your work and how your work affects th
                       <img src="https://static.igem.wiki/teams/4702/wiki/hp/hp-kechun-zhang.jpg" width="50%"
                         alt="Screenshot of the Wall of Wonder.">
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Lixian Yang</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Lixian YANG</h3>
                         <br>
                         <p style="color:rgb(70,158,180)">?</p>
-                        <p>?<br>
-                          ?</p>
-                        <a href="#">?</a>
+                        <p>A resident doctor in the Department of Tumor Radiotherapy, Zhejiang Provincial People's
+                          Hospital</p>
+
                       </div>
                     </div>
                     <div class="text">
@@ -1403,6 +1470,13 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px">We seek guidance for our nanoparticle project in cancer therapy.
+                          Specifically, we want to know the significance of using antibody-conjugated nanoparticles in
+                          HER2 target therapy. Can trastuzumab be used as a control? Recommendations on efficient drug
+                          encapsulation in nanoparticles, alternative cancer cell targets, and nanoparticle
+                          concentration determination methods are also sought. Overall, we aim to optimize our project
+                          in terms of antibody conjugation, drug delivery, target selection, and nanoparticle
+                          concentration.</p>
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -1471,7 +1545,7 @@ the world. Consider how the world affects your work and how your work affects th
                       <img src="https://static.igem.wiki/teams/4702/wiki/hp/dcy.jpg" width="50%"
                         alt="Screenshot of the Wall of Wonder.">
                       <div style=" padding:0 25%;">
-                        <h3 style="text-align: center;padding-top: 15px;">Chengyong Du</h3>
+                        <h3 style="text-align: center;padding-top: 15px;">Chengyong DU</h3>
                         <br>
 
                         <p style="color:rgb(70,158,180)">the First Affiliated Hospital of Zhejiang University School
@@ -1485,6 +1559,16 @@ the world. Consider how the world affects your work and how your work affects th
                       <!--Please do not write too much about the 需求和医院 below-->
                       <div class="blackbox hplook" id="hpquestion">
                         <h3>Looking for</h3>
+                        <p style="padding-left:10px">We are seeking guidance on patient-centric considerations and drug
+                          development. Firstly, we want to ensure the suitability of our questionnaire for patients,
+                          considering its technical nature and potential difficulty in understanding therapy
+                          definitions. Secondly, we are interested in understanding the primary concerns of patients
+                          regarding drug efficacy and toxicity. Additionally, we are exploring the idea of testing our
+                          nanoparticles on different types of cancer to maximize their medical potential. Overall, our
+                          focus is on patient suitability, drug concerns, nanoparticle testing, and the development
+                          process from the laboratory to the factory.</p>
+
+
                       </div>
                       <div class="blackbox hpquestion" id="hpquestion">
                         <h3>Question we asked</h3>
@@ -1550,30 +1634,375 @@ the world. Consider how the world affects your work and how your work affects th
     <div id="sidebar" class=" ol-md-3  sidebar flex-column flex-shrink-0 " style="padding-right:0;padding-left:50px">
       <hr>
       <ul class="navigation nav nav-pills flex-column mb-auto" style="line-height: 1.2rem;">
-
         <li>
-          <a href="#1" class="nav-link">
+          <a href="#11" class="nav-link">
+            Overview
+          </a>
+        </li>
+        <li>
+          <a href="#12" class="nav-link">
             Conference of China iGEMers Community
+          </a>
+        </li>
+        <li>
+          <a href="#13" class="nav-link">
+            Westlake Future Summit
+          </a>
+        </li>
+        <li>
+          <a href="#14" class="nav-link">
+            Healthcare Providers
+          </a>
+        </li>
+        <li>
+          <a href="#15" class="nav-link">
+            Patient Advocacy Group
+          </a>
+        </li>
+        <li>
+          <a href="#16" class="nav-link">
+            Pharmaceuticals Company
+          </a>
+        </li>
+        <li>
+          <a href="#17" class="nav-link">
+            College Vitamin
+          </a>
+        </li>
+        <li>
+          <a href="#18" class="nav-link">
+            Ethics declarations
           </a>
         </li>
       </ul>
       <hr>
     </div>
     <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
-      <div id="0" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+      <div id="11" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
         <div class="container mx-auto mt-5">
           <h1 class="pt-5 mx-auto text-center" style="">
             <span
               style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Overview</span>
           </h1>
           <hr class="hr-ani">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="container w-80 h-80 mx-auto mt-3 mb-3 ">
+              <br>
+              123
+            </div>
+            <br>
+          </div>
         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
+      <div id="12" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+        <div class="container mx-auto mt-5">
+          <h1 class="pt-5 mx-auto text-center" style="">
+            <span
+              style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Conference
+              of China iGEMers Community</span>
+          </h1>
+          <hr class="hr-ani">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="container w-80 h-80 mx-auto mt-3 mb-3 ">
+              <br>
+              The CCIC conference held from July 8 to July 10 was hosted by Hainan University and co-organized by the
+              State Key Laboratory of South China Sea Marine Resource Utilization, the College of Tropical Crops of
+              Hainan University, and the College of Life Sciences of Hainan University. The Youth League Committee of
+              Hainan University, the Academic Affairs Office of Hainan University, and the Zijin College of Hainan
+              University co-organized it. The conference was held online and offline simultaneously, marking the first
+              time CCiC has resumed offline events since the relaxation of pandemic policies. Thousands of viewers
+              participated in the conference through Tencent Meeting and Bilibili live broadcast. The theme of this CCiC
+              was “Exploring the Potential of Synthetic Biology”, aimed at encouraging everyone to think about and
+              explore the role of synthetic biology in promoting future social development.
+              <br><br>In addition to project roadshows, the conference also invited heavyweight guests from the
+              academic,
+              industrial, and social science circles of synthetic biology to give exciting reports and exchange ideas on
+              site, sharing their achievements and experiences in their respective fields with teachers and students
+              from all over the country. Four special lectures were set up in the field of synthetic biology, with three
+              academic keynote speakers and one industrial keynote speaker invited. They were Professor Chen Xing from
+              Peking University, Professor Wang Baojun from Zhejiang University, Dr. Dong Yiming from ATANTARE, and Dr.
+              Zhang Linlin from the Institute of Oceanography, Chinese Academy of Sciences. The iGEM Foundation and the
+              10th CCiC Organizing Committee jointly organized a vibrant workshop to provide participants with different
+              perspectives.<br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/picture12.jpg"
+                  width="50%" alt="Group photo in CCiC.">
+              </div><br>
+              This CCiC set up four sub-venues for project roadshows, where all teams entered according to their needs
+              to exchange and learn with other participating teams. At the conference, iGEM teams from all over China
+              gathered together to exchange project designs and progress, collide ideas, and guests and judges provided
+              targeted questions and suggestions for each team. Our presentation was on July 10, and to help other
+              contestants and other audiences understand our project theme more intuitively, we also prepared a poster
+              detailing our project work content to complement our offline display. We gained more inspiration and ideas
+              in the exchange. At the same time, while appreciating other teams' project displays, we also improved our
+              own results through reflection and learning.<br>
+              We also actively communicated with other project teams offline.<br><br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/1111.jpg"
+                  width="50%" alt="Offline sharing in CCiC.">
+              </div><br>
+              <br>
+              <div align="center">
+                <img
+                  src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/55fa1ee796484282e6f2ba1fd9ba70c.png"
+                  width="50%" alt="Offline presentation in CCiC.">
+              </div><br>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
+      <div id="13" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+        <div class="container mx-auto mt-5">
+          <h1 class="pt-5 mx-auto text-center" style="">
+            <span
+              style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Westlake
+              Future Summit</span>
+          </h1>
+          <hr class="hr-ani">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="container w-80 h-80 mx-auto mt-3 mb-3 "><br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/.jpg" width="80%"
+                  alt="Offline sharing in CCiC.">
+              </div>
+              <br>
+              <br>
+              We have participated in the First Westlake Future Summit. From the presentation at the Summit, we can take
+              away several key points relevant to our project on biosynthesized nanoparticles for cancer targeted
+              therapy:
+              <br><br>1. Bioelectronic materials: The field of bioelectronic materials offers opportunities for
+              real-time
+              monitoring and data analysis of body functions. This could be explored to incorporate sensing capabilities
+              into our biosynthesized nanoparticles for monitoring therapeutic response and optimizing treatment.
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/picture2.jpg"
+                  width="80%" alt="Bioelectronic materials.">
+              </div>
+              <br><br>2. Conducting polymer hydrogels: Conducting polymer hydrogels have been widely applied in neural
+              implants,
+              implantable sensors, and prosthetic interfaces. This suggests that incorporating conducting polymer
+              hydrogels into our nanoparticles could enhance their functionality and compatibility with biological
+              systems.
+              <br><br>3. Controlled drug delivery: The use of biomaterials, such as lipid nanoparticles, liposomes, and
+              targeted
+              liposomes, has shown promise in controlled drug delivery. We can leverage this knowledge to design our
+              biosynthesized nanoparticles as effective vehicles for targeted drug delivery, compatible with both
+              hydrophobic and hydrophilic drugs.
+              <br><br>4. Ligand/antibody coating for specific delivery: Coating our nanoparticles with ligands or
+              antibodies can
+              improve their specificity and target specific cancer cells, thereby enhancing the efficacy of the therapy.
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/picture.jpg"
+                  width="80%" alt="Lipid Nanoparticles.">
+              </div>
+              <br><br>5. PEGylation for increased drug circulation half-life: PEGylation, a process of attaching
+              polyethylene
+              glycol (PEG) chains to nanoparticles, can reduce immune responses and increase the circulation half-life
+              of the drugs. This approach can be considered to improve the pharmacokinetics and therapeutic efficacy of
+              our biosynthesized nanoparticles.
+              <br><br>Overall, the presentation highlights the potential of bioelectronic materials, conducting polymer
+              hydrogels, and biomaterials for controlled drug delivery. It also emphasizes the importance of specific
+              targeting, compatibility with various drugs, and strategies to enhance drug circulation half-life. These
+              insights can inform our approach in developing biosynthesized nanoparticles for targeted cancer therapy,
+              making them more effective and suitable for clinical applications.
+              <br><br>Descriptions:
+              Additionally, we have actively engaged with stakeholders, including patient advocacy groups, healthcare
+              providers, and pharmaceuticals companies, to gather insights and address concerns related to safety.
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
+      <div id="14" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+        <div class="container mx-auto mt-5">
+          <h1 class="pt-5 mx-auto text-center" style="">
+            <span
+              style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Healthcare
+              Providers</span>
+          </h1>
+          <hr class="hr-ani">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="container w-80 h-80 mx-auto mt-3 mb-3 ">
+              <br>
+              After conducting interviews with numerous doctors, it has been found that patients do not place
+              significant emphasis on the details of their therapy. As a result, it is believed that the main
+              stakeholders for the biosynthetic nanoparticles for cancer target therapy project are pharmaceutical
+              companies and clinicians. This conclusion is supported by the study titled "Knowledge is not power for
+              patients: A systematic review and thematic synthesis of patient-reported barriers and facilitators to
+              shared decision making" by Natalie Joseph-Williams et al. (2014). The results support the view that many
+              patients currently can't participate in shared decision making (SDM) since they lack many detailed
+              knowledge of their therapies. Therefore, it supports the notion that pharmaceutical companies and
+              clinicians would be key stakeholders in the implementation and utilization of biosynthetic nanoparticles
+              for cancer target therapy.
+              <div align="center">
+                <img
+                  src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/d97eed4fb0cd892b3f221364084b71e.png"
+                  width="80%" alt="Summary of Interview with Doctors.">
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
+      <div id="15" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+        <div class="container mx-auto mt-5">
+          <h1 class="pt-5 mx-auto text-center" style="">
+            <span
+              style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Patient
+              Advocacy Group</span>
+          </h1>
+          <hr class="hr-ani">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="container w-80 h-80 mx-auto mt-3 mb-3 ">
+              <br>
+              We have communicated with Pink Ribbon Association, a nonprofit organization which cares for breast cancer
+              patients and they agreed to help us distribute our questionnaire designed for breast cancer patients. But
+              we received few results which indicates that they know few about details of their therapies confirms that
+              pharmaceutical companies and clinicians would be key stakeholders of our project.
+              <br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/fhso-logo.jpg"
+                  width="80%" alt="Pink Ribbon Association Logo.">
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
+      <div id="16" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+        <div class="container mx-auto mt-5">
+          <h1 class="pt-5 mx-auto text-center" style="">
+            <span
+              style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Pharmaceuticals
+              Company
+            </span>
+          </h1>
+          <hr class="hr-ani">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="container w-80 h-80 mx-auto mt-3 mb-3 ">
+              <br>
+              ???
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
+      <div id="17" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+        <div class="container mx-auto mt-5">
+          <h1 class="pt-5 mx-auto text-center" style="">
+            <span
+              style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">College
+              Vitamin</span>
+          </h1>
+          <hr class="hr-ani">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="container w-80 h-80 mx-auto mt-3 mb-3 ">
+              <br>
+              On the evening of September 26th, we had the opportunity to deliver a comprehensive lecture of College
+              Vitamin Series to the incoming freshmen of Westlake University. During the lecture, Shijie HE
+              systematically
+              introduced the concept of the International Genetically Engineered Machine Competition (iGEM) and provided
+              an in-depth overview of our team's project. The aim was to familiarize the students with the intricacies
+              and significance of iGEM while showcasing the potential of our own project.
+              <br>
+              <div align="center">
+                <img
+                  src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/college-vitamin2.png"
+                  width="80%" alt="College Vitamin Poster.">
+              </div><br>
+              The lecture proved to be an interactive session as the freshmen actively participated and shared their
+              valuable feedback. Specifically, their insights highlighted the need for adjustments to the project's
+              timeline, as the initial design had inadvertently resulted in an overly tight schedule for the later
+              stages. They also pointed out the fact that our team members didn't cooperate that well. The feedback
+              served as a valuable lesson, prompting us to refine our project plan and teamwork to ensure a more
+              efficient timeline and collaboration moving forward.
+              Furthermore, the lecture provided a platform to address the freshmen's misconceptions and
+              misunderstandings about iGEM. Through engaging discussions and clarifications, we managed to dispel any
+              confusion and offer a clearer understanding of the competition's objectives, rules, and the potential
+              impact that iGEM projects can have in the field of synthetic biology.
+              <br>
+              <div align="center">
+                <img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/people-photo/college-vitamin.jpg"
+                  width="80%" alt="College Vitamin.">
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="mp-content offset-md-2 col-md-10 col-lg-10 " style="padding-right:80px;">
+      <div id="18" class="month gaspcol" style="margin-top:-150px;padding-top:0;">
+        <div class="container mx-auto mt-5">
+          <h1 class="pt-5 mx-auto text-center" style="">
+            <span
+              style="background-color: rgb(232,250,248);  padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">Ethics
+              declarations
+            </span>
+          </h1>
+          <hr class="hr-ani">
+          <br>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="container w-80 h-80 mx-auto mt-3 mb-3 ">
+              <br>
+              The questionnaire of our project was approved by Pink Ribbon Association and Dr.Du Chengyong.
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
   </div>
+  </div>
 </section>
-</div>
-
+<br>
+<br>
+<br>
 
 <script src="{{ url_for('static', filename = 'card.js') }}"></script>
 <script src="{{ url_for('static', filename = 'HP.js') }}"></script>

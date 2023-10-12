@@ -1,20 +1,16 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Contribution{% endblock %}
-{% block lead %}Make a useful contribution for future iGEM teams. Use this page to document that contribution.{% endblock %}
+{% block lead %}Make a useful contribution for future iGEM teams. Use this page to document that contribution.{%
+endblock %}
 
 {% block page_content %}
 
 <link href="{{ url_for('static', filename = 'engineering.css') }}" rel="stylesheet">
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
-<div class="sky single_slider d-flex align-items-center" id = "cover-image" style="background:linear-gradient(
-      110deg,
-      #6fd7d0 0%,
-      #96daf7 32%, 
-      #66bfe5 57%, 
-      rgba(0, 76, 197, 0.8) 100%
-  )">
+<div class="sky single_slider d-flex align-items-center" id="cover-image"
+  style="background-image: url('https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/126023896503ce3005da318bc98bb8c.png');background-size:cover">
   <section class="col-md-12 text-center">
     <script src="https://files.cnblogs.com/files/cn-suqingnian/snow.js"></script>
     <div class="container header">
@@ -23,7 +19,6 @@
           <p class="text-light">Contribution</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              Make a useful contribution for future iGEM teams. Use this page to document that contribution. 
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -33,113 +28,105 @@
   </section>
 </div>
 
-<div class="col-md-12 text-center">
+<div class="col-md-12">
   <section id="features">
     <div class="features-inner">
       <!-- Digital XRays-->
       <div class="features-group has-animation animation-rtl">
         <div class="features-text">
           <h1>Overview</h1>
-          <p>We designed a method for the separation of the Iron Oxide Nanoparticles 
-            by taking the advantage of ultrasonication and ultrafiltration. This method 
-            could relatively precisely separate the nanoparticles of desired size from the 
-            biological masses, resulting in a satisfying low polydispersity index, 
-            which is also an important factor to control for application. What is especially 
-            important is that the method designed by us is nicely suitable for preliminary 
-            test, as this method largely reduced the interference factors like salt ions 
-            and aggregation in the characterization like TEM and DLS. Several repeat 
-            experiments conducted by us showed that the method is easily repeatable. 
+          <p>We designed a method for the separation of the Iron Oxide Nanoparticles
+            by taking the advantage of ultrasonication and ultrafiltration. This method
+            could relatively precisely separate the nanoparticles of desired size from the
+            biological masses, resulting in a satisfying low polydispersity index,
+            which is also an important factor to control for application. What is especially
+            important is that the method designed by us is nicely suitable for preliminary
+            test, as this method largely reduced the interference factors like salt ions
+            and aggregation in the characterization like TEM and DLS. Several repeat
+            experiments conducted by us showed that the method is easily repeatable.
             It is also a green way which don't involve the usage of hazardous chemicals.</p>
         </div>
       </div>
       <div class="features-group has-animation animation-rtl">
-        <div class="features-image"><img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/0bb62922a03db3cc1fa9501c8e0f008.jpg"
+        <div class="features-image"><img
+            src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/0bb62922a03db3cc1fa9501c8e0f008.jpg"
             width="100%">
         </div>
         <div class="features-text">
           <h1>Feasible Nanoparticle Separation Method from Biological Masses</h1>
-          <p>We designed a method for the separation of the Iron Oxide Nanoparticles 
-            by taking the advantage of ultrasonication and ultrafiltration. This method 
-            could relatively precisely separate the nanoparticles of desired size from the 
-            biological masses, resulting in a satisfying low polydispersity index, 
-            which is also an important factor to control for application. What is especially 
-            important is that the method designed by us is nicely suitable for preliminary 
-            test, as this method largely reduced the interference factors like salt ions 
-            and aggregation in the characterization like TEM and DLS. Several repeat 
-            experiments conducted by us showed that the method is easily repeatable. 
-            It is also a green way which don't involve the usage of hazardous chemicals.</p>
+          <p>We designed a method for the separation of the Iron Oxide Nanoparticles
+            by taking the advantage of ultrasonication and ultrafiltration. This method
+            could relatively precisely separate the nanoparticles of desired size from the
+            biological masses, resulting in a satisfying low polydispersity index,
+            which is also an important factor to control for application. What is especially
+            important is that the method designed by us is nicely suitable for preliminary
+            test, as this method largely reduced the interference factors like salt ions
+            and aggregation in the characterization like TEM and DLS. Several repeat
+            experiments conducted by us showed that the method is easily repeatable.
+            It is also a green way which doesn't involve the usage of hazardous chemicals.</p>
         </div>
       </div>
       <!-- Dental Cleanings-->
       <div class="features-group has-animation animation-ltr">
         <div class="features-image inverted "><img
-            src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/376c0163dce9a132ce714d155346503.png" width="100%" />
+            src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/376c0163dce9a132ce714d155346503.png"
+            width="100%" />
         </div>
         <div class="features-text inverted">
           <h1>NHS-PEG-Maleimide Bridge</h1>
-          <p>There is a facile approach used to functionalize cell membrane-coated nanoparticles, 
-            which gives us inspiration in our crucial part, namely antibody-nanoparticle conjugation. 
-            Since our iron-oxide nanoparticles are formed via intrinsically protective 
-            mechanism from <i>E. coli</i>, and based on the fact that the iron-oxide nanoparticles 
-            are membrane-bounded, we speculate that the composition of this membrane is probably 
-            highly similar to biologically lipid bilayer, with a vast amount of membrane proteins 
-            inlaid. This facile approach utilized amine groups on membrane proteins and thiol 
-            groups in certain thiolated enzymes, adopting NHS-PEG-Maleimide as an intermediate 
-            molecule, fulfilling conjugation process via amine-NHS reaction and thiol-maleimide 
-            reaction, which is also applicable for our situation. However, due to the concern about 
-            losing the biological activity of our antibodies, we are not going to thiolate our 
-            antibodies by directly using Traut's reagent, but add a cysteine at the end of our 
-            antibodies to provide a reactive thiol group, ensuring the smooth completeness of 
-            conjugation process. This is a versatile approach that can be applied in various types 
-            of conjugation, including ADC (antibody-drug conjugation) and any other kinds of 
+          <p>There is a facile approach used to functionalize cell membrane-coated nanoparticles,
+            which gives us inspiration in our crucial part, namely antibody-nanoparticle conjugation.
+            Since our iron-oxide nanoparticles are formed via intrinsically protective
+            mechanism from <i>E. coli</i>, and based on the fact that the iron-oxide nanoparticles
+            are membrane-bounded, we speculate that the composition of this membrane is probably
+            highly similar to biologically lipid bilayer, with a vast amount of membrane proteins
+            inlaid. This facile approach utilized amine groups on membrane proteins and thiol
+            groups in certain thiolated enzymes, adopting NHS-PEG-Maleimide as an intermediate
+            molecule, fulfilling conjugation process via amine-NHS reaction and thiol-maleimide
+            reaction, which is also applicable for our situation. However, due to the concern about
+            losing the biological activity of our antibodies, we are not going to thiolate our
+            antibodies by directly using Traut's reagent, but add a cysteine at the end of our
+            antibodies to provide a reactive thiol group, ensuring the smooth completeness of
+            conjugation process. This is a versatile approach that can be applied in various types
+            of conjugation, including ADC (antibody-drug conjugation) and any other kinds of
             protein-related conjugation. </p>
         </div>
       </div>
       <div class="features-group has-animation animation-rtl">
-        <div class="features-image"><img src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/6cdc997919a92212ab1b9499d0c050b.jpg"
+        <div class="features-image"><img
+            src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/6cdc997919a92212ab1b9499d0c050b.jpg"
             width="100%">
         </div>
         <div class="features-text">
-          <h1>Mysterious inclusion Body  Formation</h1>
-          <p>pGLO plasmid is able to express green-fluorescent protein 
-            (GFP), which can be observed by human naked eyes. Furthermore, 
-            we have successfully produced our cysteine-added his-tagged anti-HER2 scFv 
+          <h1>Mysterious inclusion Body Formation</h1>
+          <p>pGLO plasmid is able to express green-fluorescent protein
+            (GFP), which can be observed by human naked eyes. Furthermore,
+            we have successfully produced our cysteine-added his-tagged anti-HER2 scFv
             by replacing GFP-sequencing region with our design scFv sequence.
-            <br><br>However, for our back-up conjugation strategy, biotin-streptavidin 
-            conjugation, which is a kind of tight conjugation, it is failed to express 
-            streptavidin in <i>E. coli</i>, forming intrusion bodies rather than producing 
-            normal streptavidin. However, the exact reason is still unknown. Our speculations 
-            are that the environment of SHuffle strain of <i>E. coli</i> is not oxidizing enough 
-            and pGLO plasmid is somehow not suitable for streptavidin expression. 
-            Usually, when the level of expression of protein goes beyond 2% of the total 
-            cellular proteins, it leads to inclusion Body  formation. What's more, lack of 
-            eukaryotic chaperones such as ClpB and post-translational machinery also 
-            contribute to the formation of intrusion bodies, and proteins with more highly 
-            hydrophobic proteins having more chances to aggregate into inclusion bodies.  
-            It reminds us and others that expression environment, including cell host and 
-            expressing plasmid, is important for protein production, and different proteins 
-            have different requirements. There are several resolutions that might work, including 
-            slowing down the expression of proteins by reducing temperature, the concentration of the 
-            inducer and the amount of vectors used, adding protein tags which makes it more soluble, 
-            and using vectors with weaker promoter. What need to mention is that solubilize and refold 
-            the protein of interest from the intrusion bodies is also a possible solution to get target 
+            <br><br>However, for our back-up conjugation strategy, biotin-streptavidin
+            conjugation, which is a kind of tight conjugation, it is failed to express
+            streptavidin in <i>E. coli</i>, forming intrusion bodies rather than producing
+            normal streptavidin. However, the exact reason is still unknown. Our speculations
+            are that the environment of SHuffle strain of <i>E. coli</i> is not oxidizing enough
+            and pGLO plasmid is somehow not suitable for streptavidin expression.
+            Usually, when the level of expression of protein goes beyond 2% of the total
+            cellular proteins, it leads to inclusion Body formation. What's more, lack of
+            eukaryotic chaperones such as ClpB and post-translational machinery also
+            contribute to the formation of intrusion bodies, and proteins with more highly
+            hydrophobic proteins having more chances to aggregate into inclusion bodies.
+            It reminds us and others that expression environment, including cell host and
+            expressing plasmid, is important for protein production, and different proteins
+            have different requirements. There are several resolutions that might work, including
+            slowing down the expression of proteins by reducing temperature, the concentration of the
+            inducer and the amount of vectors used, adding protein tags which makes it more soluble,
+            and using vectors with weaker promoter. What need to mention is that solubilize and refold
+            the protein of interest from the intrusion bodies is also a possible solution to get target
             protein.
-          </div>
+        </div>
       </div>
     </div>
   </section>
 </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #4</h4>
-      <p>Make a useful contribution for future iGEM teams. Use this page to document that contribution.<p>
-      <p>If you are making a contribution by adding information to an existing Part or creating a new Part, you must document your contribution on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria. You can use this page to link to that part and include additional information about your contribution.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
-    </div>
-  </div>
-</div>
 <script src="{{ url_for('static', filename = 'engineering.js') }}"></script>
 {% endblock %}

@@ -5,6 +5,7 @@
 
 {% block page_content %}
 
+<link href="{{ url_for('static', filename = 'engineering.css') }}" rel="stylesheet">
 <!-- Header -->
 <link href="{{ url_for('static', filename = 'header.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'description.css') }}" rel="stylesheet">
@@ -23,7 +24,6 @@
           <p class="text-light">Project Description</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              Describe how and why you chose your iGEM project.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -32,47 +32,19 @@
     </div>
   </section>
 </div>
-
-<!--图表-->
-<div id="ChartExample" style="width:600px; height:400px; margin:auto"></div>
-<script type="text/javascript">
-  // 基于准备好的dom，初始化echarts实例
-  var myChart = echarts.init(document.getElementById('ChartExample'));
-
-  // 指定图表的配置项和数据
-  var option = {
-    title: {
-      text: 'ECharts 入门示例'
-    },
-    tooltip: {},
-    legend: {
-      data: ['销量']
-    },
-    xAxis: {
-      data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
-    },
-    yAxis: {},
-    series: [
-      {
-        name: '销量',
-        type: 'bar',
-        data: [5, 20, 36, 10, 10, 20]
-      }
-    ]
-  };
-  // 使用刚指定的配置项和数据显示图表。
-  myChart.setOption(option);
-</script>
-<h1 align="center">
-  <span
-  style="background-color: rgb(232,250,248);  
-  padding: 0px 10px;margin-bottom: 0px;border-radius: 20px; font-size: xx-large;">
-  Background</span>
-</h1>
+<div class="mp-content col-md-12 col-lg-12 ">
+  <div class="container mx-auto mt-5 w-90">
+    <h1 align="center">
+      <span style="background-color: rgb(232,250,248);  
+  padding: 0px 10px;margin-bottom: 0px;border-radius: 20px; font-size: xxxx-large;">
+        Background</span>
+    </h1>
+  </div>
+</div>
 <div id="wrapper">
   <div id="content">
     <div class="spacer"></div>
-    <div class="accordions">
+    <div class="accordions" style="padding-top:0;">
       <div class="accordion gaspcol">
         <div class="title">
           Current Status of Cancer, with a Focus on Breast Cancer
@@ -85,14 +57,15 @@
           from World Health Organization (WHO), breast cancer tops the list
           as the most commonly diagnosed cancer worldwide and claims
           a significant number of lives.
-          <br> 
-          <div align="center"><img
-            src="https://static.igem.wiki/teams/4702/wiki/description/description-background.png"
-            style="width:100%" alt="Estimated age-standardized incidence and mortality rates (World) in 2020, World, both sexes, all ages
+          <br>
+          <div align="center"><img src="https://static.igem.wiki/teams/4702/wiki/description/description-background.png"
+              style="width:100%" alt="Estimated age-standardized incidence and mortality rates (World) in 2020, World, both sexes, all ages
             (excl.NMSC)">
-          <p><b>Figure 1.</b> Estimated age-standardized incidence and mortality rates (World) in 2020, World, both sexes, all ages
-            (excl.NMSC).</p>
-        </div>
+            <p><b>Figure 1.</b> Estimated age-standardized incidence and mortality rates (World) in 2020, World,
+              both
+              sexes, all ages
+              (excl.NMSC).</p>
+          </div>
           <br><br> Breast cancer is a heterogeneous disease characterized by
           the uncontrolled growth of cells in the breast tissue. It is the
           most common cancer among women, with a significant impact on their
@@ -112,10 +85,10 @@
         <div class="title">Current Problems in Treating Breast Cancer</div>
         <div class="text">
           <div align="center"><img
-            src="https://static.igem.wiki/teams/4702/wiki/description/description-background2.png"
-            style="width:100%" alt="Current Treatment towards Breast Cancer">
-          <p><b>Figure 2.</b> Current Treatment towards Breast Cancer.</p>
-        </div>
+              src="https://static.igem.wiki/teams/4702/wiki/description/description-background2.png" style="width:100%"
+              alt="Current Treatment towards Breast Cancer">
+            <p><b>Figure 2.</b> Current Treatment towards Breast Cancer.</p>
+          </div>
           Treating breast cancer remains a complex and multifaceted
           challenge, despite significant advancements in the field
           of oncology. Several current problems and challenges
@@ -169,7 +142,68 @@
           can be categorized into three main approaches: physical synthesis, chemical
           synthesis, and biological synthesis,
           each with its own set of advantages and disadvantages.
-          <br><br>
+          <br><br><br>
+          <!--图表-->
+          <div class="" style="
+          position: relative;height:400px">
+            <div id="ChartDom" style="width:100%;height:100%">
+            </div>
+            <!--style="width:600px; height:400px; margin:auto"-->
+          </div>
+          <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('ChartDom'));
+
+            // 指定图表的配置项和数据
+            option = {
+              title: {
+                text: 'Current status of IONPs synthesis methods',
+                left: 'center',
+                textStyle: {
+                  color: 'blue',  // 设置标题字体颜色
+                }
+              },
+              tooltip: {
+                trigger: 'item',
+                formatter: '{a} <br/>{b}: {d}%', // 显示百分比
+              },
+              legend: {
+                orient: 'vertical',
+                top: '5%', // 设置标题距离容器顶部的距离，根据需要调整值
+                left: 'left',
+                textStyle: {
+                  color: 'white',  // 设置图例字体颜色
+                },
+
+                top: '8%', // 设置标题距离容器顶部的距离，根据需要调整值
+              },
+              series: [
+                {
+                  left: "20%",
+                  name: 'Access From',
+                  type: 'pie',
+                  radius: '60%',
+                  data: [
+                    { value: 24, name: 'Other Chemical methods' },
+                    { value: 8, name: 'Physical methods' },
+                    { value: 23, name: 'Hydrothermal' },
+                    { value: 18, name: 'Microemulsion' },
+                    { value: 2, name: 'Biological mediated' },
+                    { value: 25, name: 'Coprecipitation' }
+                  ],
+                  label: {
+                    show: true,
+                    color: 'white',  // 设置数据项字体颜色
+                    // 可以根据需要调整透明度，例如：backgroundColor: 'rgba(255, 255, 255, 0.7)'
+                  }
+                }
+              ]
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+          </script>
+        </div>
+        <div class="text">
           <b style="font-size: large;">Physical Synthesis</b><br>
           Historically, physical synthesis methods have been employed to produce
           iron oxide nanoparticles. These methods involve high-temperature processes
@@ -197,6 +231,7 @@
           size and shape can be more challenging compared to chemical methods.
         </div>
       </div>
+
       <div class="accordion gaspcol">
         <div class="title">Application of Iron Oxide Nanoparticles in Medical Field Currently</div>
         <div class="text">
@@ -216,13 +251,56 @@
           Iron oxide nanoparticles can generate heat when exposed to an alternating
           magnetic field, making them suitable for hyperthermia therapy, where cancer
           cells are selectively heated and destroyed.
-          <br><br>
-          <b style="font-size: large;">..............................</b><br>
+          <br>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<div class="col-md-12">
+  <section id="features">
+    <div class="features-inner">
+      <div class="features-group has-animation animation-rtl">
+        <div class="features-text">
+          <h1>Our Solution</h1>
+          <p>
+            Since the treatment of breast cancer nowadays is still facing many challenges like significant side effects,
+            low specificity and cannot deal with the subgroup of breast cancer well, we are trying to develop a new
+            method for the treatment of breast cancer. Our method is based on the iron oxide nanoparticles, which could
+            be
+            linked with the antibody targeting overexpressed protein on the surface of some breast cancer subgroup
+            cells.
+            <br><br>We choose to use iron oxide nanoparticles as the carrier backbond mainly because of its relative high
+            biocompatibility in different types of nanoparticles, especially the biologically synthesized iron oxide
+            nanoparticles. And the iron oxide nanoparticles could be synthesized by the <i>E. coli</i> dircetly with
+            ferric
+            ions as the inducer, which is also a green way to synthesize nanoparticles.
+            <br><br>Though our final outlook is to have the IONPs directly linked to the antibody in a self-assembly manner,
+            the coating composition of the IONPs is still a problem to be solved. In this way, bringing forward a
+            self-assembly design for the IONPs could be hard and unpractical at this stage.
+            <br><br>So, instead of the self-assembly design, we choose to synthesize the IONPs and the antibody separately,
+            and then link them together with the help of the NHS-PEG-Maleimide bridge or through EDC-NHS linkage.
+            This way, we could still have the IONPs and the antibody linked together for specific targeting.<br>
+            <br>For the antibody, we choose to use the scFv domain of the anti HER2 antibody, who had been proved to be
+            properly expressed in the SHuffle strain <i>E. coli</i>. So we integrate the scFv domain of the anti HER2
+            into a vector with the functional groups for linkage and separation. Then, the vector is transformed into
+            the SHuffle strain <i>E. coli</i> for protein expression and folding. After purification, the antibody
+            was linked to the IONPs. And finally we tested the cytotoxicity of the IONPs with or without the antibody
+            linked to it, indirectly tested the affinity of the antibody to the HER2 receptor.
+            <br><br>Beyond that, we also designed the fluorescent staining method to test the affinity of the antibody to
+            the HER2 receptor. And doxorubicin junction method was also designed to test the cytotoxicity of the IONPs,
+            though this part of experiment haven't been conducted by us due to the limited time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
 
 <div class="flowchart">
   <h2 style="text-align: center;">Our Experiment Flow Chart</h2>
@@ -280,105 +358,97 @@
     </ul>
   </section>
 </div>
-
-<div class="row mt-4">
-  <div class="col-lg-12">
-    <h2>Project</h2>
-    <hr>
-    <p>Biosynthesis and Applications of magnetic iron nanoparticles</p>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-12">
-    <h2>Description</h2>
-    <hr>
-    <p>Biogenic synthesis of nanomaterials is the process of synthesizing and assembling nanoparticles using
-      biomolecules, enzymes, and microorganisms found within living organisms. It offers advantages such as
-      environmental friendliness, low cost, scalability, and controllable structural properties. In current research
-      both domestically and internationally, microorganisms such as bacteria, fungi, and algae are utilized to reduce
-      metal ions into metal nanoparticles through metabolic pathways and enzymatic reactions. The size, shape, and
-      structure of the nanoparticles can be controlled by manipulating the conditions and environment within the
-      organisms. For instance, microorganisms like Escherichia coli, lactobacilli, and yeast have been widely employed
-      in the biogenic synthesis of nanoparticles.
+<div class="col-md-12" style="margin-bottom: 200px;">
+  <section id="features">
+    <div class="features-inner">
+      <!-- Digital XRays-->
+      <div class="features-group has-animation animation-rtl">
+        <div class="features-text">
+          <h1>Software Design</h1>
+          <p>We designed two softwares in order to achieve high throughput data analysis.
+            <br><br>The first one is the Particle Size Distribution Counter for the Transmission Electron Microscope
+            images
+            analysis. This software could
+            automatically generate the plot for the size distribution of the nanoparticles in the TEM images. By
+            "fine-tuning" the parameters in image process procedure, the software could be used for different types
+            of
+            materials ovserved under microscopes beyond just nanoparticles under TEM. To utilize this software
+            effectively, users only need to upload the image file into the software and also type in the real world
+            length of the scale bar if it's available. Next, the software will process the graph, extracting the
+            particle size information and generating a statistical distribution graph, both the statistical
+            distribution
+            graph and the schematic diagram indicating the particles included in the statistis would be shown as the
+            out
+            put.
+            <br>
+            For example, the following image is the output of the software when the TEM image of the IONPs is
+            uploaded,
+            and the size distribution figure of the IONPs is also shown below:<br>
+          <div align="center">
+            <img
+              src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/d3f1a90cde3d7cfbb91ed8b852435b1.jpg"
+              alt="Output of the software for one sample TEM figure" class="image"
+              style="width: 50%;margin-left:0;margin-right:0">
+            <p><b>Figure 1.</b>Output of the software for one sample TEM figure</p>
+          </div>
+          <div align="center">
+            <img
+              src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/3491389b9de3f492a80e10936445c88.png"
+              alt="Size Distribution Output Figure" class="image" style="width: 50%;margin-left:0;margin-right:0">
+            <p><b>Figure 2.</b> Size Distribution Data Output Figure</p>
+          </div>
+          For the second one, we have developed a script specifically designed for high-throughput analysis of
+          confocal image fluorescence intensity, inspired by the tedious data processing in wet lab experiments.
+          This
+          script provides the high throughput processing of TIF images using macro language in Fiji. With our
+          program,
+          we can directly perform automatic normalization and statistical analysis of fluorescence intensity for all
+          images in a given folder, significantly reducing repetitive workload and streamlining the process.
+          Actually,
+          you can change the core codes with different functions in this high-throughput frame. And figures with
+          specific nomenclature could be picked out for analysis by the program, which is helpful when only a
+          subgroup
+          of the data is needed for analysis.
+          </p>
+        </div>
+      </div>
+      <div class="features-group has-animation animation-rtl">
+        <div class="features-image"><img
+            src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/254dc290698a9e3aa7d73e66528ade4.png"
+            width="100%">
+        </div>
+        <div class="features-text">
+          <h1>Beyond Experiment</h1>
+          <p>As our project focuses on developing a bio-synthesis method for iron oxide nanoparticles for targeted
+            cancer
+            therapy. We have collaborated with medical professionals in oncology, radiotherapy, and surgery, as well
+            as
+            experts in nanotechnology and synthetic biology. Safety is a central theme, addressing the limitations
+            and
+            side effects of existing therapies like chemotherapy. By utilizing iron oxide nanoparticles as drug
+            carriers, we aim to enhance specificity and minimize impact on healthy cells. Rigorous testing protocols
+            and
+            in vitro studies assess biocompatibility and toxicity. Stakeholder engagement with patient advocacy
+            groups,
+            healthcare providers, and pharmaceutical companies helps shape our research and development process,
+            prioritizing safety. Overall, our human practices ensure the safety, efficacy, and accessibility of our
+            proposed solution for cancer therapy.
+          </p>
+        </div>
+      </div>
       <br>
-      Magnetic iron oxide nanoparticles (IONPs) hold significant potential in various fields such as magnetic
-      separation, hyperthermia, targeted drug delivery, and catalysis, due to their biocompatibility and excellent
-      targeting capabilities. They are currently the only nanomaterials that have undergone clinical trials. However,
-      the synthesis of IONPs currently relies mainly on chemical methods, and exploring biogenic synthesis methods for
-      IONPs is of great significance. The key breakthrough in overcoming the bottleneck of biogenic synthesis of IONPs
-      lies in the exploration of high iron-tolerant bacteria that can be cultivated on a scalable level. This has been
-      the primary focus of researchers for many years. Recently, with a deeper understanding of the iron reduction
-      pathway, we plan to isolate iron-tolerant bacterial strains from soil samples, explore their enzyme systems
-      through genetic sequencing, and then genetically modify Escherichia coli to enhance its tolerance to iron-rich
-      environments. This will allow us to obtain a bacterial strain capable of efficiently producing IONPs.
-      Additionally, we aim to mutate the Escherichia coli population and screen for strains that are even more tolerant
-      to iron salt environments, further enhancing the bacterium's ability to biogenically synthesize IONPs.
       <br>
-      Building upon these foundations, we also intend to explore the use of biogenic synthesis methods for producing
-      functional protein-modified IONPs. By expressing the functional domain of trastuzumab (BH), a monoclonal antibody,
-      in Escherichia coli and directly coupling it with the synthesized IONPs, we can obtain functional nanomaterials
-      suitable for breast cancer therapy.
-    </p>
-  </div>
-
-</div>
-
-
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Describe how and why you chose your iGEM project.
-      <p>
-        <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.
-      </p>
+      <div class="features-group has-animation animation-rtl">
+        <div class="features-text">
+          <h1>Reference</h1>
+          <p>
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>A clear and concise description of your project.</li>
-      <li>A detailed explanation of why your team chose to work on this particular project.</li>
-      <li>References and sources to document your research.</li>
-      <li>Use illustrations and other visual resources to explain your project.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
-      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
-      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
-      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
-      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
-      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Some advice</h2>
-    <hr>
-    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include
-      summaries as much as possible. If you think of the sections in your project description as the sections in a
-      publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project
-      Description should include more information than your project abstract.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr>
-    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted
-      somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works
-      inspired you.</p>
-  </div>
-</div>
 <script src="{{ url_for('static', filename = 'description.js') }}"></script>
+<script src="{{ url_for('static', filename = 'engineering.js') }}"></script>
 {% endblock %}

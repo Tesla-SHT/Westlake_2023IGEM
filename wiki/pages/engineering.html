@@ -19,8 +19,6 @@ engineering design cycle.{% endblock %}
           <p class="text-light">Engineering Success</p>
           <div class=" ">
             <p class="lead text-white-50" style="font-family:'Times New Roman', Times, serif;">
-              Demonstrate engineering success in a part of your project by going through at least one iteration of the
-              engineering design cycle.
             </p>
             <button class="custom-btn btn-header "><span>Click!</span><span>Read More</span></button>
           </div>
@@ -30,14 +28,37 @@ engineering design cycle.{% endblock %}
   </section>
 </div>
 
-<div class="col-12 text-center">
+<div class="col-12">
   <section id="features">
     <div class="features-inner">
       <!-- Digital XRays-->
-
+      <div class="row pb-5 gx-0">
+        <div class="offset-md-1 col-10 features-group has-animation animation-rtl">
+          <div class="features-text">
+            <h1>Overview</h1>
+            <p>Since the target of our project is to synthesize the Iron Oxide Nanoparticles using biological method and
+              achieve specific targeting towards the breast cancer cell, we designed four different plasmid expressing
+              the carefully selected scFv domain of anti-HER2 antibody and the specific functional domain to enable the
+              purification and conjugation of the antibody, specific
+              bacteria strain was selected to ensure the proper folding of the antibody.
+              <br><br>For the future work, when the coating composition of the iron oxide nanoparticles is better
+              determined and the synthetic mechanism of IONPs is better understood, designs of the plasmid can be
+              further optimized to enabling the expression termial of antibody to be the same site as IONPs, along with
+              addition of functional groups in the plasmid design, self assembly of the antibody and IONPs may become
+              possible, which will greatly improve the efficiency for large scale prodection.
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="col-md-12  features-group has-animation animation-rtl" style="overflow-x:hidden">
         <img src="https://static.igem.wiki/teams/4702/wiki/engineering/layout-2.jpg" width="100%">
       </div>
+
+      <h1 class=" mx-auto text-center" style="font-size: xxxxxx-large;">
+        <span style="background-color: rgb(232,250,248); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">
+          Design and Build</span>
+      </h1>
+
       <div class="row pb-5 gx-0">
         <div class="offset-md-1 col-10 features-group has-animation animation-rtl">
           <div class="features-image"><img src="https://static.igem.wiki/teams/4702/wiki/engineering/e-coli-2.png"
@@ -88,7 +109,7 @@ engineering design cycle.{% endblock %}
               because of their large size, which had the potential to lead to steric hinderance, and furthermore to
               restrict the binding efficiency. Single-chain variable fragments (scFv) was composed of variable regions
               of
-              heavy (VH) and light (VL) chains of immunoglobulins, linked via a flexible short peptide linker. Its lack
+              heavy (V<sub>H</sub>) and light (V<sub>L</sub>) chains of immunoglobulins, linked via a flexible short peptide linker. Its lack
               of
               Fc domain enabled itself to possess a smaller size, which reduced the possibility of steric hinderance
               issue
@@ -130,9 +151,10 @@ engineering design cycle.{% endblock %}
         <div class="col-10 features-group has-animation animation-ltr"
           style="padding-top:0px;margin-top:0px;margin-bottom:0;">
           <div class="features-image inverted"><img
-              src="https://static.igem.wiki/teams/4702/wiki/engineering/layout-1-three-vector-design-by-mal-linking.jpg" width="105%">
+              src="https://static.igem.wiki/teams/4702/wiki/engineering/layout-1-three-vector-design-by-mal-linking.jpg"
+              width="105%">
           </div>
-          <div class="features-text inverted"style="margin-bottom:0px">
+          <div class="features-text inverted" style="margin-bottom:0px">
             <h2>Specific Design in Plasmid Construction for NHS-PEG-Maleimide Conjugation</h2>
             <p>
               Beyond the elaborate design above, several other designs for better fit of NHS-PEG-Maleimide conjugation
@@ -153,10 +175,10 @@ engineering design cycle.{% endblock %}
         <!--third part-->
         <div class="offset-md-1 col-10 features-group has-animation animation-rtl"
           style="padding-top:0px;margin-top:0px">
-          <div class="features-image"><img
-              src="https://static.igem.wiki/teams/4702/wiki/engineering/20231010204848.jpg" width="100%">
+          <div class="features-image"><img src="https://static.igem.wiki/teams/4702/wiki/engineering/20231010204848.jpg"
+              width="100%">
           </div>
-          <div class="features-text"style="padding-top:0px">
+          <div class="features-text" style="padding-top:0px">
             <h2>Specific Design in Plasmid Construction for Streptavidin-Biotin Conjugation</h2>
             <p>
               As the Streptavidin-Biotin linkage is a very strong interaction in nature, we also had a vector design
@@ -174,25 +196,89 @@ engineering design cycle.{% endblock %}
           <div class="rbar"></div>
         </div>
       </div>
+
+      <h1 class=" mx-auto text-center" style="font-size: xxxxxx-large;">
+        <span style="background-color: rgb(232,250,248); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">
+          Test</span>
+      </h1>
+
+      <div class="row pb-5 gx-0">
+        <div class="offset-md-1 col-10 features-group has-animation animation-rtl">
+          <div class="features-image"><img
+              src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/engineering/engineering-test.jpg"
+              width="100%">
+          </div>
+          <div class="features-text">
+            <h1>Test Results of Our Plasmids</h1>
+            <p>
+              We introduced our plasmids into <i>E. coli</i> respectively and induced them to express the protein. The
+              results showed that except for the scFV-streptavidin-his protein was found to be in the inclusion body,
+              all other types of the protein was successfully expressed and purified and gave a satisfying concentration
+              around 1-5 mg/ml after solution displacement to storage buffer.
+              <br>Then, We conducted the experiment of linking the antibody to the chemically synthesized Iron Oxide
+              Nanoparticles, comparing to the chemically synthesized Iron Oxide Nanoparticles without antibody addition,
+              the cytotoxicity of the group with antibody linkage treatment was higher than the group without the
+              linkage process, indirectly indicating partial bioactivity of the scFv protein.
+              <br>And the detailed result of our experiment could be found in our <a
+                href="https://2023.igem.wiki/westlake-china/results">
+                result page</a>, especially the cytotoxicity test result and protein purification result.
+            </p>
+          </div>
+        </div>
+        <div class="col-1  d-flex justify-content-center">
+          <div class="rbar"></div>
+        </div>
+      </div>
+
+      <h1 class=" mx-auto text-center" style="font-size: xxxxxx-large;">
+        <span style="background-color: rgb(232,250,248); padding: 0px 10px;margin-bottom: 20px;border-radius: 20px">
+          Future</span>
+      </h1>
+
+      <div class="row pb-5 gx-0">
+        <div class="offset-md-1 col-10 features-group has-animation animation-rtl">
+          <div class="features-image"><img
+              src="https://static.igem.wiki/teams/4702/wiki/result-for-notebook/e310b35721f23d15526cc50af17868d.png"
+              width="100%">
+          </div>
+          <div class="features-text">
+            <h1>Future from Our Tests and Other Prospects</h1>
+            <p>
+              For the results of our tests, one thing we could do for the alternative of the scFv-streptavidin-his
+              design is to remove the streptavidin in the design but using chemical method to link the biotin to the 
+              antibody, and then link the biotinylated antibody to the avidin linked iron oxide nanoparticles.
+              <br>
+              One promising direction for future work is to optimize the design of plasmids to enable the expression
+              terminal of antibodies to be located at the same site as the IONPs. This strategic modification would
+              facilitate the self-assembly of antibodies and IONPs if the process is made possible in the future,
+              potentially leading to more efficient and targeted
+              delivery systems. By incorporating functional groups into the plasmid design, we could enhance
+              the binding affinity between the antibodies and IONPs, thereby improving the overall performance of the
+              nanocomplex.
+              <br>
+              The successful self-assembly of antibodies and IONPs holds great potential for large-scale production.
+              With this advancement, we could streamline the manufacturing process and significantly increase
+              the efficiency of nanoparticle production. Additionally, the ability to self-assemble the components may
+              offer new opportunities for tailoring the properties of the nanocomplex, such as controlling the release
+              kinetics of drugs or enabling specific interactions with biological targets.
+              <br>
+              The present development in biologically synthesized IONPs offers promising avenues for future research. By
+              further refining the coating composition, understanding the synthetic mechanism, and optimizing plasmid
+              design, scientists are paving the way for improved efficiency, stability, and functionality of these
+              nanoparticles. Ultimately, these advancements hold great potential for revolutionizing various fields,
+              including targeted drug delivery, biomedical imaging, and therapeutics.
+            </p>
+          </div>
+        </div>
+        <div class="col-1  d-flex justify-content-center">
+          <div class="rbar"></div>
+        </div>
+      </div>
+
+
     </div>
   </section>
 </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Silver Medal Criterion #1</h4>
-      <p>Demonstrate engineering success in a part of your project by going through at least one iteration of the
-        engineering design cycle. This achievement should be distinct from your Contribution for Bronze.
-      <p>
-      <p>If you plan to show engineering success by creating a new Part that has been shown to work as expected, you
-        must document your contribution on the Part's Main Page on the <a
-          href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.
-      </p>   
-    </div>
-  </div>
-</div>
 <script src="{{ url_for('static', filename = 'engineering.js') }}"></script>
 {% endblock %}
