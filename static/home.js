@@ -137,6 +137,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const textDivs = document.querySelectorAll(".fade-in-text");
 const textDivsafter = document.querySelectorAll(".fade-in-text::after");
+const futureDiv = document.querySelectorAll(".future-part");
 // 创建Intersection Observer实例
 window.addEventListener("scroll", () => {
   textDivs.forEach((div) => {
@@ -149,6 +150,18 @@ window.addEventListener("scroll", () => {
     } else {
       // 使用GSAP动画隐藏div
       gsap.to(div, { duration: 0.5, x: -500, opacity: 0, });
+    }
+  });
+  futureDiv.forEach((div) => {
+    const rect = div.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // 判断div是否在屏幕可见区域内
+    if (rect.top < windowHeight && rect.bottom >= 0) {
+      // 使用GSAP动画显示div
+      gsap.to(div, { dration: 1.3, y: 0, opacity: 1 });
+    } else {
+      // 使用GSAP动画隐藏div
+      gsap.to(div, { duration: 0.5, y:200, opacity: 0, });
     }
   });
 });
