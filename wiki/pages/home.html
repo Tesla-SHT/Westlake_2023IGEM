@@ -34,10 +34,10 @@ season!{%endblock %}
   <br><br><br><br><br><br>
   <div class="container-wrapper">
     <div class="container-left ">
-      <strong><span class="centered-text-1"><span class="larger-text-2"><span
+      <strong><span class="centered-text-1"><span class="larger-text-1-1"><span
               class="colored-text">N</span>anoparticles</span></span></strong>
-      <br><br><br>
-      <strong><span class="larger-text-3">What are nanoparticles?</span></strong>
+      <br><br><br><br><br>
+      <strong><span class="larger-text-3" style="color:rgb(0, 47, 167)">What are nanoparticles?</span></strong>
       <br><br>
       <div class="larger-text">
         Nanoparticles are tiny particles with diameters ranging from 1 to 100 nanometers, making them roughly 1000 times
@@ -52,30 +52,32 @@ season!{%endblock %}
         For instance, in the realm of cancer therapy, IONPs can generate heat that selectively targets and eradicates
         tumor cells.
       </div>
-      <br>
-      <br><br>
-      <strong><span class="larger-text-3">And how can you make them?</span></strong>
-      <br><br>
-      <div class="larger-text">
-        There are different ways of producing these nanoparticles</div>
-      <br><br><span class="larger-text">Chemical
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Physical
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coorecipitation</span>
-      <br><br>
-      <div class="larger-text">
-        but these production methods all have their downsides.</div>s
-      <br><br>
-      <span class="centered-text-2"><strong><span class="larger-text">Inconsistent
-            &nbsp;&nbsp;&nbsp; Not adaptable &nbsp;&nbsp;&nbsp; Toxic
-            &nbsp;&nbsp;&nbsp; Expensive</span></strong></span>
     </div>
 
 
     <div class="container-right">
-      <br><br><br>
 
+      <strong><span class="larger-text-3" style="color:rgb(0, 47, 167)">And how can you make them?</span></strong>
+      <br><br>
+      <div class="larger-text">
+        There are different ways of producing these nanoparticles</div><br>
+      <div class="row larger-text text-center" style="color:rgb(88 199 250 / 100%)">
+        <div class="col">Chemical</div>
+        <div class="col">Physical</div>
+        <div class="col">Coorecipitation</div>
+      </div>
+      <br>
+      <div class="larger-text">
+        but these production methods all have their downsides.</div><br>
+      <div class="row larger-text text-center" style="color:#f57f7f">
+        <div class="col">Inconsistent</div>
+        <div class="col">Unadaptable</div>
+        <div class="col">Toxic</div>
+        <div class="col">Expensive</div>
+      </div>
       <!--图表-->
-      <div id="ChartDom" style="width:100%;height:100%"></div> <!--style="width:600px; height:400px; margin:auto"-->
+      <br><br>
+      <div id="ChartDom" style="width:100%;height:80%"></div> <!--style="width:600px; height:400px; margin:auto"-->
       <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('ChartDom'));
@@ -83,10 +85,13 @@ season!{%endblock %}
         // 指定图表的配置项和数据
         option = {
           title: {
-            text: 'Current status of IONPs synthesis methods',
+            text: 'Current status of IONPs\n synthesis methods\n',
             left: 'center',
             textStyle: {
               color: 'rgb(0, 47, 167)',  // 设置标题字体颜色
+              //设置字体大小
+              fontSize: 24,
+              lineHeight: 32
             }
           },
           tooltip: {
@@ -129,11 +134,11 @@ season!{%endblock %}
     </div>
 
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
   <div class="card">
     <span class="head-font">What can we do?</span>
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
   <div class="container-wrapper">
     <div class="container-left-1">
       <br>
@@ -144,23 +149,23 @@ season!{%endblock %}
     </div>
     <div class="container-right-1 ">
       <br><br>
-      <strong><span class="larger-text-3"><span class="colored-text">B</span>iosynthesitic <span
-            class="colored-text">n</span>anoparticles</span></strong>
-      <div class="larger-text"><b>
-          <br><br><br>
-          Our genetically edited <i>E. coli</i> is used to synthesize Iron Oxide Nanoparticles (IONPs) by adding
-          Fe<sup>3+</sup> for induction.
-          <br><br><br>
-          After leaving the system in shaker for 1-2 days, we can seperate the IONPs from the culture by
-          untrasonification
-          and filtration method designed and tested by us own.
-          <br><br><br>
-          <strong><span class="larger-text-3"><span class="colored-text">W</span>hat is special about our
-              nanoparticles?</span></strong>
-          <br><br><br>
-          They are not just any other nanoparticles! They have special abilities due to their properties.
-          We then step into exploring therapeutic applications and drug delivery possibilities.
-          <br><br><br><br><br><br></b>
+      <strong><span style="font-size:38px"><span class="colored-text">B</span>iosynthesitic <span
+            class="colored-text">N</span>anoparticles</span></strong>
+      <div class="larger-text">
+        <br><br><br>
+        Our genetically edited <i>E. coli</i> is used to synthesize Iron Oxide Nanoparticles (IONPs) by adding
+        Fe<sup>3+</sup> for induction.
+        <br><br><br>
+        After leaving the system in shaker for 1-2 days, we can seperate the IONPs from the culture by
+        untrasonification
+        and filtration method designed and tested by us own.
+        <br><br><br>
+        <strong><span style="font-size:38px"><span class="colored-text">W</span>hat is special about our
+            nanoparticles?</span></strong>
+        <br><br><br>
+        They are not just any other nanoparticles! They have special abilities due to their properties.
+        We then step into exploring therapeutic applications and drug delivery possibilities.
+        <br><br><br><br><br><br>
       </div>
     </div>
   </div>
@@ -208,33 +213,21 @@ season!{%endblock %}
   <div class="timeline-container">
     <div class="container-wrapper-1">
       <div class="left-content">
-        <br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         <p><strong><span class="larger-text-2">
               <sapn class="head-font"><span class="colored-text">B</span>reast Cancer</sapn>
-            </span></strong><br><br><br><br><br><br><br>
+            </span></strong><br><br><br><br>
           <a href="https://2023.igem.wiki/westlake-china/description#href-2">
             <img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/breast-cancer-true.png" alt="breast cancer"
               width="80%">
           </a>
         </p>
-        <br><br><br><br><br>
         <a href="https://2023.igem.wiki/westlake-china/description#href-4">
           <p><img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/experimrnt-2.png" alt="breast cancer"
               width="100%">
           </p>
         </a>
         <br>
-        <p><strong><span class="larger-text-2">
-              <sapn class="head-font"><span class="colored-text">F</span>uture promotion</sapn>
-            </span></strong><br><br>
-          <img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/untitled-11.png" alt="breast cancer"
-            width="50%">
-        </p>
-        <p>
-          <img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/aaa-2.png" alt="breast cancer"
-          width="40%">
-          </p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
       <div class="right-content">
         <p><strong><span class="larger-text-2"> <span class="head-font"><span class="colored-text">T</span>he
@@ -245,7 +238,7 @@ season!{%endblock %}
               width="80%">
           </a>
         </p>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
         <p><a href="https://2023.igem.wiki/westlake-china/engineering#vector-engineering#href-6"
             style="text-decoration: none; color: white;"><strong><span class="larger-text-2"><span
                   class="head-font"><span class="colored-text">O</span>ur
@@ -260,24 +253,43 @@ season!{%endblock %}
           <p><img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/experiment-3.png" alt="breast cancer"
               width="100%"></p>
         </a>
-        <p>
-        <div class="larger-text-3" style="color: #ffaa00"><b>
-            One promising direction for future work is to optimize the design of plasmids to enable the expression
-            terminal of antibodies to be located at the same site as the IONPs.This strategic modification would
-            facilitate the self-assembly of antibodies and IONPs.
-          </b></div>
-        </p><br>
-        <p>
-        <div class="larger-text-3" style="color: #ffaa00"><b>
-            By further refining the coating composition, understanding the synthetic mechanism, and optimizing plasmid
-            design, we are paving the way for improved efficiency, stability, and functionality of these nanoparticles.
-            We are also trying to find new applications of nanoparticles in various fields, including targeted drug
-            delivery, biomedical imaging, and therapeutics.
-          </b></div>
-        </p>
       </div>
     </div>
-    <br><br><br><br>
+    <div class="container-wrapper-1">
+      <div class="row ">
+        <div class="col ">
+          <p><strong><span class="larger-text-2">
+                <sapn class="head-font"><span class="colored-text">F</span>uture promotion</sapn>
+              </span></strong><br><br>
+            <img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/untitled-11.png" alt="breast cancer"
+              width="30%">
+          </p><br><br>
+          <p>
+            <img src="https://static.igem.wiki/teams/4702/wiki/home-photoes/aaa-2.png" alt="breast cancer" width="25%">
+          </p>
+          <br><br><br>
+        </div>
+        <div class="col">
+          <p>
+          <div class="larger-text-3-3" style="color: #ffaa00;padding-top:20%"><b>
+              One promising direction for future work is to optimize the design of plasmids to enable the expression
+              terminal of antibodies to be located at the same site as the IONPs.This strategic modification would
+              facilitate the self-assembly of antibodies and IONPs.
+            </b></div>
+          </p><br>
+          <p>
+          <div class="larger-text-3-3" style="color: #ffaa00;padding-top:10%"><b>
+              By further refining the coating composition, understanding the synthetic mechanism, and optimizing plasmid
+              design, we are paving the way for improved efficiency, stability, and functionality of these
+              nanoparticles.
+              We are also trying to find new applications of nanoparticles in various fields, including targeted drug
+              delivery, biomedical imaging, and therapeutics.
+            </b></div>
+            <br><br><br><br>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -374,7 +386,7 @@ season!{%endblock %}
   </section>
 </div>
 
-<div class="bottom-section">
+<div class="bottom-section" style="height:120%;overflow-y:visible">
   <sapn class="headhead-font"><span class="larger-text-2"><span class="colored-text-2">Human Practice & Team :
   </sapn></span></span>
   <br><br><br>
@@ -403,7 +415,7 @@ season!{%endblock %}
           <div class="blog-slider__text">We have actively engaged with stakeholders, including patient advocacy groups,
             healthcare providers, and pharmaceutical companies, to gather insights and address concerns related to
             safety.</div>
-            <a href="{{url_for('pages',page='human-practices-copy')}}" class="blog-slider__button">READ MORE</a>
+          <a href="{{url_for('pages',page='human-practices-copy')}}" class="blog-slider__button">READ MORE</a>
         </div>
       </div>
 
@@ -420,7 +432,7 @@ season!{%endblock %}
             design, web authoring, and graphic design.
           </div>
           <a href="https://2023.igem.wiki/westlake-china/team" class="blog-slider__button">READ MORE</a>
-          
+
         </div>
       </div>
     </div>
@@ -428,7 +440,6 @@ season!{%endblock %}
   </div>
   <br><br><br><br><br><br><br>
 </div>
-<br><br><br><br>
 
 
 

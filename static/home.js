@@ -3,27 +3,7 @@ var sectionheight = h2back.parentElement;
 h2back.style.paddingTop = (sectionheight.clientHeight - h2back.clientHeight) / 2 + "px";
 
 const footer = document.querySelector('#footer');
-const sidebarAnimation = gsap.from("#sidebar", { duration: 1, opacity: 0, x: -500 });
-window.addEventListener('DOMContentLoaded', () => {
-  // 判断初始位置是否需要显示侧边栏
-  if (window.pageYOffset <= 50) {
-    sidebarAnimation.play();
-  } else {
-    sidebarAnimation.reverse();
-  }
-});
-window.addEventListener('scroll', () => {
-  // 计算滚动位置
-  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  const windowHeight = window.innerHeight;
-  const documentHeight = document.documentElement.scrollHeight;
-  // 切换侧边栏显示
-  if (scrollPosition + windowHeight < documentHeight - footer.offsetHeight) {
-    sidebarAnimation.play()
-  } else {
-    sidebarAnimation.reverse();
-  }
-});
+
 window.onload = function () {
   const sidebar = document.getElementById("sidebar");
   const toggleButton = document.getElementById("sidebar-toggle");
