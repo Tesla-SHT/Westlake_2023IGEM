@@ -416,7 +416,7 @@ h1 {
   width: 100%;
   height: auto;
   min-height: 300%;
-  background: linear-gradient(-210deg, #6682ba, #355fd0);
+  background: linear-gradient(-210deg, #6682ba, #2e59cf);
   /* 45度角线性渐变 */
   padding-top: 45px;
   color: #fff;
@@ -433,7 +433,7 @@ h1 {
   width: 100%;
   height: auto;
   min-height: 200%;
-  background: #031625;
+  background: #083456 ;
   padding-top: 45px;
   color: #fff;
   letter-spacing: 1.5px;
@@ -490,7 +490,8 @@ h1 {
   width: 100%;
   height: auto;
   min-height: 300%;
-  background: linear-gradient(-210deg, #D6BC46, #BE8A2F);
+  background:linear-gradient(180deg, rgba(110, 24, 110, 0.775),rgba(137, 141, 205, 0.956) );
+  /*background: linear-gradient(-210deg, #D6BC46, #BE8A2F);*/
   padding-top: 45px;
   color: #fff;
   letter-spacing: 1.5px;
