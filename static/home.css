@@ -264,8 +264,6 @@
   width: 93%;
   display: inline-block;
   /* 使包装的文字元素变为内联块元素 */
-  text-align: center;
-  /* 文本居中对齐 */
   /*background-color: #f0f0f0; 可选：添加背景颜色以突出显示 */
   padding: 2px 5px;
   /* 可选：添加内边距以改善样式 */
@@ -289,7 +287,7 @@
 }
 
 .larger-text-1 {
-  font-size: 64px;
+  font-size: 80px;
   /* 根据需要设置更大的字号值 */
 }
 
@@ -313,6 +311,10 @@
   /* 根据需要设置更大的字号值 */
 }
 
+.larger-text-6 {
+  font-size: 24px;
+  /* 根据需要设置更大的字号值 */
+}
 
 /*.animation-container {
   position: relative;
@@ -357,7 +359,7 @@ h1 {
 }
 
 .top-section {
-  background: #ffffff url('https://static.igem.wiki/teams/4702/wiki/hp/people-photo/88.png') no-repeat center center / cover;
+  background: #ffffff url('https://static.igem.wiki/teams/4702/wiki/home-photoes/1.gif') no-repeat center center / cover;
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
@@ -1105,8 +1107,8 @@ font-size: 1rem;
 }
 
 .round-button {
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   /* 将按钮变成圆形 */
   margin: 50px;

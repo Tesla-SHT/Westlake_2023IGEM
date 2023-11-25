@@ -9,7 +9,7 @@
 }
 
 .text {
-  font-size: max(1vw, 15px);
+  font-size:1.1rem;
   line-height: 1.4;
   overflow: hidden;
   padding-bottom: 20px;
@@ -25,7 +25,7 @@
 
 .accordion {
   background: linear-gradient(200deg, rgb(29, 145, 252) 13.57%, rgb(90, 54, 192) 98.38%);
-  width: max(50vw, 280px);
+  width: max(70vw, 280px);
   padding: 25px 30px 10px;
   border-radius: 15px;
   margin-bottom: 40px;
@@ -87,7 +87,7 @@
   .timeline ul li div {
     position: relative;
     bottom: 0;
-    width: 600px;
+    width: 500px;
     padding: 15px;
     background: #5b8ef485;/*background*/
   }
@@ -113,7 +113,7 @@
   }
   
   .timeline ul li:nth-child(even) div {
-    left: -639px;
+    left: -539px;
   }
   
   .timeline ul li:nth-child(even) div::before {

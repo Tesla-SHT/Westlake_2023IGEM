@@ -3,14 +3,25 @@
   line-height: 0.5rem;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* 悬停和点击时的样式 */
 .ani-card-header:hover {
   cursor: pointer;
-  background-color: #f0f0f0; /* 悬停时颜色变化 */
+  background-color: #f0f0f0;
+  /* 悬停时颜色变化 */
 }
 
 .ani-card-header.active {
-  background-color: #ddd; /* 点击时颜色变化 */
+  background-color: #ddd;
+  /* 点击时颜色变化 */
 }
 
 /* 初始状态隐藏card-body */
@@ -22,19 +33,23 @@
 .ani-card-body.active {
   display: block;
   opacity: 0;
-  transition: opacity 0.3s ease; /* 添加淡入过渡效果 */
+  transition: opacity 0.3s ease;
+  /* 添加淡入过渡效果 */
 }
 
 .ani-card-body.active.show {
   opacity: 1;
 }
-.card-body{
 
-text-align: left;
+.card-body {
+
+  text-align: left;
 }
-.card{
+
+.card {
   box-shadow: 3px 3px 4px 4px rgba(70, 158, 180, 0.1);
 }
+
 /*侧边栏*/
 
 .sidebar {
@@ -49,6 +64,10 @@ text-align: left;
   overflow-y: auto;
   /* Add scrollbar to the sidebar if content exceeds its height */
 }
-a[href="#a1"],a[href="#a2"],a[href="#a3"],a[href="#a4"]{
+
+a[href="#a1"],
+a[href="#a2"],
+a[href="#a3"],
+a[href="#a4"] {
   text-decoration: none;
-} 
+}

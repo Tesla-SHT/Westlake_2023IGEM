@@ -184,9 +184,11 @@ footer a {
   color: white;
   text-decoration: underline;
 }
-.table{
-  text-align:center;
+
+.table {
+  text-align: center;
 }
+
 .main-container {
   max-width: 100%;
   padding: 0;
@@ -198,20 +200,21 @@ footer a {
 }
 
 .text-light {
-  font-size : 120px ;
-  -webkit-text-stroke: 1px #000;
+  font-family: 'Lobster', sans-serif;
+  font-size: 120px;
   color: #fff;
-  background: -webkit-linear-gradient(45deg, #d8d8e2, #d8f1e7 50%);
+  background: -webkit-linear-gradient(45deg, rgb(078, 098, 171), rgb(91, 187, 200) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 
 @media (max-width:767px) {
-  #sidebar{
-    display:none;
+  #sidebar {
+    display: none;
   }
-  #minsidebar{
-    display : none;
+
+  #minsidebar {
+    display: none;
   }
 }
