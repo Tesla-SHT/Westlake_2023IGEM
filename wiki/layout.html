@@ -15,7 +15,6 @@
   <link href="{{ url_for('static', filename = 'footer.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
   <title>{% block title %}{% endblock %} | Westlake-China - iGEM 2023</title>
-  <link rel="shortcut icon" href="https://static.igem.wiki/teams/4702/wiki/logo-trans.png" sizes="16x16">
   <!--GSAP animation-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -26,37 +25,6 @@
 
 <body>
 
-  <!--加载界面
-  <script>
-    setTimeout(function () {
-      $(".loading-div").hide();
-      $(".main").css('display', 'block');
-    }, 8000)
-    document.onreadystatechange = function () {
-      if (document.readyState == "complete") {
-        $(".loading-div").hide();
-        $(".main").css('display', 'block');
-      }
-    }
-  </script>
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <style>
-    .main {
-      display: none;
-    }
-
-    .loading-div {
-      height: 40px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: #555;
-    }
-  </style>
-  <div class="loading-div">
-    <i class="fa fa-spinner fa-pulse fa-3x fa-fw "></i>
-    <link rel="icon" href="https://static.igem.wiki/teams/4702/wiki/logo.png" size="16x16">
-  </div>-->
   <link href="{{ url_for('static', filename = 'loading.css') }}" rel="stylesheet">
   <div class="preloader">
     <div class="loader">
@@ -86,7 +54,6 @@
 
           $(document).height(), winheight = $(window).height();
         var scrolled = (wintop / (docheight - winheight)) * 100;
-        console.log(scrolled);
         $('.scroll-line').css('width', (scrolled + '%'));
       });
     </script>
@@ -103,14 +70,17 @@
 
         // 获取当前页面的路径
         var currentPath = window.location.pathname;
-        console.log(currentPath);
         // 检查当前页面的路径是否包含 "home"
         if (currentPath.slice(-1) === "/") {
           // 如果是 Home 页面，则显示按钮
           button.style.display = "inline-block";
         } else {
           // 如果不是 Home 页面，则隐藏按钮
-          button.style.display = "none";
+          if (button) {
+            if (Object.keys(button.style).length > 0) {
+              button.style.display = "none";
+            }
+          }
         }
       });
     </script>
@@ -125,7 +95,6 @@
 
     <script>window.onscroll = function () { scrollFunction() };
       function scrollFunction() {// 当网页向下滑动 20px 出现"返回顶部" 按钮
-        console.log(121);
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           document.getElementById("backtop").style.display = "block";
         } else {
@@ -159,10 +128,6 @@
   <!--加载界面-->
   <script>$(function () {
       "use strict"; $(window).on('load', function (event) { $('.preloader').delay(500).fadeOut(500); });
-
-      wow.init();
-
-      $(".preloader").delay(500).fadeout(500);
     });</script>
 </body>
 

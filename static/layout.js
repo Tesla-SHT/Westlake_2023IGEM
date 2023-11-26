@@ -3,7 +3,6 @@
 //回到顶部
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {// 当网页向下滑动 20px 出现"返回顶部" 按钮
-    console.log(121);
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("backtop").style.display = "block";
     } else {
