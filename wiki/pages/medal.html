@@ -63,15 +63,22 @@
         <hr class="hr-ani">
         <div class="shadow-lg p-5 mb-5 bg-white rounded">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 vertical-align">
               <img src="https://static.igem.wiki/teams/4702/wiki/medal/gold-medal.png" class="img-fluid" width="100%">
             </div>
-            <div class="col-lg-8 ">
-              <p class="medal-text"> Throughout the
-                experimental process, I gained profound insights into the inherent challenges of drawing conclusive
-                results and encountered the intricate nature of designing a compelling and methodologically sound
-                experiment.</p>
+            <div class="col-lg-8 vertical-align">
+              <div>
+                <p class="medal-text" style="padding-top:30px;"> Throughout the
+                  experimental process, I gained profound insights into the inherent challenges of drawing conclusive
+                  results and encountered the intricate nature of designing a compelling and methodologically sound
+                  experiment.</p>
                 <p class="medal-name">--Shuoyi Hu</p>
+                <p class="medal-text">In the integrated human practice process, I have garnered valuable feedback from
+                  diverse fields, which has greatly enhanced our project. Additionally, this experience has provided me
+                  with the skills necessary to effectively engage with external school communities and companies,
+                  fostering meaningful collaborations.</p>
+                <p class="medal-name">--Shijie He</p>
+              </div>
             </div>
           </div>
         </div>
@@ -87,17 +94,21 @@
         <hr class="hr-ani">
         <div class="shadow-lg p-5 mb-5 bg-white rounded">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 vertical-align">
               <img src="https://static.igem.wiki/teams/4702/wiki/medal/entrepreneurship.svg" class="img-fluid">
             </div>
-            <div class="col-lg-8 " style="vertical-align: middle;">
-              <p class="medal-text">Thanks to all the team members and instructors in Westlake -China for giving me
-                materials needed for the project and helping me finish the project. Especially for Shijie He, who gives
-                me a lot of human practice materials and presents the idea in the final committee; Haotian Shen, who
-                changes my words and charts into beautiful web pages. I hope these entrepreneurship pages can make our
-                team's future plans become more clearly and have a larger feasibility. At last I hope our team’s product
-                can successfully come into the market. </p>
-              <p class="medal-name">--Ziqiao Wang</p>
+            <div class="col-lg-8 vertical-align">
+              <div>
+                <p class="medal-text">Thanks to all the team members and instructors in Westlake -China for giving me
+                  materials needed for the project and helping me finish the project. Especially for Shijie He, who
+                  gives
+                  me a lot of human practice materials and presents the idea in the final committee; Haotian Shen, who
+                  changes my words and charts into beautiful web pages. I hope these entrepreneurship pages can make our
+                  team's future plans become more clearly and have a larger feasibility. At last I hope our team’s
+                  product
+                  can successfully come into the market. </p>
+                <p class="medal-name">--Ziqiao Wang</p>
+              </div>
             </div>
           </div>
         </div>
@@ -177,14 +188,19 @@
   .medal-text {
     vertical-align: middle;
     font-size: 18px;
-    padding: 30px 60px;
-    padding-bottom:0px;
-    margin-bottom:0px;
+    padding: 0px 60px;
+    margin-bottom: 0px;
   }
-  .medal-name{
-    text-align:right;
-    padding-right:60px;
-  
+
+  .medal-name {
+    text-align: right;
+    padding-right: 60px;
+
+  }
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
   }
 </style>
 <script src="{{ url_for('static', filename = 'card.js') }}"></script>
